@@ -1,0 +1,138 @@
+{
+  "id": "ara_0050",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "gemini",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "09bbd37132e4dc75ebfc90f7e81599cb58ede929eca65492c34775902e6c754d",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": "27",
+    "purchase_date": "2022-07-19",
+    "purchase_time": "07:19 PM",
+    "currency": null,
+    "subtotal": "800.00",
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "800.00",
+    "line_items": [
+      {
+        "raw_description": "GUESS TSHIRT",
+        "quantity": "1",
+        "unit_price": "800.00",
+        "line_total": "800.00"
+      }
+    ],
+    "raw_text": "فاتورة مبيعات نقدی\nالماكينة 0\nالمسلسل 27\nالعميل\nالصنف الكمية السعر القيمة المضافة الإجمالي\nGUESS TSHIRT\n1 800.00 0.000 800.00\nالإجمالي 800.00\nالخصم 0.00\nالقيمة المضافة للفاتورة 0.00\nالصافي 800.00\nالقيمة المضافة للأصناف 0.00\nالمدفوع 0.00\nالباقي 0.00",
+    "missing_fields": [
+      "merchant_name",
+      "currency"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"27\",\n  \"purchase_date\": \"2022-07-19\",\n  \"purchase_time\": \"07:19 PM\",\n  \"currency\": null,\n  \"subtotal\": \"800.00\",\n  \"discount\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"800.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"GUESS TSHIRT\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"800.00\",\n      \"line_total\": \"800.00\"\n    }\n  ],\n  \"raw_text\": \"فاتورة مبيعات نقدی\\nالماكينة 0\\nالمسلسل 27\\nالعميل\\nالصنف الكمية السعر القيمة المضافة الإجمالي\\nGUESS TSHIRT\\n1 800.00 0.000 800.00\\nالإجمالي 800.00\\nالخصم 0.00\\nالقيمة المضافة للفاتورة 0.00\\nالصافي 800.00\\nالقيمة المضافة للأصناف 0.00\\nالمدفوع 0.00\\nالباقي 0.00\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"currency\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1218,
+        "output_tokens": 396,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 396,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 396,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1218,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 154
+            },
+            {
+              "modality": "IMAGE",
+              "token_count": 1064
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1614,
+          "traffic_type": null
+        },
+        "latency_seconds": 5.672943874960765
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1218,
+    "output_tokens": 396,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 5.672943874960765,
+    "latency_seconds": 5.672943874960765
+  },
+  "metrics": {
+    "field_correct": 5,
+    "field_total": 5,
+    "field_accuracy": 1.0,
+    "fields": {
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 5,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "discount"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 5.700114958919585
+}

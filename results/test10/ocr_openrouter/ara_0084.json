@@ -1,0 +1,228 @@
+{
+  "id": "ara_0084",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_openrouter",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0084.json"
+  },
+  "experiment": {
+    "image_sha256": "11e70ecb9762a7a7101f6355667451cc08e89b94276857efdc528c0c51f798ac",
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:52:29.290752+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": "2021-12-17",
+    "purchase_time": "19:20:26 PM",
+    "currency": null,
+    "subtotal": "93.7",
+    "discount": null,
+    "tax": null,
+    "total": "93.7",
+    "line_items": [
+      {
+        "raw_description": "16 علبه بريزدون 8 مثلث",
+        "quantity": "16",
+        "unit_price": null,
+        "line_total": null
+      },
+      {
+        "raw_description": "1 كيس بن شاهين ساده",
+        "quantity": "1",
+        "unit_price": "7.5",
+        "line_total": "7.5"
+      },
+      {
+        "raw_description": "1 فاتج 55 جم",
+        "quantity": "1",
+        "unit_price": null,
+        "line_total": null
+      },
+      {
+        "raw_description": "1 كيس بن شاهين محوج",
+        "quantity": "10",
+        "unit_price": null,
+        "line_total": null
+      },
+      {
+        "raw_description": "1 فاتج بالحبهان ٥ جم",
+        "quantity": "1",
+        "unit_price": null,
+        "line_total": null
+      },
+      {
+        "raw_description": "16.5 قطعة بيض احمر",
+        "quantity": "10",
+        "unit_price": "1.65",
+        "line_total": "16.5"
+      },
+      {
+        "raw_description": "15 علبه دومتي ٥ جم فيتا",
+        "quantity": "15",
+        "unit_price": null,
+        "line_total": null
+      },
+      {
+        "raw_description": "4 علبه زبادي جهينه ",
+        "quantity": "4",
+        "unit_price": null,
+        "line_total": null
+      },
+      {
+        "raw_description": "1 ساده",
+        "quantity": "1",
+        "unit_price": "0.19",
+        "line_total": "0.19"
+      },
+      {
+        "raw_description": "1 كيلو زيتون كلماتا &",
+        "quantity": "60",
+        "unit_price": null,
+        "line_total": null
+      },
+      {
+        "raw_description": "13 كيس لبن بخيره ١كجم",
+        "quantity": "1",
+        "unit_price": "13",
+        "line_total": "13"
+      }
+    ],
+    "raw_text": "12/17/20219:20:26 PM\nمنتجات البان\nالسلام\nتجزئة\nفاتورة مبيعات رقم\nالعميل\nالاجمالى\nالكمية\nالسعر\nاسم الصنف\n16\nعلبه بريزدون 8 مثلث\n16\n1\nكيس بن شاهين ساده\n7.5\n7.5\n1\nفاتج 5٥ جم\nكيس بن شاهين محوج\n10\n1\n10\nفاتج بالحبهان ٥ جم\nقطعة بيض احمر\n16.5\n10\n1.65\n15\nعلبه دومتي ٥ جم فيتا\n15\n1\nعلبه زبادي جهينه \n4\n1\nساده\n0.19\nكيلو زيتون كلماتا &\n11.7\n60\nدولسي\n5\n13\nكيس لبن بخيره ١كجم\n1\n13\nعدد الاصناف  إجمالى1\n93.7\n95\nالمطلوب سداده\n93.7\nالمدفوع\nالمتبقى\nO\n93.7\nحرب  امام كبده البرنس \n010023\nSolut",
+    "missing_fields": [
+      "receipt_number",
+      "currency",
+      "subtotal",
+      "discount",
+      "tax",
+      "total",
+      "line_items",
+      "merchant_name"
+    ],
+    "uncertain_fields": [
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "subtotal",
+      "discount",
+      "tax",
+      "total",
+      "line_items",
+      "merchant_name"
+    ],
+    "validation_warnings": [
+      "Date format appears to be 12/17/20219:20:26 PM, possibly a typo in year (20219)",
+      "Line item '16' without description may be a header or error",
+      "Line item '16' with description 'علبه بريزدون 8 مثلث' has quantity 16 but no unit price",
+      "Line item '1' with description 'كيس بن شاهين ساده' has unit price 7.5 and line total 7.5",
+      "Line item '1' with description 'فاتج 55 جم' has no quantity or unit price",
+      "Line item '10' with description 'كيس بن شاهين محوج' has quantity 10 but no unit price",
+      "Line item '1' with description '10' has quantity 1 but no description",
+      "Line item '10' with description 'فاتج بالحبهان ٥ جم' has quantity 1 but no unit price",
+      "Line item '16.5' with description 'قطعة بيض احمر' has quantity 10 and unit price 1.65",
+      "Line item '15' with description 'علبه دومتي ٥ جم فيتا' has quantity 15 but no unit price",
+      "Line item '4' with description 'علبه زبادي جهينه ' has quantity 4 but no unit price",
+      "Line item '1' with description 'ساده' has unit price 0.19 and line total 0.19",
+      "Line item '1' with description 'كيلو زيتون كلماتا &' has quantity 60 but no unit price",
+      "Line item '13' with description 'كيس لبن بخيره ١كجم' has quantity 1 and unit price 13",
+      "Line item '93.7' appears twice, possibly subtotal and total",
+      "Line item '95' appears after '93.7' with no clear description",
+      "Line item 'O' has no description or quantity",
+      "Line item '93.7' after 'المدفوع' may be total but context unclear",
+      "Line item 'حرب  امام كبده البرنس' has no quantity or price",
+      "Line item '010023' appears to be a reference number but not clearly labeled",
+      "Line item 'Solut' appears to be incomplete text"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 4562,
+        "output_tokens": 1519,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": \"2021-12-17\",\n  \"purchase_time\": \"19:20:26 PM\",\n  \"currency\": null,\n  \"subtotal\": \"93.7\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"93.7\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"16 علبه بريزدون 8 مثلث\",\n      \"quantity\": \"16\",\n      \"unit_price\": null,\n      \"line_total\": null\n    },\n    {\n      \"raw_description\": \"1 كيس بن شاهين ساده\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"7.5\",\n      \"line_total\": \"7.5\"\n    },\n    {\n      \"raw_description\": \"1 فاتج 55 جم\",\n      \"quantity\": \"1\",\n      \"unit_price\": null,\n      \"line_total\": null\n    },\n    {\n      \"raw_description\": \"1 كيس بن شاهين محوج\",\n      \"quantity\": \"10\",\n      \"unit_price\": null,\n      \"line_total\": null\n    },\n    {\n      \"raw_description\": \"1 فاتج بالحبهان ٥ جم\",\n      \"quantity\": \"1\",\n      \"unit_price\": null,\n      \"line_total\": null\n    },\n    {\n      \"raw_description\": \"16.5 قطعة بيض احمر\",\n      \"quantity\": \"10\",\n      \"unit_price\": \"1.65\",\n      \"line_total\": \"16.5\"\n    },\n    {\n      \"raw_description\": \"15 علبه دومتي ٥ جم فيتا\",\n      \"quantity\": \"15\",\n      \"unit_price\": null,\n      \"line_total\": null\n    },\n    {\n      \"raw_description\": \"4 علبه زبادي جهينه \",\n      \"quantity\": \"4\",\n      \"unit_price\": null,\n      \"line_total\": null\n    },\n    {\n      \"raw_description\": \"1 ساده\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"0.19\",\n      \"line_total\": \"0.19\"\n    },\n    {\n      \"raw_description\": \"1 كيلو زيتون كلماتا &\",\n      \"quantity\": \"60\",\n      \"unit_price\": null,\n      \"line_total\": null\n    },\n    {\n      \"raw_description\": \"13 كيس لبن بخيره ١كجم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"13\",\n      \"line_total\": \"13\"\n    }\n  ],\n  \"raw_text\": \"12/17/20219:20:26 PM\\nمنتجات البان\\nالسلام\\nتجزئة\\nفاتورة مبيعات رقم\\nالعميل\\nالاجمالى\\nالكمية\\nالسعر\\nاسم الصنف\\n16\\nعلبه بريزدون 8 مثلث\\n16\\n1\\nكيس بن شاهين ساده\\n7.5\\n7.5\\n1\\nفاتج 55 جم\\nكيس بن شاهين محوج\\n10\\n1\\n10\\nفاتج بالحبهان ٥ جم\\nقطعة بيض احمر\\n16.5\\n10\\n1.65\\n15\\nعلبه دومتي ٥ جم فيتا\\n15\\n1\\nعلبه زبادي جهينه \\n4\\n1\\nساده\\n0.19\\nكيلو زيتون كلماتا &\\n11.7\\n60\\nدولسي\\n5\\n13\\nكيس لبن بخيره ١كجم\\n1\\n13\\nعدد الاصناف  إجمالى1\\n93.7\\n95\\nالمطلوب سداده\\n93.7\\nالمدفوع\\nالمتبقى\\nO\\n93.7\\nحرب  امام كبده البرنس \\n010023\\nSolut\",\n  \"missing_fields\": [\n    \"receipt_number\",\n    \"currency\",\n    \"subtotal\",\n    \"discount\",\n    \"tax\",\n    \"total\",\n    \"line_items\",\n    \"merchant_name\"\n  ],\n  \"uncertain_fields\": [\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\",\n    \"subtotal\",\n    \"discount\",\n    \"tax\",\n    \"total\",\n    \"line_items\",\n    \"merchant_name\"\n  ],\n  \"validation_warnings\": [\n    \"Date format appears to be 12/17/20219:20:26 PM, possibly a typo in year (20219)\",\n    \"Line item '16' without description may be a header or error\",\n    \"Line item '16' with description 'علبه بريزدون 8 مثلث' has quantity 16 but no unit price\",\n    \"Line item '1' with description 'كيس بن شاهين ساده' has unit price 7.5 and line total 7.5\",\n    \"Line item '1' with description 'فاتج 55 جم' has no quantity or unit price\",\n    \"Line item '10' with description 'كيس بن شاهين محوج' has quantity 10 but no unit price\",\n    \"Line item '1' with description '10' has quantity 1 but no description\",\n    \"Line item '10' with description 'فاتج بالحبهان ٥ جم' has quantity 1 but no unit price\",\n    \"Line item '16.5' with description 'قطعة بيض احمر' has quantity 10 and unit price 1.65\",\n    \"Line item '15' with description 'علبه دومتي ٥ جم فيتا' has quantity 15 but no unit price\",\n    \"Line item '4' with description 'علبه زبادي جهينه ' has quantity 4 but no unit price\",\n    \"Line item '1' with description 'ساده' has unit price 0.19 and line total 0.19\",\n    \"Line item '1' with description 'كيلو زيتون كلماتا &' has quantity 60 but no unit price\",\n    \"Line item '13' with description 'كيس لبن بخيره ١كجم' has quantity 1 and unit price 13\",\n    \"Line item '93.7' appears twice, possibly subtotal and total\",\n    \"Line item '95' appears after '93.7' with no clear description\",\n    \"Line item 'O' has no description or quantity\",\n    \"Line item '93.7' after 'المدفوع' may be total but context unclear\",\n    \"Line item 'حرب  امام كبده البرنس' has no quantity or price\",\n    \"Line item '010023' appears to be a reference number but not clearly labeled\",\n    \"Line item 'Solut' appears to be incomplete text\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 4562,
+          "completion_tokens": 1519,
+          "total_tokens": 6081,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          },
+          "served_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "served_provider": "Nvidia"
+        },
+        "latency_seconds": 15.67682000005152
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 4562,
+    "output_tokens": 1519,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 15.67682000005152,
+    "latency_seconds": 15.67682000005152,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle",
+    "reported_cost_usd": 0,
+    "price_scope": "free quota trial; not a production price guarantee"
+  },
+  "metrics": {
+    "field_correct": 1,
+    "field_total": 1,
+    "field_accuracy": 1.0,
+    "fields": {
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 1,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "purchase_date",
+      "purchase_time",
+      "subtotal"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 15.763404124998488
+}

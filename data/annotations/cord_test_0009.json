@@ -1,0 +1,43 @@
+{
+  "receipt": {
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "36000",
+    "discount": null,
+    "tax": null,
+    "total": null,
+    "line_items": [
+      {
+        "raw_description": "Bumbu Kaldu Ayam 1",
+        "quantity": null,
+        "unit_price": "36000",
+        "line_total": "36000"
+      }
+    ],
+    "raw_text": "Bumbu Kaldu Ayam 1\n36000\n36000\nSub Total 36000\nDiscount (0%)\nTunai 50000\nKembalian 14000",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "annotated_fields": [
+    "subtotal"
+  ],
+  "line_items_supported": true,
+  "item_annotated_fields": [
+    [
+      "raw_description",
+      "unit_price",
+      "line_total"
+    ]
+  ],
+  "ocr_text": "Bumbu Kaldu Ayam 1\n36000\n36000\nSub Total 36000\nDiscount (0%)\nTunai 50000\nKembalian 14000",
+  "ocr_text_complete": false,
+  "annotation_notes": [
+    "CORD header fields removed upstream are unknown, including merchant, date, time, receipt number, currency.",
+    "OCR transcription contains valid_line annotations only, not all image text.",
+    "Nested menu.sub annotations are flattened as modifier lines with original grouping retained in original annotation."
+  ]
+}

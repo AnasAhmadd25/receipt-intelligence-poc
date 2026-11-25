@@ -1,0 +1,6 @@
+attempted_inputs,strict_scorable,strict_passes,critical_total_scorable,critical_total_passes,economic_cost_usd,cost_per_strict_accepted_usd,strict_cost_reason,cost_per_critical_total_accepted_usd,critical_cost_reason,provider,expected_inputs,complete,experimental_inference_cash_usd_estimated,commercial_price_known
+0,0,0,0,0,,,no acceptable receipts,,no acceptable receipts,ocr_ollama,10,False,,False
+10,9,2,8,6,,,"unknown price, usage, or allocated lifecycle cost",,"unknown price, usage, or allocated lifecycle cost",ocr_nvidia,10,True,0.0,False
+10,9,6,8,7,0.0202543,0.0033757166666666667,all input inference cost divided by accepted receipts,0.0028934714285714287,all input inference cost divided by accepted receipts,gemini,10,True,,True
+10,9,4,8,6,0.14995643476302,0.037489108690755,all input inference cost divided by accepted receipts,0.02499273912717,all input inference cost divided by accepted receipts,modal_hybrid,10,True,,True
+10,9,2,8,6,0.0,0.0,all input inference cost divided by accepted receipts,0.0,all input inference cost divided by accepted receipts,ocr_openrouter,10,True,,True

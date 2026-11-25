@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.cache/
+deploy/research_cache/
+data/tessdata/osd.traineddata

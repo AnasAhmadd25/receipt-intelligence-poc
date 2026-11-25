@@ -1,0 +1,168 @@
+{
+  "id": "ara_0090",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "gemini",
+  "split": "development",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "6c5fa69c1bceffecc719e712d46a96e0784f5834a3e3663c07fc3aeac3d9b6b1",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "كازابلانكا",
+    "receipt_number": "63",
+    "purchase_date": "2022-04-26",
+    "purchase_time": "11:48:59",
+    "currency": null,
+    "subtotal": "232",
+    "discount": null,
+    "tax": "32.48",
+    "total": "264.48",
+    "line_items": [
+      {
+        "raw_description": "مياه ( ص )",
+        "quantity": "1",
+        "unit_price": "8",
+        "line_total": "8"
+      },
+      {
+        "raw_description": "قهوة تركي ساده",
+        "quantity": "4",
+        "unit_price": "22",
+        "line_total": "88"
+      },
+      {
+        "raw_description": "قهوة D",
+        "quantity": "1",
+        "unit_price": "30",
+        "line_total": "30"
+      },
+      {
+        "raw_description": "هوست شوكلت كلاسيك",
+        "quantity": "1",
+        "unit_price": "30",
+        "line_total": "30"
+      },
+      {
+        "raw_description": "شاي نكهات",
+        "quantity": "2",
+        "unit_price": "20",
+        "line_total": "40"
+      },
+      {
+        "raw_description": "شاي",
+        "quantity": "2",
+        "unit_price": "18",
+        "line_total": "36"
+      }
+    ],
+    "raw_text": "كازابلانكا\nالفرع الفرع الرئيسي\nالتاريخ 26/04/2022 11:48:59 م\nرقم الكاشير\nرقم الطلب 63\nنقدي\nالصنف الكمية السعر الاجمالي\n( مياه ( ص 1 8 8\nقهوة تركي ساده 4 22 88\nقهوة D 1 30 30\nهوست شوكلت كلاسيك 1 30 30\nشاي نكهات 2 20 40\nشاي 2 18 36\nالقيمة 232\nالضريبة 32.48\nالأججمالي 264.48\nالرقم الضريبي :\nPowered by www.tebalink.com",
+    "missing_fields": [
+      "currency",
+      "discount"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"كازابلانكا\",\n  \"receipt_number\": \"63\",\n  \"purchase_date\": \"2022-04-26\",\n  \"purchase_time\": \"11:48:59\",\n  \"currency\": null,\n  \"subtotal\": \"232\",\n  \"discount\": null,\n  \"tax\": \"32.48\",\n  \"total\": \"264.48\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"مياه ( ص )\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"8\",\n      \"line_total\": \"8\"\n    },\n    {\n      \"raw_description\": \"قهوة تركي ساده\",\n      \"quantity\": \"4\",\n      \"unit_price\": \"22\",\n      \"line_total\": \"88\"\n    },\n    {\n      \"raw_description\": \"قهوة D\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30\",\n      \"line_total\": \"30\"\n    },\n    {\n      \"raw_description\": \"هوست شوكلت كلاسيك\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30\",\n      \"line_total\": \"30\"\n    },\n    {\n      \"raw_description\": \"شاي نكهات\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"20\",\n      \"line_total\": \"40\"\n    },\n    {\n      \"raw_description\": \"شاي\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"18\",\n      \"line_total\": \"36\"\n    }\n  ],\n  \"raw_text\": \"كازابلانكا\\nالفرع الفرع الرئيسي\\nالتاريخ 26/04/2022 11:48:59 م\\nرقم الكاشير\\nرقم الطلب 63\\nنقدي\\nالصنف الكمية السعر الاجمالي\\n( مياه ( ص 1 8 8\\nقهوة تركي ساده 4 22 88\\nقهوة D 1 30 30\\nهوست شوكلت كلاسيك 1 30 30\\nشاي نكهات 2 20 40\\nشاي 2 18 36\\nالقيمة 232\\nالضريبة 32.48\\nالأججمالي 264.48\\nالرقم الضريبي :\\nPowered by www.tebalink.com\",\n  \"missing_fields\": [\n    \"currency\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1218,
+        "output_tokens": 677,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 677,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 677,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1218,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 154
+            },
+            {
+              "modality": "IMAGE",
+              "token_count": 1064
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1895,
+          "traffic_type": null
+        },
+        "latency_seconds": 4.998605125001632
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1218,
+    "output_tokens": 677,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 4.998605125001632,
+    "latency_seconds": 4.998605125001632
+  },
+  "metrics": {
+    "field_correct": 5,
+    "field_total": 5,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 5,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "subtotal"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 5.026300749974325
+}

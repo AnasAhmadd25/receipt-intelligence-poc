@@ -1,0 +1,30 @@
+{
+  "engine": "paddle",
+  "concurrency": 1,
+  "count": 8,
+  "succeeded": 8,
+  "profile": {
+    "wall_seconds": 54.77000387501903,
+    "cpu_core_seconds": 52.70096099999999,
+    "average_cpu_percent": 96.22230650240516,
+    "peak_cpu_percent": 146.41368991634855,
+    "baseline_ram_mib": 25.375,
+    "peak_ram_mib": 5129.25,
+    "incremental_ram_mib": 5103.875,
+    "sample_interval_seconds": 0.05,
+    "scope": "local process tree, includes provider waiting; CPU 100%=one core",
+    "peak_cpu_caveat": "waited child CPU is accounted at exit; sample peak may spike",
+    "logical_cores": 10,
+    "physical_cores": 10,
+    "system_ram_bytes": 17179869184,
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "receipts_per_minute": 8.763921234976053,
+  "mean_latency_seconds": 6.838407890594681,
+  "initialization_seconds": 2.7144213339779526,
+  "language_hint": "known corpus language routes Arabic/English recognizer; API uses OCR_LANGUAGE env for Paddle",
+  "metrics": {
+    "annotated_token_recall": 0.8044026178339267,
+    "annotated_numeric_token_recall": 0.728541366041366
+  }
+}

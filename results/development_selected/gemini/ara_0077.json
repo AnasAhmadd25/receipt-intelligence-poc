@@ -1,0 +1,126 @@
+{
+  "id": "ara_0077",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "gemini",
+  "split": "development",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "c9772f6873d08f4d6666fc51d02307c248ce390ac42a371214c49d036352f70d",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "مكتبة النهضة العربية",
+    "receipt_number": null,
+    "purchase_date": "2022-11-12",
+    "purchase_time": "03:55:00",
+    "currency": "ج.م",
+    "subtotal": "30.000",
+    "discount": null,
+    "tax": null,
+    "total": "30.000",
+    "line_items": [
+      {
+        "raw_description": "خرطوشة دحاب 250 حرام 3 لون",
+        "quantity": "1",
+        "unit_price": "30",
+        "line_total": "30"
+      }
+    ],
+    "raw_text": "مكتبة النهضة العربية\nمبيعات\nx3665\nتاريخ : 12/11/2022\nالوقت : 03:55:00 م\n1 - تعدا\nتعدا\nب : فرع السرق\nالكاسير :\nكود | اسم الصنف | الكمية | الوحدة | السعر | اجمالي\n918 | خرطوشة دحاب 250 حرام 3 لون | 1 | قطعة | 30 | 30\nالاجمالي: 30.000 ج.م\nالمدفوع: 30.000 ج.م\nالباقي: 0.00 ج.م\nتلاتون جنيه مصري فقط لا غير\nالرصيد: 0.000\nفرع: سوهاج -السرق -ش البرعه المردومة خصم 15% علي الملتحات\nت/ 093-4597005\nفرع عرب النجع -شارع احمد ماهر\n01026649821-01124230420\nعفوا لا مرتجع ولا استبدال نهائيا لادوات العنايه بالجسم والبشره\nولا استخدامات الشخصيه الكمامات والوافي\nواله الحاسبه والالعاب\n2022 03:55:02م ServerSoft - 0106878891",
+    "missing_fields": [
+      "receipt_number",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"مكتبة النهضة العربية\",\n  \"receipt_number\": null,\n  \"purchase_date\": \"2022-11-12\",\n  \"purchase_time\": \"03:55:00\",\n  \"currency\": \"ج.م\",\n  \"subtotal\": \"30.000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"30.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"خرطوشة دحاب 250 حرام 3 لون\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30\",\n      \"line_total\": \"30\"\n    }\n  ],\n  \"raw_text\": \"مكتبة النهضة العربية\\nمبيعات\\nx3665\\nتاريخ : 12/11/2022\\nالوقت : 03:55:00 م\\n1 - تعدا\\nتعدا\\nب : فرع السرق\\nالكاسير :\\nكود | اسم الصنف | الكمية | الوحدة | السعر | اجمالي\\n918 | خرطوشة دحاب 250 حرام 3 لون | 1 | قطعة | 30 | 30\\nالاجمالي: 30.000 ج.م\\nالمدفوع: 30.000 ج.م\\nالباقي: 0.00 ج.م\\nتلاتون جنيه مصري فقط لا غير\\nالرصيد: 0.000\\nفرع: سوهاج -السرق -ش البرعه المردومة خصم 15% علي الملتحات\\nت/ 093-4597005\\nفرع عرب النجع -شارع احمد ماهر\\n01026649821-01124230420\\nعفوا لا مرتجع ولا استبدال نهائيا لادوات العنايه بالجسم والبشره\\nولا استخدامات الشخصيه الكمامات والوافي\\nواله الحاسبه والالعاب\\n2022 03:55:02م ServerSoft - 0106878891\",\n  \"missing_fields\": [\n    \"receipt_number\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1254,
+        "output_tokens": 595,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 595,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 595,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1254,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 154
+            },
+            {
+              "modality": "IMAGE",
+              "token_count": 1100
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1849,
+          "traffic_type": null
+        },
+        "latency_seconds": 4.525068333023228
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1254,
+    "output_tokens": 595,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 4.525068333023228,
+    "latency_seconds": 4.525068333023228
+  },
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 2,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 4.844345458084717
+}

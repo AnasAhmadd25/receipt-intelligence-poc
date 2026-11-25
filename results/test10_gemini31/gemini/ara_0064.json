@@ -1,0 +1,132 @@
+{
+  "id": "ara_0064",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "gemini",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "a5ae8f8190f2627e250c1e7ac32b98ef72a06348d1d0d9dd969f736061a637de",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T00:51:52.190998+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "Gourmet",
+    "receipt_number": "23",
+    "purchase_date": "2022-11-09",
+    "purchase_time": "8:44 PM",
+    "currency": null,
+    "subtotal": "50.000",
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "50.00",
+    "line_items": [
+      {
+        "raw_description": "تشيكن بانيه ص",
+        "quantity": "2",
+        "unit_price": "25.000",
+        "line_total": "50.000"
+      }
+    ],
+    "raw_text": "Gourmet\nتيكاوي\nفاتورة 23\n2022-11-09 8:44 PM\nوردية: 28\nكاشير: \nعميل: \n438\nالصنف عدد السعر اجمالي\nتشيكن بانيه ص 2 25.000 50.000\nتكلفة اضافية : 0\nاجمالي اصناف : 50.000\nخصم : 0.00\nضريبة : 0.00\nاجمالي : 50.00\nمدفوع : 50.00 باقي : 0.00\nمدينة الشيخ زايد_ZED CLUB\n01126965454\nWELCOM",
+    "missing_fields": [
+      "currency"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"Gourmet\",\n  \"receipt_number\": \"23\",\n  \"purchase_date\": \"2022-11-09\",\n  \"purchase_time\": \"8:44 PM\",\n  \"currency\": null,\n  \"subtotal\": \"50.000\",\n  \"discount\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"50.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"تشيكن بانيه ص\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"25.000\",\n      \"line_total\": \"50.000\"\n    }\n  ],\n  \"raw_text\": \"Gourmet\\nتيكاوي\\nفاتورة 23\\n2022-11-09 8:44 PM\\nوردية: 28\\nكاشير: \\nعميل: \\n438\\nالصنف عدد السعر اجمالي\\nتشيكن بانيه ص 2 25.000 50.000\\nتكلفة اضافية : 0\\nاجمالي اصناف : 50.000\\nخصم : 0.00\\nضريبة : 0.00\\nاجمالي : 50.00\\nمدفوع : 50.00 باقي : 0.00\\nمدينة الشيخ زايد_ZED CLUB\\n01126965454\\nWELCOM\",\n  \"missing_fields\": [\n    \"currency\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1254,
+        "output_tokens": 427,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 427,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 427,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1254,
+          "prompt_tokens_details": [
+            {
+              "modality": "IMAGE",
+              "token_count": 1100
+            },
+            {
+              "modality": "TEXT",
+              "token_count": 154
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1681,
+          "traffic_type": null
+        },
+        "latency_seconds": 4.338466916931793
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1254,
+    "output_tokens": 427,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 4.338466916931793,
+    "latency_seconds": 4.338466916931793,
+    "repair_revision": "gemini-repair-2"
+  },
+  "metrics": {
+    "field_correct": 3,
+    "field_total": 3,
+    "field_accuracy": 1.0,
+    "fields": {
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "discount"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 4.367816207930446
+}

@@ -1,0 +1,192 @@
+{
+  "text": "4003-Blueberry Fuji\n40.000\n40.000\nx1\n6001-Plastic Bag Small\n0\nx1\nTotal Item:\nON\nTotal.\n40.000\nCash\nTendered:\n50.000\nChange:\n10,000",
+  "lines": [
+    {
+      "text": "4003-Blueberry Fuji",
+      "bbox": [
+        72,
+        455,
+        256,
+        483
+      ],
+      "confidence": 99.41022992134094
+    },
+    {
+      "text": "40.000",
+      "bbox": [
+        374,
+        481,
+        443,
+        512
+      ],
+      "confidence": 99.77693557739258
+    },
+    {
+      "text": "40.000",
+      "bbox": [
+        167,
+        483,
+        231,
+        505
+      ],
+      "confidence": 99.72825050354004
+    },
+    {
+      "text": "x1",
+      "bbox": [
+        258,
+        486,
+        284,
+        507
+      ],
+      "confidence": 95.13350129127502
+    },
+    {
+      "text": "6001-Plastic Bag Small",
+      "bbox": [
+        72,
+        507,
+        283,
+        534
+      ],
+      "confidence": 99.43333268165588
+    },
+    {
+      "text": "0",
+      "bbox": [
+        210,
+        536,
+        230,
+        556
+      ],
+      "confidence": 24.370160698890686
+    },
+    {
+      "text": "x1",
+      "bbox": [
+        242,
+        538,
+        283,
+        560
+      ],
+      "confidence": 95.0914978981018
+    },
+    {
+      "text": "Total Item:",
+      "bbox": [
+        68,
+        583,
+        177,
+        611
+      ],
+      "confidence": 99.3644118309021
+    },
+    {
+      "text": "ON",
+      "bbox": [
+        271,
+        592,
+        282,
+        610
+      ],
+      "confidence": 36.5742027759552
+    },
+    {
+      "text": "Total.",
+      "bbox": [
+        67,
+        637,
+        126,
+        663
+      ],
+      "confidence": 99.93969798088074
+    },
+    {
+      "text": "40.000",
+      "bbox": [
+        358,
+        647,
+        422,
+        673
+      ],
+      "confidence": 96.57842516899109
+    },
+    {
+      "text": "Cash",
+      "bbox": [
+        62,
+        660,
+        113,
+        692
+      ],
+      "confidence": 99.96581673622131
+    },
+    {
+      "text": "Tendered:",
+      "bbox": [
+        63,
+        688,
+        154,
+        718
+      ],
+      "confidence": 99.9542236328125
+    },
+    {
+      "text": "50.000",
+      "bbox": [
+        393,
+        690,
+        458,
+        724
+      ],
+      "confidence": 98.80954623222351
+    },
+    {
+      "text": "Change:",
+      "bbox": [
+        60,
+        715,
+        137,
+        746
+      ],
+      "confidence": 99.775630235672
+    },
+    {
+      "text": "10,000",
+      "bbox": [
+        393,
+        715,
+        458,
+        750
+      ],
+      "confidence": 91.98959469795227
+    }
+  ],
+  "engine": "paddle",
+  "model": "en_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det",
+  "initialization_seconds": 0.0,
+  "latency_seconds": 2.0626955420011654,
+  "language_hint": "en",
+  "image_size": [
+    576,
+    864
+  ],
+  "profile": {
+    "wall_seconds": 2.077206749934703,
+    "cpu_core_seconds": 2.029738000000002,
+    "average_cpu_percent": 97.71477971866818,
+    "peak_cpu_percent": 104.06221567247054,
+    "baseline_ram_mib": 4631.84375,
+    "peak_ram_mib": 4638.5,
+    "incremental_ram_mib": 6.65625,
+    "sample_interval_seconds": 0.05,
+    "scope": "local process tree, includes provider waiting; CPU 100%=one core",
+    "peak_cpu_caveat": "50ms live process-tree samples may miss short-lived children; average/core-seconds use OS waited-child accounting",
+    "logical_cores": 10,
+    "physical_cores": 10,
+    "system_ram_bytes": 17179869184,
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "image_sha256": "3441cee6f018d71a5906bc947e464c736dae3f9b742dfbeabc6fda5b89444f2f",
+  "config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552"
+}

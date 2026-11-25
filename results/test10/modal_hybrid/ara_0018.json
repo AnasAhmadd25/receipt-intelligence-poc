@@ -1,0 +1,101 @@
+{
+  "id": "ara_0018",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "modal_hybrid",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "7e9c580e5e1f1cb81846d6a0c28990bb2e8aafd0328591c5bf7d1fb3d74dafb1",
+    "provider": "modal_hybrid",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T00:58:05.161141+00:00",
+  "status": "error",
+  "error": "Modal model output failed receipt schema validation",
+  "metadata": {
+    "provider": "modal_hybrid",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "container_id": "ta-01M8839534TR1DPFZN54A9FHER",
+    "runtime_versions": {
+      "torch": "2.9.1+cu128",
+      "transformers": "5.24.1"
+    },
+    "dtype": "torch.float16",
+    "attention_implementation": "sdpa",
+    "original_image_size": [
+      2160,
+      3840
+    ],
+    "inference_image_size": [
+      750,
+      1333
+    ],
+    "image_pixel_cap": 1000000,
+    "latency_seconds": 122.81330701800002,
+    "cold_first_request": false,
+    "initialization_seconds": 11.172391802,
+    "initialization_resource": {
+      "wall_seconds": 11.16153959,
+      "cpu_core_seconds": 12.69,
+      "cpu_percent_mean": 113.69399264031101,
+      "cpu_percent_peak": 196.8,
+      "baseline_ram_bytes": 61734912,
+      "peak_ram_bytes": 11616468992,
+      "gpu_utilization_percent_mean": 5.75,
+      "gpu_memory_observed_peak_mib": 4166.0
+    },
+    "resource": {
+      "wall_seconds": 122.81330701800002,
+      "cpu_core_seconds": 124.12000000000002,
+      "cpu_percent_mean": 101.0639669378893,
+      "cpu_percent_peak": 118.5,
+      "baseline_ram_bytes": 8145596416,
+      "peak_ram_bytes": 8169402368,
+      "gpu_utilization_percent_mean": 77.67241379310344,
+      "gpu_memory_observed_peak_mib": 4788.0,
+      "gpu_name": "Tesla T4",
+      "gpu_compute_capability": [
+        7,
+        5
+      ],
+      "gpu_peak_allocated_bytes": 4786156032,
+      "gpu_peak_reserved_bytes": 4877975552,
+      "allocated_cpu_physical_cores": 2.0,
+      "allocated_ram_mib": 8192,
+      "allocated_gpu": "T4",
+      "container_uptime_seconds": 196.720402962,
+      "region_selection": "us",
+      "region_price_multiplier": 1.15
+    },
+    "input_tokens": 1132,
+    "output_tokens": 2048,
+    "fallback_used": false,
+    "json_valid": false,
+    "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle.",
+    "validation_error": "1 validation error for Receipt\n  Invalid JSON: EOF while parsing a string at line 104 column 1208 [type=json_invalid, input_value='{\\n    \"schema_version\":...80 Date:15/07/2022 22:3', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+    "raw_output": "```json\n{\n    \"schema_version\": \"1.0\",\n    \"merchant_name\": \"البركة مول\",\n    \"receipt_number\": \"280/6/102/150722\",\n    \"purchase_date\": \"15/07/2022\",\n    \"purchase_time\": \"22:32:05\",\n    \"currency\": \"EGP\",\n    \"subtotal\": 527.16,\n    \"discount\": 0.00,\n    \"tax\": 0.00,\n    \"total\": 527.16,\n    \"line_items\": [\n        {\n            \"raw_description\": \"لما رحى كام لدوم الدسم 64.50 21.50 3 6224001105005\",\n            \"quantity\": 3,\n            \"unit_price\": 21.50,\n            \"line_total\": 64.50\n        },\n        {\n            \"raw_description\": \"كابور شيكو لاتة مكمر 37ت جم 36.00 12.00 3 7622210292704\",\n            \"quantity\": 3,\n            \"unit_price\": 12.00,\n            \"line_total\": 36.00\n        },\n        {\n            \"raw_description\": \"أكس جولد 50 57.50 57.50 1 8717163647394\",\n            \"quantity\": 1,\n            \"unit_price\": 57.50,\n            \"line_total\": 57.50\n        },\n        {\n            \"raw_description\": \"ليبتون طي با ن 100 جم 24.00 12.00 2 6221155032706\",\n            \"quantity\": 2,\n            \"unit_price\": 12.00,\n            \"line_total\": 24.00\n        },\n        {\n            \"raw_description\": \"تاج جم بروطمان بن 450 جم 39.00 39.00 1 7622201822521\",\n            \"quantity\": 1,\n            \"unit_price\": 39.00,\n            \"line_total\": 39.00\n        },\n        {\n            \"raw_description\": \"عند المعبود بن دوبيل فاتج 200 جم 79.95 79.95 1 6223000110324\",\n            \"quantity\": 1,\n            \"unit_price\": 79.95,\n            \"line_total\": 79.95\n        },\n        {\n            \"raw_description\": \"ثوم بلد ي شيك 15.00 15.00 1 62250004442313\",\n            \"quantity\": 1,\n            \"unit_price\": 15.00,\n            \"line_total\": 15.00\n        },\n        {\n            \"raw_description\": \"بادنجان رومي وزن 9.63 7.00 1.375 2300408000007\",\n            \"quantity\": 1,\n            \"unit_price\": 7.00,\n            \"line_total\": 9.63\n        },\n        {\n            \"raw_description\": \"لمون بلدي وزن 12.95 35.00 0.370 2300430000006\",\n            \"quantity\": 1,\n            \"unit_price\": 35.00,\n            \"line_total\": 12.95\n        },\n        {\n            \"raw_description\": \"ماجر عويس وزن 137.70 60.00 2.295 2300383000009\",\n            \"quantity\": 1,\n            \"unit_price\": 60.00,\n            \"line_total\": 137.70\n        },\n        {\n            \"raw_description\": \"شبيسي قطة حارة وليمون بتج 10.00 5.00 2 6221031490132\",\n            \"quantity\": 1,\n            \"unit_price\": 5.00,\n            \"line_total\": 10.00\n        },\n        {\n            \"raw_description\": \"بادنجان عروس وزن 6.09 7.00 0.870 2300409000006\",\n            \"quantity\": 1,\n            \"unit_price\": 7.00,\n            \"line_total\": 6.09\n        },\n        {\n            \"raw_description\": \"طماطم وزن 4.46 4.50 0.990 2300422000007\",\n            \"quantity\": 1,\n            \"unit_price\": 4.50,\n            \"line_total\": 4.46\n        },\n        {\n            \"raw_description\": \"علي بنايتي وزن 22.90 19.00 1.205 2300335000002\",\n            \"quantity\": 1,\n            \"unit_price\": 19.00,\n            \"line_total\": 22.90\n        },\n        {\n            \"raw_description\": \"خضرة بالقطعة 7.50 1.50 5 2012790000014\",\n            \"quantity\": 1,\n            \"unit_price\": 1.50,\n            \"line_total\": 7.50\n        }\n    ],\n    \"raw_text\": \"البركة مول اولاد الجارحي القمية السعر الكمية الصنف\\nلما رحى كام لدوم الدسم 64.50 21.50 3 6224001105005\\nكابور شيكو لاتة مكمر 37ت جم 36.00 12.00 3 7622210292704\\nأكس جولد 50 57.50 57.50 1 8717163647394\\nليبتون طي با ن 100 جم 24.00 12.00 2 6221155032706\\nتاج جم بروطمان بن 450 جم 39.00 39.00 1 7622201822521\\nعند المعبود بن دوبيل فاتج 200 جم 79.95 79.95 1 6223000110324\\nثوم بلد ي شيك 15.00 15.00 1 62250004442313\\nبادنجان رومي وزن 9.63 7.00 1.375 2300408000007\\nلمون بلدي وزن 12.95 35.00 0.370 2300430000006\\nماجر عويس وزن 137.70 60.00 2.295 2300383000009\\nشبيسي قطة حارة وليمون بتج 10.00 5.00 2 6221031490132\\nبادنجان عروس وزن 6.09 7.00 0.870 2300409000006\\nطماطم وزن 4.46 4.50 0.990 2300422000007\\nعلي بنايتي وزن 22.90 19.00 1.205 2300335000002\\nخضرة بالقطعة 7.50 1.50 5 2012790000014\\n527.16 25 الإجمالي عدد القطع\\n527.15 :كارت التمام\\n0.00 :الباقي\\nStore:102 PoS:6 Uber:75\\nTrans:280 Date:15/07/2022 22:3",
+    "client_latency_seconds": 125.51974304195028
+  },
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 0,
+    "field_accuracy": null,
+    "fields": {},
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": null,
+    "hallucination_rate": null,
+    "missing_denominator": 0,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "wall_seconds": 125.52605537499767
+}

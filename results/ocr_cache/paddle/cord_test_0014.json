@@ -1,0 +1,382 @@
+{
+  "text": "1 RedVelvetCheese Slc\n,000\n38.\n55\n1 Chicken Baked Rice\n000\n3\n65,000\nFish n Chips\n2\n35,000\nMushroom Soup\n25,,00\nChamomile\n20, 000\n1 Iced Tea\n238,000\nSUBTOTAL\n17,850\nService\n25,585\nPB1\nin upne 2\n281-435\nTOTAL\n100,000\nCoupon\nCASH\n200, 000\n,55\n18\nChange\n\nIto t  2  b  o \n2  3  ",
+  "lines": [
+    {
+      "text": "1 RedVelvetCheese Slc",
+      "bbox": [
+        501,
+        1078,
+        1028,
+        1141
+      ],
+      "confidence": 96.97314500808716
+    },
+    {
+      "text": ",000",
+      "bbox": [
+        1303,
+        1078,
+        1393,
+        1139
+      ],
+      "confidence": 92.61032342910767
+    },
+    {
+      "text": "38.",
+      "bbox": [
+        1247,
+        1086,
+        1302,
+        1137
+      ],
+      "confidence": 90.74832797050476
+    },
+    {
+      "text": "55",
+      "bbox": [
+        1239,
+        1117,
+        1300,
+        1187
+      ],
+      "confidence": 93.20731163024902
+    },
+    {
+      "text": "1 Chicken Baked Rice",
+      "bbox": [
+        503,
+        1125,
+        983,
+        1184
+      ],
+      "confidence": 98.34839105606079
+    },
+    {
+      "text": "000",
+      "bbox": [
+        1309,
+        1126,
+        1394,
+        1181
+      ],
+      "confidence": 98.76065254211426
+    },
+    {
+      "text": "3",
+      "bbox": [
+        1294,
+        1142,
+        1320,
+        1177
+      ],
+      "confidence": 33.19191932678223
+    },
+    {
+      "text": "65,000",
+      "bbox": [
+        1240,
+        1167,
+        1398,
+        1233
+      ],
+      "confidence": 91.12205505371094
+    },
+    {
+      "text": "Fish n Chips",
+      "bbox": [
+        541,
+        1174,
+        846,
+        1229
+      ],
+      "confidence": 99.58294034004211
+    },
+    {
+      "text": "2",
+      "bbox": [
+        1286,
+        1206,
+        1304,
+        1214
+      ],
+      "confidence": 10.146937519311905
+    },
+    {
+      "text": "35,000",
+      "bbox": [
+        1241,
+        1215,
+        1399,
+        1277
+      ],
+      "confidence": 99.84447360038757
+    },
+    {
+      "text": "Mushroom Soup",
+      "bbox": [
+        543,
+        1216,
+        870,
+        1283
+      ],
+      "confidence": 93.85876059532166
+    },
+    {
+      "text": "25,,00",
+      "bbox": [
+        1235,
+        1253,
+        1403,
+        1329
+      ],
+      "confidence": 80.64858317375183
+    },
+    {
+      "text": "Chamomile",
+      "bbox": [
+        544,
+        1264,
+        776,
+        1319
+      ],
+      "confidence": 94.8221743106842
+    },
+    {
+      "text": "20, 000",
+      "bbox": [
+        1237,
+        1305,
+        1400,
+        1373
+      ],
+      "confidence": 95.42524218559265
+    },
+    {
+      "text": "1 Iced Tea",
+      "bbox": [
+        502,
+        1308,
+        756,
+        1367
+      ],
+      "confidence": 98.62077832221985
+    },
+    {
+      "text": "238,000",
+      "bbox": [
+        1221,
+        1397,
+        1400,
+        1456
+      ],
+      "confidence": 99.67002868652344
+    },
+    {
+      "text": "SUBTOTAL",
+      "bbox": [
+        551,
+        1399,
+        749,
+        1455
+      ],
+      "confidence": 99.9153733253479
+    },
+    {
+      "text": "17,850",
+      "bbox": [
+        1243,
+        1446,
+        1402,
+        1504
+      ],
+      "confidence": 99.87937808036804
+    },
+    {
+      "text": "Service",
+      "bbox": [
+        550,
+        1450,
+        731,
+        1509
+      ],
+      "confidence": 99.17157292366028
+    },
+    {
+      "text": "25,585",
+      "bbox": [
+        1239,
+        1487,
+        1405,
+        1557
+      ],
+      "confidence": 79.51784133911133
+    },
+    {
+      "text": "PB1",
+      "bbox": [
+        547,
+        1494,
+        636,
+        1549
+      ],
+      "confidence": 98.90214800834656
+    },
+    {
+      "text": "in upne 2",
+      "bbox": [
+        1340,
+        1556,
+        1396,
+        1574
+      ],
+      "confidence": 46.82248532772064
+    },
+    {
+      "text": "281-435",
+      "bbox": [
+        1067,
+        1582,
+        1402,
+        1648
+      ],
+      "confidence": 97.23723530769348
+    },
+    {
+      "text": "TOTAL",
+      "bbox": [
+        560,
+        1589,
+        797,
+        1644
+      ],
+      "confidence": 99.61732625961304
+    },
+    {
+      "text": "100,000",
+      "bbox": [
+        1227,
+        1673,
+        1413,
+        1741
+      ],
+      "confidence": 99.97450709342957
+    },
+    {
+      "text": "Coupon",
+      "bbox": [
+        551,
+        1685,
+        707,
+        1738
+      ],
+      "confidence": 99.896240234375
+    },
+    {
+      "text": "CASH",
+      "bbox": [
+        545,
+        1720,
+        670,
+        1789
+      ],
+      "confidence": 99.05309081077576
+    },
+    {
+      "text": "200, 000",
+      "bbox": [
+        1228,
+        1722,
+        1414,
+        1786
+      ],
+      "confidence": 94.35839653015137
+    },
+    {
+      "text": ",55",
+      "bbox": [
+        1293,
+        1755,
+        1419,
+        1840
+      ],
+      "confidence": 73.49007725715637
+    },
+    {
+      "text": "18",
+      "bbox": [
+        1256,
+        1773,
+        1319,
+        1826
+      ],
+      "confidence": 99.8295545578003
+    },
+    {
+      "text": "Change",
+      "bbox": [
+        551,
+        1774,
+        710,
+        1840
+      ],
+      "confidence": 99.94229674339294
+    },
+    {
+      "text": "",
+      "bbox": [
+        1325,
+        1929,
+        1408,
+        1942
+      ],
+      "confidence": 0.0
+    },
+    {
+      "text": "Ito t  2  b  o ",
+      "bbox": [
+        1140,
+        2079,
+        1380,
+        2093
+      ],
+      "confidence": 42.454034090042114
+    },
+    {
+      "text": "2  3  ",
+      "bbox": [
+        497,
+        2081,
+        738,
+        2095
+      ],
+      "confidence": 41.208016872406006
+    }
+  ],
+  "engine": "paddle",
+  "model": "en_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det",
+  "initialization_seconds": 0.27799420803785324,
+  "latency_seconds": 8.10793154197745,
+  "language_hint": "en",
+  "image_size": [
+    1836,
+    3264
+  ],
+  "profile": {
+    "wall_seconds": 8.12475729198195,
+    "cpu_core_seconds": 7.977857999999998,
+    "average_cpu_percent": 98.19195470458025,
+    "peak_cpu_percent": 111.90987009320553,
+    "baseline_ram_mib": 4349.453125,
+    "peak_ram_mib": 4349.453125,
+    "incremental_ram_mib": 0.0,
+    "sample_interval_seconds": 0.05,
+    "scope": "local process tree, includes provider waiting; CPU 100%=one core",
+    "peak_cpu_caveat": "50ms live process-tree samples may miss short-lived children; average/core-seconds use OS waited-child accounting",
+    "logical_cores": 10,
+    "physical_cores": 10,
+    "system_ram_bytes": 17179869184,
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "image_sha256": "ea8f1c932350e1e2d5182a9dad4ed0fdadf2fe4d88703ee1d4ce20ecf9933067",
+  "config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552"
+}

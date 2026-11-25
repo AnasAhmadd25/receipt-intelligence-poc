@@ -1,0 +1,125 @@
+{
+  "id": "ara_0100",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_nvidia",
+  "split": "development",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0100.json"
+  },
+  "experiment": {
+    "image_sha256": "df2e461b1aa180348962b940656349bf17382ecbf084e4f16a5b7163b2b0dfcf",
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552"
+  },
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "Dukkan chocolate",
+    "receipt_number": "1220",
+    "purchase_date": null,
+    "purchase_time": "07:23:03",
+    "currency": null,
+    "subtotal": "154.00",
+    "discount": null,
+    "tax": null,
+    "total": "154.00",
+    "line_items": [
+      {
+        "raw_description": "عرض ال٥\nبريك وابت بندق ولوز",
+        "quantity": "1",
+        "unit_price": "54.00",
+        "line_total": "54.00"
+      },
+      {
+        "raw_description": "وزبيب",
+        "quantity": "2",
+        "unit_price": "27.00",
+        "line_total": "54.00"
+      }
+    ],
+    "raw_text": "Dukkan chocolate\n(1220)\nفاتورة رقم \nكاشير  المدير\nCash\nالوقت\nAM 07:23:03\n3\nعدد الأصناف\nالاحمالي\nالسعر\nالعد\nI\n100.00\n100.00\nعرض ال٥\n–\nبريك وابت بندق ولوز\nIn\n54.00\n27.00\nوزبيب\n2\n154.00\nOBT\nIF\nKK\nفرع شبرا\nر\n01550088990",
+    "missing_fields": [
+      "purchase_date",
+      "currency",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [
+      "The line item total for 'عرض ال٥\nبريك وابت بندق ولوز' is inferred as 54.00 based on the provided unit price and quantity context, but the receipt shows 100.00 and 100.00 near the header which is ambiguous.",
+      "The total of 154.00 is listed, but the breakdown (54.00 + 54.00) matches this."
+    ],
+    "validation_warnings": [
+      "The receipt contains multiple monetary values (100.00, 100.00, 54.00, 27.00, 154.00) whose exact mapping to subtotal, discount, tax, and total is not perfectly clear without clearer layout separation."
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 2749,
+        "output_tokens": 631,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"Dukkan chocolate\",\n  \"receipt_number\": \"1220\",\n  \"purchase_date\": null,\n  \"purchase_time\": \"07:23:03\",\n  \"currency\": null,\n  \"subtotal\": \"154.00\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"154.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"عرض ال٥\\nبريك وابت بندق ولوز\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"54.00\",\n      \"line_total\": \"54.00\"\n    },\n    {\n      \"raw_description\": \"وزبيب\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"27.00\",\n      \"line_total\": \"54.00\"\n    }\n  ],\n  \"raw_text\": \"Dukkan chocolate\\n(1220)\\nفاتورة رقم \\nكاشير  المدير\\nCash\\nالوقت\\nAM 07:23:03\\n3\\nعدد الأصناف\\nالاحمالي\\nالسعر\\nالعد\\nI\\n100.00\\n100.00\\nعرض ال٥\\n–\\nبريك وابت بندق ولوز\\nIn\\n54.00\\n27.00\\nوزبيب\\n2\\n154.00\\nOBT\\nIF\\nKK\\nفرع شبرا\\nر\\n01550088990\",\n  \"missing_fields\": [\n    \"purchase_date\"\n  ],\n  \"uncertain_fields\": [\n    \"The line item total for 'عرض ال٥\\nبريك وابت بندق ولوز' is inferred as 54.00 based on the provided unit price and quantity context, but the receipt shows 100.00 and 100.00 near the header which is ambiguous.\",\n    \"The total of 154.00 is listed, but the breakdown (54.00 + 54.00) matches this.\"\n  ],\n  \"validation_warnings\": [\n    \"The receipt contains multiple monetary values (100.00, 100.00, 54.00, 27.00, 154.00) whose exact mapping to subtotal, discount, tax, and total is not perfectly clear without clearer layout separation.\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 2749,
+          "completion_tokens": 631,
+          "total_tokens": 3380,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 7.71808395802509
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 2749,
+    "output_tokens": 631,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 7.71808395802509,
+    "latency_seconds": 7.71808395802509,
+    "ocr_engine": "paddle"
+  },
+  "metrics": {
+    "field_correct": 1,
+    "field_total": 1,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 1,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_time",
+      "subtotal",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 7.7288130830274895
+}

@@ -1,0 +1,54 @@
+{
+  "receipt": {
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "total": "63000",
+    "line_items": [
+      {
+        "raw_description": "Lemon Tea (L)",
+        "quantity": "1",
+        "unit_price": null,
+        "line_total": "25000"
+      },
+      {
+        "raw_description": "Caramel Small",
+        "quantity": "1",
+        "unit_price": null,
+        "line_total": "38000"
+      }
+    ],
+    "raw_text": "1\nLemon Tea (L)\n25.000\n1\nCaramel Small\n38.000\nTOTAL 63.000\nCASH 70.000\nCHANGED 7.000",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "annotated_fields": [
+    "total"
+  ],
+  "line_items_supported": true,
+  "item_annotated_fields": [
+    [
+      "raw_description",
+      "quantity",
+      "line_total"
+    ],
+    [
+      "raw_description",
+      "quantity",
+      "line_total"
+    ]
+  ],
+  "ocr_text": "1\nLemon Tea (L)\n25.000\n1\nCaramel Small\n38.000\nTOTAL 63.000\nCASH 70.000\nCHANGED 7.000",
+  "ocr_text_complete": false,
+  "annotation_notes": [
+    "CORD header fields removed upstream are unknown, including merchant, date, time, receipt number, currency.",
+    "OCR transcription contains valid_line annotations only, not all image text.",
+    "Nested menu.sub annotations are flattened as modifier lines with original grouping retained in original annotation."
+  ]
+}

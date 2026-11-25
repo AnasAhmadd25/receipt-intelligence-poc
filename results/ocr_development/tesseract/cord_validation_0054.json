@@ -1,0 +1,118 @@
+{
+  "id": "cord_validation_0054",
+  "language": "Indonesian / Latin script / mixed English",
+  "ocr": {
+    "text": "Total. 40.008\nCash\nTendered:",
+    "lines": [
+      {
+        "text": "Total. 40.008",
+        "bbox": [
+          71,
+          642,
+          412,
+          669
+        ],
+        "confidence": 66.5,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 1,
+            "word_num": 1,
+            "left": 71,
+            "top": 642,
+            "width": 53,
+            "height": 17,
+            "conf": 89,
+            "text": "Total."
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 1,
+            "word_num": 2,
+            "left": 362,
+            "top": 653,
+            "width": 50,
+            "height": 16,
+            "conf": 44,
+            "text": "40.008"
+          }
+        ]
+      },
+      {
+        "text": "Cash",
+        "bbox": [
+          69,
+          668,
+          106,
+          685
+        ],
+        "confidence": 68.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 2,
+            "word_num": 1,
+            "left": 69,
+            "top": 668,
+            "width": 37,
+            "height": 17,
+            "conf": 68,
+            "text": "Cash"
+          }
+        ]
+      },
+      {
+        "text": "Tendered:",
+        "bbox": [
+          64,
+          694,
+          150,
+          720
+        ],
+        "confidence": 86.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 3,
+            "word_num": 1,
+            "left": 64,
+            "top": 694,
+            "width": 86,
+            "height": 26,
+            "conf": 86,
+            "text": "Tendered:"
+          }
+        ]
+      }
+    ],
+    "engine": "tesseract",
+    "model": "tessdata_fast ara + installed eng, psm6",
+    "initialization_seconds": 0.0,
+    "latency_seconds": 0.2836286670062691,
+    "language_hint": "Indonesian / Latin script / mixed English",
+    "image_size": [
+      576,
+      864
+    ]
+  },
+  "metrics": {
+    "annotated_token_recall": 0.14285714285714285,
+    "annotated_numeric_token_recall": 0.0,
+    "full_ocr_cer": null,
+    "coverage_note": "Partial transcription; token recall only, not full OCR accuracy"
+  },
+  "latency_seconds": 0.2844585420098156,
+  "status": "ok"
+}

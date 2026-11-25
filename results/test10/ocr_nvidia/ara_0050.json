@@ -1,0 +1,173 @@
+{
+  "id": "ara_0050",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_nvidia",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0050.json"
+  },
+  "experiment": {
+    "image_sha256": "09bbd37132e4dc75ebfc90f7e81599cb58ede929eca65492c34775902e6c754d",
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:36:57.900269+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": "27",
+    "purchase_date": "2022-07-19",
+    "purchase_time": "07:19 PM",
+    "currency": null,
+    "subtotal": "800.00",
+    "discount": "0.00",
+    "tax": null,
+    "total": "800.00",
+    "line_items": [
+      {
+        "raw_description": "GUESS TSHIRT",
+        "quantity": null,
+        "unit_price": "800.00",
+        "line_total": "800.000"
+      }
+    ],
+    "raw_text": "فاتورة مبيعات نقدى\nالماكينة\n0\nالملسل\n27\nالوقت\n2022-07-19 07:19 PM\nالعميل\nالصنف\nالكمية\nالسعر\nالقيمة المشافة\nالإجمالي\nGUESS TSHIRT\n800.00\n0.000\nq\n800.000\nالإجمالي\n800.00\nالخصم\n0.00\nالقيمة المشافة للفاتورة\n0.00\nالصافى\n800.00\n0.00\nالقبمة المطافة للأصدائ\nالمدفوع\n0.00\n0.00\nالباقى",
+    "missing_fields": [
+      "tax",
+      "merchant_name",
+      "currency"
+    ],
+    "uncertain_fields": [
+      "quantity unit for GUESS TSHIRT"
+    ],
+    "validation_warnings": [
+      "Line item quantity 'q' is not a standard numerical quantity."
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 2921,
+        "output_tokens": 466,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"27\",\n  \"purchase_date\": \"2022-07-19\",\n  \"purchase_time\": \"07:19 PM\",\n  \"currency\": null,\n  \"subtotal\": \"800.00\",\n  \"discount\": \"0.00\",\n  \"tax\": null,\n  \"total\": \"800.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"GUESS TSHIRT\",\n      \"quantity\": \"q\",\n      \"unit_price\": \"800.00\",\n      \"line_total\": \"800.000\"\n    }\n  ],\n  \"raw_text\": \"فاتورة مبيعات نقدى\\nالماكينة\\n0\\nالملسل\\n27\\nالوقت\\n2022-07-19 07:19 PM\\nالعميل\\nالصنف\\nالكمية\\nالسعر\\nالقيمة المشافة\\nالإجمالي\\nGUESS TSHIRT\\n800.00\\n0.000\\nq\\n800.000\\nالإجمالي\\n800.00\\nالخصم\\n0.00\\nالقيمة المشافة للفاتورة\\n0.00\\nالصافى\\n800.00\\n0.00\\nالقبمة المطافة للأصدائ\\nالمدفوع\\n0.00\\n0.00\\nالباقى\",\n  \"missing_fields\": [\n    \"tax\"\n  ],\n  \"uncertain_fields\": [\n    \"quantity unit for GUESS TSHIRT\"\n  ],\n  \"validation_warnings\": [\n    \"Line item quantity 'q' is not a standard numerical quantity.\"\n  ]\n}",
+        "status": "invalid_json_or_schema",
+        "token_details": {
+          "prompt_tokens": 2921,
+          "completion_tokens": 466,
+          "total_tokens": 3387,
+          "prompt_tokens_details": {
+            "cached_tokens": 832
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 5.853725375025533,
+        "validation_error": "ValidationError",
+        "validation_diagnostics": [
+          {
+            "loc": [
+              "line_items",
+              0,
+              "quantity"
+            ],
+            "type": "value_error"
+          }
+        ]
+      },
+      {
+        "attempt": 2,
+        "kind": "repair",
+        "input_tokens": 3497,
+        "output_tokens": 465,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"27\",\n  \"purchase_date\": \"2022-07-19\",\n  \"purchase_time\": \"07:19 PM\",\n  \"currency\": null,\n  \"subtotal\": \"800.00\",\n  \"discount\": \"0.00\",\n  \"tax\": null,\n  \"total\": \"800.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"GUESS TSHIRT\",\n      \"quantity\": null,\n      \"unit_price\": \"800.00\",\n      \"line_total\": \"800.000\"\n    }\n  ],\n  \"raw_text\": \"فاتورة مبيعات نقدى\\nالماكينة\\n0\\nالملسل\\n27\\nالوقت\\n2022-07-19 07:19 PM\\nالعميل\\nالصنف\\nالكمية\\nالسعر\\nالقيمة المشافة\\nالإجمالي\\nGUESS TSHIRT\\n800.00\\n0.000\\nq\\n800.000\\nالإجمالي\\n800.00\\nالخصم\\n0.00\\nالقيمة المشافة للفاتورة\\n0.00\\nالصافى\\n800.00\\n0.00\\nالقبمة المطافة للأصدائ\\nالمدفوع\\n0.00\\n0.00\\nالباقى\",\n  \"missing_fields\": [\n    \"tax\"\n  ],\n  \"uncertain_fields\": [\n    \"quantity unit for GUESS TSHIRT\"\n  ],\n  \"validation_warnings\": [\n    \"Line item quantity 'q' is not a standard numerical quantity.\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 3497,
+          "completion_tokens": 465,
+          "total_tokens": 3962,
+          "prompt_tokens_details": {
+            "cached_tokens": 3360
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 5.905081667006016
+      }
+    ],
+    "json_valid": false,
+    "repairs": 1,
+    "input_tokens": 6418,
+    "output_tokens": 931,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 11.758807042031549,
+    "latency_seconds": 11.758807042031549,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle"
+  },
+  "metrics": {
+    "field_correct": 4,
+    "field_total": 5,
+    "field_accuracy": 0.8,
+    "fields": {
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [
+      "tax"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 0.2,
+    "hallucination_rate": null,
+    "missing_denominator": 5,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "discount"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 11.769569958909415
+}

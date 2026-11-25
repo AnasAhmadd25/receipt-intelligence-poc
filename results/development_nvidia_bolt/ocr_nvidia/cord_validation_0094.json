@@ -1,0 +1,150 @@
+{
+  "id": "cord_validation_0094",
+  "dataset": "CORD-v2",
+  "language": "Indonesian / Latin script / mixed English",
+  "provider": "ocr_nvidia",
+  "split": "development",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/cord_validation_0094.json"
+  },
+  "experiment": {
+    "image_sha256": "34098bb6289c8a289a1d68c0fc99cc1122d3b09178cdf85029f60509909afc83",
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552"
+  },
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": "C003",
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "0",
+    "discount": "3.795",
+    "tax": "7.280",
+    "total": "80.100",
+    "line_items": [
+      {
+        "raw_description": "1 Emily's Shrimp Scampi Fettucine",
+        "quantity": "1",
+        "unit_price": "69.000",
+        "line_total": "69.000"
+      }
+    ],
+    "raw_text": "\ngooC\nC003\n69.000\n1 Emily's Shrimp Scampi\nFettucine\n69.000\nSUB TOTAL\n0\nDISCOUNT\n3.795\nSERVICE\n7.280\nOTHERS\n+25\nROUNDING\n80.100\nGRAND TOTAL\n80.100\nTADA EGIFT\nCHANGES\nSANKYOU",
+    "missing_fields": [
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "merchant_name"
+    ],
+    "uncertain_fields": [
+      "gooC"
+    ],
+    "validation_warnings": [
+      "The subtotal '0' seems inconsistent with the line item total '69.000' and other charges.",
+      "subtotal + tax - discount differs from total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 2145,
+        "output_tokens": 391,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"C003\",\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"0\",\n  \"discount\": \"3.795\",\n  \"tax\": \"7.280\",\n  \"total\": \"80.100\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"1 Emily's Shrimp Scampi Fettucine\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"69.000\",\n      \"line_total\": \"69.000\"\n    }\n  ],\n  \"raw_text\": \"\\ngooC\\nC003\\n69.000\\n1 Emily's Shrimp Scampi\\nFettucine\\n69.000\\nSUB TOTAL\\n0\\nDISCOUNT\\n3.795\\nSERVICE\\n7.280\\nOTHERS\\n+25\\nROUNDING\\n80.100\\nGRAND TOTAL\\n80.100\\nTADA EGIFT\\nCHANGES\\nSANKYOU\",\n  \"missing_fields\": [\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\"\n  ],\n  \"uncertain_fields\": [\n    \"gooC\"\n  ],\n  \"validation_warnings\": [\n    \"The subtotal '0' seems inconsistent with the line item total '69.000' and other charges.\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 2145,
+          "completion_tokens": 391,
+          "total_tokens": 2536,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 5.294679500046186
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 2145,
+    "output_tokens": 391,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 5.294679500046186,
+    "latency_seconds": 5.294679500046186,
+    "ocr_engine": "paddle"
+  },
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 3,
+    "field_accuracy": 0.0,
+    "fields": {
+      "subtotal": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "discount": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "tax"
+    ],
+    "description_similarity": 0.96875,
+    "line_items": {
+      "matched": 0,
+      "predicted": 1,
+      "expected": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "quantity": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "status": "ok",
+  "wall_seconds": 5.304003749974072
+}

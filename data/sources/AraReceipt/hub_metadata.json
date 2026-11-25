@@ -1,0 +1,370 @@
+{
+  "_id": "6a6c01b228ca1dec011781da",
+  "id": "IslamMesabah/AraReceipt",
+  "author": "IslamMesabah",
+  "sha": "d995859bd253ad37053faee8bce24b5fa1c265e2",
+  "lastModified": "2026-08-07T05:11:53.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "task_categories:object-detection",
+    "task_categories:image-to-text",
+    "language:ar",
+    "license:mit",
+    "size_categories:n<1K",
+    "format:imagefolder",
+    "modality:image",
+    "modality:text",
+    "library:datasets",
+    "library:mlcroissant",
+    "region:us",
+    "document-understanding",
+    "key-information-extraction",
+    "receipts",
+    "ocr",
+    "arabic"
+  ],
+  "description": "\n\t\n\t\t\n\t\n\t\n\t\tAraReceipt\n\t\n\nAraReceipt is a manually annotated dataset of 100 Arabic retail receipt images labeled with 25 key-information classes plus an Ignore category, in WildReceipt style. It contains 4,609 annotated regions (46.1 ± 21.6 per image), each with a box, a transcription, and a semantic class.\nThe dataset was built with GAIDA, a human-in-the-loop annotation system that combines OCR-based region extraction, LLM-based semantic pre-annotation, and human validation in Label Studio.… See the full description on the dataset page: https://huggingface.co/datasets/IslamMesabah/AraReceipt.",
+  "downloads": 932,
+  "likes": 2,
+  "cardData": {
+    "license": "mit",
+    "language": [
+      "ar"
+    ],
+    "task_categories": [
+      "object-detection",
+      "image-to-text"
+    ],
+    "tags": [
+      "document-understanding",
+      "key-information-extraction",
+      "receipts",
+      "ocr",
+      "arabic"
+    ],
+    "size_categories": [
+      "n<1K"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "class_list.txt"
+    },
+    {
+      "rfilename": "examples/example_0001.jpg"
+    },
+    {
+      "rfilename": "images/0001.jpg"
+    },
+    {
+      "rfilename": "images/0002.jpg"
+    },
+    {
+      "rfilename": "images/0003.jpg"
+    },
+    {
+      "rfilename": "images/0004.jpg"
+    },
+    {
+      "rfilename": "images/0005.jpg"
+    },
+    {
+      "rfilename": "images/0006.jpg"
+    },
+    {
+      "rfilename": "images/0007.jpg"
+    },
+    {
+      "rfilename": "images/0008.jpg"
+    },
+    {
+      "rfilename": "images/0009.jpg"
+    },
+    {
+      "rfilename": "images/0010.jpg"
+    },
+    {
+      "rfilename": "images/0011.jpg"
+    },
+    {
+      "rfilename": "images/0012.jpg"
+    },
+    {
+      "rfilename": "images/0013.jpg"
+    },
+    {
+      "rfilename": "images/0014.jpg"
+    },
+    {
+      "rfilename": "images/0015.jpg"
+    },
+    {
+      "rfilename": "images/0016.jpg"
+    },
+    {
+      "rfilename": "images/0017.jpg"
+    },
+    {
+      "rfilename": "images/0018.jpg"
+    },
+    {
+      "rfilename": "images/0019.jpg"
+    },
+    {
+      "rfilename": "images/0020.jpg"
+    },
+    {
+      "rfilename": "images/0021.jpg"
+    },
+    {
+      "rfilename": "images/0022.jpg"
+    },
+    {
+      "rfilename": "images/0023.jpg"
+    },
+    {
+      "rfilename": "images/0024.jpg"
+    },
+    {
+      "rfilename": "images/0025.jpg"
+    },
+    {
+      "rfilename": "images/0026.jpg"
+    },
+    {
+      "rfilename": "images/0027.jpg"
+    },
+    {
+      "rfilename": "images/0028.jpg"
+    },
+    {
+      "rfilename": "images/0029.jpg"
+    },
+    {
+      "rfilename": "images/0030.jpg"
+    },
+    {
+      "rfilename": "images/0031.jpg"
+    },
+    {
+      "rfilename": "images/0032.jpg"
+    },
+    {
+      "rfilename": "images/0033.jpg"
+    },
+    {
+      "rfilename": "images/0034.jpg"
+    },
+    {
+      "rfilename": "images/0035.jpg"
+    },
+    {
+      "rfilename": "images/0036.jpg"
+    },
+    {
+      "rfilename": "images/0037.jpg"
+    },
+    {
+      "rfilename": "images/0038.jpg"
+    },
+    {
+      "rfilename": "images/0039.jpg"
+    },
+    {
+      "rfilename": "images/0040.jpg"
+    },
+    {
+      "rfilename": "images/0041.jpg"
+    },
+    {
+      "rfilename": "images/0042.jpg"
+    },
+    {
+      "rfilename": "images/0043.jpg"
+    },
+    {
+      "rfilename": "images/0044.jpg"
+    },
+    {
+      "rfilename": "images/0045.jpg"
+    },
+    {
+      "rfilename": "images/0046.jpg"
+    },
+    {
+      "rfilename": "images/0047.jpg"
+    },
+    {
+      "rfilename": "images/0048.jpg"
+    },
+    {
+      "rfilename": "images/0049.jpg"
+    },
+    {
+      "rfilename": "images/0050.jpg"
+    },
+    {
+      "rfilename": "images/0051.jpg"
+    },
+    {
+      "rfilename": "images/0052.jpg"
+    },
+    {
+      "rfilename": "images/0053.jpg"
+    },
+    {
+      "rfilename": "images/0054.jpg"
+    },
+    {
+      "rfilename": "images/0055.jpg"
+    },
+    {
+      "rfilename": "images/0056.jpg"
+    },
+    {
+      "rfilename": "images/0057.jpg"
+    },
+    {
+      "rfilename": "images/0058.jpg"
+    },
+    {
+      "rfilename": "images/0059.jpg"
+    },
+    {
+      "rfilename": "images/0060.jpg"
+    },
+    {
+      "rfilename": "images/0061.jpg"
+    },
+    {
+      "rfilename": "images/0062.jpg"
+    },
+    {
+      "rfilename": "images/0063.jpg"
+    },
+    {
+      "rfilename": "images/0064.jpg"
+    },
+    {
+      "rfilename": "images/0065.jpg"
+    },
+    {
+      "rfilename": "images/0066.jpg"
+    },
+    {
+      "rfilename": "images/0067.jpg"
+    },
+    {
+      "rfilename": "images/0068.jpg"
+    },
+    {
+      "rfilename": "images/0069.jpg"
+    },
+    {
+      "rfilename": "images/0070.jpg"
+    },
+    {
+      "rfilename": "images/0071.jpg"
+    },
+    {
+      "rfilename": "images/0072.jpg"
+    },
+    {
+      "rfilename": "images/0073.jpg"
+    },
+    {
+      "rfilename": "images/0074.jpg"
+    },
+    {
+      "rfilename": "images/0075.jpg"
+    },
+    {
+      "rfilename": "images/0076.jpg"
+    },
+    {
+      "rfilename": "images/0077.jpg"
+    },
+    {
+      "rfilename": "images/0078.jpg"
+    },
+    {
+      "rfilename": "images/0079.jpg"
+    },
+    {
+      "rfilename": "images/0080.jpg"
+    },
+    {
+      "rfilename": "images/0081.jpg"
+    },
+    {
+      "rfilename": "images/0082.jpg"
+    },
+    {
+      "rfilename": "images/0083.jpg"
+    },
+    {
+      "rfilename": "images/0084.jpg"
+    },
+    {
+      "rfilename": "images/0085.jpg"
+    },
+    {
+      "rfilename": "images/0086.jpg"
+    },
+    {
+      "rfilename": "images/0087.jpg"
+    },
+    {
+      "rfilename": "images/0088.jpg"
+    },
+    {
+      "rfilename": "images/0089.jpg"
+    },
+    {
+      "rfilename": "images/0090.jpg"
+    },
+    {
+      "rfilename": "images/0091.jpg"
+    },
+    {
+      "rfilename": "images/0092.jpg"
+    },
+    {
+      "rfilename": "images/0093.jpg"
+    },
+    {
+      "rfilename": "images/0094.jpg"
+    },
+    {
+      "rfilename": "images/0095.jpg"
+    },
+    {
+      "rfilename": "images/0096.jpg"
+    },
+    {
+      "rfilename": "images/0097.jpg"
+    },
+    {
+      "rfilename": "images/0098.jpg"
+    },
+    {
+      "rfilename": "images/0099.jpg"
+    },
+    {
+      "rfilename": "images/0100.jpg"
+    },
+    {
+      "rfilename": "metadata.jsonl"
+    }
+  ],
+  "createdAt": "2026-07-31T02:00:18.000Z",
+  "usedStorage": 129661206
+}

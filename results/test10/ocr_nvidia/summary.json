@@ -1,0 +1,29 @@
+{
+  "provider": "ocr_nvidia",
+  "split": "test",
+  "concurrency": 1,
+  "count": 10,
+  "succeeded": 10,
+  "profile": {
+    "wall_seconds": 98.56341337494086,
+    "cpu_core_seconds": 18.740927,
+    "average_cpu_percent": 19.01408074080028,
+    "peak_cpu_percent": 89.08779944965804,
+    "baseline_ram_mib": 2379.515625,
+    "peak_ram_mib": 2417.015625,
+    "incremental_ram_mib": 37.5,
+    "sample_interval_seconds": 0.05,
+    "scope": "local process tree, includes provider waiting; CPU 100%=one core",
+    "peak_cpu_caveat": "50ms live process-tree samples may miss short-lived children; average/core-seconds use OS waited-child accounting",
+    "logical_cores": 10,
+    "physical_cores": 10,
+    "system_ram_bytes": 17179869184,
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "receipts_per_minute": 6.087451514260831,
+  "ocr_excluded_from_profile": true,
+  "estimated_inference_cost_usd": null,
+  "new_requests": 10,
+  "timed_run_complete": true,
+  "cached_rows": 0
+}

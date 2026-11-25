@@ -1,0 +1,162 @@
+{
+  "id": "ara_0022",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "gemini",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "50854a61901ab3715ee023a07c0e1bc0e569910ac79c47fa7a401b737bb07b49",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T00:34:19.581199+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "طيور عيسي",
+    "receipt_number": "69",
+    "purchase_date": "2022-12-22",
+    "purchase_time": "1:08:10PM",
+    "currency": null,
+    "subtotal": "254.16",
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "259.16",
+    "line_items": [
+      {
+        "raw_description": "فراخ بلدي كامل",
+        "quantity": "2",
+        "unit_price": "68.00",
+        "line_total": "136.00"
+      },
+      {
+        "raw_description": "قص بانية",
+        "quantity": "1",
+        "unit_price": "110.00",
+        "line_total": "110.00"
+      },
+      {
+        "raw_description": "فراخ بلدي كامل",
+        "quantity": "0.120",
+        "unit_price": "68.00",
+        "line_total": "8.16"
+      }
+    ],
+    "raw_text": "طيور عيسي\nDelivery\nفاتورة: 69\nالتاريخ: 22/12/2022 1:08:10PM\nالطيار:\nالاسم:\nتليفون-1:\nالعنوان:\nالمنطقة:\nالدور:\nالشقة:\nعلامة مميزة\nالاصناف | كمية | السعر | اجمالي\nفراخ بلدي كامل | 2 | 68.00 | 136.00\nقص بانية | 1 | 110.00 | 110.00\nفراخ بلدي كامل | 0.120 | 68.00 | 8.16\nاجمالي المبيعات: 254.16\nضريبة القيمة المضافة: 0.00\nخدمة التوصيل: 5.00\nالخصم: 0.00\nاجمالي الفاتورة: 259.16",
+    "missing_fields": [
+      "currency"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": [
+      "subtotal + tax - discount differs from total"
+    ]
+  },
+  "metadata": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "",
+        "status": "error",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usage_reported": false,
+        "error": "ServerError",
+        "latency_seconds": 4.029727165936492,
+        "http_status_code": 503
+      },
+      {
+        "attempt": 2,
+        "kind": "retry",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"طيور عيسي\",\n  \"receipt_number\": \"69\",\n  \"purchase_date\": \"2022-12-22\",\n  \"purchase_time\": \"1:08:10PM\",\n  \"currency\": null,\n  \"subtotal\": \"254.16\",\n  \"discount\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"259.16\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"فراخ بلدي كامل\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"68.00\",\n      \"line_total\": \"136.00\"\n    },\n    {\n      \"raw_description\": \"قص بانية\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"110.00\",\n      \"line_total\": \"110.00\"\n    },\n    {\n      \"raw_description\": \"فراخ بلدي كامل\",\n      \"quantity\": \"0.120\",\n      \"unit_price\": \"68.00\",\n      \"line_total\": \"8.16\"\n    }\n  ],\n  \"raw_text\": \"طيور عيسي\\nDelivery\\nفاتورة: 69\\nالتاريخ: 22/12/2022 1:08:10PM\\nالطيار:\\nالاسم:\\nتليفون-1:\\nالعنوان:\\nالمنطقة:\\nالدور:\\nالشقة:\\nعلامة مميزة\\nالاصناف | كمية | السعر | اجمالي\\nفراخ بلدي كامل | 2 | 68.00 | 136.00\\nقص بانية | 1 | 110.00 | 110.00\\nفراخ بلدي كامل | 0.120 | 68.00 | 8.16\\nاجمالي المبيعات: 254.16\\nضريبة القيمة المضافة: 0.00\\nخدمة التوصيل: 5.00\\nالخصم: 0.00\\nاجمالي الفاتورة: 259.16\",\n  \"missing_fields\": [\n    \"currency\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1218,
+        "output_tokens": 597,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 597,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 597,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1218,
+          "prompt_tokens_details": [
+            {
+              "modality": "IMAGE",
+              "token_count": 1064
+            },
+            {
+              "modality": "TEXT",
+              "token_count": 154
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1815,
+          "traffic_type": null
+        },
+        "latency_seconds": 4.135265375021845
+      }
+    ],
+    "json_valid": false,
+    "repairs": 0,
+    "input_tokens": 1218,
+    "output_tokens": 597,
+    "thinking_tokens": 0,
+    "usage_complete": false,
+    "api_latency_seconds": 8.164992540958337,
+    "latency_seconds": 8.164992540958337
+  },
+  "metrics": {
+    "field_correct": 3,
+    "field_total": 4,
+    "field_accuracy": 0.75,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 4,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_time",
+      "subtotal",
+      "discount"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 9.414658583002165
+}

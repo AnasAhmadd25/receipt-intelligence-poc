@@ -1,0 +1,54 @@
+{
+  "receipt": {
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "56000",
+    "discount": null,
+    "tax": "5600",
+    "total": "61600",
+    "line_items": [
+      {
+        "raw_description": "PKT AYAM",
+        "quantity": null,
+        "unit_price": null,
+        "line_total": "33000"
+      },
+      {
+        "raw_description": "GULAI OTAK",
+        "quantity": null,
+        "unit_price": null,
+        "line_total": "23000"
+      }
+    ],
+    "raw_text": "PKT AYAM\n33,000\nGULAI OTAK\n23,000\n2.00 ITEMS\nSUBTOTAL 56,000\nTAX 10% 5,600\nTOTAL 61,600\nCHARGE5 61,600",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "annotated_fields": [
+    "subtotal",
+    "tax",
+    "total"
+  ],
+  "line_items_supported": true,
+  "item_annotated_fields": [
+    [
+      "raw_description",
+      "line_total"
+    ],
+    [
+      "raw_description",
+      "line_total"
+    ]
+  ],
+  "ocr_text": "PKT AYAM\n33,000\nGULAI OTAK\n23,000\n2.00 ITEMS\nSUBTOTAL 56,000\nTAX 10% 5,600\nTOTAL 61,600\nCHARGE5 61,600",
+  "ocr_text_complete": false,
+  "annotation_notes": [
+    "CORD header fields removed upstream are unknown, including merchant, date, time, receipt number, currency.",
+    "OCR transcription contains valid_line annotations only, not all image text.",
+    "Nested menu.sub annotations are flattened as modifier lines with original grouping retained in original annotation."
+  ]
+}

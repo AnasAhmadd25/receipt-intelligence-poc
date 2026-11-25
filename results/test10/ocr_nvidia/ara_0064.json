@@ -1,0 +1,136 @@
+{
+  "id": "ara_0064",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_nvidia",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0064.json"
+  },
+  "experiment": {
+    "image_sha256": "a5ae8f8190f2627e250c1e7ac32b98ef72a06348d1d0d9dd969f736061a637de",
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:37:26.770057+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "تيكاوي",
+    "receipt_number": "23",
+    "purchase_date": "2022-11-09",
+    "purchase_time": "20:44",
+    "currency": null,
+    "subtotal": "25.000",
+    "discount": null,
+    "tax": null,
+    "total": "50.000",
+    "line_items": [
+      {
+        "raw_description": "تشيكن بانيه ص e..e...",
+        "quantity": "2",
+        "unit_price": "25.000",
+        "line_total": "50.000"
+      }
+    ],
+    "raw_text": "Q٢RRRBEEF\nفاتورة\nتيكاوي\n23\n2022-11-09 8:44 PM\nورلية \n438\nكاشير\nعميل\nالصنف\nالسعر\nاجمالي\nعدد\nتشيكن بانيه ص\ne..e...\n0 25.000\n50.000\n2\nتكلفة اضافية  \n١جمالي ١صناف\nخصم\nضريية \n١جمالي\nباقي\nمدفوع \nمدينة الشيخ زايد\n01126965454\nWELCOM",
+    "missing_fields": [
+      "tax_rate",
+      "subtotal_amount",
+      "currency",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [
+      "The exact mapping of '0 25.000' to quantity/unit price/line total for the first item",
+      "The meaning of 'تكلفة اضافية' in relation to totals",
+      "The exact values for 'خصم' and 'ضريية' totals"
+    ],
+    "validation_warnings": [
+      "Purchase time format adjusted to ISO standard (20:44) based on input '8:44 PM'."
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 2620,
+        "output_tokens": 506,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"تيكاوي\",\n  \"receipt_number\": \"23\",\n  \"purchase_date\": \"2022-11-09\",\n  \"purchase_time\": \"20:44\",\n  \"currency\": null,\n  \"subtotal\": \"25.000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"50.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"تشيكن بانيه ص e..e...\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"25.000\",\n      \"line_total\": \"50.000\"\n    }\n  ],\n  \"raw_text\": \"Q٢RRRBEEF\\nفاتورة\\nتيكاوي\\n23\\n2022-11-09 8:44 PM\\nورلية \\n438\\nكاشير\\nعميل\\nالصنف\\nالسعر\\nاجمالي\\nعدد\\nتشيكن بانيه ص\\ne..e...\\n0 25.000\\n50.000\\n2\\nتكلفة اضافية  \\n١جمالي ١صناف\\nخصم\\nضريية \\n١جمالي\\nباقي\\nمدفوع \\nمدينة الشيخ زايد\\n01126965454\\nWELCOM\",\n  \"missing_fields\": [\n    \"tax_rate\",\n    \"subtotal_amount\"\n  ],\n  \"uncertain_fields\": [\n    \"The exact mapping of '0 25.000' to quantity/unit price/line total for the first item\",\n    \"The meaning of 'تكلفة اضافية' in relation to totals\",\n    \"The exact values for 'خصم' and 'ضريية' totals\"\n  ],\n  \"validation_warnings\": [\n    \"Purchase time format adjusted to ISO standard (20:44) based on input '8:44 PM'.\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 2620,
+          "completion_tokens": 506,
+          "total_tokens": 3126,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 6.29987687501125
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 2620,
+    "output_tokens": 506,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 6.29987687501125,
+    "latency_seconds": 6.29987687501125,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle"
+  },
+  "metrics": {
+    "field_correct": 1,
+    "field_total": 3,
+    "field_accuracy": 0.3333333333333333,
+    "fields": {
+      "subtotal": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "tax": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [
+      "tax"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 0.3333333333333333,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 6.3106357080396265
+}

@@ -1,0 +1,44 @@
+{
+  "receipt": {
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "total": "9500",
+    "line_items": [
+      {
+        "raw_description": "CHEESE JOHN",
+        "quantity": "1",
+        "unit_price": "9500",
+        "line_total": "9500"
+      }
+    ],
+    "raw_text": "2005-\nCHEESE JOHN\n9.500,00\nx1\n9.500,00\nTotal Item: 1\nTotal. 9.500,00\nCash Tendered: 9.500,00",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "annotated_fields": [
+    "total"
+  ],
+  "line_items_supported": true,
+  "item_annotated_fields": [
+    [
+      "raw_description",
+      "quantity",
+      "unit_price",
+      "line_total"
+    ]
+  ],
+  "ocr_text": "2005-\nCHEESE JOHN\n9.500,00\nx1\n9.500,00\nTotal Item: 1\nTotal. 9.500,00\nCash Tendered: 9.500,00",
+  "ocr_text_complete": false,
+  "annotation_notes": [
+    "CORD header fields removed upstream are unknown, including merchant, date, time, receipt number, currency.",
+    "OCR transcription contains valid_line annotations only, not all image text.",
+    "Nested menu.sub annotations are flattened as modifier lines with original grouping retained in original annotation."
+  ]
+}

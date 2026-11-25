@@ -1,0 +1,93 @@
+{
+  "seed": 20261125,
+  "development": [
+    {
+      "id": "ara_0077",
+      "dataset": "AraReceipt",
+      "language": "Arabic / mixed Arabic-English",
+      "source_split": "train",
+      "source_row_index": 76,
+      "image": "data/images/ara_0077.jpg",
+      "annotation": "data/annotations/ara_0077.json",
+      "original_annotation": "data/original_annotations/ara_0077.json",
+      "sha256": "c9772f6873d08f4d6666fc51d02307c248ce390ac42a371214c49d036352f70d"
+    },
+    {
+      "id": "ara_0100",
+      "dataset": "AraReceipt",
+      "language": "Arabic / mixed Arabic-English",
+      "source_split": "train",
+      "source_row_index": 99,
+      "image": "data/images/ara_0100.jpg",
+      "annotation": "data/annotations/ara_0100.json",
+      "original_annotation": "data/original_annotations/ara_0100.json",
+      "sha256": "df2e461b1aa180348962b940656349bf17382ecbf084e4f16a5b7163b2b0dfcf"
+    },
+    {
+      "id": "ara_0019",
+      "dataset": "AraReceipt",
+      "language": "Arabic / mixed Arabic-English",
+      "source_split": "train",
+      "source_row_index": 18,
+      "image": "data/images/ara_0019.jpg",
+      "annotation": "data/annotations/ara_0019.json",
+      "original_annotation": "data/original_annotations/ara_0019.json",
+      "sha256": "34a36b0f707d7c8ef3b7930c66165519e6478495f82bc41a8c3ba875e6029192"
+    },
+    {
+      "id": "ara_0090",
+      "dataset": "AraReceipt",
+      "language": "Arabic / mixed Arabic-English",
+      "source_split": "train",
+      "source_row_index": 89,
+      "image": "data/images/ara_0090.jpg",
+      "annotation": "data/annotations/ara_0090.json",
+      "original_annotation": "data/original_annotations/ara_0090.json",
+      "sha256": "6c5fa69c1bceffecc719e712d46a96e0784f5834a3e3663c07fc3aeac3d9b6b1"
+    },
+    {
+      "id": "ara_0047",
+      "dataset": "AraReceipt",
+      "language": "Arabic / mixed Arabic-English",
+      "source_split": "train",
+      "source_row_index": 46,
+      "image": "data/images/ara_0047.jpg",
+      "annotation": "data/annotations/ara_0047.json",
+      "original_annotation": "data/original_annotations/ara_0047.json",
+      "sha256": "689c7f3f4b5307b4cf1551a6c4a9808634369e0610eac91d5cdb32c917a9d437"
+    },
+    {
+      "id": "cord_validation_0071",
+      "dataset": "CORD-v2",
+      "language": "Indonesian / Latin script / mixed English",
+      "source_split": "validation",
+      "source_row_index": 71,
+      "image": "data/images/cord_validation_0071.jpg",
+      "annotation": "data/annotations/cord_validation_0071.json",
+      "original_annotation": "data/original_annotations/cord_validation_0071.json",
+      "sha256": "38870cde5030bd0b4cf5f1485bc39ce4632b3f10f70369d4063a3a13c6640917"
+    },
+    {
+      "id": "cord_validation_0054",
+      "dataset": "CORD-v2",
+      "language": "Indonesian / Latin script / mixed English",
+      "source_split": "validation",
+      "source_row_index": 54,
+      "image": "data/images/cord_validation_0054.jpg",
+      "annotation": "data/annotations/cord_validation_0054.json",
+      "original_annotation": "data/original_annotations/cord_validation_0054.json",
+      "sha256": "3441cee6f018d71a5906bc947e464c736dae3f9b742dfbeabc6fda5b89444f2f"
+    },
+    {
+      "id": "cord_validation_0094",
+      "dataset": "CORD-v2",
+      "language": "Indonesian / Latin script / mixed English",
+      "source_split": "validation",
+      "source_row_index": 94,
+      "image": "data/images/cord_validation_0094.jpg",
+      "annotation": "data/annotations/cord_validation_0094.json",
+      "original_annotation": "data/original_annotations/cord_validation_0094.json",
+      "sha256": "34098bb6289c8a289a1d68c0fc99cc1122d3b09178cdf85029f60509909afc83"
+    }
+  ]
+}

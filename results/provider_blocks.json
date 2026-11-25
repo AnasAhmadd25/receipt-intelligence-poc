@@ -1,0 +1,16 @@
+{
+  "ocr_ollama": {
+    "model": "gemma4:31b",
+    "status": "blocked",
+    "http_status": 402,
+    "reason": "Ollama inference requires usage credits or paid subscription; model listing succeeds but is insufficient evidence of inference access. User asked to enable billing/credits; no purchase made.",
+    "development_attempts": 8,
+    "test_attempts": 0,
+    "smaller_candidate": "gpt-oss:20b offered at lower token rates; development evaluation blocked by same account credit requirement"
+  },
+  "nvidia_initial_candidate": {
+    "model": "google/gemma-3-4b-it",
+    "http_status": 404,
+    "reason": "Listed in inventory but function unavailable to this account. Replaced after tiny successful probe with8B Nemotron3.5 Bolt E4B free developer endpoint; production price unknown."
+  }
+}

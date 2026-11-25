@@ -1,0 +1,57 @@
+{
+  "receipt": {
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "26250",
+    "discount": null,
+    "tax": null,
+    "total": "26250",
+    "line_items": [
+      {
+        "raw_description": "Topping Milo Sparkle (untuk 1 Po rsi)",
+        "quantity": "1",
+        "unit_price": "1250",
+        "line_total": "1250"
+      },
+      {
+        "raw_description": "Bola Ubi Mini Original (14 Pcs )",
+        "quantity": "2",
+        "unit_price": "12500",
+        "line_total": "25000"
+      }
+    ],
+    "raw_text": "Topping Milo Sparkle (untuk 1 Po rsi)\n1x\n1.250\n1.250\nBola Ubi Mini Original (14 Pcs )\n2x\n12.500\n25.000\nSubtotal 26.250\nPajak -\nTotal 26.250\nPembayaran GO-PAY",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "annotated_fields": [
+    "subtotal",
+    "total"
+  ],
+  "line_items_supported": true,
+  "item_annotated_fields": [
+    [
+      "raw_description",
+      "quantity",
+      "unit_price",
+      "line_total"
+    ],
+    [
+      "raw_description",
+      "quantity",
+      "unit_price",
+      "line_total"
+    ]
+  ],
+  "ocr_text": "Topping Milo Sparkle (untuk 1 Po rsi)\n1x\n1.250\n1.250\nBola Ubi Mini Original (14 Pcs )\n2x\n12.500\n25.000\nSubtotal 26.250\nPajak -\nTotal 26.250\nPembayaran GO-PAY",
+  "ocr_text_complete": false,
+  "annotation_notes": [
+    "CORD header fields removed upstream are unknown, including merchant, date, time, receipt number, currency.",
+    "OCR transcription contains valid_line annotations only, not all image text.",
+    "Nested menu.sub annotations are flattened as modifier lines with original grouping retained in original annotation."
+  ]
+}

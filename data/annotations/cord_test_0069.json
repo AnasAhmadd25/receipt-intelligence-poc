@@ -1,0 +1,65 @@
+{
+  "receipt": {
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "total": "74000",
+    "line_items": [
+      {
+        "raw_description": "[MD] SOFT MORNING ROLL",
+        "quantity": "1",
+        "unit_price": null,
+        "line_total": "18000"
+      },
+      {
+        "raw_description": "REAL HONEY PANCAKE BREAD",
+        "quantity": "2",
+        "unit_price": null,
+        "line_total": "20000"
+      },
+      {
+        "raw_description": "CUSTARD BRIOCHE",
+        "quantity": "4",
+        "unit_price": null,
+        "line_total": "36000"
+      }
+    ],
+    "raw_text": "1\n[MD] SOFT MORNING ROLL\n18,000\n2\nREAL HONEY PANCAKE BREAD\n20,000\n4\nCUSTARD BRIOCHE\n36,000\nTOTAL 74,000\nCASH 100,000\nCHANGE 26,000",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "annotated_fields": [
+    "total"
+  ],
+  "line_items_supported": true,
+  "item_annotated_fields": [
+    [
+      "raw_description",
+      "quantity",
+      "line_total"
+    ],
+    [
+      "raw_description",
+      "quantity",
+      "line_total"
+    ],
+    [
+      "raw_description",
+      "quantity",
+      "line_total"
+    ]
+  ],
+  "ocr_text": "1\n[MD] SOFT MORNING ROLL\n18,000\n2\nREAL HONEY PANCAKE BREAD\n20,000\n4\nCUSTARD BRIOCHE\n36,000\nTOTAL 74,000\nCASH 100,000\nCHANGE 26,000",
+  "ocr_text_complete": false,
+  "annotation_notes": [
+    "CORD header fields removed upstream are unknown, including merchant, date, time, receipt number, currency.",
+    "OCR transcription contains valid_line annotations only, not all image text.",
+    "Nested menu.sub annotations are flattened as modifier lines with original grouping retained in original annotation."
+  ]
+}

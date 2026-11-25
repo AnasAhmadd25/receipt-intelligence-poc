@@ -1,0 +1,139 @@
+{
+  "id": "ara_0033",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_nvidia",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0033.json"
+  },
+  "experiment": {
+    "image_sha256": "9c329e1ac0854c8909fd5fc807db620bb7ba3b47079b985346615014ae1161fe",
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:37:09.670552+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "تريومف الفرجانى",
+    "receipt_number": "2306787000003",
+    "purchase_date": "2022-07-05",
+    "purchase_time": "14:47:31",
+    "currency": null,
+    "subtotal": "89.95",
+    "discount": null,
+    "tax": null,
+    "total": "104.81",
+    "line_items": [
+      {
+        "raw_description": "المناهري بطاعى تحمير وزن",
+        "quantity": "2",
+        "unit_price": "7.00",
+        "line_total": "3.176"
+      },
+      {
+        "raw_description": "سمانة وزن",
+        "quantity": null,
+        "unit_price": null,
+        "line_total": "82.57"
+      }
+    ],
+    "raw_text": "تريومف الفرجانى\n01207890866\nالتوصيل\nخدمة\nالكمية\nاللصنق\nالسعر\nالقيمة\nالمناهري بطاعى\nتحمير\nوزن\n22.23\n2306787000003\n7.00\n3.176\nسمانة وزن\n89.95\n2301457000000\n82.57\n0.918\nالدجمالي\n104.81\nعدد القطع2\n\n104.80\nكارن اطتمان\n   \nالباقى\n0.00\nالكاشر\nUser:8723\nPoS:3\nStore:223\n14:47:31 Date:05/07/2022\nTrans:154\nأفمل\nأرفى  جودة\nسعر\n5\no\nE\nشكرا لزيارتكم\n01207890866\nالتوصيل\nخدمة\nfacebook.com/marketelfergany",
+    "missing_fields": [
+      "unit_price for سمانة وزن",
+      "currency",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [
+      "The relationship between 22.23 and the first line item",
+      "The meaning of 'اللصنق' and 'القيمة' in relation to the line items",
+      "The value 104.80 vs 104.81"
+    ],
+    "validation_warnings": [
+      "Line item quantity '2' is associated with 'عدد القطع2' but not clearly linked to a specific product line.",
+      "line_items[0]: quantity × unit_price differs from line_total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 3805,
+        "output_tokens": 708,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"تريومف الفرجانى\",\n  \"receipt_number\": \"2306787000003\",\n  \"purchase_date\": \"2022-07-05\",\n  \"purchase_time\": \"14:47:31\",\n  \"currency\": null,\n  \"subtotal\": \"89.95\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"104.81\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"المناهري بطاعى تحمير وزن\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"7.00\",\n      \"line_total\": \"3.176\"\n    },\n    {\n      \"raw_description\": \"سمانة وزن\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"line_total\": \"82.57\"\n    }\n  ],\n  \"raw_text\": \"تريومف الفرجانى\\n01207890866\\nالتوصيل\\nخدمة\\nالكمية\\nاللصنق\\nالسعر\\nالقيمة\\nالمناهري بطاعى\\nتحمير\\nوزن\\n22.23\\n2306787000003\\n7.00\\n3.176\\nسمانة وزن\\n89.95\\n2301457000000\\n82.57\\n0.918\\nالدجمالي\\n104.81\\nعدد القطع2\\n\\n104.80\\nكارن اطتمان\\n\\nالباقى\\n0.00\\nالكاشر\\nUser:8723\\nPoS:3\\nStore:223\\n14:47:31 Date:05/07/2022\\nTrans:154\\nأفمل\\nأرفى  جودة\\nsعر\\n5\\no\\nE\\nشكرا لزيارتكم\\n01207890866\\nالتوصيل\\nخدمة\\nfacebook.com/marketelfergany\",\n  \"missing_fields\": [\n    \"unit_price for سمانة وزن\"\n  ],\n  \"uncertain_fields\": [\n    \"The relationship between 22.23 and the first line item\",\n    \"The meaning of 'اللصنق' and 'القيمة' in relation to the line items\",\n    \"The value 104.80 vs 104.81\"\n  ],\n  \"validation_warnings\": [\n    \"Line item quantity '2' is associated with 'عدد القطع2' but not clearly linked to a specific product line.\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 3805,
+          "completion_tokens": 708,
+          "total_tokens": 4513,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 8.483746665995568
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 3805,
+    "output_tokens": 708,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 8.483746665995568,
+    "latency_seconds": 8.483746665995568,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle"
+  },
+  "metrics": {
+    "field_correct": 3,
+    "field_total": 3,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "subtotal",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 8.493966334033757
+}

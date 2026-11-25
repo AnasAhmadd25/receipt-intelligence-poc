@@ -1,0 +1,194 @@
+{
+  "id": "ara_0077",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_openrouter",
+  "split": "development",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0077.json"
+  },
+  "experiment": {
+    "image_sha256": "c9772f6873d08f4d6666fc51d02307c248ce390ac42a371214c49d036352f70d",
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:49:49.369111+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": "x3665",
+    "purchase_date": "12/11/202",
+    "purchase_time": "03:55:02p",
+    "currency": "ج م",
+    "subtotal": "30.000",
+    "discount": null,
+    "tax": null,
+    "total": "30.000",
+    "line_items": [
+      {
+        "raw_description": "14و جرطوسه دحان",
+        "quantity": "30",
+        "unit_price": "1",
+        "line_total": "30.000"
+      },
+      {
+        "raw_description": "قطعه",
+        "quantity": "30",
+        "unit_price": "1",
+        "line_total": "30.000"
+      }
+    ],
+    "raw_text": "مكتبة النهضة العربية\nمبيعات\nx3665\nاريج12/11/202\nالوف\n1-نعدا\nنعدا\n فرع السرق\nالكاسير\nاسم الصنف\nالكمية الوحدذ السعر احمالى\n١٤و  جرطوسه دحان\nقطعه\n30\n30\n1\nأ حرام لو\nالاجمالي\n30.000\nج٠م\nالمدفوع\n30.000\nج ٠م\nالباقي\n0.00\nج،م\nنلانوب جنيه مصري فعط لا عبر\nالرصيد ٥٥٥٥\nفرع سوهاج السرف ش المزعه المردذومة حصم\nك٥٥١ علي الملخصاب\n4597005-093/\nفرع عربه النجع سارع احمد ماهر\n01026649821-01124230420\nععوا لا مرنحع ولا اسبدال بهائيا لادوات العبايه\nبالجسم والبسره\nولاسحدماب السحصيه الكماماب والوافى\nواله الحاسبة ولالعاب\n2022\n03:55:02p\nServerSoft - 010687889\n",
+    "missing_fields": [
+      "merchant_name",
+      "currency",
+      "subtotal",
+      "discount",
+      "tax",
+      "total",
+      "line_items",
+      "raw_text",
+      "missing_fields",
+      "uncertain_fields",
+      "validation_warnings"
+    ],
+    "uncertain_fields": [
+      "purchase_date",
+      "currency",
+      "subtotal",
+      "discount",
+      "tax",
+      "total",
+      "line_items",
+      "raw_text",
+      "missing_fields",
+      "uncertain_fields",
+      "validation_warnings"
+    ],
+    "validation_warnings": [
+      "Purchase date format ambiguous (12/11/202)",
+      "Currency symbol 'ج م' not standard ISO currency code",
+      "Line item quantities and unit prices not explicitly observed",
+      "Line totals derived from ambiguous layout",
+      "Multiple potential merchant names in raw text",
+      "Date format '03:55:02p' not ISO compliant",
+      "Receipt number 'x3665' may be part of product description",
+      "Ambiguous line item grouping due to mixed Arabic/English text",
+      "Unclear separation between product rows and totals",
+      "Missing clear merchant identifier",
+      "Unclear if '30.000' represents subtotal or total",
+      "Uncertain if 'ج ٠م' and 'ج،م' represent same currency unit",
+      "Unclear if 'الرصيد ٥٥٥5' is related to transaction or separate account",
+      "Unclear if 'ServerSoft' is merchant or system identifier",
+      "Unclear if '2022' is year of transaction or reference number",
+      "Unclear if '01026649821-01124230420' is phone number or account number",
+      "Unclear if '4597005-093/' is reference number or code",
+      "Unclear if 'ك٥٥١ علي الملخصاب' is product description or code",
+      "Unclear if 'فرع سوهاج السرف ش المزعه المردذومة حصم' is location or discount",
+      "Unclear if 'فرع عربه النجع سارع احمد ماهر' is location or name",
+      "Unclear if 'ععوا لا مرنحع ولا اسبدال بهائيا لادوات العبايه' is discount or disclaimer",
+      "Unclear if 'بالجسم والبسره' is product description or note",
+      "Unclear if 'ولاسحدماب السحصيه الكماماب والوافى' is product description or note",
+      "Unclear if 'واله الحاسبة وللعاب' is product description or note",
+      "Unclear if '2022' is year or part of reference number",
+      "Unclear if '03:55:02p' is time or part of reference number",
+      "Unclear if 'ServerSoft - 010687889' is merchant or system identifier"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 3549,
+        "output_tokens": 1199,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"x3665\",\n  \"purchase_date\": \"12/11/202\",\n  \"purchase_time\": \"03:55:02p\",\n  \"currency\": \"ج م\",\n  \"subtotal\": \"30.000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"30.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"14و جرطوسه دحان\",\n      \"quantity\": \"30\",\n      \"unit_price\": \"1\",\n      \"line_total\": \"30.000\"\n    },\n    {\n      \"raw_description\": \"قطعه\",\n      \"quantity\": \"30\",\n      \"unit_price\": \"1\",\n      \"line_total\": \"30.000\"\n    }\n  ],\n  \"raw_text\": \"مكتبة النهضة العربية\\nمبيعات\\nx3665\\nاريج12/11/202\\nالوف\\n1-نعدا\\nنعدا\\n فرع السرق\\nالكاسير\\nاسم الصنف\\nالكمية الوحدذ السعر احمالى\\n١٤و  جرطوسه دحان\\nقطعه\\n30\\n30\\n1\\nأ حرام لو\\nالاجمالي\\n30.000\\nج٠م\\nالمدفوع\\n30.000\\nج ٠م\\nالباقي\\n0.00\\nج،م\\nنلانوب جنيه مصري فعط لا عبر\\nالرصيد ٥٥٥5\\nفرع سوهاج السرف ش المزعه المردذومة حصم\\nك٥٥١ علي الملخصاب\\n4597005-093/\\nفرع عربه النجع سارع احمد ماهر\\n01026649821-01124230420\\nععوا لا مرنحع ولا اسبدال بهائيا لادوات العبايه\\nبالجسم والبسره\\nولاسحدماب السحصيه الكماماب والوافى\\nواله الحاسبة وللعاب\\n2022\\n03:55:02p\\nServerSoft - 010687889\\n\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"currency\",\n    \"subtotal\",\n    \"discount\",\n    \"tax\",\n    \"total\",\n    \"line_items\",\n    \"raw_text\",\n    \"missing_fields\",\n    \"uncertain_fields\",\n    \"validation_warnings\"\n  ],\n  \"uncertain_fields\": [\n    \"purchase_date\",\n    \"currency\",\n    \"subtotal\",\n    \"discount\",\n    \"tax\",\n    \"total\",\n    \"line_items\",\n    \"raw_text\",\n    \"missing_fields\",\n    \"uncertain_fields\",\n    \"validation_warnings\"\n  ],\n  \"validation_warnings\": [\n    \"Purchase date format ambiguous (12/11/202)\",\n    \"Currency symbol 'ج م' not standard ISO currency code\",\n    \"Line item quantities and unit prices not explicitly observed\",\n    \"Line totals derived from ambiguous layout\",\n    \"Multiple potential merchant names in raw text\",\n    \"Date format '03:55:02p' not ISO compliant\",\n    \"Receipt number 'x3665' may be part of product description\",\n    \"Ambiguous line item grouping due to mixed Arabic/English text\",\n    \"Unclear separation between product rows and totals\",\n    \"Missing clear merchant identifier\",\n    \"Unclear if '30.000' represents subtotal or total\",\n    \"Uncertain if 'ج ٠م' and 'ج،م' represent same currency unit\",\n    \"Unclear if 'الرصيد ٥٥٥5' is related to transaction or separate account\",\n    \"Unclear if 'ServerSoft' is merchant or system identifier\",\n    \"Unclear if '2022' is year of transaction or reference number\",\n    \"Unclear if '01026649821-01124230420' is phone number or account number\",\n    \"Unclear if '4597005-093/' is reference number or code\",\n    \"Unclear if 'ك٥٥١ علي الملخصاب' is product description or code\",\n    \"Unclear if 'فرع سوهاج السرف ش المزعه المردذومة حصم' is location or discount\",\n    \"Unclear if 'فرع عربه النجع سارع احمد ماهر' is location or name\",\n    \"Unclear if 'ععوا لا مرنحع ولا اسبدال بهائيا لادوات العبايه' is discount or disclaimer\",\n    \"Unclear if 'بالجسم والبسره' is product description or note\",\n    \"Unclear if 'ولاسحدماب السحصيه الكماماب والوافى' is product description or note\",\n    \"Unclear if 'واله الحاسبة وللعاب' is product description or note\",\n    \"Unclear if '2022' is year or part of reference number\",\n    \"Unclear if '03:55:02p' is time or part of reference number\",\n    \"Unclear if 'ServerSoft - 010687889' is merchant or system identifier\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 3549,
+          "completion_tokens": 1199,
+          "total_tokens": 4748,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          },
+          "served_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "served_provider": "Nvidia"
+        },
+        "latency_seconds": 9.425971624907106
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 3549,
+    "output_tokens": 1199,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 9.425971624907106,
+    "latency_seconds": 9.425971624907106,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle",
+    "reported_cost_usd": 0,
+    "price_scope": "free quota trial; not a production price guarantee"
+  },
+  "metrics": {
+    "field_correct": 1,
+    "field_total": 2,
+    "field_accuracy": 0.5,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [
+      "merchant_name"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 0.5,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 9.748855208046734
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "probe": "ollama",
+    "status": 402,
+    "body": {
+      "error": "Add usage credits or subscribe and save up to 66%: https://ollama.com/plans (ref: 96151ff7-8561-4ea3-ba5f-9393532b9c0d)"
+    }
+  },
+  {
+    "probe": "nvidia_gemma",
+    "status": 404,
+    "body": {
+      "status": 404,
+      "title": "Not Found",
+      "detail": "Listed model function not available for this NVIDIA account"
+    }
+  },
+  {
+    "probe": "nvidia_bolt",
+    "status": 200,
+    "body": {
+      "usage": {
+        "prompt_tokens": 10,
+        "completion_tokens": 11,
+        "total_tokens": 21,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    }
+  }
+]

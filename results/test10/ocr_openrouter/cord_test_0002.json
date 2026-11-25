@@ -1,0 +1,180 @@
+{
+  "id": "cord_test_0002",
+  "dataset": "CORD-v2",
+  "language": "Indonesian / Latin script / mixed English",
+  "provider": "ocr_openrouter",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/cord_test_0002.json"
+  },
+  "experiment": {
+    "image_sha256": "bcf0c175181bfc6b2352ab8f452704b8f18e27fa51f2278bc5c41f6765179edb",
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:56:02.486940+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "28000",
+    "discount": null,
+    "tax": null,
+    "total": "28000",
+    "line_items": [
+      {
+        "raw_description": "SMINEMT (L)",
+        "quantity": "24000",
+        "unit_price": null,
+        "line_total": null
+      },
+      {
+        "raw_description": "DUCONUT JELLY (L)",
+        "quantity": "4000",
+        "unit_price": null,
+        "line_total": null
+      }
+    ],
+    "raw_text": "SMINEMT (L)\n24,000\nDUCONUT JELLY (L)\n4,000\nSUB TOTAI\n28,000\nTOTAL SALES\n28,000\nTOTAL ITEMS\n-\n100,000\nCASH\n72,000\nCHANGE\nQueue No: 102",
+    "missing_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "discount",
+      "tax",
+      "total",
+      "line_items",
+      "raw_text"
+    ],
+    "uncertain_fields": [
+      "SUB TOTAI",
+      "TOTAL ITEMS",
+      "100,000",
+      "CASH",
+      "72,000",
+      "CHANGE",
+      "Queue No: 102"
+    ],
+    "validation_warnings": [
+      "SUB TOTAI appears to be a misspelling of 'SUB TOTAL'",
+      "TOTAL ITEMS shows '-' which may indicate zero or missing value",
+      "100,000 appears unrelated to itemized totals and may be unrelated data"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 1805,
+        "output_tokens": 475,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"28,000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"28,000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"SMINEMT (L)\",\n      \"quantity\": \"24,000\",\n      \"unit_price\": null,\n      \"line_total\": null\n    },\n    {\n      \"raw_description\": \"DUCONUT JELLY (L)\",\n      \"quantity\": \"4,000\",\n      \"unit_price\": null,\n      \"line_total\": null\n    }\n  ],\n  \"raw_text\": \"SMINEMT (L)\\n24,000\\nDUCONUT JELLY (L)\\n4,000\\nSUB TOTAI\\n28,000\\nTOTAL SALES\\n28,000\\nTOTAL ITEMS\\n-\\n100,000\\nCASH\\n72,000\\nCHANGE\\nQueue No: 102\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"receipt_number\",\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\",\n    \"discount\",\n    \"tax\",\n    \"total\",\n    \"line_items\",\n    \"raw_text\"\n  ],\n  \"uncertain_fields\": [\n    \"SUB TOTAI\",\n    \"TOTAL ITEMS\",\n    \"100,000\",\n    \"CASH\",\n    \"72,000\",\n    \"CHANGE\",\n    \"Queue No: 102\"\n  ],\n  \"validation_warnings\": [\n    \"SUB TOTAI appears to be a misspelling of 'SUB TOTAL'\",\n    \"TOTAL ITEMS shows '-' which may indicate zero or missing value\",\n    \"100,000 appears unrelated to itemized totals and may be unrelated data\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 1805,
+          "completion_tokens": 475,
+          "total_tokens": 2280,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          },
+          "served_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "served_provider": "Nvidia"
+        },
+        "latency_seconds": 4.388342332909815
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1805,
+    "output_tokens": 475,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 4.388342332909815,
+    "latency_seconds": 4.388342332909815,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle",
+    "reported_cost_usd": 0,
+    "price_scope": "free quota trial; not a production price guarantee"
+  },
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 2,
+    "field_accuracy": 1.0,
+    "fields": {
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": 0.861904761904762,
+    "line_items": {
+      "matched": 0,
+      "predicted": 2,
+      "expected": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      },
+      "quantity": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "status": "ok",
+  "wall_seconds": 4.3972699999576434
+}

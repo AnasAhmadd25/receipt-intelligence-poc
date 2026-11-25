@@ -1,0 +1,112 @@
+{
+  "id": "ara_0019",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_nvidia",
+  "split": "development",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0019.json"
+  },
+  "experiment": {
+    "image_sha256": "34a36b0f707d7c8ef3b7930c66165519e6478495f82bc41a8c3ba875e6029192",
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552"
+  },
+  "status": "error",
+  "error": "Receipt remained invalid after one repair",
+  "metadata": {
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 2872,
+        "output_tokens": 638,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"sheko\",\n  \"receipt_number\": null,\n  \"purchase_date\": \"2022-11-18\",\n  \"purchase_time\": \"6:00 PM\",\n  \"currency\": null,\n  \"subtotal\": \"1,320.00\",\n  \"discount\": \"0.00\",\n  \"tax\": \"5%\",\n  \"total\": \"1,620.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥ سم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"160.00\",\n      \"line_total\": \"160.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥ سم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"140.00\",\n      \"line_total\": \"140.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥سم\",\n      \"quantity\": \"12\",\n      \"unit_price\": \"110.00\",\n      \"line_total\": \"1,320.00\"\n    }\n  ],\n  \"raw_text\": \"sheko\\nفاتورة بيع\\n2022/11/18\\nرقم الفاتورة\\nالتاريخ\\n6:00 PM\\nالوقت\\nنوع الفاتورة نقدى\\nتستحق\\nكاشير\\nالإجمالى\\nكمية\\nالسعر\\nاسم الصنف\\n160.00\\n160.00\\nكفر مرتبه ٦٥ سم\\n140.00\\n140.00\\nكفر مرتبه ٦٥ سم\\n1,320.00\\n110.00\\n12\\nكفر مرتبه ٦٥سم\\n1,620.00\\nالمطلوب\\nيشمل ضريبة القيمة المضافة ٥\\n0.00\\nالمدفوع\\n1,620.00\\nشكرا لزيارتكع\\n\",\n  \"missing_fields\": [\n    \"receipt_number\"\n  ],\n  \"uncertain_fields\": [\n    \"tax\"\n  ],\n  \"validation_warnings\": [\n    \"The line item quantities (1, 1, 12) were inferred based on the layout, not explicitly stated as such in a clear quantity column for all items.\"\n  ]\n}",
+        "status": "invalid_json_or_schema",
+        "token_details": {
+          "prompt_tokens": 2872,
+          "completion_tokens": 638,
+          "total_tokens": 3510,
+          "prompt_tokens_details": {
+            "cached_tokens": 832
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 7.599610665929504,
+        "validation_error": "ValidationError"
+      },
+      {
+        "attempt": 2,
+        "kind": "repair",
+        "input_tokens": 3552,
+        "output_tokens": 638,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"sheko\",\n  \"receipt_number\": null,\n  \"purchase_date\": \"2022-11-18\",\n  \"purchase_time\": \"6:00 PM\",\n  \"currency\": null,\n  \"subtotal\": \"1,320.00\",\n  \"discount\": \"0.00\",\n  \"tax\": \"5%\",\n  \"total\": \"1,620.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥ سم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"160.00\",\n      \"line_total\": \"160.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥ سم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"140.00\",\n      \"line_total\": \"140.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥سم\",\n      \"quantity\": \"12\",\n      \"unit_price\": \"110.00\",\n      \"line_total\": \"1,320.00\"\n    }\n  ],\n  \"raw_text\": \"sheko\\nفاتورة بيع\\n2022/11/18\\nرقم الفاتورة\\nالتاريخ\\n6:00 PM\\nالوقت\\nنوع الفاتورة نقدى\\nتستحق\\nكاشير\\nالإجمالى\\nكمية\\nالسعر\\nاسم الصنف\\n160.00\\n160.00\\nكفر مرتبه ٦٥ سم\\n140.00\\n140.00\\nكفر مرتبه ٦٥ سم\\n1,320.00\\n110.00\\n12\\nكفر مرتبه ٦٥سم\\n1,620.00\\nالمطلوب\\nيشمل ضريبة القيمة المضافة ٥\\n0.00\\nالمدفوع\\n1,620.00\\nشكرا لزيارتكع\\n\",\n  \"missing_fields\": [\n    \"receipt_number\"\n  ],\n  \"uncertain_fields\": [\n    \"tax\"\n  ],\n  \"validation_warnings\": [\n    \"The line item quantities (1, 1, 12) were inferred based on the layout, not explicitly stated as such in a clear quantity column for all items.\"\n  ]\n}",
+        "status": "invalid_json_or_schema",
+        "token_details": {
+          "prompt_tokens": 3552,
+          "completion_tokens": 638,
+          "total_tokens": 4190,
+          "prompt_tokens_details": {
+            "cached_tokens": 3488
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 7.345797625021078,
+        "validation_error": "ValidationError"
+      }
+    ],
+    "json_valid": false,
+    "repairs": 1,
+    "input_tokens": 6424,
+    "output_tokens": 1276,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 14.945408290950581,
+    "latency_seconds": 14.945408290950581
+  },
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 2,
+    "field_accuracy": 0.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_date": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "merchant_name",
+      "purchase_date"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 1.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "wall_seconds": 14.9561091249343
+}

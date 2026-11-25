@@ -1,0 +1,159 @@
+{
+  "id": "ara_0033",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_openrouter",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0033.json"
+  },
+  "experiment": {
+    "image_sha256": "9c329e1ac0854c8909fd5fc807db620bb7ba3b47079b985346615014ae1161fe",
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:55:26.329228+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": "01207890866",
+    "purchase_date": "05/07/2022",
+    "purchase_time": "14:47:31",
+    "currency": null,
+    "subtotal": "104.80",
+    "discount": "0.00",
+    "tax": null,
+    "total": "104.81",
+    "line_items": [
+      {
+        "raw_description": "سمانة وزن",
+        "quantity": "89.95",
+        "unit_price": "0.918",
+        "line_total": "82.57"
+      },
+      {
+        "raw_description": "تحمير",
+        "quantity": "22.23",
+        "unit_price": "3.176",
+        "line_total": "70.24"
+      }
+    ],
+    "raw_text": "تريومف الفرجانى\n01207890866\nالتوصيل\nخدمة\nالكمية\nاللصنق\nالسعر\nالقيمة\nالمناهري بطاعى\nتحمير\nوزن\n22.23\n2306787000003\n7.00\n3.176\nسمانة وزن\n89.95\n2301457000000\n82.57\n0.918\nالدجمالي\n104.81\nعدد القطع2\n\n104.80\nكارن اطتمان\n   \nالباقى\n0.00\nالكاشر\nUser:8723\nPoS:3\nStore:223\n14:47:31 Date:05/07/2022\nTrans:154\nأفمل\nأرفى  جودة\nسعر\n5\no\nE\nشكرا لزيارتكم\n01207890866\nالتوصيل\nخدمة\nfacebook.com/marketelfergany",
+    "missing_fields": [
+      "currency",
+      "merchant_name",
+      "receipt_number",
+      "tax"
+    ],
+    "uncertain_fields": [
+      "purchase_date",
+      "purchase_time",
+      "line_items"
+    ],
+    "validation_warnings": [
+      "Date format is ambiguous (DD/MM/YYYY vs MM/DD/YYYY); preserving printed date",
+      "Line items lack explicit quantity and unit price; using observed values as raw text",
+      "line_items[1]: quantity × unit_price differs from line_total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 3803,
+        "output_tokens": 595,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"01207890866\",\n  \"purchase_date\": \"05/07/2022\",\n  \"purchase_time\": \"14:47:31\",\n  \"currency\": null,\n  \"subtotal\": \"104.80\",\n  \"discount\": \"0.00\",\n  \"tax\": null,\n  \"total\": \"104.81\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"سمانة وزن\",\n      \"quantity\": \"89.95\",\n      \"unit_price\": \"0.918\",\n      \"line_total\": \"82.57\"\n    },\n    {\n      \"raw_description\": \"تحمير\",\n      \"quantity\": \"22.23\",\n      \"unit_price\": \"3.176\",\n      \"line_total\": \"70.24\"\n    }\n  ],\n  \"raw_text\": \"تريومف الفرجانى\\n01207890866\\nالتوصيل\\nخدمة\\nالكمية\\nاللصنق\\nالسعر\\nالقيمة\\nالمناهري بطاعى\\nتحمير\\nوزن\\n22.23\\n2306787000003\\n7.00\\n3.176\\nسمانة وزن\\n89.95\\n2301457000000\\n82.57\\n0.918\\nالدجمالي\\n104.81\\nعدد القطع2\\n\\n104.80\\nكارن اطتمان\\n   \\nالباقى\\n0.00\\nالكاشر\\nUser:8723\\nPoS:3\\nStore:223\\n14:47:31 Date:05/07/2022\\nTrans:154\\nأفمل\\nأرفى  جودة\\nسعر\\n5\\no\\nE\\nشكرا لزيارتكم\\n01207890866\\nالتوصيل\\nخدمة\\nfacebook.com/marketelfergany\",\n  \"missing_fields\": [\n    \"currency\",\n    \"merchant_name\",\n    \"receipt_number\"\n  ],\n  \"uncertain_fields\": [\n    \"purchase_date\",\n    \"purchase_time\",\n    \"line_items\"\n  ],\n  \"validation_warnings\": [\n    \"Date format is ambiguous (DD/MM/YYYY vs MM/DD/YYYY); preserving printed date\",\n    \"Line items lack explicit quantity and unit price; using observed values as raw text\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 3803,
+          "completion_tokens": 595,
+          "total_tokens": 4398,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          },
+          "served_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "served_provider": "Nvidia"
+        },
+        "latency_seconds": 5.26214137498755
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 3803,
+    "output_tokens": 595,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 5.26214137498755,
+    "latency_seconds": 5.26214137498755,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle",
+    "reported_cost_usd": 0,
+    "price_scope": "free quota trial; not a production price guarantee"
+  },
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 3,
+    "field_accuracy": 0.6666666666666666,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [
+      "merchant_name"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 0.3333333333333333,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "subtotal",
+      "discount",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 5.273444707971066
+}

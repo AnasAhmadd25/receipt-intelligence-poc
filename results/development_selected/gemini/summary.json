@@ -1,0 +1,29 @@
+{
+  "provider": "gemini",
+  "split": "development",
+  "concurrency": 1,
+  "count": 8,
+  "succeeded": 8,
+  "profile": {
+    "wall_seconds": 40.156362000037916,
+    "cpu_core_seconds": 9.047103999999997,
+    "average_cpu_percent": 22.529690314056474,
+    "peak_cpu_percent": 94.37629250703947,
+    "baseline_ram_mib": 4626.984375,
+    "peak_ram_mib": 4645.5,
+    "incremental_ram_mib": 18.515625,
+    "sample_interval_seconds": 0.05,
+    "scope": "local process tree, includes provider waiting; CPU 100%=one core",
+    "peak_cpu_caveat": "50ms live process-tree samples may miss short-lived children; average/core-seconds use OS waited-child accounting",
+    "logical_cores": 10,
+    "physical_cores": 10,
+    "system_ram_bytes": 17179869184,
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "receipts_per_minute": 11.953274054047695,
+  "ocr_excluded_from_profile": false,
+  "estimated_inference_cost_usd": 0.0126002,
+  "new_requests": 8,
+  "timed_run_complete": true,
+  "cached_rows": 0
+}

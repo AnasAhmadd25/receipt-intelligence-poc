@@ -1,0 +1,196 @@
+{
+  "id": "ara_0019",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_openrouter",
+  "split": "development",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0019.json"
+  },
+  "experiment": {
+    "image_sha256": "34a36b0f707d7c8ef3b7930c66165519e6478495f82bc41a8c3ba875e6029192",
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:50:08.353702+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": "رقم الفاتورة",
+    "purchase_date": "2022/11/18",
+    "purchase_time": "6:00 PM",
+    "currency": null,
+    "subtotal": "160.00",
+    "discount": "0.00",
+    "tax": "5",
+    "total": "1620.00",
+    "line_items": [
+      {
+        "raw_description": "كفر مرتبه ٦٥ سم",
+        "quantity": "160.00",
+        "unit_price": "160.00",
+        "line_total": "160.00"
+      },
+      {
+        "raw_description": "كفر مرتبة ٦٥ سم",
+        "quantity": "140.00",
+        "unit_price": "140.00",
+        "line_total": "140.00"
+      },
+      {
+        "raw_description": "كفر مرتبه ٦٥سم",
+        "quantity": "12",
+        "unit_price": "110.00",
+        "line_total": "1320.00"
+      },
+      {
+        "raw_description": "كفر مرتبه ٦٥سم",
+        "quantity": "12",
+        "unit_price": "110.00",
+        "line_total": "1620.00"
+      }
+    ],
+    "raw_text": "sheko\nفاتورة بيع\n2022/11/18\nرقم الفاتورة\nالتاريخ\n6:00 PM\nالوقت\nنوع الفاتورة نقدى\nتستحق\nكاشير\nالإجمالى\nكمية\nالسعر\nاسم الصنف\n160.00\n160.00\nكفر مرتبه ٦٥ سم\n140.00\n140.00\nكفر مرتبه ٦٥ سم\n1,320.00\n110.00\n12\nكفر مرتبه ٦٥سم\n1,620.00\nالمطلوب\nيشمل ضريبة القيمة المضافة ٥\n0.00\nالمدفوع\n1,620.00\nشكرا لزيارتكع\n",
+    "missing_fields": [
+      "currency",
+      "merchant_name",
+      "receipt_number",
+      "purchase_time",
+      "line_items[0].quantity",
+      "line_items[0].unit_price",
+      "line_items[0].line_total",
+      "line_items[1].quantity",
+      "line_items[1].unit_price",
+      "line_items[1].line_total",
+      "line_items[2].quantity",
+      "line_items[2].unit_price",
+      "line_items[2].line_total",
+      "line_items[3].quantity",
+      "line_items[3].unit_price",
+      "line_items[3].line_total"
+    ],
+    "uncertain_fields": [
+      "receipt_number",
+      "purchase_time",
+      "currency",
+      "line_items[0].quantity",
+      "line_items[0].unit_price",
+      "line_items[0].line_total",
+      "line_items[1].quantity",
+      "line_items[1].unit_price",
+      "line_items[1].line_total",
+      "line_items[2].quantity",
+      "line_items[2].unit_price",
+      "line_items[2].line_total",
+      "line_items[3].quantity",
+      "line_items[3].unit_price",
+      "line_items[3].line_total"
+    ],
+    "validation_warnings": [
+      "Line item quantities and unit prices appear to be identical, which may indicate OCR misinterpretation of layout rather than actual values.",
+      "Line item descriptions contain inconsistent spacing and potential OCR errors (e.g., 'كفر مر طبقه' vs 'كفر مرتبه').",
+      "Total amount (1,620.00) does not mathematically align with subtotal (160.00) + tax (5) + line items (1,320.00 + 1,620.00), suggesting possible misalignment in line item grouping or parsing.",
+      "line_items[0]: quantity × unit_price differs from line_total",
+      "line_items[1]: quantity × unit_price differs from line_total",
+      "line_items[3]: quantity × unit_price differs from line_total",
+      "subtotal + tax - discount differs from total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 2870,
+        "output_tokens": 966,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"رقم الفاتورة\",\n  \"purchase_date\": \"2022/11/18\",\n  \"purchase_time\": \"6:00 PM\",\n  \"currency\": null,\n  \"subtotal\": \"160.00\",\n  \"discount\": \"0.00\",\n  \"tax\": \"5\",\n  \"total\": \"1,620.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥ سم\",\n      \"quantity\": \"160.00\",\n      \"unit_price\": \"160.00\",\n      \"line_total\": \"160.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبة ٦٥ سم\",\n      \"quantity\": \"140.00\",\n      \"unit_price\": \"140.00\",\n      \"line_total\": \"140.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥سم\",\n      \"quantity\": \"12\",\n      \"unit_price\": \"110.00\",\n      \"line_total\": \"1,320.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥سم\",\n      \"quantity\": \"12\",\n      \"unit_price\": \"110.00\",\n      \"line_total\": \"1,620.00\"\n    }\n  ],\n  \"raw_text\": \"sheko\\nفاتورة بيع\\n2022/11/18\\nرقم الفاتورة\\nالتاريخ\\n6:00 PM\\nالوقت\\nنوع الفاتورة نقدى\\nتستحق\\nكاشير\\nالإجمالى\\nكمية\\nالسعر\\nاسم الصنف\\n160.00\\n160.00\\nكفر مر طبقه ٦٥ سم\\n140.00\\n140.00\\nكفر مر طبقه ٦٥ سم\\n1,320.00\\n110.00\\n12\\nكفر مر طبقه ٦٥سم\\n1,620.00\\nالمطلوب\\nيشمل ضريبة القيمة المضافة ٥\\n0.00\\nالمدفوع\\n1,620.00\\nشكرا لزيارتكع\\n\",\n  \"missing_fields\": [\n    \"currency\",\n    \"merchant_name\",\n    \"receipt_number\",\n    \"purchase_time\",\n    \"line_items[0].quantity\",\n    \"line_items[0].unit_price\",\n    \"line_items[0].line_total\",\n    \"line_items[1].quantity\",\n    \"line_items[1].unit_price\",\n    \"line_items[1].line_total\",\n    \"line_items[2].quantity\",\n    \"line_items[2].unit_price\",\n    \"line_items[2].line_total\",\n    \"line_items[3].quantity\",\n    \"line_items[3].unit_price\",\n    \"line_items[3].line_total\"\n  ],\n  \"uncertain_fields\": [\n    \"receipt_number\",\n    \"purchase_time\",\n    \"currency\",\n    \"line_items[0].quantity\",\n    \"line_items[0].unit_price\",\n    \"line_items[0].line_total\",\n    \"line_items[1].quantity\",\n    \"line_items[1].unit_price\",\n    \"line_items[1].line_total\",\n    \"line_items[2].quantity\",\n    \"line_items[2].unit_price\",\n    \"line_items[2].line_total\",\n    \"line_items[3].quantity\",\n    \"line_items[3].unit_price\",\n    \"line_items[3].line_total\"\n  ],\n  \"validation_warnings\": [\n    \"Line item quantities and unit prices appear to be identical, which may indicate OCR misinterpretation of layout rather than actual values.\",\n    \"Line item descriptions contain inconsistent spacing and potential OCR errors (e.g., 'كفر مر طبقه' vs 'كفر مرتبه').\",\n    \"Total amount (1,620.00) does not mathematically align with subtotal (160.00) + tax (5) + line items (1,320.00 + 1,620.00), suggesting possible misalignment in line item grouping or parsing.\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 2870,
+          "completion_tokens": 966,
+          "total_tokens": 3836,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          },
+          "served_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "served_provider": "Nvidia"
+        },
+        "latency_seconds": 10.342090833000839
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 2870,
+    "output_tokens": 966,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 10.342090833000839,
+    "latency_seconds": 10.342090833000839,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle",
+    "reported_cost_usd": 0,
+    "price_scope": "free quota trial; not a production price guarantee"
+  },
+  "metrics": {
+    "field_correct": 1,
+    "field_total": 2,
+    "field_accuracy": 0.5,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [
+      "merchant_name"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 0.5,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_time",
+      "subtotal",
+      "discount",
+      "tax",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 10.373603707994334
+}

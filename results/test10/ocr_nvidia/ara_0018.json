@@ -1,0 +1,213 @@
+{
+  "id": "ara_0018",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_nvidia",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0018.json"
+  },
+  "experiment": {
+    "image_sha256": "7e9c580e5e1f1cb81846d6a0c28990bb2e8aafd0328591c5bf7d1fb3d74dafb1",
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:36:32.532271+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "البركة مول",
+    "receipt_number": "280",
+    "purchase_date": "2022-07-15",
+    "purchase_time": "22:32:0s",
+    "currency": null,
+    "subtotal": "527.15",
+    "discount": "0.00",
+    "tax": null,
+    "total": "527.16",
+    "line_items": [
+      {
+        "raw_description": "لمار حليب كامل الدمم",
+        "quantity": "3",
+        "unit_price": "64.50",
+        "line_total": "21.50"
+      },
+      {
+        "raw_description": "كاد بورى شيكرلاتة مكسر ات٦ذ جم",
+        "quantity": "3",
+        "unit_price": "36.00",
+        "line_total": "12.00"
+      },
+      {
+        "raw_description": "١كص جولد ٥امل",
+        "quantity": "1",
+        "unit_price": "57.50",
+        "line_total": "57.50"
+      },
+      {
+        "raw_description": "ليبتون ضاى ناعم",
+        "quantity": "2",
+        "unit_price": "24.00",
+        "line_total": "12.00"
+      },
+      {
+        "raw_description": "٩٥٥ جم برطمان برتفال تالج",
+        "quantity": "1",
+        "unit_price": "39.00",
+        "line_total": "39.00"
+      },
+      {
+        "raw_description": "عبد المعبود بن دوبل فاتح",
+        "quantity": "1",
+        "unit_price": "79.95",
+        "line_total": "79.95"
+      },
+      {
+        "raw_description": "ثوم بلدي شبك",
+        "quantity": "1",
+        "unit_price": "15.00",
+        "line_total": "15.00"
+      },
+      {
+        "raw_description": "باذلجان رومي وزن",
+        "quantity": "1.375",
+        "unit_price": "9.63",
+        "line_total": "7.00"
+      },
+      {
+        "raw_description": "ليمون بلدي وزن",
+        "quantity": "0.370",
+        "unit_price": "12.95",
+        "line_total": "35.00"
+      },
+      {
+        "raw_description": "عويس وزن",
+        "quantity": "2.295",
+        "unit_price": "137.70",
+        "line_total": "60.00"
+      },
+      {
+        "raw_description": "شيبسى شطة حارة وليمون باج",
+        "quantity": "2",
+        "unit_price": "10.00",
+        "line_total": "5.00"
+      },
+      {
+        "raw_description": "باذلجان عروص وزن",
+        "quantity": "0.870",
+        "unit_price": "6.09",
+        "line_total": "7.00"
+      },
+      {
+        "raw_description": "طما طم وزن",
+        "quantity": "0.990",
+        "unit_price": "4.46",
+        "line_total": "4.50"
+      },
+      {
+        "raw_description": "علب بناتي وزن",
+        "quantity": "1.205",
+        "unit_price": "22.90",
+        "line_total": "19.00"
+      },
+      {
+        "raw_description": "خضر ٠ با لفطعه",
+        "quantity": "5",
+        "unit_price": "7.50",
+        "line_total": "1.50"
+      }
+    ],
+    "raw_text": "البركة مول\nاولاد الجارحي\nخالسعر\nالقيمة\nالكمية\nالصـف\nالتر\nلمار حليب كامل الدمم\n\n64.50\n21.50\n3\n6224001105005\nكاد بورى شيكرلاتة مكسر ات٦ذ جم\n36.00\n12.00\n3\n7622210292704\n١كص جولد ٥امل\n57.50\n57.50\n8717163647394\n1\n100\nليبتون ضاى ناعم\nجم\n24.00\n12.00\n2\n6221155032706\n٩٥٥ جم برطمان برتفال\nتالج\n39.00\n39.00\n7622201822521\n1\n200جم\nعبد المعبود بن دوبل فاتح\n79.95\n79.95\n1\n6223000110324\nثوم بلدي شبك\n15.00\n15.00\n6225000442313\n1\nباذلجان رومي وزن\n9.63\n7.00\n1.375\n2300408000007\nليمون بلدي وزن\n12.95\n35.00\n0.370\n2300430000006\nمالجر\nعويس وزن\n137.70\n60.00\n2.295\n2300383000009\nشيبسى شطة حارة وليمون باج\n10.00\n5.00\n2\n6221031490132\nباذلجان عروص وزن\n6.09\n7.00\n0.870\n2300409000006\nطما طم\nوزن\n4.46\n4.50\n0.990\n2300422000007\nعلب بناتي وزن\n22.90\n19.00\n2300335000002\n1.205\nخضر ٠ با لفطعه\n7.50\n1.50\n2012790000014\n5\n527.16\nعدد القطع  الإجمالى\n527.15\nكارت انتمان\n0.00\nالباقى\nلكا شير\nPoS:6\nStore:102\nUser:75\nDate:15/07/2022 22:32:0s\nTrans:280\nبرجاء الإحتفاظ بالفاتورة\nللإسترجاع او الإستبد ال ١٩\nيوم\nالفريل ٩ماعة\nالإقتر احاتو الثكاوى\n280/6/102/150722",
+    "missing_fields": [
+      "unit_price_for_first_item",
+      "currency",
+      "tax"
+    ],
+    "uncertain_fields": [
+      "Quantity for لمار حليب كامل الدمم",
+      "Unit Price for لمار حليب كامل الدمم"
+    ],
+    "validation_warnings": [
+      "The line total for the first item (21.50) does not match the observed quantity (3) multiplied by the unit price (64.50).",
+      "line_items[0]: quantity × unit_price differs from line_total",
+      "line_items[1]: quantity × unit_price differs from line_total",
+      "line_items[3]: quantity × unit_price differs from line_total",
+      "line_items[7]: quantity × unit_price differs from line_total",
+      "line_items[8]: quantity × unit_price differs from line_total",
+      "line_items[9]: quantity × unit_price differs from line_total",
+      "line_items[10]: quantity × unit_price differs from line_total",
+      "line_items[11]: quantity × unit_price differs from line_total",
+      "line_items[12]: quantity × unit_price differs from line_total",
+      "line_items[13]: quantity × unit_price differs from line_total",
+      "line_items[14]: quantity × unit_price differs from line_total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 8002,
+        "output_tokens": 2026,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"البركة مول\",\n  \"receipt_number\": \"280\",\n  \"purchase_date\": \"2022-07-15\",\n  \"purchase_time\": \"22:32:0s\",\n  \"currency\": null,\n  \"subtotal\": \"527.15\",\n  \"discount\": \"0.00\",\n  \"tax\": null,\n  \"total\": \"527.16\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"لمار حليب كامل الدمم\",\n      \"quantity\": \"3\",\n      \"unit_price\": \"64.50\",\n      \"line_total\": \"21.50\"\n    },\n    {\n      \"raw_description\": \"كاد بورى شيكرلاتة مكسر ات٦ذ جم\",\n      \"quantity\": \"3\",\n      \"unit_price\": \"36.00\",\n      \"line_total\": \"12.00\"\n    },\n    {\n      \"raw_description\": \"١كص جولد ٥امل\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"57.50\",\n      \"line_total\": \"57.50\"\n    },\n    {\n      \"raw_description\": \"ليبتون ضاى ناعم\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"24.00\",\n      \"line_total\": \"12.00\"\n    },\n    {\n      \"raw_description\": \"٩٥٥ جم برطمان برتفال تالج\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"39.00\",\n      \"line_total\": \"39.00\"\n    },\n    {\n      \"raw_description\": \"عبد المعبود بن دوبل فاتح\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"79.95\",\n      \"line_total\": \"79.95\"\n    },\n    {\n      \"raw_description\": \"ثوم بلدي شبك\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"15.00\",\n      \"line_total\": \"15.00\"\n    },\n    {\n      \"raw_description\": \"باذلجان رومي وزن\",\n      \"quantity\": \"1.375\",\n      \"unit_price\": \"9.63\",\n      \"line_total\": \"7.00\"\n    },\n    {\n      \"raw_description\": \"ليمون بلدي وزن\",\n      \"quantity\": \"0.370\",\n      \"unit_price\": \"12.95\",\n      \"line_total\": \"35.00\"\n    },\n    {\n      \"raw_description\": \"عويس وزن\",\n      \"quantity\": \"2.295\",\n      \"unit_price\": \"137.70\",\n      \"line_total\": \"60.00\"\n    },\n    {\n      \"raw_description\": \"شيبسى شطة حارة وليمون باج\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"10.00\",\n      \"line_total\": \"5.00\"\n    },\n    {\n      \"raw_description\": \"باذلجان عروص وزن\",\n      \"quantity\": \"0.870\",\n      \"unit_price\": \"6.09\",\n      \"line_total\": \"7.00\"\n    },\n    {\n      \"raw_description\": \"طما طم وزن\",\n      \"quantity\": \"0.990\",\n      \"unit_price\": \"4.46\",\n      \"line_total\": \"4.50\"\n    },\n    {\n      \"raw_description\": \"علب بناتي وزن\",\n      \"quantity\": \"1.205\",\n      \"unit_price\": \"22.90\",\n      \"line_total\": \"19.00\"\n    },\n    {\n      \"raw_description\": \"خضر ٠ با لفطعه\",\n      \"quantity\": \"5\",\n      \"unit_price\": \"7.50\",\n      \"line_total\": \"1.50\"\n    }\n  ],\n  \"raw_text\": \"البركة مول\\nاولاد الجارحي\\nخالسعر\\nالقيمة\\nالكمية\\nالصـف\\nالتر\\nلمار حليب كامل الدمم\\n\\n64.50\\n21.50\\n3\\n6224001105005\\nkاد بورى شيكرلاتة مكسر ات٦ذ جم\\n36.00\\n12.00\\n3\\n7622210292704\\n١كص جولد ٥امل\\n57.50\\n57.50\\n8717163647394\\n1\\n100\\nليبتون ضاى ناعم\\nجم\\n24.00\\n12.00\\n2\\n6221155032706\\n٩٥٥ جم برطمان برتفال\\nتالج\\n39.00\\n39.00\\n7622201822521\\n1\\n200جم\\nعبد المعبود بن دوبل فاتح\\n79.95\\n79.95\\n1\\n6223000110324\\nثوم بلدي شبك\\n15.00\\n15.00\\n6225000442313\\n1\\nباذلجان رومي وزن\\n9.63\\n7.00\\n1.375\\n2300408000007\\nليمون بلدي وزن\\n12.95\\n35.00\\n0.370\\n2300430000006\\nمالجر\\nعويس وزن\\n137.70\\n60.00\\n2.295\\n2300383000009\\nشيبسى شطة حارة وليمون باج\\n10.00\\n5.00\\n2\\n6221031490132\\nباذلجان عروص وزن\\n6.09\\n7.00\\n0.870\\n2300409000006\\nطما طم\\nوزن\\n4.46\\n4.50\\n0.990\\n2300422000007\\nعلب بناتي وزن\\n22.90\\n19.00\\n2300335000002\\n1.205\\nxضر ٠ با لفطعه\\n7.50\\n1.50\\n2012790000014\\n5\\n527.16\\nعدد القطع  الإجمالى\\n527.15\\nkارت انتمان\\n0.00\\nالباقى\\nلكا شير\\nPoS:6\\nStore:102\\nUser:75\\nDate:15/07/2022 22:32:0s\\nTrans:280\\nبرجاء الإحتفاظ بالفاتورة\\nللإسترجاع او الإستبد ال ١٩\\nyوم\\nالفريل ٩ماعة\\nالإقتر احاتو الثكاوى\\n280/6/102/150722\",\n  \"missing_fields\": [\n    \"unit_price_for_first_item\"\n  ],\n  \"uncertain_fields\": [\n    \"Quantity for لمار حليب كامل الدمم\",\n    \"Unit Price for لمار حليب كامل الدمم\"\n  ],\n  \"validation_warnings\": [\n    \"The line total for the first item (21.50) does not match the observed quantity (3) multiplied by the unit price (64.50).\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 8002,
+          "completion_tokens": 2026,
+          "total_tokens": 10028,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 25.354184875031933
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 8002,
+    "output_tokens": 2026,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 25.354184875031933,
+    "latency_seconds": 25.354184875031933,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle"
+  },
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 0,
+    "field_accuracy": null,
+    "fields": {},
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": null,
+    "hallucination_rate": null,
+    "missing_denominator": 0,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "subtotal",
+      "discount",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 25.367465208051726
+}

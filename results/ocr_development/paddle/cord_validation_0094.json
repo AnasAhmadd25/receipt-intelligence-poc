@@ -1,0 +1,246 @@
+{
+  "id": "cord_validation_0094",
+  "language": "Indonesian / Latin script / mixed English",
+  "ocr": {
+    "text": "\ngooC\nC003\n69.000\n1 Emily's Shrimp Scampi\nFettucine\n69.000\nSUB TOTAL\n0\nDISCOUNT\n3.795\nSERVICE\n7.280\nOTHERS\n+25\nROUNDING\n80.100\nGRAND TOTAL\n80.100\nTADA EGIFT\nCHANGES\nSANKYOU",
+    "lines": [
+      {
+        "text": "",
+        "bbox": [
+          354,
+          144,
+          394,
+          172
+        ],
+        "confidence": 0.0
+      },
+      {
+        "text": "gooC",
+        "bbox": [
+          345,
+          169,
+          405,
+          198
+        ],
+        "confidence": 47.05711007118225
+      },
+      {
+        "text": "C003",
+        "bbox": [
+          318,
+          276,
+          438,
+          319
+        ],
+        "confidence": 56.914663314819336
+      },
+      {
+        "text": "69.000",
+        "bbox": [
+          546,
+          522,
+          653,
+          561
+        ],
+        "confidence": 99.83121752738953
+      },
+      {
+        "text": "1 Emily's Shrimp Scampi",
+        "bbox": [
+          123,
+          542,
+          454,
+          603
+        ],
+        "confidence": 99.19741153717041
+      },
+      {
+        "text": "Fettucine",
+        "bbox": [
+          143,
+          589,
+          267,
+          625
+        ],
+        "confidence": 99.98704195022583
+      },
+      {
+        "text": "69.000",
+        "bbox": [
+          549,
+          618,
+          661,
+          656
+        ],
+        "confidence": 99.92110133171082
+      },
+      {
+        "text": "SUB TOTAL",
+        "bbox": [
+          117,
+          653,
+          270,
+          694
+        ],
+        "confidence": 99.25913214683533
+      },
+      {
+        "text": "0",
+        "bbox": [
+          639,
+          657,
+          660,
+          682
+        ],
+        "confidence": 78.73967289924622
+      },
+      {
+        "text": "DISCOUNT",
+        "bbox": [
+          116,
+          689,
+          262,
+          730
+        ],
+        "confidence": 97.76760339736938
+      },
+      {
+        "text": "3.795",
+        "bbox": [
+          570,
+          690,
+          666,
+          729
+        ],
+        "confidence": 99.97913241386414
+      },
+      {
+        "text": "SERVICE",
+        "bbox": [
+          115,
+          726,
+          240,
+          766
+        ],
+        "confidence": 99.99184608459473
+      },
+      {
+        "text": "7.280",
+        "bbox": [
+          572,
+          727,
+          669,
+          766
+        ],
+        "confidence": 99.94434118270874
+      },
+      {
+        "text": "OTHERS",
+        "bbox": [
+          113,
+          764,
+          232,
+          804
+        ],
+        "confidence": 99.96606707572937
+      },
+      {
+        "text": "+25",
+        "bbox": [
+          604,
+          767,
+          672,
+          801
+        ],
+        "confidence": 99.95179176330566
+      },
+      {
+        "text": "ROUNDING",
+        "bbox": [
+          113,
+          799,
+          264,
+          840
+        ],
+        "confidence": 99.98481273651123
+      },
+      {
+        "text": "80.100",
+        "bbox": [
+          531,
+          859,
+          679,
+          906
+        ],
+        "confidence": 99.94878768920898
+      },
+      {
+        "text": "GRAND TOTAL",
+        "bbox": [
+          110,
+          883,
+          297,
+          928
+        ],
+        "confidence": 99.91029500961304
+      },
+      {
+        "text": "80.100",
+        "bbox": [
+          534,
+          916,
+          683,
+          962
+        ],
+        "confidence": 99.90565180778503
+      },
+      {
+        "text": "TADA EGIFT",
+        "bbox": [
+          109,
+          937,
+          266,
+          979
+        ],
+        "confidence": 99.94276165962219
+      },
+      {
+        "text": "CHANGES",
+        "bbox": [
+          112,
+          993,
+          235,
+          1031
+        ],
+        "confidence": 99.98982548713684
+      },
+      {
+        "text": "SANKYOU",
+        "bbox": [
+          245,
+          1071,
+          591,
+          1153
+        ],
+        "confidence": 79.89781498908997
+      }
+    ],
+    "engine": "paddle",
+    "model": "en_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det",
+    "initialization_seconds": 0.0,
+    "latency_seconds": 16.58749216690194,
+    "language_hint": "en",
+    "image_size": [
+      864,
+      1296
+    ]
+  },
+  "metrics": {
+    "annotated_token_recall": 0.9090909090909091,
+    "annotated_numeric_token_recall": 0.9,
+    "full_ocr_cer": null,
+    "coverage_note": "Partial transcription; token recall only, not full OCR accuracy"
+  },
+  "latency_seconds": 16.58862370904535,
+  "status": "ok"
+}

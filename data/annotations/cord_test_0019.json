@@ -1,0 +1,56 @@
+{
+  "receipt": {
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "160000",
+    "discount": null,
+    "tax": "16000",
+    "total": "176000",
+    "line_items": [
+      {
+        "raw_description": "AMBUSH DBL CHS",
+        "quantity": "4",
+        "unit_price": null,
+        "line_total": "60000"
+      },
+      {
+        "raw_description": "AMBUSH CHS BUR",
+        "quantity": "10",
+        "unit_price": null,
+        "line_total": "100000"
+      }
+    ],
+    "raw_text": "4\nAMBUSH DBL CHS\n60000\n10\nAMBUSH CHS BUR\n100000\nNET SALES 160000\nTAX 16000\nAMOUNT DUE 176000",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "annotated_fields": [
+    "subtotal",
+    "tax",
+    "total"
+  ],
+  "line_items_supported": true,
+  "item_annotated_fields": [
+    [
+      "raw_description",
+      "quantity",
+      "line_total"
+    ],
+    [
+      "raw_description",
+      "quantity",
+      "line_total"
+    ]
+  ],
+  "ocr_text": "4\nAMBUSH DBL CHS\n60000\n10\nAMBUSH CHS BUR\n100000\nNET SALES 160000\nTAX 16000\nAMOUNT DUE 176000",
+  "ocr_text_complete": false,
+  "annotation_notes": [
+    "CORD header fields removed upstream are unknown, including merchant, date, time, receipt number, currency.",
+    "OCR transcription contains valid_line annotations only, not all image text.",
+    "Nested menu.sub annotations are flattened as modifier lines with original grouping retained in original annotation."
+  ]
+}

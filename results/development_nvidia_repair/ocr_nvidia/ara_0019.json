@@ -1,0 +1,168 @@
+{
+  "id": "ara_0019",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_nvidia",
+  "split": "development",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0019.json"
+  },
+  "experiment": {
+    "image_sha256": "34a36b0f707d7c8ef3b7930c66165519e6478495f82bc41a8c3ba875e6029192",
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552"
+  },
+  "started_utc": "2026-11-25T00:34:10.364234+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "sheko",
+    "receipt_number": null,
+    "purchase_date": "2022-11-18",
+    "purchase_time": "6:00 PM",
+    "currency": null,
+    "subtotal": "1320.00",
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "1620.00",
+    "line_items": [
+      {
+        "raw_description": "كفر مرتبه ٦٥ سم",
+        "quantity": "1",
+        "unit_price": "160.00",
+        "line_total": "160.00"
+      },
+      {
+        "raw_description": "كفر مرتبه ٦٥ سم",
+        "quantity": "1",
+        "unit_price": "140.00",
+        "line_total": "140.00"
+      },
+      {
+        "raw_description": "كفر مرتبه ٦٥سم",
+        "quantity": "12",
+        "unit_price": "110.00",
+        "line_total": "1320.00"
+      }
+    ],
+    "raw_text": "sheko\nفاتورة بيع\n2022/11/18\nرقم الفاتورة\nالتاريخ\n6:00 PM\nالوقت\nنوع الفاتورة نقدى\nتستحق\nكاشير\nالإجمالى\nكمية\nالسعر\nاسم الصنف\n160.00\n160.00\nكفر مرتبه ٦٥ سم\n140.00\n140.00\nكفر مرتبه ٦٥ سم\n1,320.00\n110.00\n12\nكفر مرتبه ٦٥سم\n1,620.00\nالمطلوب\nيشمل ضريبة القيمة المضافة ٥\n0.00\nالمدفوع\n1,620.00\nشكرا لزيارتكع\n",
+    "missing_fields": [
+      "receipt_number",
+      "currency"
+    ],
+    "uncertain_fields": [
+      "The text mentions 'يشمل ضريبة القيمة المضافة ٥' but the explicit tax amount observed is '0.00'."
+    ],
+    "validation_warnings": [
+      "Line item quantities (1, 1, 12) are inferred based on layout, not explicitly stated as quantity for all items.",
+      "subtotal + tax - discount differs from total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 2872,
+        "output_tokens": 647,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"sheko\",\n  \"receipt_number\": null,\n  \"purchase_date\": \"2022-11-18\",\n  \"purchase_time\": \"6:00 PM\",\n  \"currency\": null,\n  \"subtotal\": \"1,320.00\",\n  \"discount\": \"0.00\",\n  \"tax\": \"5%\",\n  \"total\": \"1,620.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥ سم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"160.00\",\n      \"line_total\": \"160.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥ سم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"140.00\",\n      \"line_total\": \"140.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥سم\",\n      \"quantity\": \"12\",\n      \"unit_price\": \"110.00\",\n      \"line_total\": \"1,320.00\"\n    }\n  ],\n  \"raw_text\": \"sheko\\nفاتورة بيع\\n2022/11/18\\nرقم الفاتورة\\nالتاريخ\\n6:00 PM\\nالوقت\\nنوع الفاتورة نقدى\\nتستحق\\nكاشير\\nالإجمالى\\nكمية\\nالسعر\\nاسم الصنف\\n160.00\\n160.00\\nكفر مرتبه ٦٥ سم\\n140.00\\n140.00\\nكفر مرتبه ٦٥ سم\\n1,320.00\\n110.00\\n12\\nكفر مرتبه ٦٥سم\\n1,620.00\\nالمطلوب\\nيشمل ضريبة القيمة المضافة ٥\\n0.00\\nالمدفوع\\n1,620.00\\nشكرا لزيارتكع\\n\",\n  \"missing_fields\": [\n    \"receipt_number\"\n  ],\n  \"uncertain_fields\": [\n    \"Tax rate is stated as 5% but tax amount is 0.00\"\n  ],\n  \"validation_warnings\": [\n    \"Line item quantities (1, 1, 12) are inferred based on layout, not explicitly stated as quantity for all items.\"\n  ]\n}",
+        "status": "invalid_json_or_schema",
+        "token_details": {
+          "prompt_tokens": 2872,
+          "completion_tokens": 647,
+          "total_tokens": 3519,
+          "prompt_tokens_details": {
+            "cached_tokens": 2848
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 8.981777332955971,
+        "validation_error": "ValidationError",
+        "validation_diagnostics": [
+          {
+            "loc": [
+              "tax"
+            ],
+            "type": "value_error"
+          }
+        ]
+      },
+      {
+        "attempt": 2,
+        "kind": "repair",
+        "input_tokens": 3621,
+        "output_tokens": 660,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"sheko\",\n  \"receipt_number\": null,\n  \"purchase_date\": \"2022-11-18\",\n  \"purchase_time\": \"6:00 PM\",\n  \"currency\": null,\n  \"subtotal\": \"1,320.00\",\n  \"discount\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"1,620.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥ سم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"160.00\",\n      \"line_total\": \"160.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥ سم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"140.00\",\n      \"line_total\": \"140.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥سم\",\n      \"quantity\": \"12\",\n      \"unit_price\": \"110.00\",\n      \"line_total\": \"1,320.00\"\n    }\n  ],\n  \"raw_text\": \"sheko\\nفاتورة بيع\\n2022/11/18\\nرقم الفاتورة\\nالتاريخ\\n6:00 PM\\nالوقت\\nنوع الفاتورة نقدى\\nتستحق\\nكاشير\\nالإجمالى\\nكمية\\nالسعر\\nاسم الصنف\\n160.00\\n160.00\\nكفر مرتبه ٦٥ سم\\n140.00\\n140.00\\nكفر مرتبه ٦٥ سم\\n1,320.00\\n110.00\\n12\\nكفر مرتبه ٦٥سم\\n1,620.00\\nالمطلوب\\nيشمل ضريبة القيمة المضافة ٥\\n0.00\\nالمدفوع\\n1,620.00\\nشكرا لزيارتكع\\n\",\n  \"missing_fields\": [\n    \"receipt_number\"\n  ],\n  \"uncertain_fields\": [\n    \"The text mentions 'يشمل ضريبة القيمة المضافة ٥' but the explicit tax amount observed is '0.00'.\"\n  ],\n  \"validation_warnings\": [\n    \"Line item quantities (1, 1, 12) are inferred based on layout, not explicitly stated as quantity for all items.\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 3621,
+          "completion_tokens": 660,
+          "total_tokens": 4281,
+          "prompt_tokens_details": {
+            "cached_tokens": 3488
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 8.785300916992128
+      }
+    ],
+    "json_valid": false,
+    "repairs": 1,
+    "input_tokens": 6493,
+    "output_tokens": 1307,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 17.7670782499481,
+    "latency_seconds": 17.7670782499481,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle"
+  },
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 2,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "purchase_time",
+      "subtotal",
+      "discount",
+      "tax",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 17.87846304103732
+}

@@ -1,0 +1,192 @@
+{
+  "id": "ara_0050",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "modal_hybrid",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "09bbd37132e4dc75ebfc90f7e81599cb58ede929eca65492c34775902e6c754d",
+    "provider": "modal_hybrid",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T01:00:10.688731+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": "2022-07-19",
+    "purchase_time": "07:19 PM",
+    "currency": null,
+    "subtotal": "800.00",
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "800.00",
+    "line_items": [
+      {
+        "raw_description": "الإجمالي",
+        "quantity": "1",
+        "unit_price": "800.00",
+        "line_total": "800.00"
+      },
+      {
+        "raw_description": "الحصص",
+        "quantity": "0.00",
+        "unit_price": "0.00",
+        "line_total": "0.00"
+      },
+      {
+        "raw_description": "القيمة المضافة للقناة",
+        "quantity": "0.00",
+        "unit_price": "0.00",
+        "line_total": "0.00"
+      },
+      {
+        "raw_description": "التصافي",
+        "quantity": "0.00",
+        "unit_price": "0.00",
+        "line_total": "0.00"
+      },
+      {
+        "raw_description": "القيمة المضافة للاصداف",
+        "quantity": "0.00",
+        "unit_price": "0.00",
+        "line_total": "0.00"
+      },
+      {
+        "raw_description": "المدفوع",
+        "quantity": "0.00",
+        "unit_price": "0.00",
+        "line_total": "0.00"
+      },
+      {
+        "raw_description": "الباقى",
+        "quantity": "0.00",
+        "unit_price": "0.00",
+        "line_total": "0.00"
+      }
+    ],
+    "raw_text": "فاتورة مبيعات نقدى\n\n0\n27\n2022-07-19 07:19 PM\nالوقت\nالمحاسبة\nالمسجل\nالعميل\nالكمية\nالصنف\nGUESS TSHIRT\n800.00 0.00 800.00 1\n800.00\nالإجمالي\n0.00\nالحصص\n0.00\nالقيمة المضافة للقناة\n800.00\nالتصافي\n0.00\nالقيمة المضافة للاصداف\n0.00\nالمدفوع\n0.00\nالباقى\n0.00",
+    "missing_fields": [
+      "merchant_name",
+      "receipt_number",
+      "currency"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "modal_hybrid",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "container_id": "ta-01M8839534TR1DPFZN54A9FHER",
+    "runtime_versions": {
+      "torch": "2.9.1+cu128",
+      "transformers": "5.24.1"
+    },
+    "dtype": "torch.float16",
+    "attention_implementation": "sdpa",
+    "original_image_size": [
+      3024,
+      4032
+    ],
+    "inference_image_size": [
+      866,
+      1154
+    ],
+    "image_pixel_cap": 1000000,
+    "latency_seconds": 60.49143147900003,
+    "cold_first_request": false,
+    "initialization_seconds": 11.172391802,
+    "initialization_resource": {
+      "wall_seconds": 11.16153959,
+      "cpu_core_seconds": 12.69,
+      "cpu_percent_mean": 113.69399264031101,
+      "cpu_percent_peak": 196.8,
+      "baseline_ram_bytes": 61734912,
+      "peak_ram_bytes": 11616468992,
+      "gpu_utilization_percent_mean": 5.75,
+      "gpu_memory_observed_peak_mib": 4166.0
+    },
+    "resource": {
+      "wall_seconds": 60.49143147900003,
+      "cpu_core_seconds": 61.18000000000001,
+      "cpu_percent_mean": 101.13829100116274,
+      "cpu_percent_peak": 119.5,
+      "baseline_ram_bytes": 8169762816,
+      "peak_ram_bytes": 8169910272,
+      "gpu_utilization_percent_mean": 58.228070175438596,
+      "gpu_memory_observed_peak_mib": 4788.0,
+      "gpu_name": "Tesla T4",
+      "gpu_compute_capability": [
+        7,
+        5
+      ],
+      "gpu_peak_allocated_bytes": 4723376128,
+      "gpu_peak_reserved_bytes": 4877975552,
+      "allocated_cpu_physical_cores": 2.0,
+      "allocated_ram_mib": 8192,
+      "allocated_gpu": "T4",
+      "container_uptime_seconds": 261.48335409,
+      "region_selection": "us",
+      "region_price_multiplier": 1.15
+    },
+    "input_tokens": 1138,
+    "output_tokens": 661,
+    "fallback_used": false,
+    "json_valid": true,
+    "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle.",
+    "raw_output": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": \"2022-07-19\",\n  \"purchase_time\": \"07:19 PM\",\n  \"currency\": null,\n  \"subtotal\": \"800.00\",\n  \"discount\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"800.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"الإجمالي\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"800.00\",\n      \"line_total\": \"800.00\"\n    },\n    {\n      \"raw_description\": \"الحصص\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    },\n    {\n      \"raw_description\": \"القيمة المضافة للقناة\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    },\n    {\n      \"raw_description\": \"التصافي\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    },\n    {\n      \"raw_description\": \"القيمة المضافة للاصداف\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    },\n    {\n      \"raw_description\": \"المدفوع\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    },\n    {\n      \"raw_description\": \"الباقى\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    }\n  ],\n  \"raw_text\": \"فاتورة مبيعات نقدى\\n\\n0\\n27\\n2022-07-19 07:19 PM\\nالوقت\\nالمحاسبة\\nالمسجل\\nالعميل\\nالكمية\\nالصنف\\nGUESS TSHIRT\\n800.00 0.00 800.00 1\\n800.00\\nالإجمالي\\n0.00\\nالحصص\\n0.00\\nالقيمة المضافة للقناة\\n800.00\\nالتصافي\\n0.00\\nالقيمة المضافة للاصداف\\n0.00\\nالمدفوع\\n0.00\\nالباقى\\n0.00\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+    "client_latency_seconds": 64.77883120800834
+  },
+  "raw_output": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": \"2022-07-19\",\n  \"purchase_time\": \"07:19 PM\",\n  \"currency\": null,\n  \"subtotal\": \"800.00\",\n  \"discount\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"800.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"الإجمالي\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"800.00\",\n      \"line_total\": \"800.00\"\n    },\n    {\n      \"raw_description\": \"الحصص\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    },\n    {\n      \"raw_description\": \"القيمة المضافة للقناة\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    },\n    {\n      \"raw_description\": \"التصافي\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    },\n    {\n      \"raw_description\": \"القيمة المضافة للاصداف\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    },\n    {\n      \"raw_description\": \"المدفوع\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    },\n    {\n      \"raw_description\": \"الباقى\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    }\n  ],\n  \"raw_text\": \"فاتورة مبيعات نقدى\\n\\n0\\n27\\n2022-07-19 07:19 PM\\nالوقت\\nالمحاسبة\\nالمسجل\\nالعميل\\nالكمية\\nالصنف\\nGUESS TSHIRT\\n800.00 0.00 800.00 1\\n800.00\\nالإجمالي\\n0.00\\nالحصص\\n0.00\\nالقيمة المضافة للقناة\\n800.00\\nالتصافي\\n0.00\\nالقيمة المضافة للاصداف\\n0.00\\nالمدفوع\\n0.00\\nالباقى\\n0.00\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+  "metrics": {
+    "field_correct": 5,
+    "field_total": 5,
+    "field_accuracy": 1.0,
+    "fields": {
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 5,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "discount"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 64.79130204208195
+}

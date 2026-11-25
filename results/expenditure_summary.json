@@ -1,0 +1,20 @@
+{
+  "paid_hosted_known_usage_usd_estimated": 0.10082909999999998,
+  "hosted_attempts_counted": 75,
+  "hosted_attempts_missing_usage": 4,
+  "modal_development_observed_lifecycle_usd_estimated": {
+    "GLM-OCR": 0.05298470575580925,
+    "HunyuanOCR": 0.052713623463252916,
+    "Qwen3-VL-2B-Instruct": 0.08806463809874815,
+    "Qwen3-1.7B": 0.04633217462189137
+  },
+  "conservative_cumulative_reserved_or_estimated_usd": 2.2904034,
+  "authorized_limit_usd": 5,
+  "cash_debits_verified": false,
+  "notes": [
+    "Known token usage does not include missing usage after server errors.",
+    "Modal retained lifecycles omit some failed-container work and pre-Python startup.",
+    "The ledger retains conservative bounds for these gaps.",
+    "NVIDIA developer trial and fixed OpenRouter free variants have no asserted commercial production rate."
+  ]
+}

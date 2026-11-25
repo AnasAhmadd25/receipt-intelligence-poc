@@ -1,0 +1,45 @@
+{
+  "receipt": {
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "24000",
+    "discount": null,
+    "tax": null,
+    "total": "24000",
+    "line_items": [
+      {
+        "raw_description": "THAI ICED GREEN TEA",
+        "quantity": "1",
+        "unit_price": "24000",
+        "line_total": "24000"
+      }
+    ],
+    "raw_text": "THAI ICED GREEN TEA\n1\n@24.000\n24.000\nSUB-TOTAL 24.000\nGRANDTOTAL 24.000\nCASH 50.000\nCHANGED 26.000",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "annotated_fields": [
+    "subtotal",
+    "total"
+  ],
+  "line_items_supported": true,
+  "item_annotated_fields": [
+    [
+      "raw_description",
+      "quantity",
+      "unit_price",
+      "line_total"
+    ]
+  ],
+  "ocr_text": "THAI ICED GREEN TEA\n1\n@24.000\n24.000\nSUB-TOTAL 24.000\nGRANDTOTAL 24.000\nCASH 50.000\nCHANGED 26.000",
+  "ocr_text_complete": false,
+  "annotation_notes": [
+    "CORD header fields removed upstream are unknown, including merchant, date, time, receipt number, currency.",
+    "OCR transcription contains valid_line annotations only, not all image text.",
+    "Nested menu.sub annotations are flattened as modifier lines with original grouping retained in original annotation."
+  ]
+}

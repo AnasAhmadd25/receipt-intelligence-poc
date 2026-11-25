@@ -1,0 +1,390 @@
+[
+  {
+    "receipt": {
+      "schema_version": "1.0",
+      "merchant_name": null,
+      "receipt_number": null,
+      "purchase_date": null,
+      "purchase_time": null,
+      "currency": null,
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "total": null,
+      "line_items": [
+        {
+          "raw_description": "١٤و جرطوسه دحان",
+          "quantity": "1",
+          "unit_price": "30.000",
+          "line_total": "30.000"
+        },
+        {
+          "raw_description": "قطعه",
+          "quantity": "1",
+          "unit_price": "30.000",
+          "line_total": "30.000"
+        },
+        {
+          "raw_description": "اله الحاسبة ولالعاب",
+          "quantity": "1",
+          "unit_price": "30.000",
+          "line_total": "30.000"
+        }
+      ],
+      "raw_text": "مكتبة النهضة العربية\nمبيعات\nx3665\nاريج12/11/202\nالوف\n1-نعدا\nنعدا\n فرع السرق\nالكاسير\nاسم الصنف\nالكمية الوحدذ السعر احمالى\n١٤و  جرطوسه دحان\nقطعه\n30\n30\n1\nأ حرام لو\nالاجمالي\n30.000\nج٠م\nالمدفوع\n30.000\nج ٠م\nالباقي\n0.00\nج،م\nنلانوب جنيه مصري فعط لا عبر\nالرصيد ٥٥٥٥\nفرع سوهاج السرف ش المزعه المردذومة حصم\nك٥٥١ علي الملخصاب\n4597005-093/\nفرع عربه النجع سارع احمد ماهر\n01026649821-01124230420\nععوا لا مرنحع ولا اسبدال بهائيا لادوات العبايه\nبالجسم والبسره\nولاسحدماب السحصيه الكماماب والوافى\nواله الحاسبة ولالعاب\n2022\n03:55:02p\nServerSoft - 010687889\n",
+      "missing_fields": [],
+      "uncertain_fields": [],
+      "validation_warnings": []
+    },
+    "metadata": {
+      "model": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "container_id": "ta-01M883KJHGMDHTRD1MMCDMJ4JR",
+      "runtime_versions": {
+        "torch": "2.9.1+cu128",
+        "transformers": "5.24.1"
+      },
+      "dtype": "torch.float16",
+      "attention_implementation": "sdpa",
+      "original_image_size": [
+        1080,
+        1920
+      ],
+      "inference_image_size": [
+        750,
+        1333
+      ],
+      "image_pixel_cap": 1000000,
+      "latency_seconds": 49.684172810999996,
+      "cold_first_request": true,
+      "initialization_seconds": 63.872332158,
+      "initialization_resource": {
+        "wall_seconds": 63.861214896999996,
+        "cpu_core_seconds": 61.76,
+        "cpu_percent_mean": 96.70971668736809,
+        "cpu_percent_peak": 205.7,
+        "baseline_ram_bytes": 61784064,
+        "peak_ram_bytes": 11537596416,
+        "gpu_utilization_percent_mean": 1.0192307692307692,
+        "gpu_memory_observed_peak_mib": 4318.0
+      },
+      "resource": {
+        "wall_seconds": 49.684172810999996,
+        "cpu_core_seconds": 49.36000000000001,
+        "cpu_percent_mean": 99.34753304189415,
+        "cpu_percent_peak": 138.0,
+        "baseline_ram_bytes": 7620427776,
+        "peak_ram_bytes": 9168449536,
+        "gpu_utilization_percent_mean": 84.72222222222223,
+        "gpu_memory_observed_peak_mib": 5284.0,
+        "gpu_name": "Tesla T4",
+        "gpu_compute_capability": [
+          7,
+          5
+        ],
+        "gpu_peak_allocated_bytes": 5280792064,
+        "gpu_peak_reserved_bytes": 5398069248,
+        "allocated_cpu_physical_cores": 2.0,
+        "allocated_ram_mib": 12288,
+        "allocated_gpu": "T4",
+        "container_uptime_seconds": 114.396911288,
+        "region_selection": "us",
+        "region_price_multiplier": 1.15
+      },
+      "input_tokens": 2982,
+      "output_tokens": 604,
+      "fallback_used": true,
+      "json_valid": true,
+      "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle.",
+      "ocr": {
+        "engine": "paddle",
+        "latency_seconds": 15.138181826999997,
+        "model": "arabic_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det"
+      }
+    },
+    "raw_output": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": null,\n  \"line_items\": [\n    {\n      \"raw_description\": \"١٤و جرطوسه دحان\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30.000\",\n      \"line_total\": \"30.000\"\n    },\n    {\n      \"raw_description\": \"قطعه\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30.000\",\n      \"line_total\": \"30.000\"\n    },\n    {\n      \"raw_description\": \"اله الحاسبة ولالعاب\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30.000\",\n      \"line_total\": \"30.000\"\n    }\n  ],\n  \"raw_text\": \"مكتبة النهضة العربية\\nمبيعات\\nx3665\\nاريج12/11/202\\nالوف\\n1-نعدا\\nنعدا\\n فرع السرق\\nالكاسير\\nاسم الصنف\\nالكمية الوحدذ السعر احمالى\\n١٤و  جرطوسه دحان\\nقطعه\\n30\\n30\\n1\\nأ حرام لو\\nالاجمالي\\n30.000\\nج٠م\\nالمدفوع\\n30.000\\nج ٠م\\nالباقي\\n0.00\\nج،م\\nنلانوب جنيه مصري فعط لا عبر\\nالرصيد ٥٥٥٥\\nفرع سوهاج السرف ش المزعه المردذومة حصم\\nك٥٥١ علي الملخصاب\\n4597005-093/\\nفرع عربه النجع سارع احمد ماهر\\n01026649821-01124230420\\nععوا لا مرنحع ولا اسبدال بهائيا لادوات العبايه\\nبالجسم والبسره\\nولاسحدماب السحصيه الكماماب والوافى\\nواله الحاسبة ولالعاب\\n2022\\n03:55:02p\\nServerSoft - 010687889\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+    "sample_id": "ara_0077",
+    "client_wall_seconds": 119.48879058391321
+  },
+  {
+    "receipt": {
+      "schema_version": "1.0",
+      "merchant_name": null,
+      "receipt_number": null,
+      "purchase_date": null,
+      "purchase_time": null,
+      "currency": null,
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "total": null,
+      "line_items": [
+        {
+          "raw_description": "1 Dum Dum Thai Coffee",
+          "quantity": "1",
+          "unit_price": "19.000",
+          "line_total": "19.000"
+        },
+        {
+          "raw_description": "1 Ice",
+          "quantity": "1",
+          "unit_price": "1.000",
+          "line_total": "1.000"
+        }
+      ],
+      "raw_text": "JRLN\nAIAM\n1 Dum Dum Thai Coffee\n19.000\n1 Ice\n1.000\nSubtotal\n:0,000\n20,000\nTOTAL\n60.000\nCash\nChange Due\n30.000",
+      "missing_fields": [],
+      "uncertain_fields": [],
+      "validation_warnings": []
+    },
+    "metadata": {
+      "model": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "container_id": "ta-01M883KJHGMDHTRD1MMCDMJ4JR",
+      "runtime_versions": {
+        "torch": "2.9.1+cu128",
+        "transformers": "5.24.1"
+      },
+      "dtype": "torch.float16",
+      "attention_implementation": "sdpa",
+      "original_image_size": [
+        960,
+        1280
+      ],
+      "inference_image_size": [
+        866,
+        1154
+      ],
+      "image_pixel_cap": 1000000,
+      "latency_seconds": 14.398054793,
+      "cold_first_request": false,
+      "initialization_seconds": 63.872332158,
+      "initialization_resource": {
+        "wall_seconds": 63.861214896999996,
+        "cpu_core_seconds": 61.76,
+        "cpu_percent_mean": 96.70971668736809,
+        "cpu_percent_peak": 205.7,
+        "baseline_ram_bytes": 61784064,
+        "peak_ram_bytes": 11537596416,
+        "gpu_utilization_percent_mean": 1.0192307692307692,
+        "gpu_memory_observed_peak_mib": 4318.0
+      },
+      "resource": {
+        "wall_seconds": 14.398054793,
+        "cpu_core_seconds": 14.759999999999998,
+        "cpu_percent_mean": 102.51384796212865,
+        "cpu_percent_peak": 118.1,
+        "baseline_ram_bytes": 9182507008,
+        "peak_ram_bytes": 9250115584,
+        "gpu_utilization_percent_mean": 81.9,
+        "gpu_memory_observed_peak_mib": 5286.0,
+        "gpu_name": "Tesla T4",
+        "gpu_compute_capability": [
+          7,
+          5
+        ],
+        "gpu_peak_allocated_bytes": 3815063040,
+        "gpu_peak_reserved_bytes": 5398069248,
+        "allocated_cpu_physical_cores": 2.0,
+        "allocated_ram_mib": 12288,
+        "allocated_gpu": "T4",
+        "container_uptime_seconds": 129.126403135,
+        "region_selection": "us",
+        "region_price_multiplier": 1.15
+      },
+      "input_tokens": 1091,
+      "output_tokens": 268,
+      "fallback_used": true,
+      "json_valid": true,
+      "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle.",
+      "ocr": {
+        "engine": "paddle",
+        "latency_seconds": 3.6423928020000034,
+        "model": "arabic_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det"
+      }
+    },
+    "raw_output": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": null,\n  \"line_items\": [\n    {\n      \"raw_description\": \"1 Dum Dum Thai Coffee\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"19.000\",\n      \"line_total\": \"19.000\"\n    },\n    {\n      \"raw_description\": \"1 Ice\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"1.000\",\n      \"line_total\": \"1.000\"\n    }\n  ],\n  \"raw_text\": \"JRLN\\nAIAM\\n1 Dum Dum Thai Coffee\\n19.000\\n1 Ice\\n1.000\\nSubtotal\\n:0,000\\n20,000\\nTOTAL\\n60.000\\nCash\\nChange Due\\n30.000\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+    "sample_id": "cord_validation_0071",
+    "client_wall_seconds": 14.693105500075035
+  },
+  {
+    "receipt": {
+      "schema_version": "1.0",
+      "merchant_name": null,
+      "receipt_number": "01550088990",
+      "purchase_date": null,
+      "purchase_time": "AM 07:23:03",
+      "currency": null,
+      "subtotal": null,
+      "discount": null,
+      "tax": null,
+      "total": null,
+      "line_items": [
+        {
+          "raw_description": "Dukkan chocolate",
+          "quantity": "1",
+          "unit_price": "100.00",
+          "line_total": "100.00"
+        },
+        {
+          "raw_description": "بريك وابت بندق ولوز",
+          "quantity": "2",
+          "unit_price": "54.00",
+          "line_total": "108.00"
+        },
+        {
+          "raw_description": "وزبيب",
+          "quantity": "1",
+          "unit_price": "27.00",
+          "line_total": "27.00"
+        }
+      ],
+      "raw_text": "Dukkan chocolate\n(1220)\nفاتورة رقم \nكاشير  المدير\nCash\nالوقت\nAM 07:23:03\n3\nعدد الأصناف\nالاحمالي\nالسعر\nالعد\nI\n100.00\n100.00\nعرض ال٥\n–\nبريك وابت بندق ولوز\nIn\n54.00\n27.00\nوزبيب\n2\n154.00\nOBT\nIF\nKK\nفرع شبرا\nر\n01550088990",
+      "missing_fields": [],
+      "uncertain_fields": [],
+      "validation_warnings": []
+    },
+    "metadata": {
+      "model": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "container_id": "ta-01M883KJHGMDHTRD1MMCDMJ4JR",
+      "runtime_versions": {
+        "torch": "2.9.1+cu128",
+        "transformers": "5.24.1"
+      },
+      "dtype": "torch.float16",
+      "attention_implementation": "sdpa",
+      "original_image_size": [
+        3456,
+        4608
+      ],
+      "inference_image_size": [
+        866,
+        1154
+      ],
+      "image_pixel_cap": 1000000,
+      "latency_seconds": 39.32291712099999,
+      "cold_first_request": false,
+      "initialization_seconds": 63.872332158,
+      "initialization_resource": {
+        "wall_seconds": 63.861214896999996,
+        "cpu_core_seconds": 61.76,
+        "cpu_percent_mean": 96.70971668736809,
+        "cpu_percent_peak": 205.7,
+        "baseline_ram_bytes": 61784064,
+        "peak_ram_bytes": 11537596416,
+        "gpu_utilization_percent_mean": 1.0192307692307692,
+        "gpu_memory_observed_peak_mib": 4318.0
+      },
+      "resource": {
+        "wall_seconds": 39.32291712099999,
+        "cpu_core_seconds": 39.56999999999999,
+        "cpu_percent_mean": 100.62834320821038,
+        "cpu_percent_peak": 127.8,
+        "baseline_ram_bytes": 9191575552,
+        "peak_ram_bytes": 10040717312,
+        "gpu_utilization_percent_mean": 97.23529411764706,
+        "gpu_memory_observed_peak_mib": 5286.0,
+        "gpu_name": "Tesla T4",
+        "gpu_compute_capability": [
+          7,
+          5
+        ],
+        "gpu_peak_allocated_bytes": 4487165952,
+        "gpu_peak_reserved_bytes": 5398069248,
+        "allocated_cpu_physical_cores": 2.0,
+        "allocated_ram_mib": 12288,
+        "allocated_gpu": "T4",
+        "container_uptime_seconds": 169.263445972,
+        "region_selection": "us",
+        "region_price_multiplier": 1.15
+      },
+      "input_tokens": 2128,
+      "output_tokens": 415,
+      "fallback_used": true,
+      "json_valid": true,
+      "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle.",
+      "ocr": {
+        "engine": "paddle",
+        "latency_seconds": 20.60242710700001,
+        "model": "arabic_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det"
+      }
+    },
+    "raw_output": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"01550088990\",\n  \"purchase_date\": null,\n  \"purchase_time\": \"AM 07:23:03\",\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": null,\n  \"line_items\": [\n    {\n      \"raw_description\": \"Dukkan chocolate\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"100.00\",\n      \"line_total\": \"100.00\"\n    },\n    {\n      \"raw_description\": \"بريك وابت بندق ولوز\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"54.00\",\n      \"line_total\": \"108.00\"\n    },\n    {\n      \"raw_description\": \"وزبيب\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"27.00\",\n      \"line_total\": \"27.00\"\n    }\n  ],\n  \"raw_text\": \"Dukkan chocolate\\n(1220)\\nفاتورة رقم \\nkashir  المدير\\nCash\\nالوقت\\nAM 07:23:03\\n3\\nعدد الأصناف\\nالاحمالي\\nالسعر\\nالعد\\nI\\n100.00\\n100.00\\nعرض ال٥\\n–\\nبريك وابت بندق ولوز\\nIn\\n54.00\\n27.00\\nوزبيب\\n2\\n154.00\\nOBT\\nIF\\nKK\\nفرع شبرا\\nر\\n01550088990\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+    "sample_id": "ara_0100",
+    "client_wall_seconds": 40.157191375037655
+  },
+  {
+    "receipt": null,
+    "metadata": {
+      "model": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "container_id": "ta-01M883KJHGMDHTRD1MMCDMJ4JR",
+      "runtime_versions": {
+        "torch": "2.9.1+cu128",
+        "transformers": "5.24.1"
+      },
+      "dtype": "torch.float16",
+      "attention_implementation": "sdpa",
+      "original_image_size": [
+        576,
+        864
+      ],
+      "inference_image_size": [
+        576,
+        864
+      ],
+      "image_pixel_cap": 1000000,
+      "latency_seconds": 14.258622927999994,
+      "cold_first_request": false,
+      "initialization_seconds": 63.872332158,
+      "initialization_resource": {
+        "wall_seconds": 63.861214896999996,
+        "cpu_core_seconds": 61.76,
+        "cpu_percent_mean": 96.70971668736809,
+        "cpu_percent_peak": 205.7,
+        "baseline_ram_bytes": 61784064,
+        "peak_ram_bytes": 11537596416,
+        "gpu_utilization_percent_mean": 1.0192307692307692,
+        "gpu_memory_observed_peak_mib": 4318.0
+      },
+      "resource": {
+        "wall_seconds": 14.258622927999994,
+        "cpu_core_seconds": 14.380000000000003,
+        "cpu_percent_mean": 100.85125381751737,
+        "cpu_percent_peak": 108.4,
+        "baseline_ram_bytes": 9411690496,
+        "peak_ram_bytes": 9438502912,
+        "gpu_utilization_percent_mean": 85.9,
+        "gpu_memory_observed_peak_mib": 5286.0,
+        "gpu_name": "Tesla T4",
+        "gpu_compute_capability": [
+          7,
+          5
+        ],
+        "gpu_peak_allocated_bytes": 3871668224,
+        "gpu_peak_reserved_bytes": 5398069248,
+        "allocated_cpu_physical_cores": 2.0,
+        "allocated_ram_mib": 12288,
+        "allocated_gpu": "T4",
+        "container_uptime_seconds": 183.799887001,
+        "region_selection": "us",
+        "region_price_multiplier": 1.15
+      },
+      "input_tokens": 1201,
+      "output_tokens": 287,
+      "fallback_used": true,
+      "json_valid": false,
+      "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle.",
+      "ocr": {
+        "engine": "paddle",
+        "latency_seconds": 3.080224186999999,
+        "model": "arabic_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det"
+      },
+      "validation_error": "2 validation errors for Receipt\nline_items.0.quantity\n  Value error, Invalid decimal [type=value_error, input_value='x1', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error\nline_items.1.quantity\n  Value error, Invalid decimal [type=value_error, input_value='x1', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/value_error"
+    },
+    "raw_output": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": null,\n  \"line_items\": [\n    {\n      \"raw_description\": \"4003-Blueberry Fuji\",\n      \"quantity\": \"x1\",\n      \"unit_price\": \"40.000\",\n      \"line_total\": \"40.000\"\n    },\n    {\n      \"raw_description\": \"6001-Plastic Bag Small\",\n      \"quantity\": \"x1\",\n      \"unit_price\": \"0\",\n      \"line_total\": \"0\"\n    }\n  ],\n  \"raw_text\": \"4003-Blueberry Fuji\\n40.000\\n40.000\\nx1\\n6001-Plastic Bag Small\\n0\\nx1\\nTotal Item:\\n24\\nTotal.\\n40.000\\nCash\\nTendered:\\n50.000\\nChange:\\n10.000\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+    "sample_id": "cord_validation_0054",
+    "client_wall_seconds": 14.571019041002728
+  }
+]

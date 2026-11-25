@@ -1,0 +1,142 @@
+{
+  "text": "1F\nEOOD\nubur Polos + Telur\n13.000\n13.000\n\nSubtotal\n13.000\najak\n,otal\n13.000",
+  "lines": [
+    {
+      "text": "1F",
+      "bbox": [
+        132,
+        298,
+        188,
+        352
+      ],
+      "confidence": 12.881815433502197
+    },
+    {
+      "text": "EOOD",
+      "bbox": [
+        383,
+        602,
+        734,
+        679
+      ],
+      "confidence": 22.173820436000824
+    },
+    {
+      "text": "ubur Polos + Telur",
+      "bbox": [
+        166,
+        814,
+        560,
+        872
+      ],
+      "confidence": 97.13772535324097
+    },
+    {
+      "text": "13.000",
+      "bbox": [
+        389,
+        871,
+        542,
+        924
+      ],
+      "confidence": 99.92973804473877
+    },
+    {
+      "text": "13.000",
+      "bbox": [
+        700,
+        873,
+        840,
+        930
+      ],
+      "confidence": 99.93597865104675
+    },
+    {
+      "text": "",
+      "bbox": [
+        796,
+        953,
+        830,
+        967
+      ],
+      "confidence": 0.0
+    },
+    {
+      "text": "Subtotal",
+      "bbox": [
+        154,
+        969,
+        324,
+        1026
+      ],
+      "confidence": 96.80888056755066
+    },
+    {
+      "text": "13.000",
+      "bbox": [
+        700,
+        979,
+        841,
+        1037
+      ],
+      "confidence": 99.80216026306152
+    },
+    {
+      "text": "ajak",
+      "bbox": [
+        156,
+        1023,
+        264,
+        1080
+      ],
+      "confidence": 99.88080263137817
+    },
+    {
+      "text": ",otal",
+      "bbox": [
+        146,
+        1076,
+        261,
+        1133
+      ],
+      "confidence": 92.04023480415344
+    },
+    {
+      "text": "13.000",
+      "bbox": [
+        698,
+        1083,
+        839,
+        1144
+      ],
+      "confidence": 99.90885257720947
+    }
+  ],
+  "engine": "paddle",
+  "model": "en_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det",
+  "initialization_seconds": 0.0,
+  "latency_seconds": 1.9125971659086645,
+  "language_hint": "en",
+  "image_size": [
+    960,
+    1706
+  ],
+  "profile": {
+    "wall_seconds": 1.9268507499946281,
+    "cpu_core_seconds": 1.9785619999999824,
+    "average_cpu_percent": 102.68371849794273,
+    "peak_cpu_percent": 105.42561799741783,
+    "baseline_ram_mib": 3632.734375,
+    "peak_ram_mib": 3682.484375,
+    "incremental_ram_mib": 49.75,
+    "sample_interval_seconds": 0.05,
+    "scope": "local process tree, includes provider waiting; CPU 100%=one core",
+    "peak_cpu_caveat": "50ms live process-tree samples may miss short-lived children; average/core-seconds use OS waited-child accounting",
+    "logical_cores": 10,
+    "physical_cores": 10,
+    "system_ram_bytes": 17179869184,
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "image_sha256": "23ce4a875e39efa0cf4e0a5da93c3ff04b43c6e09b4f3bb25e22b73c828330f1",
+  "config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552"
+}

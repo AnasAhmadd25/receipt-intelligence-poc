@@ -1,0 +1,74 @@
+{
+  "limit_usd": 5.0,
+  "entries": {
+    "modal_experiments": {
+      "usd": 1.0,
+      "status": "reserved upper bound, not actual charge"
+    },
+    "development_selected/ocr_ollama/1a810edd9ff0": {
+      "usd": 0,
+      "status": "usage \u00d7 official list price; billing not verified"
+    },
+    "development_selected/ocr_nvidia/d42acab192c6": {
+      "usd": 0,
+      "status": "usage \u00d7 official list price; billing not verified"
+    },
+    "development_selected/gemini/262937828bf4": {
+      "usd": 0.0126002,
+      "status": "usage \u00d7 official list price; billing not verified"
+    },
+    "development_nvidia_bolt/ocr_nvidia/f78298233408": {
+      "usd": 0,
+      "status": "usage \u00d7 official list price; billing not verified"
+    },
+    "test10/gemini/60c54644a371": {
+      "usd": 0.0202543,
+      "status": "usage \u00d7 official list price; billing not verified"
+    },
+    "test10_c2/gemini/7aff413a5282": {
+      "usd": 0.2172977,
+      "status": "reserved upper bound, not actual charge"
+    },
+    "development_nvidia_repair/ocr_nvidia/c611cdcb1293": {
+      "usd": 0,
+      "status": "Official free developer endpoint; experimental cash estimate0, commercial inference price unavailable"
+    },
+    "test10_c4/gemini/72481b078796": {
+      "usd": 0.21289770000000002,
+      "status": "reserved upper bound, not actual charge"
+    },
+    "test10/ocr_nvidia/186918608d09": {
+      "usd": 0,
+      "status": "Official free developer endpoint; experimental cash estimate0, commercial inference price unavailable"
+    },
+    "development_gemini31/gemini/078a7898c6d1": {
+      "usd": 0.010098,
+      "status": "usage \u00d7 official list price; billing not verified"
+    },
+    "development_gemini31_repair/gemini/08ebdfbab9ae": {
+      "usd": 0.0035605000000000003,
+      "status": "usage \u00d7 official list price; billing not verified"
+    },
+    "development_openrouter/ocr_openrouter/a4d295ab2ff1": {
+      "usd": 0,
+      "status": "Fixed free OpenRouter variant; quota-limited experiment, production paid twin not measured"
+    },
+    "development_openrouter_nano/ocr_openrouter/7e8b6e0be55d": {
+      "usd": 0,
+      "status": "Fixed free OpenRouter variant; quota-limited experiment, production paid twin not measured"
+    },
+    "test10_gemini31/gemini/518324e4bbc4": {
+      "usd": 0.013695,
+      "status": "usage \u00d7 official list price; billing not verified"
+    },
+    "test10/ocr_openrouter/94755f40b45a": {
+      "usd": 0,
+      "status": "Fixed free OpenRouter variant; quota-limited experiment, production paid twin not measured"
+    },
+    "test10/modal_hybrid/722d0c0860b7": {
+      "usd": 0.8,
+      "status": "reserved upper bound, not actual charge"
+    }
+  },
+  "reserved_or_estimated_usd": 2.2904034
+}

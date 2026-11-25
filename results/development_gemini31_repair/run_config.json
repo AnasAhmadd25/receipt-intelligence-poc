@@ -1,0 +1,9 @@
+{
+  "record_ids": [
+    "cord_validation_0054",
+    "cord_validation_0094"
+  ],
+  "split": "development",
+  "limit": 8,
+  "concurrency": 1
+}

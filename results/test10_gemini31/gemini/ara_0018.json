@@ -1,0 +1,203 @@
+{
+  "id": "ara_0018",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "gemini",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "7e9c580e5e1f1cb81846d6a0c28990bb2e8aafd0328591c5bf7d1fb3d74dafb1",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T00:51:30.440817+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "البركة مول",
+    "receipt_number": "280",
+    "purchase_date": "2022-07-15",
+    "purchase_time": "22:32:05",
+    "currency": null,
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "total": "527.15",
+    "line_items": [
+      {
+        "raw_description": "لمار حليب كامل الدسم التر",
+        "quantity": "3",
+        "unit_price": "21.50",
+        "line_total": "64.50"
+      },
+      {
+        "raw_description": "كادبوري شيكولاتة مكسرات 37 جم",
+        "quantity": "3",
+        "unit_price": "12.00",
+        "line_total": "36.00"
+      },
+      {
+        "raw_description": "اكس جولد 150 امل",
+        "quantity": "1",
+        "unit_price": "57.50",
+        "line_total": "57.50"
+      },
+      {
+        "raw_description": "ليبتون شاي ناعم 100 جم",
+        "quantity": "2",
+        "unit_price": "12.00",
+        "line_total": "24.00"
+      },
+      {
+        "raw_description": "تانج 450 جم برطمان برتقال",
+        "quantity": "1",
+        "unit_price": "39.00",
+        "line_total": "39.00"
+      },
+      {
+        "raw_description": "عبد المعبود بن دوبل فاتح 200جم",
+        "quantity": "1",
+        "unit_price": "79.95",
+        "line_total": "79.95"
+      },
+      {
+        "raw_description": "ثوم بلدي شبك",
+        "quantity": "1",
+        "unit_price": "15.00",
+        "line_total": "15.00"
+      },
+      {
+        "raw_description": "باذنجان رومي وزن",
+        "quantity": "1.375",
+        "unit_price": "7.00",
+        "line_total": "9.63"
+      },
+      {
+        "raw_description": "ليمون بلدي وزن",
+        "quantity": "0.370",
+        "unit_price": "35.00",
+        "line_total": "12.95"
+      },
+      {
+        "raw_description": "مانجو عويس وزن",
+        "quantity": "2.295",
+        "unit_price": "60.00",
+        "line_total": "137.70"
+      },
+      {
+        "raw_description": "شيبسي شطة حارة وليمون بلاج",
+        "quantity": "2",
+        "unit_price": "5.00",
+        "line_total": "10.00"
+      },
+      {
+        "raw_description": "باذنجان عروس وزن",
+        "quantity": "0.870",
+        "unit_price": "7.00",
+        "line_total": "6.09"
+      },
+      {
+        "raw_description": "طماطم وزن",
+        "quantity": "0.990",
+        "unit_price": "4.50",
+        "line_total": "4.46"
+      },
+      {
+        "raw_description": "عنب بناتي وزن",
+        "quantity": "1.205",
+        "unit_price": "19.00",
+        "line_total": "22.90"
+      },
+      {
+        "raw_description": "خضره بالقطعه",
+        "quantity": "5",
+        "unit_price": "1.50",
+        "line_total": "7.50"
+      }
+    ],
+    "raw_text": "البركة مول\nاولاد الجارحي\nالصنف الكمية السعر القيمة\nلمار حليب كامل الدسم التر 3 21.50 64.50 6224001105005\nكادبوري شيكولاتة مكسرات 37 جم 3 12.00 36.00 7622210292704\nاكس جولد 150 امل 1 57.50 57.50 8717163647394\nليبتون شاي ناعم 100 جم 2 12.00 24.00 6221155032706\nتانج 450 جم برطمان برتقال 1 39.00 39.00 7622201822521\nعبد المعبود بن دوبل فاتح 200جم 1 79.95 79.95 6223000110324\nثوم بلدي شبك 1 15.00 15.00 6225000442313\nباذنجان رومي وزن 1.375 7.00 9.63 2300408000007\nليمون بلدي وزن 0.370 35.00 12.95 2300430000006\nمانجو عويس وزن 2.295 60.00 137.70 2300383000009\nشيبسي شطة حارة وليمون بلاج 2 5.00 10.00 6221031490132\nباذنجان عروس وزن 0.870 7.00 6.09 2300409000006\nطماطم وزن 0.990 4.50 4.46 2300422000007\nعنب بناتي وزن 1.205 19.00 22.90 2300335000002\nخضره بالقطعه 5 1.50 7.50 2012790000014\nعدد القطع 25 الاجمالي 527.16\nكارت ائتمان: 527.15\nالباقي: 0.00\nلكا ثير\nStore:102 PoS:6 User:75\nTrans:280 Date:15/07/2022 22:32:05\nبرجاء الاحتفاظ بالفاتورة\nللإسترجاع او الإستبدال 14 يوم\nو الفريش 24 ساعة\nت :\nالإقتراحات و الشكاوى :\n280/6/102/150722",
+    "missing_fields": [
+      "currency",
+      "subtotal",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"البركة مول\",\n  \"receipt_number\": \"280\",\n  \"purchase_date\": \"2022-07-15\",\n  \"purchase_time\": \"22:32:05\",\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"527.15\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"لمار حليب كامل الدسم التر\",\n      \"quantity\": \"3\",\n      \"unit_price\": \"21.50\",\n      \"line_total\": \"64.50\"\n    },\n    {\n      \"raw_description\": \"كادبوري شيكولاتة مكسرات 37 جم\",\n      \"quantity\": \"3\",\n      \"unit_price\": \"12.00\",\n      \"line_total\": \"36.00\"\n    },\n    {\n      \"raw_description\": \"اكس جولد 150 امل\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"57.50\",\n      \"line_total\": \"57.50\"\n    },\n    {\n      \"raw_description\": \"ليبتون شاي ناعم 100 جم\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"12.00\",\n      \"line_total\": \"24.00\"\n    },\n    {\n      \"raw_description\": \"تانج 450 جم برطمان برتقال\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"39.00\",\n      \"line_total\": \"39.00\"\n    },\n    {\n      \"raw_description\": \"عبد المعبود بن دوبل فاتح 200جم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"79.95\",\n      \"line_total\": \"79.95\"\n    },\n    {\n      \"raw_description\": \"ثوم بلدي شبك\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"15.00\",\n      \"line_total\": \"15.00\"\n    },\n    {\n      \"raw_description\": \"باذنجان رومي وزن\",\n      \"quantity\": \"1.375\",\n      \"unit_price\": \"7.00\",\n      \"line_total\": \"9.63\"\n    },\n    {\n      \"raw_description\": \"ليمون بلدي وزن\",\n      \"quantity\": \"0.370\",\n      \"unit_price\": \"35.00\",\n      \"line_total\": \"12.95\"\n    },\n    {\n      \"raw_description\": \"مانجو عويس وزن\",\n      \"quantity\": \"2.295\",\n      \"unit_price\": \"60.00\",\n      \"line_total\": \"137.70\"\n    },\n    {\n      \"raw_description\": \"شيبسي شطة حارة وليمون بلاج\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"5.00\",\n      \"line_total\": \"10.00\"\n    },\n    {\n      \"raw_description\": \"باذنجان عروس وزن\",\n      \"quantity\": \"0.870\",\n      \"unit_price\": \"7.00\",\n      \"line_total\": \"6.09\"\n    },\n    {\n      \"raw_description\": \"طماطم وزن\",\n      \"quantity\": \"0.990\",\n      \"unit_price\": \"4.50\",\n      \"line_total\": \"4.46\"\n    },\n    {\n      \"raw_description\": \"عنب بناتي وزن\",\n      \"quantity\": \"1.205\",\n      \"unit_price\": \"19.00\",\n      \"line_total\": \"22.90\"\n    },\n    {\n      \"raw_description\": \"خضره بالقطعه\",\n      \"quantity\": \"5\",\n      \"unit_price\": \"1.50\",\n      \"line_total\": \"7.50\"\n    }\n  ],\n  \"raw_text\": \"البركة مول\\nاولاد الجارحي\\nالصنف الكمية السعر القيمة\\nلمار حليب كامل الدسم التر 3 21.50 64.50 6224001105005\\nكادبوري شيكولاتة مكسرات 37 جم 3 12.00 36.00 7622210292704\\nاكس جولد 150 امل 1 57.50 57.50 8717163647394\\nليبتون شاي ناعم 100 جم 2 12.00 24.00 6221155032706\\nتانج 450 جم برطمان برتقال 1 39.00 39.00 7622201822521\\nعبد المعبود بن دوبل فاتح 200جم 1 79.95 79.95 6223000110324\\nثوم بلدي شبك 1 15.00 15.00 6225000442313\\nباذنجان رومي وزن 1.375 7.00 9.63 2300408000007\\nليمون بلدي وزن 0.370 35.00 12.95 2300430000006\\nمانجو عويس وزن 2.295 60.00 137.70 2300383000009\\nشيبسي شطة حارة وليمون بلاج 2 5.00 10.00 6221031490132\\nباذنجان عروس وزن 0.870 7.00 6.09 2300409000006\\nطماطم وزن 0.990 4.50 4.46 2300422000007\\nعنب بناتي وزن 1.205 19.00 22.90 2300335000002\\nخضره بالقطعه 5 1.50 7.50 2012790000014\\nعدد القطع 25 الاجمالي 527.16\\nكارت ائتمان: 527.15\\nالباقي: 0.00\\nلكا ثير\\nStore:102 PoS:6 User:75\\nTrans:280 Date:15/07/2022 22:32:05\\nبرجاء الاحتفاظ بالفاتورة\\nللإسترجاع او الإستبدال 14 يوم\\nو الفريش 24 ساعة\\nت :\\nالإقتراحات و الشكاوى :\\n280/6/102/150722\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1254,
+        "output_tokens": 1850,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 1850,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 1850,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1254,
+          "prompt_tokens_details": [
+            {
+              "modality": "IMAGE",
+              "token_count": 1100
+            },
+            {
+              "modality": "TEXT",
+              "token_count": 154
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 3104,
+          "traffic_type": null
+        },
+        "latency_seconds": 7.298328457982279
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1254,
+    "output_tokens": 1850,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 7.298328457982279,
+    "latency_seconds": 7.298328457982279,
+    "repair_revision": "gemini-repair-2"
+  },
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 0,
+    "field_accuracy": null,
+    "fields": {},
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": null,
+    "hallucination_rate": null,
+    "missing_denominator": 0,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 7.326160499942489
+}

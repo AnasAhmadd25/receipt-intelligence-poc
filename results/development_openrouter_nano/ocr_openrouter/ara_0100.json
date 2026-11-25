@@ -1,0 +1,206 @@
+{
+  "id": "ara_0100",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_openrouter",
+  "split": "development",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0100.json"
+  },
+  "experiment": {
+    "image_sha256": "df2e461b1aa180348962b940656349bf17382ecbf084e4f16a5b7163b2b0dfcf",
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:49:59.112306+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": "01550088990",
+    "purchase_date": null,
+    "purchase_time": "AM 07:23:03",
+    "currency": "Cash",
+    "subtotal": "100.00",
+    "discount": null,
+    "tax": null,
+    "total": "154.00",
+    "line_items": [
+      {
+        "raw_description": "Dukkan chocolate",
+        "quantity": "3",
+        "unit_price": "100.00",
+        "line_total": "100.00"
+      },
+      {
+        "raw_description": "بريك وابت بندق ولوز",
+        "quantity": "2",
+        "unit_price": "27.00",
+        "line_total": "54.00"
+      },
+      {
+        "raw_description": "وزبيب",
+        "quantity": "2",
+        "unit_price": "77.00",
+        "line_total": "154.00"
+      }
+    ],
+    "raw_text": "Dukkan chocolate\n(1220)\nفاتورة رقم \nكاشير  المدير\nCash\nالوقت\nAM 07:23:03\n3\nعدد الأصناف\nالاحمالي\nالسعر\nالعد\nI\n100.00\n100.00\nعرض ال٥\n–\nبريك وابت بندق ولوز\nIn\n54.00\n27.00\nوزبيب\n2\n154.00\nOBT\nIF\nKK\nفرع شبرا\nر\n01550088990",
+    "missing_fields": [
+      "purchase_date",
+      "currency_symbol",
+      "merchant_name",
+      "receipt_number",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [
+      "purchase_date",
+      "merchant_name",
+      "receipt_number"
+    ],
+    "validation_warnings": [
+      "Purchase date not found; only time is present",
+      "Merchant name not explicitly stated; merchant_id is null",
+      "Receipt number appears as '01550088990' but may be part of other data",
+      "Line item quantities and prices are aligned but may not correspond correctly due to OCR layout issues",
+      "Currency is listed as 'Cash' which is ambiguous as a currency name",
+      "line_items[0]: quantity × unit_price differs from line_total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 2758,
+        "output_tokens": 570,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"01550088990\",\n  \"purchase_date\": null,\n  \"purchase_time\": \"AM 07:23:03\",\n  \"currency\": \"Cash\",\n  \"subtotal\": \"100.00\",\n  \"discount\": \"عرض ال٥\",\n  \"tax\": null,\n  \"total\": \"154.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"Dukkan chocolate\",\n      \"quantity\": \"3\",\n      \"unit_price\": \"100.00\",\n      \"line_total\": \"100.00\"\n    },\n    {\n      \"raw_description\": \"بريك وابت بندق ولوز\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"27.00\",\n      \"line_total\": \"54.00\"\n    },\n    {\n      \"raw_description\": \"وزبيب\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"77.00\",\n      \"line_total\": \"154.00\"\n    }\n  ],\n  \"raw_text\": \"Dukkan chocolate\\n(1220)\\nفاتورة رقم \\nكاشير  المدير\\nCash\\nالوقت\\nAM 07:23:03\\n3\\nعدد الأصناف\\nالاحمالي\\nالسعر\\nالعد\\nI\\n100.00\\n100.00\\nعرض ال٥\\n–\\nبريك وابت بندق ولوز\\nIn\\n54.00\\n27.00\\nوزبيب\\n2\\n154.00\\nOBT\\nIF\\nKK\\nفرع شبرا\\nر\\n01550088990\",\n  \"missing_fields\": [\n    \"purchase_date\",\n    \"currency_symbol\",\n    \"merchant_name\",\n    \"receipt_number\"\n  ],\n  \"uncertain_fields\": [\n    \"purchase_date\",\n    \"merchant_name\",\n    \"receipt_number\"\n  ],\n  \"validation_warnings\": [\n    \"Purchase date not found; only time is present\",\n    \"Merchant name not explicitly stated; merchant_id is null\",\n    \"Receipt number appears as '01550088990' but may be part of other data\",\n    \"Line item quantities and prices are aligned but may not correspond correctly due to OCR layout issues\",\n    \"Currency is listed as 'Cash' which is ambiguous as a currency name\"\n  ]\n}",
+        "status": "invalid_json_or_schema",
+        "token_details": {
+          "prompt_tokens": 2758,
+          "completion_tokens": 570,
+          "total_tokens": 3328,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          },
+          "served_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "served_provider": "Nvidia"
+        },
+        "latency_seconds": 4.7284967919113114,
+        "validation_error": "ValidationError",
+        "validation_diagnostics": [
+          {
+            "loc": [
+              "discount"
+            ],
+            "type": "value_error"
+          }
+        ]
+      },
+      {
+        "attempt": 2,
+        "kind": "repair",
+        "input_tokens": 3433,
+        "output_tokens": 567,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"01550088990\",\n  \"purchase_date\": null,\n  \"purchase_time\": \"AM 07:23:03\",\n  \"currency\": \"Cash\",\n  \"subtotal\": \"100.00\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"154.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"Dukkan chocolate\",\n      \"quantity\": \"3\",\n      \"unit_price\": \"100.00\",\n      \"line_total\": \"100.00\"\n    },\n    {\n      \"raw_description\": \"بريك وابت بندق ولوز\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"27.00\",\n      \"line_total\": \"54.00\"\n    },\n    {\n      \"raw_description\": \"وزبيب\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"77.00\",\n      \"line_total\": \"154.00\"\n    }\n  ],\n  \"raw_text\": \"Dukkan chocolate\\n(1220)\\nفاتورة رقم \\nكاشير  المدير\\nCash\\nالوقت\\nAM 07:23:03\\n3\\nعدد الأصناف\\nالاحمالي\\nالسعر\\nالعد\\nI\\n100.00\\n100.00\\nعرض ال٥\\n–\\nبريك وابت بندق ولوز\\nIn\\n54.00\\n27.00\\nوزبيب\\n2\\n154.00\\nOBT\\nIF\\nKK\\nفرع شبرا\\nر\\n01550088990\",\n  \"missing_fields\": [\n    \"purchase_date\",\n    \"currency_symbol\",\n    \"merchant_name\",\n    \"receipt_number\"\n  ],\n  \"uncertain_fields\": [\n    \"purchase_date\",\n    \"merchant_name\",\n    \"receipt_number\"\n  ],\n  \"validation_warnings\": [\n    \"Purchase date not found; only time is present\",\n    \"Merchant name not explicitly stated; merchant_id is null\",\n    \"Receipt number appears as '01550088990' but may be part of other data\",\n    \"Line item quantities and prices are aligned but may not correspond correctly due to OCR layout issues\",\n    \"Currency is listed as 'Cash' which is ambiguous as a currency name\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 3433,
+          "completion_tokens": 567,
+          "total_tokens": 4000,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 2688,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          },
+          "served_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "served_provider": "Nvidia"
+        },
+        "latency_seconds": 4.477765833027661
+      }
+    ],
+    "json_valid": false,
+    "repairs": 1,
+    "input_tokens": 6191,
+    "output_tokens": 1137,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 9.206262624938972,
+    "latency_seconds": 9.206262624938972,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle",
+    "reported_cost_usd": 0,
+    "price_scope": "free quota trial; not a production price guarantee"
+  },
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 1,
+    "field_accuracy": 0.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "merchant_name"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 1.0,
+    "hallucination_rate": null,
+    "missing_denominator": 1,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_time",
+      "currency",
+      "subtotal",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 9.23477441596333
+}

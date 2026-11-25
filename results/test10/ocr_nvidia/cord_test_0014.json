@@ -1,0 +1,191 @@
+{
+  "id": "cord_test_0014",
+  "dataset": "CORD-v2",
+  "language": "Indonesian / Latin script / mixed English",
+  "provider": "ocr_nvidia",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/cord_test_0014.json"
+  },
+  "experiment": {
+    "image_sha256": "ea8f1c932350e1e2d5182a9dad4ed0fdadf2fe4d88703ee1d4ce20ecf9933067",
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:37:33.081769+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "17850",
+    "discount": null,
+    "tax": null,
+    "total": "100000",
+    "line_items": [
+      {
+        "raw_description": "1 RedVelvetCheese Slc",
+        "quantity": "1",
+        "unit_price": "38.55",
+        "line_total": "38.55"
+      },
+      {
+        "raw_description": "1 Chicken Baked Rice",
+        "quantity": "1",
+        "unit_price": "65000",
+        "line_total": "65000"
+      },
+      {
+        "raw_description": "Fish n Chips",
+        "quantity": "2",
+        "unit_price": "35000",
+        "line_total": "35000"
+      },
+      {
+        "raw_description": "Mushroom Soup",
+        "quantity": "25",
+        "unit_price": "0",
+        "line_total": "0"
+      },
+      {
+        "raw_description": "Chamomile",
+        "quantity": null,
+        "unit_price": "20000",
+        "line_total": "20000"
+      },
+      {
+        "raw_description": "1 Iced Tea",
+        "quantity": "1",
+        "unit_price": "238000",
+        "line_total": "238000"
+      }
+    ],
+    "raw_text": "1 RedVelvetCheese Slc\n,000\n38.\n55\n1 Chicken Baked Rice\n000\n3\n65,000\nFish n Chips\n2\n35,000\nMushroom Soup\n25,,00\nChamomile\n20, 000\n1 Iced Tea\n238,000\nSUBTOTAL\n17,850\nService\n25,585\nPB1\nin upne 2\n281-435\nTOTAL\n100,000\nCoupon\nCASH\n200, 000\n,55\n18\nChange\n\nIto t  2  b  o \n2  3  ",
+    "missing_fields": [
+      "Purchase Date",
+      "Purchase Time",
+      "Currency",
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [
+      "Quantity for RedVelvetCheese Slc",
+      "Quantity for Chicken Baked Rice",
+      "Quantity for Chamomile",
+      "Unit Price for Mushroom Soup"
+    ],
+    "validation_warnings": [
+      "Line item quantities and unit prices are highly uncertain due to OCR noise.",
+      "line_items[2]: quantity × unit_price differs from line_total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 3047,
+        "output_tokens": 761,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"17,850\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"100,000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"1 RedVelvetCheese Slc\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"38.55\",\n      \"line_total\": \"38.55\"\n    },\n    {\n      \"raw_description\": \"1 Chicken Baked Rice\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"65,000\",\n      \"line_total\": \"65,000\"\n    },\n    {\n      \"raw_description\": \"Fish n Chips\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"35,000\",\n      \"line_total\": \"35,000\"\n    },\n    {\n      \"raw_description\": \"Mushroom Soup\",\n      \"quantity\": \"25\",\n      \"unit_price\": \"00\",\n      \"line_total\": \"00\"\n    },\n    {\n      \"raw_description\": \"Chamomile\",\n      \"quantity\": null,\n      \"unit_price\": \"20, 000\",\n      \"line_total\": \"20, 000\"\n    },\n    {\n      \"raw_description\": \"1 Iced Tea\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"238,000\",\n      \"line_total\": \"238,000\"\n    }\n  ],\n  \"raw_text\": \"1 RedVelvetCheese Slc\\n,000\\n38.\\n55\\n1 Chicken Baked Rice\\n000\\n3\\n65,000\\nFish n Chips\\n2\\n35,000\\nMushroom Soup\\n25,,00\\nChamomile\\n20, 000\\n1 Iced Tea\\n238,000\\nSUBTOTAL\\n17,850\\nService\\n25,585\\nPB1\\nin upne 2\\n281-435\\nTOTAL\\n100,000\\nCoupon\\nCASH\\n200, 000\\n,55\\n18\\nChange\\n\\nIto t  2  b  o \\n2  3  \",\n  \"missing_fields\": [\n    \"Purchase Date\",\n    \"Purchase Time\",\n    \"Currency\"\n  ],\n  \"uncertain_fields\": [\n    \"Quantity for RedVelvetCheese Slc\",\n    \"Quantity for Chicken Baked Rice\",\n    \"Quantity for Chamomile\",\n    \"Unit Price for Mushroom Soup\"\n  ],\n  \"validation_warnings\": [\n    \"Line item quantities and unit prices are highly uncertain due to OCR noise.\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 3047,
+          "completion_tokens": 761,
+          "total_tokens": 3808,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 8.683941541006789
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 3047,
+    "output_tokens": 761,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 8.683941541006789,
+    "latency_seconds": 8.683941541006789,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle"
+  },
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 3,
+    "field_accuracy": 0.0,
+    "fields": {
+      "subtotal": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "tax": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "tax"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 0.3333333333333333,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": 0.9605144297057006,
+    "line_items": {
+      "matched": 0,
+      "predicted": 6,
+      "expected": 6,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 3,
+        "total": 6,
+        "accuracy": 0.5
+      },
+      "quantity": {
+        "correct": 3,
+        "total": 6,
+        "accuracy": 0.5
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 6,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "status": "ok",
+  "wall_seconds": 9.419280375004746
+}

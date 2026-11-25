@@ -1,0 +1,101 @@
+{
+  "id": "cord_validation_0071",
+  "dataset": "CORD-v2",
+  "language": "Indonesian / Latin script / mixed English",
+  "provider": "ocr_ollama",
+  "split": "development",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/cord_validation_0071.json"
+  },
+  "experiment": {
+    "image_sha256": "38870cde5030bd0b4cf5f1485bc39ce4632b3f10f70369d4063a3a13c6640917",
+    "provider": "ocr_ollama",
+    "model": "gemma4:31b",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552"
+  },
+  "status": "error",
+  "error": "Hosted text inference failed",
+  "metadata": {
+    "provider": "ocr_ollama",
+    "model": "gemma4:31b",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usage_reported": false,
+        "raw_response": "",
+        "status": "error",
+        "error": "Provider returned HTTP 402",
+        "latency_seconds": 0.8297875829739496
+      }
+    ],
+    "json_valid": false,
+    "repairs": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "thinking_tokens": 0,
+    "usage_complete": false,
+    "api_latency_seconds": 0.8297875829739496,
+    "latency_seconds": 0.8297875829739496
+  },
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 2,
+    "field_accuracy": 0.0,
+    "fields": {
+      "subtotal": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "subtotal",
+      "total"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 1.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": 0.0,
+    "line_items": {
+      "matched": 0,
+      "predicted": 0,
+      "expected": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      },
+      "quantity": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "wall_seconds": 0.8549324170453474
+}

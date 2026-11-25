@@ -1,0 +1,28 @@
+{
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "architecture": "arm64",
+  "python": "3.12.13",
+  "cpu_model": "Apple M1 Pro",
+  "physical_cores": 10,
+  "logical_cores": 10,
+  "ram_bytes": 17179869184,
+  "gpu": "Apple M1 Pro 16-core Metal (not CUDA)",
+  "docker": "installed; daemon not running",
+  "tesseract": "5.5.2 installed eng; ara tessdata_fast downloaded locally",
+  "credential_access": {
+    "ollama": 200,
+    "nvidia": 200,
+    "gemini": 200
+  },
+  "previous_project_reuse": {
+    "path": "/Users/anasahmed/WorkProjects/extraction",
+    "reviewed": [
+      "schema.json",
+      "extractor.py",
+      "requirements.txt"
+    ],
+    "finding": "invoice schema lacks receipt line items; implemented separate receipt schema; reused credential integration pattern only",
+    "modified": false
+  },
+  "python_environment": "isolated native arm64 Python3.12.13"
+}

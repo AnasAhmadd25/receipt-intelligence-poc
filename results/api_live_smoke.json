@@ -1,0 +1,129 @@
+{
+  "route": "POST /v1/extract",
+  "default_provider": "ocr_nvidia",
+  "sample_id": "ara_0077",
+  "status_code": 200,
+  "wall_seconds": 19.13820416701492,
+  "body": {
+    "receipt": {
+      "schema_version": "1.0",
+      "merchant_name": "مكتبة النهضة العربية",
+      "receipt_number": "x3665",
+      "purchase_date": "2022-11-12",
+      "purchase_time": "03:55:02",
+      "currency": "ج٠م",
+      "subtotal": "30.000",
+      "discount": null,
+      "tax": null,
+      "total": "30.000",
+      "line_items": [
+        {
+          "raw_description": "١٤و جرطوسه دحان",
+          "quantity": "30",
+          "unit_price": "30",
+          "line_total": "30.000"
+        }
+      ],
+      "raw_text": "مكتبة النهضة العربية\nمبيعات\nx3665\nاريج12/11/202\nالوف\n1-نعدا\nنعدا\n فرع السرق\nالكاسير\nاسم الصنف\nالكمية الوحدذ السعر احمالى\n١٤و  جرطوسه دحان\nقطعه\n30\n30\n1\nأ حرام لو\nالاجمالي\n30.000\nج٠م\nالمدفوع\n30.000\nج ٠م\nالباقي\n0.00\nج،م\nنلانوب جنيه مصري فعط لا عبر\nالرصيد ٥٥٥٥\nفرع سوهاج السرف ش المزعه المردذومة حصم\nك٥٥١ علي الملخصاب\n4597005-093/\nفرع عربه النجع سارع احمد ماهر\n01026649821-01124230420\nععوا لا مرنحع ولا اسبدال بهائيا لادوات العبايه\nبالجسم والبسره\nولاسحدماب السحصيه الكماماب والوافى\nواله الحاسبة ولالعاب\n2022\n03:55:02p\nServerSoft - 010687889\n",
+      "missing_fields": [
+        "unit_price_for_line_item",
+        "discount",
+        "tax"
+      ],
+      "uncertain_fields": [
+        "purchase_date_year_ambiguity"
+      ],
+      "validation_warnings": [
+        "The quantity '30' and unit price '30' for the first line item seem to be interpreted as separate values based on layout, but the structure suggests a single item with a total of 30.000.",
+        "line_items[0]: quantity × unit_price differs from line_total"
+      ]
+    },
+    "metadata": {
+      "provider": "ocr_nvidia",
+      "model": "nvidia/nemotron-3.5-bolt-e4b",
+      "attempts": [
+        {
+          "attempt": 1,
+          "kind": "initial",
+          "input_tokens": 3549,
+          "output_tokens": 672,
+          "thinking_tokens": 0,
+          "usage_reported": true,
+          "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"مكتبة النهضة العربية\",\n  \"receipt_number\": \"x3665\",\n  \"purchase_date\": \"2022-11-12\",\n  \"purchase_time\": \"03:55:02\",\n  \"currency\": \"ج٠م\",\n  \"subtotal\": \"30.000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"30.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"١٤و جرطوسه دحان\",\n      \"quantity\": \"30\",\n      \"unit_price\": \"30\",\n      \"line_total\": \"30.000\"\n    }\n  ],\n  \"raw_text\": \"مكتبة النهضة العربية\\nمبيعات\\nx3665\\nاريج12/11/202\\nالوف\\n1-نعدا\\nنعدا\\n فرع السرق\\nالكاسير\\nاسم الصنف\\nالكمية الوحدذ السعر احمالى\\n١٤و  جرطوسه دحان\\nقطعه\\n30\\n30\\n1\\nأ حرام لو\\nالاجمالي\\n30.000\\nج٠م\\nالمدفوع\\n30.000\\nج ٠م\\nالباقي\\n0.00\\nج،م\\nنلانوب جنيه مصري فعط لا عبر\\nالرصيد ٥٥٥٥\\nفرع سوهاج السرف ش المزعه المردذومة حصم\\nك٥٥١ علي الملخصاب\\n4597005-093/\\nفرع عربه النجع سارع احمد ماهر\\n01026649821-01124230420\\nععوا لا مرنحع ولا اسبدال بهائيا لادوات العبايه\\nبالجسم والبسره\\nولاسحدماب السحصيه الكماماب والوافى\\nواله الحاسبة ولالعاب\\n2022\\n03:55:02p\\nServerSoft - 010687889\\n\",\n  \"missing_fields\": [\n    \"unit_price_for_line_item\"\n  ],\n  \"uncertain_fields\": [\n    \"purchase_date_year_ambiguity\"\n  ],\n  \"validation_warnings\": [\n    \"The quantity '30' and unit price '30' for the first line item seem to be interpreted as separate values based on layout, but the structure suggests a single item with a total of 30.000.\"\n  ]\n}",
+          "status": "ok",
+          "token_details": {
+            "prompt_tokens": 3549,
+            "completion_tokens": 672,
+            "total_tokens": 4221,
+            "prompt_tokens_details": {
+              "cached_tokens": 3520
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0
+            }
+          },
+          "latency_seconds": 8.403358583920635
+        }
+      ],
+      "json_valid": true,
+      "repairs": 0,
+      "input_tokens": 3549,
+      "output_tokens": 672,
+      "thinking_tokens": 0,
+      "usage_complete": true,
+      "api_latency_seconds": 8.403358583920635,
+      "latency_seconds": 8.403358583920635,
+      "template_revision": "text-repair-2",
+      "ocr_engine": "paddle"
+    }
+  },
+  "profile": {
+    "wall_seconds": 19.16562999994494,
+    "cpu_core_seconds": 10.482323999999998,
+    "average_cpu_percent": 54.693344283647924,
+    "peak_cpu_percent": 135.25490093213338,
+    "baseline_ram_mib": 54.984375,
+    "peak_ram_mib": 1508.28125,
+    "incremental_ram_mib": 1453.296875,
+    "sample_interval_seconds": 0.05,
+    "scope": "local process tree, includes provider waiting; CPU 100%=one core",
+    "peak_cpu_caveat": "50ms live process-tree samples may miss short-lived children; average/core-seconds use OS waited-child accounting",
+    "logical_cores": 10,
+    "physical_cores": 10,
+    "system_ram_bytes": 17179869184,
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 2,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "text": "SMINEMT (L)\n24,000\nDUCONUT JELLY (L)\n4,000\nSUB TOTAI\n28,000\nTOTAL SALES\n28,000\nTOTAL ITEMS\n-\n100,000\nCASH\n72,000\nCHANGE\nQueue No: 102",
+  "lines": [
+    {
+      "text": "SMINEMT (L)",
+      "bbox": [
+        218,
+        645,
+        418,
+        673
+      ],
+      "confidence": 95.35967111587524
+    },
+    {
+      "text": "24,000",
+      "bbox": [
+        669,
+        647,
+        746,
+        680
+      ],
+      "confidence": 97.91300892829895
+    },
+    {
+      "text": "DUCONUT JELLY (L)",
+      "bbox": [
+        211,
+        681,
+        439,
+        709
+      ],
+      "confidence": 91.78792238235474
+    },
+    {
+      "text": "4,000",
+      "bbox": [
+        682,
+        684,
+        748,
+        718
+      ],
+      "confidence": 89.67401385307312
+    },
+    {
+      "text": "SUB TOTAI",
+      "bbox": [
+        103,
+        754,
+        216,
+        793
+      ],
+      "confidence": 94.54307556152344
+    },
+    {
+      "text": "28,000",
+      "bbox": [
+        679,
+        759,
+        754,
+        794
+      ],
+      "confidence": 96.97008728981018
+    },
+    {
+      "text": "TOTAL SALES",
+      "bbox": [
+        101,
+        837,
+        248,
+        878
+      ],
+      "confidence": 94.15407180786133
+    },
+    {
+      "text": "28,000",
+      "bbox": [
+        684,
+        837,
+        761,
+        872
+      ],
+      "confidence": 95.65755724906921
+    },
+    {
+      "text": "TOTAL ITEMS",
+      "bbox": [
+        99,
+        882,
+        247,
+        921
+      ],
+      "confidence": 88.97050619125366
+    },
+    {
+      "text": "-",
+      "bbox": [
+        749,
+        885,
+        763,
+        906
+      ],
+      "confidence": 92.32302904129028
+    },
+    {
+      "text": "100,000",
+      "bbox": [
+        681,
+        918,
+        769,
+        955
+      ],
+      "confidence": 97.66054153442383
+    },
+    {
+      "text": "CASH",
+      "bbox": [
+        97,
+        927,
+        157,
+        963
+      ],
+      "confidence": 99.95892643928528
+    },
+    {
+      "text": "72,000",
+      "bbox": [
+        693,
+        957,
+        773,
+        998
+      ],
+      "confidence": 98.6576795578003
+    },
+    {
+      "text": "CHANGE",
+      "bbox": [
+        98,
+        970,
+        176,
+        1004
+      ],
+      "confidence": 99.88120198249817
+    },
+    {
+      "text": "Queue No: 102",
+      "bbox": [
+        379,
+        1005,
+        552,
+        1059
+      ],
+      "confidence": 89.70549702644348
+    }
+  ],
+  "engine": "paddle",
+  "model": "en_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det",
+  "initialization_seconds": 0.0,
+  "latency_seconds": 2.1355548329884186,
+  "language_hint": "en",
+  "image_size": [
+    864,
+    1296
+  ],
+  "profile": {
+    "wall_seconds": 2.1502165000420064,
+    "cpu_core_seconds": 2.191414999999992,
+    "average_cpu_percent": 101.91601636194221,
+    "peak_cpu_percent": 105.16062307828678,
+    "baseline_ram_mib": 3682.5,
+    "peak_ram_mib": 3685.078125,
+    "incremental_ram_mib": 2.578125,
+    "sample_interval_seconds": 0.05,
+    "scope": "local process tree, includes provider waiting; CPU 100%=one core",
+    "peak_cpu_caveat": "50ms live process-tree samples may miss short-lived children; average/core-seconds use OS waited-child accounting",
+    "logical_cores": 10,
+    "physical_cores": 10,
+    "system_ram_bytes": 17179869184,
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "image_sha256": "bcf0c175181bfc6b2352ab8f452704b8f18e27fa51f2278bc5c41f6765179edb",
+  "config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552"
+}

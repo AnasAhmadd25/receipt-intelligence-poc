@@ -1,0 +1,186 @@
+{
+  "id": "cord_validation_0054",
+  "language": "Indonesian / Latin script / mixed English",
+  "ocr": {
+    "text": "4003-Blueberry Fuji\n40.000\n40.000\nx1\n6001-Plastic Bag Small\n0\nx1\nTotal Item:\nON\nTotal.\n40.000\nCash\nTendered:\n50.000\nChange:\n10,000",
+    "lines": [
+      {
+        "text": "4003-Blueberry Fuji",
+        "bbox": [
+          72,
+          455,
+          256,
+          483
+        ],
+        "confidence": 99.41022992134094
+      },
+      {
+        "text": "40.000",
+        "bbox": [
+          374,
+          481,
+          443,
+          512
+        ],
+        "confidence": 99.77693557739258
+      },
+      {
+        "text": "40.000",
+        "bbox": [
+          167,
+          483,
+          231,
+          505
+        ],
+        "confidence": 99.72825050354004
+      },
+      {
+        "text": "x1",
+        "bbox": [
+          258,
+          486,
+          284,
+          507
+        ],
+        "confidence": 95.13350129127502
+      },
+      {
+        "text": "6001-Plastic Bag Small",
+        "bbox": [
+          72,
+          507,
+          283,
+          534
+        ],
+        "confidence": 99.43333268165588
+      },
+      {
+        "text": "0",
+        "bbox": [
+          210,
+          536,
+          230,
+          556
+        ],
+        "confidence": 24.370160698890686
+      },
+      {
+        "text": "x1",
+        "bbox": [
+          242,
+          538,
+          283,
+          560
+        ],
+        "confidence": 95.0914978981018
+      },
+      {
+        "text": "Total Item:",
+        "bbox": [
+          68,
+          583,
+          177,
+          611
+        ],
+        "confidence": 99.3644118309021
+      },
+      {
+        "text": "ON",
+        "bbox": [
+          271,
+          592,
+          282,
+          610
+        ],
+        "confidence": 36.5742027759552
+      },
+      {
+        "text": "Total.",
+        "bbox": [
+          67,
+          637,
+          126,
+          663
+        ],
+        "confidence": 99.93969798088074
+      },
+      {
+        "text": "40.000",
+        "bbox": [
+          358,
+          647,
+          422,
+          673
+        ],
+        "confidence": 96.57842516899109
+      },
+      {
+        "text": "Cash",
+        "bbox": [
+          62,
+          660,
+          113,
+          692
+        ],
+        "confidence": 99.96581673622131
+      },
+      {
+        "text": "Tendered:",
+        "bbox": [
+          63,
+          688,
+          154,
+          718
+        ],
+        "confidence": 99.9542236328125
+      },
+      {
+        "text": "50.000",
+        "bbox": [
+          393,
+          690,
+          458,
+          724
+        ],
+        "confidence": 98.80954623222351
+      },
+      {
+        "text": "Change:",
+        "bbox": [
+          60,
+          715,
+          137,
+          746
+        ],
+        "confidence": 99.775630235672
+      },
+      {
+        "text": "10,000",
+        "bbox": [
+          393,
+          715,
+          458,
+          750
+        ],
+        "confidence": 91.98959469795227
+      }
+    ],
+    "engine": "paddle",
+    "model": "en_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det",
+    "initialization_seconds": 0.0,
+    "latency_seconds": 26.14318104099948,
+    "language_hint": "en",
+    "image_size": [
+      576,
+      864
+    ]
+  },
+  "metrics": {
+    "annotated_token_recall": 0.9285714285714286,
+    "annotated_numeric_token_recall": 0.75,
+    "full_ocr_cer": null,
+    "coverage_note": "Partial transcription; token recall only, not full OCR accuracy"
+  },
+  "latency_seconds": 26.14395666704513,
+  "status": "ok"
+}

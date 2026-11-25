@@ -1,0 +1,129 @@
+{
+  "id": "ara_0100",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "gemini",
+  "split": "development",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "df2e461b1aa180348962b940656349bf17382ecbf084e4f16a5b7163b2b0dfcf",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T00:40:16.194282+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "Dukkan chocolate",
+    "receipt_number": "1220",
+    "purchase_date": "2022-09-11",
+    "purchase_time": "07:23:03",
+    "currency": "جنيه",
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "total": "154.00",
+    "line_items": [
+      {
+        "raw_description": "عرض ال100",
+        "quantity": "1",
+        "unit_price": "100.00",
+        "line_total": "100.00"
+      },
+      {
+        "raw_description": "بريك وايت بندق ولوز وزبيب",
+        "quantity": "2",
+        "unit_price": "27.00",
+        "line_total": "54.00"
+      }
+    ],
+    "raw_text": "Dukkan chocolate ( 1220 ) فاتورة رقم 1220 كاشير : المدير الوقت : 11/09/2022 07:23:03 AM Cash عدد الأصناف : 3 الصنف العدد السعر الإجمالي عرض ال100 1 100.00 100.00 بريك وايت بندق ولوز وزبيب 2 27.00 54.00 الإجمالي : 154.00 جنية فرع شبرا 01550088990",
+    "missing_fields": [
+      "subtotal",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"Dukkan chocolate\",\n  \"receipt_number\": \"1220\",\n  \"purchase_date\": \"2022-09-11\",\n  \"purchase_time\": \"07:23:03\",\n  \"currency\": \"جنيه\",\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"154.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"عرض ال100\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"100.00\",\n      \"line_total\": \"100.00\"\n    },\n    {\n      \"raw_description\": \"بريك وايت بندق ولوز وزبيب\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"27.00\",\n      \"line_total\": \"54.00\"\n    }\n  ],\n  \"raw_text\": \"Dukkan chocolate ( 1220 ) فاتورة رقم 1220 كاشير : المدير الوقت : 11/09/2022 07:23:03 AM Cash عدد الأصناف : 3 الصنف العدد السعر الإجمالي عرض ال100 1 100.00 100.00 بريك وايت بندق ولوز وزبيب 2 27.00 54.00 الإجمالي : 154.00 جنية فرع شبرا 01550088990\",\n  \"missing_fields\": [\n    \"subtotal\",\n    \"discount\",\n    \"tax\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1218,
+        "output_tokens": 435,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 435,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 435,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1218,
+          "prompt_tokens_details": [
+            {
+              "modality": "IMAGE",
+              "token_count": 1064
+            },
+            {
+              "modality": "TEXT",
+              "token_count": 154
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1653,
+          "traffic_type": null
+        },
+        "latency_seconds": 4.450838666991331
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1218,
+    "output_tokens": 435,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 4.450838666991331,
+    "latency_seconds": 4.450838666991331
+  },
+  "metrics": {
+    "field_correct": 1,
+    "field_total": 1,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 1,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 4.480083415983245
+}

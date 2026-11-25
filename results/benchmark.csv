@@ -1,0 +1,31 @@
+provider,id,dataset,language,status,model_output_observed,model,field_correct,field_total,field_accuracy,line_f1,api_wall_seconds,json_valid,input_tokens,output_tokens,cost_usd_estimated
+ocr_nvidia,ara_0084,AraReceipt,Arabic / mixed Arabic-English,ok,True,nvidia/nemotron-3.5-bolt-e4b,1,1,1.0,,14.061226167017594,True,4553,1235,
+ocr_nvidia,ara_0018,AraReceipt,Arabic / mixed Arabic-English,ok,True,nvidia/nemotron-3.5-bolt-e4b,0,0,,,25.367465208051726,True,8002,2026,
+ocr_nvidia,ara_0050,AraReceipt,Arabic / mixed Arabic-English,ok,True,nvidia/nemotron-3.5-bolt-e4b,4,5,0.8,,11.769569958909415,False,6418,931,
+ocr_nvidia,ara_0033,AraReceipt,Arabic / mixed Arabic-English,ok,True,nvidia/nemotron-3.5-bolt-e4b,3,3,1.0,,8.493966334033757,True,3805,708,
+ocr_nvidia,ara_0022,AraReceipt,Arabic / mixed Arabic-English,ok,True,nvidia/nemotron-3.5-bolt-e4b,3,4,0.75,,8.602339125005528,True,3473,733,
+ocr_nvidia,ara_0064,AraReceipt,Arabic / mixed Arabic-English,ok,True,nvidia/nemotron-3.5-bolt-e4b,1,3,0.3333333333333333,,6.3106357080396265,True,2620,506,
+ocr_nvidia,cord_test_0014,CORD-v2,Indonesian / Latin script / mixed English,ok,True,nvidia/nemotron-3.5-bolt-e4b,0,3,0.0,0.0,9.419280375004746,True,3047,761,
+ocr_nvidia,cord_test_0027,CORD-v2,Indonesian / Latin script / mixed English,ok,True,nvidia/nemotron-3.5-bolt-e4b,2,3,0.6666666666666666,1.0,4.961131916032173,True,1649,400,
+ocr_nvidia,cord_test_0065,CORD-v2,Indonesian / Latin script / mixed English,ok,True,nvidia/nemotron-3.5-bolt-e4b,0,2,0.0,0.0,4.17889937502332,True,1513,319,
+ocr_nvidia,cord_test_0002,CORD-v2,Indonesian / Latin script / mixed English,ok,True,nvidia/nemotron-3.5-bolt-e4b,2,2,1.0,0.5,5.366308708093129,True,1777,405,
+gemini,ara_0084,AraReceipt,Arabic / mixed Arabic-English,ok,True,gemini-3.5-flash-lite,1,1,1.0,,8.953745791921392,True,1218,906,0.0026304
+gemini,ara_0018,AraReceipt,Arabic / mixed Arabic-English,ok,True,gemini-3.5-flash-lite,0,0,,,7.617205209098756,True,1254,2095,0.0056137
+gemini,ara_0050,AraReceipt,Arabic / mixed Arabic-English,ok,True,gemini-3.5-flash-lite,5,5,1.0,,5.700114958919585,True,1218,396,0.0013554
+gemini,ara_0033,AraReceipt,Arabic / mixed Arabic-English,ok,True,gemini-3.5-flash-lite,2,3,0.6666666666666666,,7.992125625023618,True,1218,594,0.0018504
+gemini,ara_0022,AraReceipt,Arabic / mixed Arabic-English,ok,True,gemini-3.5-flash-lite,3,4,0.75,,7.157886584056541,True,1218,604,0.0018754000000000002
+gemini,ara_0064,AraReceipt,Arabic / mixed Arabic-English,ok,True,gemini-3.5-flash-lite,3,3,1.0,,6.56081512500532,True,1254,391,0.0013537
+gemini,cord_test_0014,CORD-v2,Indonesian / Latin script / mixed English,ok,True,gemini-3.5-flash-lite,3,3,1.0,1.0,4.013359499978833,True,1254,643,0.0019837
+gemini,cord_test_0027,CORD-v2,Indonesian / Latin script / mixed English,ok,True,gemini-3.5-flash-lite,3,3,1.0,1.0,3.060611749999225,True,1234,362,0.0012752
+gemini,cord_test_0065,CORD-v2,Indonesian / Latin script / mixed English,ok,True,gemini-3.5-flash-lite,0,2,0.0,0.0,2.534723166958429,True,1254,279,0.0010737000000000001
+gemini,cord_test_0002,CORD-v2,Indonesian / Latin script / mixed English,ok,True,gemini-3.5-flash-lite,2,2,1.0,1.0,2.3147356250556186,True,1234,349,0.0012427
+modal_hybrid,ara_0084,AraReceipt,Arabic / mixed Arabic-English,ok,True,Qwen/Qwen3-VL-2B-Instruct,1,1,1.0,,75.30909554101527,True,1138,508,
+modal_hybrid,ara_0018,AraReceipt,Arabic / mixed Arabic-English,error,True,Qwen/Qwen3-VL-2B-Instruct,0,0,,,125.52605537499767,False,1132,2048,
+modal_hybrid,ara_0050,AraReceipt,Arabic / mixed Arabic-English,ok,True,Qwen/Qwen3-VL-2B-Instruct,5,5,1.0,,64.79130204208195,True,1138,661,
+modal_hybrid,ara_0033,AraReceipt,Arabic / mixed Arabic-English,ok,True,Qwen/Qwen3-VL-2B-Instruct,2,3,0.6666666666666666,,59.871699916082434,True,1138,525,
+modal_hybrid,ara_0022,AraReceipt,Arabic / mixed Arabic-English,ok,True,Qwen/Qwen3-VL-2B-Instruct,2,4,0.5,,49.27329720801208,True,1138,294,
+modal_hybrid,ara_0064,AraReceipt,Arabic / mixed Arabic-English,ok,True,Qwen/Qwen3-VL-2B-Instruct,3,3,1.0,,54.87716612499207,True,1132,440,
+modal_hybrid,cord_test_0014,CORD-v2,Indonesian / Latin script / mixed English,ok,True,Qwen/Qwen3-VL-2B-Instruct,2,3,0.6666666666666666,1.0,55.63245154195465,True,1132,420,
+modal_hybrid,cord_test_0027,CORD-v2,Indonesian / Latin script / mixed English,ok,True,Qwen/Qwen3-VL-2B-Instruct,3,3,1.0,1.0,46.41083179193083,True,1154,261,
+modal_hybrid,cord_test_0065,CORD-v2,Indonesian / Latin script / mixed English,ok,True,Qwen/Qwen3-VL-2B-Instruct,0,2,0.0,0.0,58.3644031669246,True,1132,170,
+modal_hybrid,cord_test_0002,CORD-v2,Indonesian / Latin script / mixed English,ok,True,Qwen/Qwen3-VL-2B-Instruct,1,2,0.5,1.0,43.21180208295118,True,1154,220,

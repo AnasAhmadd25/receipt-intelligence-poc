@@ -1,0 +1,262 @@
+{
+  "verified_utc_date": "2026-11-25",
+  "currency": "USD",
+  "prices_are_estimates_not_invoices": true,
+  "providers": {
+    "ollama": {
+      "source": "https://ollama.com/pricing",
+      "billing": "Pay-as-you-go per token; subscriptions include usage credits",
+      "models": {
+        "gemma4:31b": {
+          "input_per_million": 0.14,
+          "cached_input_per_million": 0.05,
+          "output_per_million": 0.4
+        },
+        "gpt-oss:20b": {
+          "input_per_million": 0.07,
+          "cached_input_per_million": 0.035,
+          "output_per_million": 0.3
+        }
+      },
+      "subscriptions": {
+        "pro": {
+          "monthly_usd": 20,
+          "included_monthly_usage_credit_usd": 60
+        },
+        "max": {
+          "monthly_usd": 100,
+          "included_monthly_usage_credit_usd": 300
+        }
+      },
+      "note": "Do not add the monthly subscription fee to every receipt; credits and cash billing differ. Actual balance/invoice not queried."
+    },
+    "gemini": {
+      "source": "https://aistudio.google.com/docs/pricing",
+      "tier": "standard paid rates; free tier cash charges may be zero",
+      "models": {
+        "gemini-3.5-flash-lite": {
+          "input_per_million": 0.3,
+          "output_per_million": 2.5,
+          "thinking_billed_as_output": true
+        },
+        "gemini-3.1-flash-lite": {
+          "input_per_million": 0.25,
+          "output_per_million": 1.5,
+          "thinking_billed_as_output": true
+        }
+      }
+    },
+    "nvidia": {
+      "source": "https://build.nvidia.com/",
+      "input_per_million": null,
+      "output_per_million": null,
+      "note": "Developer API access may be promotional/credit-based. No defensible commercial token rate found; do not substitute $0 production cost."
+    }
+  },
+  "modal": {
+    "source": "https://modal.com/pricing",
+    "T4_per_second": 0.000164,
+    "L4_per_second": 0.000222,
+    "cpu_physical_core_per_second": 1.31e-05,
+    "memory_gib_per_second": 2.22e-06,
+    "volume_gib_month": 0.09,
+    "volume_free_gib_month": 1024,
+    "egress_gib": 0.04,
+    "cpu_core_vcpu_equivalence": 2,
+    "notes": [
+      "Allocated CPU reservation can affect billing; container code caps CPU min=max for reproducibility.",
+      "GPU and memory billed for full container lifecycle, including model initialization and terminal idle. CPU activity/reservation is accounted separately.",
+      "Observed process uptime is not an invoice and misses platform scheduling before Python initializes.",
+      "Broad US selection costs 1.15x base rates; narrow us-east would cost 1.75x. Credits reduce cash charges but not economic resource cost."
+    ],
+    "region_selection": "us",
+    "region_multiplier": 1.15,
+    "starter_included_compute_monthly_usd": 30
+  },
+  "cloud_servers": [
+    {
+      "provider": "DigitalOcean",
+      "plan": "Basic Regular",
+      "vcpu": 1,
+      "ram_gib": 2,
+      "monthly": 12,
+      "currency": "USD",
+      "source": "https://www.digitalocean.com/pricing/droplets",
+      "gpu": false
+    },
+    {
+      "provider": "DigitalOcean",
+      "plan": "Basic Regular",
+      "vcpu": 2,
+      "ram_gib": 4,
+      "monthly": 24,
+      "currency": "USD",
+      "source": "https://www.digitalocean.com/pricing/droplets",
+      "gpu": false
+    },
+    {
+      "provider": "DigitalOcean",
+      "plan": "Basic Regular",
+      "vcpu": 4,
+      "ram_gib": 8,
+      "monthly": 48,
+      "currency": "USD",
+      "source": "https://www.digitalocean.com/pricing/droplets",
+      "gpu": false
+    },
+    {
+      "provider": "DigitalOcean",
+      "plan": "Basic Regular",
+      "vcpu": 8,
+      "ram_gib": 16,
+      "monthly": 96,
+      "currency": "USD",
+      "source": "https://www.digitalocean.com/pricing/droplets",
+      "gpu": false
+    },
+    {
+      "provider": "Hetzner",
+      "plan": "CPX12",
+      "vcpu": 1,
+      "ram_gib": 2,
+      "monthly": 9.99,
+      "currency": "EUR",
+      "source": "https://www.hetzner.com/cloud/regular-performance/",
+      "gpu": false,
+      "currently_unavailable": false,
+      "price_scope": "First EU-central location; public IPv4 included; VAT excluded; official HTML visually-hidden price metadata. Region inventory must be checked at order time."
+    },
+    {
+      "provider": "Hetzner",
+      "plan": "CPX22",
+      "vcpu": 2,
+      "ram_gib": 4,
+      "monthly": 16.99,
+      "currency": "EUR",
+      "source": "https://www.hetzner.com/cloud/regular-performance/",
+      "gpu": false,
+      "currently_unavailable": false,
+      "price_scope": "First EU-central location; public IPv4 included; VAT excluded; official HTML visually-hidden price metadata. Region inventory must be checked at order time."
+    },
+    {
+      "provider": "Hetzner",
+      "plan": "CPX32",
+      "vcpu": 4,
+      "ram_gib": 8,
+      "monthly": 30.49,
+      "currency": "EUR",
+      "source": "https://www.hetzner.com/cloud/regular-performance/",
+      "gpu": false,
+      "currently_unavailable": false,
+      "price_scope": "First EU-central location; public IPv4 included; VAT excluded; official HTML visually-hidden price metadata. Region inventory must be checked at order time."
+    },
+    {
+      "provider": "Hetzner",
+      "plan": "CPX42",
+      "vcpu": 8,
+      "ram_gib": 16,
+      "monthly": 59.49,
+      "currency": "EUR",
+      "source": "https://www.hetzner.com/cloud/regular-performance/",
+      "gpu": false,
+      "currently_unavailable": false,
+      "price_scope": "First EU-central location; public IPv4 included; VAT excluded; official HTML visually-hidden price metadata. Region inventory must be checked at order time."
+    },
+    {
+      "provider": "Hetzner",
+      "plan": "CX23",
+      "vcpu": 2,
+      "ram_gib": 4,
+      "monthly": 5.99,
+      "currency": "EUR",
+      "source": "https://www.hetzner.com/cloud/cost-optimized/",
+      "gpu": false,
+      "currently_unavailable": true,
+      "price_scope": "First EU-central location; public IPv4 included; VAT excluded; official HTML visually-hidden price metadata. Region inventory must be checked at order time."
+    },
+    {
+      "provider": "Hetzner",
+      "plan": "CX33",
+      "vcpu": 4,
+      "ram_gib": 8,
+      "monthly": 8.99,
+      "currency": "EUR",
+      "source": "https://www.hetzner.com/cloud/cost-optimized/",
+      "gpu": false,
+      "currently_unavailable": true,
+      "price_scope": "First EU-central location; public IPv4 included; VAT excluded; official HTML visually-hidden price metadata. Region inventory must be checked at order time."
+    },
+    {
+      "provider": "Hetzner",
+      "plan": "CX43",
+      "vcpu": 8,
+      "ram_gib": 16,
+      "monthly": 16.49,
+      "currency": "EUR",
+      "source": "https://www.hetzner.com/cloud/cost-optimized/",
+      "gpu": false,
+      "currently_unavailable": true,
+      "price_scope": "First EU-central location; public IPv4 included; VAT excluded; official HTML visually-hidden price metadata. Region inventory must be checked at order time."
+    },
+    {
+      "provider": "AWS Lightsail",
+      "plan": "Linux/Unix public IPv4 General Purpose",
+      "vcpu": 2,
+      "ram_gib": 2,
+      "monthly": 12,
+      "currency": "USD",
+      "source": "https://aws.amazon.com/lightsail/pricing/",
+      "gpu": false,
+      "note": "Lightsail does not offer all requested vCPU/RAM ratios; record actual bundle, not invented 4vCPU/8GB or 8vCPU/16GB."
+    },
+    {
+      "provider": "AWS Lightsail",
+      "plan": "Linux/Unix public IPv4 General Purpose",
+      "vcpu": 2,
+      "ram_gib": 4,
+      "monthly": 24,
+      "currency": "USD",
+      "source": "https://aws.amazon.com/lightsail/pricing/",
+      "gpu": false,
+      "note": "Lightsail does not offer all requested vCPU/RAM ratios; record actual bundle, not invented 4vCPU/8GB or 8vCPU/16GB."
+    },
+    {
+      "provider": "AWS Lightsail",
+      "plan": "Linux/Unix public IPv4 General Purpose",
+      "vcpu": 2,
+      "ram_gib": 8,
+      "monthly": 44,
+      "currency": "USD",
+      "source": "https://aws.amazon.com/lightsail/pricing/",
+      "gpu": false,
+      "note": "Lightsail does not offer all requested vCPU/RAM ratios; record actual bundle, not invented 4vCPU/8GB or 8vCPU/16GB."
+    },
+    {
+      "provider": "AWS Lightsail",
+      "plan": "Linux/Unix public IPv4 General Purpose",
+      "vcpu": 4,
+      "ram_gib": 16,
+      "monthly": 84,
+      "currency": "USD",
+      "source": "https://aws.amazon.com/lightsail/pricing/",
+      "gpu": false,
+      "note": "Lightsail does not offer all requested vCPU/RAM ratios; record actual bundle, not invented 4vCPU/8GB or 8vCPU/16GB."
+    },
+    {
+      "provider": "AWS Lightsail",
+      "plan": "Linux/Unix public IPv4 General Purpose",
+      "vcpu": 8,
+      "ram_gib": 32,
+      "monthly": 164,
+      "currency": "USD",
+      "source": "https://aws.amazon.com/lightsail/pricing/",
+      "gpu": false,
+      "note": "Lightsail does not offer all requested vCPU/RAM ratios; record actual bundle, not invented 4vCPU/8GB or 8vCPU/16GB."
+    }
+  ],
+  "sizing_notes": [
+    "Cloud CPU throughput must be validated on x86 Linux; Apple Silicon measurements are not equivalent.",
+    "Add 25% memory headroom and keep sustained CPU below 75% capacity.",
+    "Monthly CPU machine costs are fixed; cost per 1000 depends on monthly receipt volume."
+  ]
+}

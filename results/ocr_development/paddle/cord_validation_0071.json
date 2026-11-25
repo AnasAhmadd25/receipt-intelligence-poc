@@ -1,0 +1,166 @@
+{
+  "id": "cord_validation_0071",
+  "language": "Indonesian / Latin script / mixed English",
+  "ocr": {
+    "text": "JIA\nAIAM\n1 Dum Dum Thai Coffee\n19.000\nI Ice\n1.000\nSubtotal\n20.000\n20.000\nTOTAL\n50.000\nCash\nChange Due\n30.000",
+    "lines": [
+      {
+        "text": "JIA",
+        "bbox": [
+          500,
+          209,
+          619,
+          256
+        ],
+        "confidence": 46.220096945762634
+      },
+      {
+        "text": "AIAM",
+        "bbox": [
+          405,
+          267,
+          475,
+          308
+        ],
+        "confidence": 98.18263649940491
+      },
+      {
+        "text": "1 Dum Dum Thai Coffee",
+        "bbox": [
+          242,
+          754,
+          566,
+          806
+        ],
+        "confidence": 97.22588062286377
+      },
+      {
+        "text": "19.000",
+        "bbox": [
+          645,
+          759,
+          748,
+          798
+        ],
+        "confidence": 98.68545532226562
+      },
+      {
+        "text": "I Ice",
+        "bbox": [
+          273,
+          801,
+          390,
+          848
+        ],
+        "confidence": 87.27149963378906
+      },
+      {
+        "text": "1.000",
+        "bbox": [
+          658,
+          801,
+          749,
+          842
+        ],
+        "confidence": 99.38821792602539
+      },
+      {
+        "text": "Subtotal",
+        "bbox": [
+          235,
+          880,
+          376,
+          938
+        ],
+        "confidence": 95.7912802696228
+      },
+      {
+        "text": "20.000",
+        "bbox": [
+          641,
+          885,
+          752,
+          928
+        ],
+        "confidence": 88.95160555839539
+      },
+      {
+        "text": "20.000",
+        "bbox": [
+          641,
+          927,
+          754,
+          971
+        ],
+        "confidence": 97.30449318885803
+      },
+      {
+        "text": "TOTAL",
+        "bbox": [
+          237,
+          928,
+          331,
+          980
+        ],
+        "confidence": 99.62579011917114
+      },
+      {
+        "text": "50.000",
+        "bbox": [
+          641,
+          969,
+          757,
+          1019
+        ],
+        "confidence": 97.526615858078
+      },
+      {
+        "text": "Cash",
+        "bbox": [
+          235,
+          972,
+          320,
+          1027
+        ],
+        "confidence": 99.96512532234192
+      },
+      {
+        "text": "Change Due",
+        "bbox": [
+          235,
+          1005,
+          413,
+          1074
+        ],
+        "confidence": 99.53900575637817
+      },
+      {
+        "text": "30.000",
+        "bbox": [
+          641,
+          1013,
+          759,
+          1063
+        ],
+        "confidence": 99.09351468086243
+      }
+    ],
+    "engine": "paddle",
+    "model": "en_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det",
+    "initialization_seconds": 0.2610991670517251,
+    "latency_seconds": 34.646287583047524,
+    "language_hint": "en",
+    "image_size": [
+      960,
+      1280
+    ]
+  },
+  "metrics": {
+    "annotated_token_recall": 0.9583333333333334,
+    "annotated_numeric_token_recall": 0.875,
+    "full_ocr_cer": null,
+    "coverage_note": "Partial transcription; token recall only, not full OCR accuracy"
+  },
+  "latency_seconds": 34.647172459051944,
+  "status": "ok"
+}

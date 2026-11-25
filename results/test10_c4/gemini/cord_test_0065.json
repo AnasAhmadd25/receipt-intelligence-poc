@@ -1,0 +1,154 @@
+{
+  "id": "cord_test_0065",
+  "dataset": "CORD-v2",
+  "language": "Indonesian / Latin script / mixed English",
+  "provider": "gemini",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "23ce4a875e39efa0cf4e0a5da93c3ff04b43c6e09b4f3bb25e22b73c828330f1",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T00:34:24.882475+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "13.000",
+    "discount": null,
+    "tax": null,
+    "total": "13.000",
+    "line_items": [
+      {
+        "raw_description": "Bubur Polos + Telur",
+        "quantity": null,
+        "unit_price": "13.000",
+        "line_total": "13.000"
+      }
+    ],
+    "raw_text": "Subur Polos + Telur 13.000 13.000 Subtotal 13.000 Pajak - Total 13.000",
+    "missing_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"13.000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"13.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"Bubur Polos + Telur\",\n      \"quantity\": null,\n      \"unit_price\": \"13.000\",\n      \"line_total\": \"13.000\"\n    }\n  ],\n  \"raw_text\": \"Subur Polos + Telur 13.000 13.000 Subtotal 13.000 Pajak - Total 13.000\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"receipt_number\",\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1254,
+        "output_tokens": 279,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 279,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 279,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1254,
+          "prompt_tokens_details": [
+            {
+              "modality": "IMAGE",
+              "token_count": 1100
+            },
+            {
+              "modality": "TEXT",
+              "token_count": 154
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1533,
+          "traffic_type": null
+        },
+        "latency_seconds": 2.107497791061178
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1254,
+    "output_tokens": 279,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 2.107497791061178,
+    "latency_seconds": 2.107497791061178
+  },
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 2,
+    "field_accuracy": 0.0,
+    "fields": {
+      "subtotal": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": 1.0,
+    "line_items": {
+      "matched": 0,
+      "predicted": 1,
+      "expected": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "quantity": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "unit_price": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "status": "ok",
+  "wall_seconds": 2.122221583966166
+}

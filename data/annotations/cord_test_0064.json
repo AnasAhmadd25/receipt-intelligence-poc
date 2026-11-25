@@ -1,0 +1,42 @@
+{
+  "receipt": {
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "total": "16000",
+    "line_items": [
+      {
+        "raw_description": "SINGLE SCOOP",
+        "quantity": null,
+        "unit_price": null,
+        "line_total": "16000"
+      }
+    ],
+    "raw_text": "SINGLE SCOOP\n16.000\nTOTAL 16.000\nCATEND 50.000\nCHANGE 34.000",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "annotated_fields": [
+    "total"
+  ],
+  "line_items_supported": true,
+  "item_annotated_fields": [
+    [
+      "raw_description",
+      "line_total"
+    ]
+  ],
+  "ocr_text": "SINGLE SCOOP\n16.000\nTOTAL 16.000\nCATEND 50.000\nCHANGE 34.000",
+  "ocr_text_complete": false,
+  "annotation_notes": [
+    "CORD header fields removed upstream are unknown, including merchant, date, time, receipt number, currency.",
+    "OCR transcription contains valid_line annotations only, not all image text.",
+    "Nested menu.sub annotations are flattened as modifier lines with original grouping retained in original annotation."
+  ]
+}

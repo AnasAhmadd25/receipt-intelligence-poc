@@ -1,0 +1,55 @@
+{
+  "receipt": {
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "20000",
+    "discount": null,
+    "tax": null,
+    "total": "20000",
+    "line_items": [
+      {
+        "raw_description": "Dum Dum Thai Coffee",
+        "quantity": "1",
+        "unit_price": null,
+        "line_total": "19000"
+      },
+      {
+        "raw_description": "Ice",
+        "quantity": "1",
+        "unit_price": null,
+        "line_total": "1000"
+      }
+    ],
+    "raw_text": "Dum Dum Thai Coffee\n1\n19.000\n1\nIce\n1.000\nSubtotal 20.000\nTOTAL 20.000\nCash 50.000\nChange Due 30.000",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "annotated_fields": [
+    "subtotal",
+    "total"
+  ],
+  "line_items_supported": true,
+  "item_annotated_fields": [
+    [
+      "raw_description",
+      "quantity",
+      "line_total"
+    ],
+    [
+      "raw_description",
+      "quantity",
+      "line_total"
+    ]
+  ],
+  "ocr_text": "Dum Dum Thai Coffee\n1\n19.000\n1\nIce\n1.000\nSubtotal 20.000\nTOTAL 20.000\nCash 50.000\nChange Due 30.000",
+  "ocr_text_complete": false,
+  "annotation_notes": [
+    "CORD header fields removed upstream are unknown, including merchant, date, time, receipt number, currency.",
+    "OCR transcription contains valid_line annotations only, not all image text.",
+    "Nested menu.sub annotations are flattened as modifier lines with original grouping retained in original annotation."
+  ]
+}

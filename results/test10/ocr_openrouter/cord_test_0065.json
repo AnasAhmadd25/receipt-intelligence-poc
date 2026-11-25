@@ -1,0 +1,183 @@
+{
+  "id": "cord_test_0065",
+  "dataset": "CORD-v2",
+  "language": "Indonesian / Latin script / mixed English",
+  "provider": "ocr_openrouter",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/cord_test_0065.json"
+  },
+  "experiment": {
+    "image_sha256": "23ce4a875e39efa0cf4e0a5da93c3ff04b43c6e09b4f3bb25e22b73c828330f1",
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:55:58.312665+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "13.000",
+    "discount": null,
+    "tax": null,
+    "total": "13.000",
+    "line_items": [
+      {
+        "raw_description": "ubur Polos + Telur",
+        "quantity": null,
+        "unit_price": "13.000",
+        "line_total": "13.000"
+      }
+    ],
+    "raw_text": "1F\nEOOD\nubur Polos + Telur\n13.000\n13.000\n\nSubtotal\n13.000\najak\n,otal\n13.000",
+    "missing_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "discount",
+      "tax",
+      "total",
+      "line_items",
+      "Subtotal",
+      "ajak",
+      ",otal"
+    ],
+    "uncertain_fields": [
+      "EOOD",
+      "1F",
+      "ubur Polos + Telur",
+      "13.000",
+      "13.000",
+      "13.000",
+      "13.000",
+      "13.000",
+      "13.000"
+    ],
+    "validation_warnings": [
+      "Line item description 'ubur Polos + Telur' has high confidence but no quantity or unit price explicitly observed",
+      "Subtotal and total values match but no clear separation between line items and totals is visible",
+      "Text fragments 'ajak' and ',otal' appear to be OCR errors or partial text with high confidence"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 1519,
+        "output_tokens": 434,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"13.000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"13.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"ubur Polos + Telur\",\n      \"quantity\": null,\n      \"unit_price\": \"13.000\",\n      \"line_total\": \"13.000\"\n    }\n  ],\n  \"raw_text\": \"1F\\nEOOD\\nubur Polos + Telur\\n13.000\\n13.000\\n\\nSubtotal\\n13.000\\najak\\n,otal\\n13.000\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"receipt_number\",\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\",\n    \"discount\",\n    \"tax\",\n    \"total\",\n    \"line_items\",\n    \"Subtotal\",\n    \"ajak\",\n    \",otal\"\n  ],\n  \"uncertain_fields\": [\n    \"EOOD\",\n    \"1F\",\n    \"ubur Polos + Telur\",\n    \"13.000\",\n    \"13.000\",\n    \"13.000\",\n    \"13.000\",\n    \"13.000\",\n    \"13.000\"\n  ],\n  \"validation_warnings\": [\n    \"Line item description 'ubur Polos + Telur' has high confidence but no quantity or unit price explicitly observed\",\n    \"Subtotal and total values match but no clear separation between line items and totals is visible\",\n    \"Text fragments 'ajak' and ',otal' appear to be OCR errors or partial text with high confidence\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 1519,
+          "completion_tokens": 434,
+          "total_tokens": 1953,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          },
+          "served_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "served_provider": "Nvidia"
+        },
+        "latency_seconds": 4.159206041018479
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1519,
+    "output_tokens": 434,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 4.159206041018479,
+    "latency_seconds": 4.159206041018479,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle",
+    "reported_cost_usd": 0,
+    "price_scope": "free quota trial; not a production price guarantee"
+  },
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 2,
+    "field_accuracy": 0.0,
+    "fields": {
+      "subtotal": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": 0.9696969696969697,
+    "line_items": {
+      "matched": 0,
+      "predicted": 1,
+      "expected": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "quantity": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "unit_price": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "status": "ok",
+  "wall_seconds": 4.173518792027608
+}

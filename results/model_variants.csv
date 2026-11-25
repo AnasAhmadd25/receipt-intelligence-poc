@@ -1,0 +1,6 @@
+run,provider,model,attempted,scorable,strict_passes,field_accuracy,line_f1,inference_estimated_usd,cost_per_accepted_usd,mean_latency_seconds
+test10,gemini,gemini-3.5-flash-lite,10,9,6,0.8461538461538461,0.9090909090909091,0.0202543,0.0033757166666666667,5.590532333601732
+test10_gemini31,gemini,gemini-3.1-flash-lite,10,9,5,0.7307692307692307,0.7272727272727273,0.013695,0.002739,4.657470812473912
+test10,ocr_nvidia,nvidia/nemotron-3.5-bolt-e4b,10,9,2,0.6153846153846154,0.2727272727272727,,,19.026383916707708
+test10,ocr_openrouter,nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free,10,9,2,0.6538461538461539,0.0,0.0,0.0,30.930753783299586
+test10,modal_hybrid,Qwen/Qwen3-VL-2B-Instruct,10,9,4,0.7307692307692307,0.9090909090909091,0.14995643476302,0.037489108690755,63.32681047909428

@@ -1,0 +1,163 @@
+{
+  "id": "ara_0022",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "modal_hybrid",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "50854a61901ab3715ee023a07c0e1bc0e569910ac79c47fa7a401b737bb07b49",
+    "provider": "modal_hybrid",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T01:02:15.354443+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "طبي عيسى",
+    "receipt_number": "69",
+    "purchase_date": "22/12/2022",
+    "purchase_time": "1:08:10PM",
+    "currency": "EGP",
+    "subtotal": "254.16",
+    "discount": "0.00",
+    "tax": "5.00",
+    "total": "259.16",
+    "line_items": [
+      {
+        "raw_description": "الإمسح",
+        "quantity": "1",
+        "unit_price": "110.00",
+        "line_total": "110.00"
+      },
+      {
+        "raw_description": "الكريم",
+        "quantity": "2",
+        "unit_price": "68.00",
+        "line_total": "136.00"
+      },
+      {
+        "raw_description": "الكريم",
+        "quantity": "1",
+        "unit_price": "68.00",
+        "line_total": "68.00"
+      }
+    ],
+    "raw_text": "",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "modal_hybrid",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "container_id": "ta-01M8839534TR1DPFZN54A9FHER",
+    "runtime_versions": {
+      "torch": "2.9.1+cu128",
+      "transformers": "5.24.1"
+    },
+    "dtype": "torch.float16",
+    "attention_implementation": "sdpa",
+    "original_image_size": [
+      4224,
+      5632
+    ],
+    "inference_image_size": [
+      866,
+      1154
+    ],
+    "image_pixel_cap": 1000000,
+    "latency_seconds": 45.69904983500004,
+    "cold_first_request": false,
+    "initialization_seconds": 11.172391802,
+    "initialization_resource": {
+      "wall_seconds": 11.16153959,
+      "cpu_core_seconds": 12.69,
+      "cpu_percent_mean": 113.69399264031101,
+      "cpu_percent_peak": 196.8,
+      "baseline_ram_bytes": 61734912,
+      "peak_ram_bytes": 11616468992,
+      "gpu_utilization_percent_mean": 5.75,
+      "gpu_memory_observed_peak_mib": 4166.0
+    },
+    "resource": {
+      "wall_seconds": 45.69904983500004,
+      "cpu_core_seconds": 46.06999999999997,
+      "cpu_percent_mean": 100.81172402126363,
+      "cpu_percent_peak": 119.1,
+      "baseline_ram_bytes": 8176779264,
+      "peak_ram_bytes": 8176795648,
+      "gpu_utilization_percent_mean": 49.51162790697674,
+      "gpu_memory_observed_peak_mib": 4788.0,
+      "gpu_name": "Tesla T4",
+      "gpu_compute_capability": [
+        7,
+        5
+      ],
+      "gpu_peak_allocated_bytes": 4723376128,
+      "gpu_peak_reserved_bytes": 4877975552,
+      "allocated_cpu_physical_cores": 2.0,
+      "allocated_ram_mib": 8192,
+      "allocated_gpu": "T4",
+      "container_uptime_seconds": 370.65396857599995,
+      "region_selection": "us",
+      "region_price_multiplier": 1.15
+    },
+    "input_tokens": 1138,
+    "output_tokens": 294,
+    "fallback_used": false,
+    "json_valid": true,
+    "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle.",
+    "raw_output": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"طبي عيسى\",\n  \"receipt_number\": \"69\",\n  \"purchase_date\": \"22/12/2022\",\n  \"purchase_time\": \"1:08:10PM\",\n  \"currency\": \"EGP\",\n  \"subtotal\": \"254.16\",\n  \"discount\": \"0.00\",\n  \"tax\": \"5.00\",\n  \"total\": \"259.16\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"الإمسح\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"110.00\",\n      \"line_total\": \"110.00\"\n    },\n    {\n      \"raw_description\": \"الكريم\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"68.00\",\n      \"line_total\": \"136.00\"\n    },\n    {\n      \"raw_description\": \"الكريم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"68.00\",\n      \"line_total\": \"68.00\"\n    }\n  ],\n  \"raw_text\": \"\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+    "client_latency_seconds": 49.26523395907134
+  },
+  "raw_output": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"طبي عيسى\",\n  \"receipt_number\": \"69\",\n  \"purchase_date\": \"22/12/2022\",\n  \"purchase_time\": \"1:08:10PM\",\n  \"currency\": \"EGP\",\n  \"subtotal\": \"254.16\",\n  \"discount\": \"0.00\",\n  \"tax\": \"5.00\",\n  \"total\": \"259.16\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"الإمسح\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"110.00\",\n      \"line_total\": \"110.00\"\n    },\n    {\n      \"raw_description\": \"الكريم\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"68.00\",\n      \"line_total\": \"136.00\"\n    },\n    {\n      \"raw_description\": \"الكريم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"68.00\",\n      \"line_total\": \"68.00\"\n    }\n  ],\n  \"raw_text\": \"\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 4,
+    "field_accuracy": 0.5,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 4,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_time",
+      "currency",
+      "subtotal",
+      "discount"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 49.27329720801208
+}

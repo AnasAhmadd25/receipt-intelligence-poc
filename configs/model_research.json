@@ -1,0 +1,61 @@
+{
+  "verified_utc_date": "2026-11-25",
+  "models": [
+    {
+      "id": "zai-org/GLM-OCR",
+      "revision": "2e85a62840ccac27daa451df36c736c4636b8628",
+      "parameters_billions": 0.9,
+      "license": "MIT",
+      "source": "https://huggingface.co/zai-org/GLM-OCR",
+      "arabic_advertised": false,
+      "advertised_languages": [
+        "zh",
+        "en",
+        "fr",
+        "es",
+        "ru",
+        "de",
+        "ja",
+        "ko"
+      ],
+      "direct_json_supported": "Official information extraction prompt template; model validation still necessary",
+      "experiment_status": "4 dev receipts; JSON4/4; scalar1/6; Arabic1/3; Latin0/3; CORD line F1 .25"
+    },
+    {
+      "id": "tencent/HunyuanOCR",
+      "revision": "47644ecc4fc854efa4f505155158831f36773ee4",
+      "version": "1.5 root checkpoint; 1.0 archived under v1.0/",
+      "parameters_billions": 1.0,
+      "license": "Tencent Hunyuan Community License",
+      "source": "https://huggingface.co/tencent/HunyuanOCR",
+      "license_source": "https://huggingface.co/tencent/HunyuanOCR/blob/main/LICENSE",
+      "license_notes": "Territory excludes EU, UK, South Korea; hosted redistribution/provider disclosure and commercial terms apply. Experiment explicitly scheduled us (broad US region, 1.15x base rate).",
+      "arabic_advertised": false,
+      "direct_json_supported": "Information extraction task-specific instruction; Arabic extraction unverified",
+      "experiment_status": "pending"
+    },
+    {
+      "id": "Qwen/Qwen3-VL-2B-Instruct",
+      "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+      "parameters_billions": 2.0,
+      "license": "Apache-2.0",
+      "source": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+      "use_condition": "Only if dedicated OCR candidates fail Arabic/schema dev checks",
+      "experiment_status": "conditional"
+    }
+  ],
+  "hardware": {
+    "T4": {
+      "compute_capability": "7.5",
+      "vram_gib": 16,
+      "dtype": "float16",
+      "attention": "eager; FlashAttention2 unavailable on Turing"
+    },
+    "L4": {
+      "compute_capability": "8.9",
+      "vram_gib": 24,
+      "dtype": "bfloat16 supported; not assumed faster until measured"
+    }
+  },
+  "selection": "pending dev experiments; held-out test never used for selection"
+}

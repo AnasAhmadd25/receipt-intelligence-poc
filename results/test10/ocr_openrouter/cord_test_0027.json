@@ -1,0 +1,205 @@
+{
+  "id": "cord_test_0027",
+  "dataset": "CORD-v2",
+  "language": "Indonesian / Latin script / mixed English",
+  "provider": "ocr_openrouter",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/cord_test_0027.json"
+  },
+  "experiment": {
+    "image_sha256": "35a47a2e754f3a453442e0c53aa98e1b0f672708a931bdfd4a61f020a405b035",
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:55:51.612235+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": "CHARGE5",
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "56000",
+    "discount": null,
+    "tax": "5600",
+    "total": "61600",
+    "line_items": [
+      {
+        "raw_description": "33,000",
+        "quantity": null,
+        "unit_price": "33000",
+        "line_total": "33000"
+      },
+      {
+        "raw_description": "PKT AYAM",
+        "quantity": null,
+        "unit_price": null,
+        "line_total": null
+      },
+      {
+        "raw_description": "23,000",
+        "quantity": null,
+        "unit_price": "23000",
+        "line_total": "23000"
+      },
+      {
+        "raw_description": "GULAI OTAK",
+        "quantity": null,
+        "unit_price": null,
+        "line_total": null
+      },
+      {
+        "raw_description": "2.00 ITEMS",
+        "quantity": "2.00",
+        "unit_price": null,
+        "line_total": null
+      }
+    ],
+    "raw_text": "33,000\nPKT AYAM\n23,000\nGULAI OTAK\n2.00 ITEMS\n56,000\nSUBTOTAL\n5,600\nTAX 10%\n61,600\nTOTAL\n61,600\nCHARGE5",
+    "missing_fields": [
+      "merchant_name",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "discount",
+      "line_items.quantity",
+      "line_items.unit_price",
+      "line_items.line_total"
+    ],
+    "uncertain_fields": [
+      "merchant_name",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "line_items[0].quantity",
+      "line_items[0].unit_price",
+      "line_items[0].line_total",
+      "line_items[2].quantity",
+      "line_items[2].unit_price",
+      "line_items[2].line_total",
+      "line_items[3].quantity",
+      "line_items[3].unit_price",
+      "line_items[3].line_total"
+    ],
+    "validation_warnings": [
+      "Line items lack explicit quantity and unit price for most entries; inferred from raw_description and line_total",
+      "Line item '2.00 ITEMS' has quantity but no unit price or line total",
+      "No explicit currency symbol or name visible in receipt",
+      "Purchase date and time not present in raw text"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 1673,
+        "output_tokens": 653,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"CHARGE5\",\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"56,000\",\n  \"discount\": null,\n  \"tax\": \"5,600\",\n  \"total\": \"61,600\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"33,000\",\n      \"quantity\": null,\n      \"unit_price\": \"33,000\",\n      \"line_total\": \"33,000\"\n    },\n    {\n      \"raw_description\": \"PKT AYAM\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"line_total\": null\n    },\n    {\n      \"raw_description\": \"23,000\",\n      \"quantity\": null,\n      \"unit_price\": \"23,000\",\n      \"line_total\": \"23,000\"\n    },\n    {\n      \"raw_description\": \"GULAI OTAK\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"line_total\": null\n    },\n    {\n      \"raw_description\": \"2.00 ITEMS\",\n      \"quantity\": \"2.00\",\n      \"unit_price\": null,\n      \"line_total\": null\n    }\n  ],\n  \"raw_text\": \"33,000\\nPKT AYAM\\n23,000\\nGULAI OTAK\\n2.00 ITEMS\\n56,000\\nSUBTOTAL\\n5,600\\nTAX 10%\\n61,600\\nTOTAL\\n61,600\\nCHARGE5\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\",\n    \"discount\",\n    \"line_items.quantity\",\n    \"line_items.unit_price\",\n    \"line_items.line_total\"\n  ],\n  \"uncertain_fields\": [\n    \"merchant_name\",\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\",\n    \"line_items[0].quantity\",\n    \"line_items[0].unit_price\",\n    \"line_items[0].line_total\",\n    \"line_items[2].quantity\",\n    \"line_items[2].unit_price\",\n    \"line_items[2].line_total\",\n    \"line_items[3].quantity\",\n    \"line_items[3].unit_price\",\n    \"line_items[3].line_total\"\n  ],\n  \"validation_warnings\": [\n    \"Line items lack explicit quantity and unit price for most entries; inferred from raw_description and line_total\",\n    \"Line item '2.00 ITEMS' has quantity but no unit price or line total\",\n    \"No explicit currency symbol or name visible in receipt\",\n    \"Purchase date and time not present in raw text\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 1673,
+          "completion_tokens": 653,
+          "total_tokens": 2326,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          },
+          "served_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "served_provider": "Nvidia"
+        },
+        "latency_seconds": 6.007895249989815
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1673,
+    "output_tokens": 653,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 6.007895249989815,
+    "latency_seconds": 6.007895249989815,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle",
+    "reported_cost_usd": 0,
+    "price_scope": "free quota trial; not a production price guarantee"
+  },
+  "metrics": {
+    "field_correct": 3,
+    "field_total": 3,
+    "field_accuracy": 1.0,
+    "fields": {
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number"
+    ],
+    "description_similarity": 1.0,
+    "line_items": {
+      "matched": 0,
+      "predicted": 5,
+      "expected": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "status": "ok",
+  "wall_seconds": 6.6912515830481425
+}

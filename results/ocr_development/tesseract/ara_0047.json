@@ -1,0 +1,1056 @@
+{
+  "id": "ara_0047",
+  "language": "Arabic / mixed Arabic-English",
+  "ocr": {
+    "text": "مطعم الحاج شادي\nموبايل: 01020230770\nم: 69 . رقم الطلب ٠:‏ 82554\nالتاريخ ‏ 19/11/2022 الوقت م 06:43\nْ dil‏\nuy 7‏\nالعنوان\nالطيار فحت التجهيز\n000 الصف راح 75.00 75.00 ظ\n6.00 | 6.00 | Ne‏\nالتوصيل ٠‏ الإجمالي\n81.00 10.00\n91.00 | ™\nنسعد دائماً بزيارتكم لملاحظاتكم الاتصال على\n4 أحمد شادي\nمشفل بواسطة برنامج إنجزها ATMC‏\n01000116808",
+    "lines": [
+      {
+        "text": "مطعم الحاج شادي",
+        "bbox": [
+          679,
+          796,
+          1368,
+          936
+        ],
+        "confidence": 91.66666666666667,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 1,
+            "word_num": 1,
+            "left": 1165,
+            "top": 796,
+            "width": 203,
+            "height": 135,
+            "conf": 92,
+            "text": "مطعم"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 1,
+            "word_num": 2,
+            "left": 924,
+            "top": 810,
+            "width": 205,
+            "height": 126,
+            "conf": 91,
+            "text": "الحاج"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 1,
+            "word_num": 3,
+            "left": 679,
+            "top": 811,
+            "width": 208,
+            "height": 124,
+            "conf": 92,
+            "text": "شادي"
+          }
+        ]
+      },
+      {
+        "text": "موبايل: 01020230770",
+        "bbox": [
+          674,
+          971,
+          1361,
+          1039
+        ],
+        "confidence": 76.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 2,
+            "word_num": 1,
+            "left": 1186,
+            "top": 971,
+            "width": 175,
+            "height": 68,
+            "conf": 62,
+            "text": "موبايل:"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 2,
+            "word_num": 2,
+            "left": 674,
+            "top": 975,
+            "width": 453,
+            "height": 59,
+            "conf": 90,
+            "text": "01020230770"
+          }
+        ]
+      },
+      {
+        "text": "م: 69 . رقم الطلب ٠:‏ 82554",
+        "bbox": [
+          529,
+          1049,
+          1590,
+          1158
+        ],
+        "confidence": 69.71428571428571,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 3,
+            "word_num": 1,
+            "left": 1525,
+            "top": 1080,
+            "width": 65,
+            "height": 50,
+            "conf": 68,
+            "text": "م:"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 3,
+            "word_num": 2,
+            "left": 1233,
+            "top": 1075,
+            "width": 85,
+            "height": 62,
+            "conf": 96,
+            "text": "69"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 3,
+            "word_num": 3,
+            "left": 1141,
+            "top": 1119,
+            "width": 25,
+            "height": 31,
+            "conf": 37,
+            "text": "."
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 3,
+            "word_num": 4,
+            "left": 974,
+            "top": 1049,
+            "width": 117,
+            "height": 109,
+            "conf": 23,
+            "text": "رقم"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 3,
+            "word_num": 5,
+            "left": 807,
+            "top": 1053,
+            "width": 235,
+            "height": 101,
+            "conf": 92,
+            "text": "الطلب"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 3,
+            "word_num": 6,
+            "left": 749,
+            "top": 1049,
+            "width": 29,
+            "height": 109,
+            "conf": 77,
+            "text": "٠:‏"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 3,
+            "word_num": 7,
+            "left": 529,
+            "top": 1082,
+            "width": 183,
+            "height": 54,
+            "conf": 95,
+            "text": "82554"
+          }
+        ]
+      },
+      {
+        "text": "التاريخ ‏ 19/11/2022 الوقت م 06:43",
+        "bbox": [
+          490,
+          1177,
+          1715,
+          1276
+        ],
+        "confidence": 86.8,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 4,
+            "word_num": 1,
+            "left": 1585,
+            "top": 1177,
+            "width": 130,
+            "height": 63,
+            "conf": 72,
+            "text": "التاريخ ‏"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 4,
+            "word_num": 2,
+            "left": 1168,
+            "top": 1179,
+            "width": 326,
+            "height": 60,
+            "conf": 80,
+            "text": "19/11/2022"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 4,
+            "word_num": 3,
+            "left": 845,
+            "top": 1183,
+            "width": 106,
+            "height": 93,
+            "conf": 91,
+            "text": "الوقت"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 4,
+            "word_num": 4,
+            "left": 685,
+            "top": 1213,
+            "width": 23,
+            "height": 46,
+            "conf": 95,
+            "text": "م"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 4,
+            "word_num": 5,
+            "left": 490,
+            "top": 1193,
+            "width": 168,
+            "height": 51,
+            "conf": 96,
+            "text": "06:43"
+          }
+        ]
+      },
+      {
+        "text": "ْ dil‏",
+        "bbox": [
+          1288,
+          1312,
+          1685,
+          1368
+        ],
+        "confidence": 21.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 5,
+            "word_num": 2,
+            "left": 1288,
+            "top": 1312,
+            "width": 9,
+            "height": 3,
+            "conf": 0,
+            "text": "ْ"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 5,
+            "word_num": 1,
+            "left": 1564,
+            "top": 1325,
+            "width": 121,
+            "height": 43,
+            "conf": 42,
+            "text": "dil‏"
+          }
+        ]
+      },
+      {
+        "text": "uy 7‏",
+        "bbox": [
+          843,
+          1343,
+          1585,
+          1421
+        ],
+        "confidence": 19.5,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 6,
+            "word_num": 1,
+            "left": 843,
+            "top": 1343,
+            "width": 109,
+            "height": 53,
+            "conf": 20,
+            "text": "uy"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 6,
+            "word_num": 2,
+            "left": 1508,
+            "top": 1368,
+            "width": 77,
+            "height": 53,
+            "conf": 19,
+            "text": "7‏"
+          }
+        ]
+      },
+      {
+        "text": "العنوان",
+        "bbox": [
+          1581,
+          1473,
+          1713,
+          1526
+        ],
+        "confidence": 91.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 7,
+            "word_num": 1,
+            "left": 1581,
+            "top": 1473,
+            "width": 132,
+            "height": 53,
+            "conf": 91,
+            "text": "العنوان"
+          }
+        ]
+      },
+      {
+        "text": "الطيار فحت التجهيز",
+        "bbox": [
+          749,
+          1607,
+          1714,
+          1664
+        ],
+        "confidence": 50.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 8,
+            "word_num": 1,
+            "left": 1603,
+            "top": 1607,
+            "width": 111,
+            "height": 55,
+            "conf": 92,
+            "text": "الطيار"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 8,
+            "word_num": 2,
+            "left": 947,
+            "top": 1611,
+            "width": 103,
+            "height": 34,
+            "conf": 48,
+            "text": "فحت"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 8,
+            "word_num": 3,
+            "left": 749,
+            "top": 1611,
+            "width": 177,
+            "height": 53,
+            "conf": 10,
+            "text": "التجهيز"
+          }
+        ]
+      },
+      {
+        "text": "000 الصف راح 75.00 75.00 ظ",
+        "bbox": [
+          300,
+          1901,
+          1717,
+          2265
+        ],
+        "confidence": 58.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 9,
+            "word_num": 1,
+            "left": 1519,
+            "top": 1943,
+            "width": 198,
+            "height": 93,
+            "conf": 44,
+            "text": "000"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 9,
+            "word_num": 2,
+            "left": 1261,
+            "top": 1929,
+            "width": 145,
+            "height": 49,
+            "conf": 46,
+            "text": "الصف"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 9,
+            "word_num": 3,
+            "left": 1117,
+            "top": 1924,
+            "width": 116,
+            "height": 81,
+            "conf": 58,
+            "text": "راح"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 9,
+            "word_num": 4,
+            "left": 641,
+            "top": 1926,
+            "width": 203,
+            "height": 111,
+            "conf": 33,
+            "text": "75.00"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 9,
+            "word_num": 5,
+            "left": 355,
+            "top": 1968,
+            "width": 166,
+            "height": 50,
+            "conf": 83,
+            "text": "75.00"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 9,
+            "word_num": 6,
+            "left": 300,
+            "top": 1901,
+            "width": 20,
+            "height": 364,
+            "conf": 84,
+            "text": "ظ"
+          }
+        ]
+      },
+      {
+        "text": "6.00 | 6.00 | Ne‏",
+        "bbox": [
+          373,
+          2164,
+          1730,
+          2283
+        ],
+        "confidence": 80.4,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 10,
+            "word_num": 5,
+            "left": 373,
+            "top": 2203,
+            "width": 130,
+            "height": 50,
+            "conf": 95,
+            "text": "6.00"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 10,
+            "word_num": 4,
+            "left": 574,
+            "top": 2164,
+            "width": 2,
+            "height": 114,
+            "conf": 94,
+            "text": "|"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 10,
+            "word_num": 3,
+            "left": 657,
+            "top": 2203,
+            "width": 128,
+            "height": 49,
+            "conf": 94,
+            "text": "6.00"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 10,
+            "word_num": 2,
+            "left": 843,
+            "top": 2177,
+            "width": 1,
+            "height": 68,
+            "conf": 88,
+            "text": "|"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 10,
+            "word_num": 1,
+            "left": 1328,
+            "top": 2169,
+            "width": 402,
+            "height": 114,
+            "conf": 31,
+            "text": "Ne‏"
+          }
+        ]
+      },
+      {
+        "text": "التوصيل ٠‏ الإجمالي",
+        "bbox": [
+          571,
+          2426,
+          1516,
+          2520
+        ],
+        "confidence": 82.66666666666667,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 11,
+            "word_num": 1,
+            "left": 1315,
+            "top": 2426,
+            "width": 201,
+            "height": 85,
+            "conf": 91,
+            "text": "التوصيل"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 11,
+            "word_num": 2,
+            "left": 842,
+            "top": 2431,
+            "width": 1,
+            "height": 4,
+            "conf": 64,
+            "text": "٠‏"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 11,
+            "word_num": 3,
+            "left": 571,
+            "top": 2449,
+            "width": 200,
+            "height": 71,
+            "conf": 93,
+            "text": "الإجمالي"
+          }
+        ]
+      },
+      {
+        "text": "81.00 10.00",
+        "bbox": [
+          566,
+          2672,
+          1522,
+          2737
+        ],
+        "confidence": 95.5,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 12,
+            "word_num": 2,
+            "left": 566,
+            "top": 2672,
+            "width": 184,
+            "height": 57,
+            "conf": 96,
+            "text": "81.00"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 12,
+            "word_num": 1,
+            "left": 1337,
+            "top": 2678,
+            "width": 185,
+            "height": 59,
+            "conf": 95,
+            "text": "10.00"
+          }
+        ]
+      },
+      {
+        "text": "91.00 | ™",
+        "bbox": [
+          966,
+          2899,
+          1620,
+          3110
+        ],
+        "confidence": 31.333333333333332,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 13,
+            "word_num": 3,
+            "left": 966,
+            "top": 2992,
+            "width": 239,
+            "height": 83,
+            "conf": 31,
+            "text": "91.00"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 13,
+            "word_num": 2,
+            "left": 1366,
+            "top": 2899,
+            "width": 71,
+            "height": 211,
+            "conf": 31,
+            "text": "|"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 13,
+            "word_num": 1,
+            "left": 1487,
+            "top": 2903,
+            "width": 133,
+            "height": 154,
+            "conf": 32,
+            "text": "™"
+          }
+        ]
+      },
+      {
+        "text": "نسعد دائماً بزيارتكم لملاحظاتكم الاتصال على",
+        "bbox": [
+          504,
+          3222,
+          1583,
+          3313
+        ],
+        "confidence": 90.16666666666667,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 14,
+            "word_num": 1,
+            "left": 1464,
+            "top": 3240,
+            "width": 119,
+            "height": 41,
+            "conf": 89,
+            "text": "نسعد"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 14,
+            "word_num": 2,
+            "left": 1329,
+            "top": 3222,
+            "width": 116,
+            "height": 57,
+            "conf": 85,
+            "text": "دائماً"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 14,
+            "word_num": 3,
+            "left": 1113,
+            "top": 3229,
+            "width": 197,
+            "height": 80,
+            "conf": 91,
+            "text": "بزيارتكم"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 14,
+            "word_num": 4,
+            "left": 829,
+            "top": 3231,
+            "width": 262,
+            "height": 82,
+            "conf": 92,
+            "text": "لملاحظاتكم"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 14,
+            "word_num": 5,
+            "left": 624,
+            "top": 3232,
+            "width": 182,
+            "height": 59,
+            "conf": 91,
+            "text": "الاتصال"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 14,
+            "word_num": 6,
+            "left": 504,
+            "top": 3232,
+            "width": 94,
+            "height": 68,
+            "conf": 93,
+            "text": "على"
+          }
+        ]
+      },
+      {
+        "text": "4 أحمد شادي",
+        "bbox": [
+          656,
+          3315,
+          1407,
+          3392
+        ],
+        "confidence": 86.66666666666667,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 15,
+            "word_num": 1,
+            "left": 1319,
+            "top": 3317,
+            "width": 88,
+            "height": 68,
+            "conf": 95,
+            "text": "4"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 15,
+            "word_num": 2,
+            "left": 813,
+            "top": 3315,
+            "width": 206,
+            "height": 70,
+            "conf": 76,
+            "text": "أحمد"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 15,
+            "word_num": 3,
+            "left": 656,
+            "top": 3326,
+            "width": 133,
+            "height": 66,
+            "conf": 89,
+            "text": "شادي"
+          }
+        ]
+      },
+      {
+        "text": "مشفل بواسطة برنامج إنجزها ATMC‏",
+        "bbox": [
+          763,
+          3622,
+          1324,
+          3674
+        ],
+        "confidence": 89.4,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 16,
+            "word_num": 1,
+            "left": 1245,
+            "top": 3622,
+            "width": 79,
+            "height": 40,
+            "conf": 83,
+            "text": "مشفل"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 16,
+            "word_num": 2,
+            "left": 1117,
+            "top": 3625,
+            "width": 115,
+            "height": 40,
+            "conf": 92,
+            "text": "بواسطة"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 16,
+            "word_num": 3,
+            "left": 1006,
+            "top": 3631,
+            "width": 100,
+            "height": 43,
+            "conf": 92,
+            "text": "برنامج"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 16,
+            "word_num": 4,
+            "left": 894,
+            "top": 3629,
+            "width": 96,
+            "height": 40,
+            "conf": 90,
+            "text": "إنجزها"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 16,
+            "word_num": 5,
+            "left": 763,
+            "top": 3624,
+            "width": 117,
+            "height": 38,
+            "conf": 90,
+            "text": "ATMC‏"
+          }
+        ]
+      },
+      {
+        "text": "01000116808",
+        "bbox": [
+          791,
+          3674,
+          1309,
+          3718
+        ],
+        "confidence": 82.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 17,
+            "word_num": 1,
+            "left": 791,
+            "top": 3674,
+            "width": 518,
+            "height": 44,
+            "conf": 82,
+            "text": "01000116808"
+          }
+        ]
+      }
+    ],
+    "engine": "tesseract",
+    "model": "tessdata_fast ara + installed eng, psm6",
+    "initialization_seconds": 0.0,
+    "latency_seconds": 2.1281106249662116,
+    "language_hint": "Arabic / mixed Arabic-English",
+    "image_size": [
+      2160,
+      3840
+    ]
+  },
+  "metrics": {
+    "annotated_token_recall": 0.6805555555555556,
+    "annotated_numeric_token_recall": 0.6818181818181818,
+    "full_ocr_cer": null,
+    "coverage_note": "Partial transcription; token recall only, not full OCR accuracy"
+  },
+  "latency_seconds": 2.1311783749843016,
+  "status": "ok"
+}

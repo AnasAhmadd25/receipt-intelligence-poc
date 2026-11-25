@@ -1,0 +1,15 @@
+{
+  "record_ids": [
+    "ara_0077",
+    "ara_0100",
+    "ara_0019",
+    "ara_0090",
+    "ara_0047",
+    "cord_validation_0071",
+    "cord_validation_0054",
+    "cord_validation_0094"
+  ],
+  "split": "development",
+  "limit": 8,
+  "concurrency": 1
+}

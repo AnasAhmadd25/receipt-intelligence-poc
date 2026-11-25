@@ -1,0 +1,186 @@
+{
+  "id": "cord_test_0014",
+  "dataset": "CORD-v2",
+  "language": "Indonesian / Latin script / mixed English",
+  "provider": "gemini",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "ea8f1c932350e1e2d5182a9dad4ed0fdadf2fe4d88703ee1d4ce20ecf9933067",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T00:34:20.765567+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "238000",
+    "discount": "100000",
+    "tax": "25585",
+    "total": "281435",
+    "line_items": [
+      {
+        "raw_description": "RedVelvet Cheese Slc",
+        "quantity": "1",
+        "unit_price": "38000",
+        "line_total": "38000"
+      },
+      {
+        "raw_description": "Chicken Baked Rice",
+        "quantity": "1",
+        "unit_price": "55000",
+        "line_total": "55000"
+      },
+      {
+        "raw_description": "Fish n Chips",
+        "quantity": "1",
+        "unit_price": "65000",
+        "line_total": "65000"
+      },
+      {
+        "raw_description": "Mushroom Soup",
+        "quantity": "1",
+        "unit_price": "35000",
+        "line_total": "35000"
+      },
+      {
+        "raw_description": "Chamomile",
+        "quantity": "1",
+        "unit_price": "25000",
+        "line_total": "25000"
+      },
+      {
+        "raw_description": "Iced Tea",
+        "quantity": "1",
+        "unit_price": "20000",
+        "line_total": "20000"
+      }
+    ],
+    "raw_text": "1 RedVelvet Cheese Slc 38,000\n1 Chicken Baked Rice 55,000\n1 Fish n Chips 65,000\n1 Mushroom Soup 35,000\n1 Chamomile 25,000\n1 Iced Tea 20,000\nSUBTOTAL 238,000\nService 17,850\nPB1 25,585\nTOTAL 281,435\nCoupon 100,000\nCASH 200,000\nChange 18,565",
+    "missing_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": [
+      "subtotal + tax - discount differs from total"
+    ]
+  },
+  "metadata": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"238,000\",\n  \"discount\": \"100,000\",\n  \"tax\": \"25,585\",\n  \"total\": \"281,435\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"RedVelvet Cheese Slc\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"38,000\",\n      \"line_total\": \"38,000\"\n    },\n    {\n      \"raw_description\": \"Chicken Baked Rice\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"55,000\",\n      \"line_total\": \"55,000\"\n    },\n    {\n      \"raw_description\": \"Fish n Chips\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"65,000\",\n      \"line_total\": \"65,000\"\n    },\n    {\n      \"raw_description\": \"Mushroom Soup\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"35,000\",\n      \"line_total\": \"35,000\"\n    },\n    {\n      \"raw_description\": \"Chamomile\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"25,000\",\n      \"line_total\": \"25,000\"\n    },\n    {\n      \"raw_description\": \"Iced Tea\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"20,000\",\n      \"line_total\": \"20,000\"\n    }\n  ],\n  \"raw_text\": \"1 RedVelvet Cheese Slc 38,000\\n1 Chicken Baked Rice 55,000\\n1 Fish n Chips 65,000\\n1 Mushroom Soup 35,000\\n1 Chamomile 25,000\\n1 Iced Tea 20,000\\nSUBTOTAL 238,000\\nService 17,850\\nPB1 25,585\\nTOTAL 281,435\\nCoupon 100,000\\nCASH 200,000\\nChange 18,565\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"receipt_number\",\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1254,
+        "output_tokens": 686,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 686,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 686,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1254,
+          "prompt_tokens_details": [
+            {
+              "modality": "IMAGE",
+              "token_count": 1100
+            },
+            {
+              "modality": "TEXT",
+              "token_count": 154
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1940,
+          "traffic_type": null
+        },
+        "latency_seconds": 3.399463624926284
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1254,
+    "output_tokens": 686,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 3.399463624926284,
+    "latency_seconds": 3.399463624926284
+  },
+  "metrics": {
+    "field_correct": 3,
+    "field_total": 3,
+    "field_accuracy": 1.0,
+    "fields": {
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "discount"
+    ],
+    "description_similarity": 1.0,
+    "line_items": {
+      "matched": 6,
+      "predicted": 6,
+      "expected": 6,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "quantity": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "line_total": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "status": "ok",
+  "wall_seconds": 4.0713332910090685
+}

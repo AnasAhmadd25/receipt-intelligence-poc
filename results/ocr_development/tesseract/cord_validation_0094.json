@@ -1,0 +1,792 @@
+{
+  "id": "cord_validation_0094",
+  "language": "Indonesian / Latin script / mixed English",
+  "ocr": {
+    "text": "“came eit E\noe\n0111117\n4 Emily 5 shrimp scampi 69.000 7\nFettucin€é\nua TOTAL ا‎ 000.\nDISCOUNT 0\nSERVICE 3.795 :\nOTHERS 7.280\nROUNDING nee\nGRAND TOTAL 80 400 ee\nTADA EGIFT 80 400\n0\nCHANGES\n1/0 7\nلله‎ »",
+    "lines": [
+      {
+        "text": "“came eit E",
+        "bbox": [
+          106,
+          152,
+          390,
+          182
+        ],
+        "confidence": 27.666666666666668,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 1,
+            "word_num": 1,
+            "left": 106,
+            "top": 159,
+            "width": 54,
+            "height": 10,
+            "conf": 0,
+            "text": "“came"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 1,
+            "word_num": 2,
+            "left": 283,
+            "top": 174,
+            "width": 40,
+            "height": 8,
+            "conf": 29,
+            "text": "eit"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 1,
+            "word_num": 3,
+            "left": 380,
+            "top": 152,
+            "width": 10,
+            "height": 16,
+            "conf": 54,
+            "text": "E"
+          }
+        ]
+      },
+      {
+        "text": "oe",
+        "bbox": [
+          293,
+          175,
+          402,
+          194
+        ],
+        "confidence": 26.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 2,
+            "word_num": 1,
+            "left": 293,
+            "top": 175,
+            "width": 109,
+            "height": 19,
+            "conf": 26,
+            "text": "oe"
+          }
+        ]
+      },
+      {
+        "text": "0111117",
+        "bbox": [
+          301,
+          205,
+          444,
+          232
+        ],
+        "confidence": 51.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 3,
+            "word_num": 1,
+            "left": 301,
+            "top": 205,
+            "width": 143,
+            "height": 27,
+            "conf": 51,
+            "text": "0111117"
+          }
+        ]
+      },
+      {
+        "text": "4 Emily 5 shrimp scampi 69.000 7",
+        "bbox": [
+          130,
+          528,
+          800,
+          603
+        ],
+        "confidence": 84.71428571428571,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 4,
+            "word_num": 1,
+            "left": 130,
+            "top": 581,
+            "width": 6,
+            "height": 16,
+            "conf": 93,
+            "text": "4"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 4,
+            "word_num": 2,
+            "left": 152,
+            "top": 574,
+            "width": 88,
+            "height": 22,
+            "conf": 92,
+            "text": "Emily"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 4,
+            "word_num": 3,
+            "left": 231,
+            "top": 570,
+            "width": 13,
+            "height": 33,
+            "conf": 96,
+            "text": "5"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 4,
+            "word_num": 4,
+            "left": 256,
+            "top": 565,
+            "width": 84,
+            "height": 20,
+            "conf": 77,
+            "text": "shrimp"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 4,
+            "word_num": 5,
+            "left": 357,
+            "top": 545,
+            "width": 91,
+            "height": 35,
+            "conf": 91,
+            "text": "scampi"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 4,
+            "word_num": 6,
+            "left": 553,
+            "top": 530,
+            "width": 94,
+            "height": 25,
+            "conf": 93,
+            "text": "69.000"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 4,
+            "word_num": 7,
+            "left": 791,
+            "top": 528,
+            "width": 9,
+            "height": 17,
+            "conf": 51,
+            "text": "7"
+          }
+        ]
+      },
+      {
+        "text": "Fettucin€é",
+        "bbox": [
+          150,
+          597,
+          263,
+          622
+        ],
+        "confidence": 15.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 5,
+            "word_num": 1,
+            "left": 150,
+            "top": 597,
+            "width": 113,
+            "height": 25,
+            "conf": 15,
+            "text": "Fettucin€é"
+          }
+        ]
+      },
+      {
+        "text": "ua TOTAL ا‎ 000.",
+        "bbox": [
+          121,
+          613,
+          661,
+          690
+        ],
+        "confidence": 43.25,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 6,
+            "word_num": 1,
+            "left": 121,
+            "top": 659,
+            "width": 49,
+            "height": 31,
+            "conf": 21,
+            "text": "ua"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 6,
+            "word_num": 2,
+            "left": 185,
+            "top": 649,
+            "width": 82,
+            "height": 35,
+            "conf": 96,
+            "text": "TOTAL"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 6,
+            "word_num": 3,
+            "left": 303,
+            "top": 631,
+            "width": 149,
+            "height": 15,
+            "conf": 13,
+            "text": "ا‎"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 6,
+            "word_num": 4,
+            "left": 546,
+            "top": 613,
+            "width": 115,
+            "height": 38,
+            "conf": 43,
+            "text": "000."
+          }
+        ]
+      },
+      {
+        "text": "DISCOUNT 0",
+        "bbox": [
+          121,
+          661,
+          657,
+          727
+        ],
+        "confidence": 63.5,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 7,
+            "word_num": 1,
+            "left": 121,
+            "top": 695,
+            "width": 136,
+            "height": 32,
+            "conf": 31,
+            "text": "DISCOUNT"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 7,
+            "word_num": 2,
+            "left": 644,
+            "top": 661,
+            "width": 13,
+            "height": 19,
+            "conf": 96,
+            "text": "0"
+          }
+        ]
+      },
+      {
+        "text": "SERVICE 3.795 :",
+        "bbox": [
+          120,
+          680,
+          840,
+          763
+        ],
+        "confidence": 64.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 8,
+            "word_num": 1,
+            "left": 120,
+            "top": 733,
+            "width": 116,
+            "height": 30,
+            "conf": 96,
+            "text": "SERVICE"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 8,
+            "word_num": 2,
+            "left": 578,
+            "top": 698,
+            "width": 82,
+            "height": 25,
+            "conf": 96,
+            "text": "3.795"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 8,
+            "word_num": 3,
+            "left": 838,
+            "top": 680,
+            "width": 2,
+            "height": 4,
+            "conf": 0,
+            "text": ":"
+          }
+        ]
+      },
+      {
+        "text": "OTHERS 7.280",
+        "bbox": [
+          119,
+          736,
+          663,
+          799
+        ],
+        "confidence": 94.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 9,
+            "word_num": 1,
+            "left": 119,
+            "top": 771,
+            "width": 108,
+            "height": 28,
+            "conf": 96,
+            "text": "OTHERS"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 9,
+            "word_num": 2,
+            "left": 579,
+            "top": 736,
+            "width": 84,
+            "height": 24,
+            "conf": 92,
+            "text": "7.280"
+          }
+        ]
+      },
+      {
+        "text": "ROUNDING nee",
+        "bbox": [
+          119,
+          775,
+          666,
+          849
+        ],
+        "confidence": 31.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 10,
+            "word_num": 1,
+            "left": 119,
+            "top": 806,
+            "width": 141,
+            "height": 43,
+            "conf": 39,
+            "text": "ROUNDING"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 10,
+            "word_num": 2,
+            "left": 612,
+            "top": 775,
+            "width": 54,
+            "height": 22,
+            "conf": 23,
+            "text": "nee"
+          }
+        ]
+      },
+      {
+        "text": "GRAND TOTAL 80 400 ee",
+        "bbox": [
+          116,
+          851,
+          856,
+          923
+        ],
+        "confidence": 78.4,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 11,
+            "word_num": 1,
+            "left": 116,
+            "top": 899,
+            "width": 82,
+            "height": 24,
+            "conf": 96,
+            "text": "GRAND"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 11,
+            "word_num": 2,
+            "left": 213,
+            "top": 893,
+            "width": 80,
+            "height": 23,
+            "conf": 96,
+            "text": "TOTAL"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 11,
+            "word_num": 3,
+            "left": 538,
+            "top": 871,
+            "width": 43,
+            "height": 29,
+            "conf": 95,
+            "text": "80"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 11,
+            "word_num": 4,
+            "left": 605,
+            "top": 867,
+            "width": 69,
+            "height": 29,
+            "conf": 93,
+            "text": "400"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 11,
+            "word_num": 5,
+            "left": 827,
+            "top": 851,
+            "width": 29,
+            "height": 8,
+            "conf": 12,
+            "text": "ee"
+          }
+        ]
+      },
+      {
+        "text": "TADA EGIFT 80 400",
+        "bbox": [
+          115,
+          924,
+          679,
+          973
+        ],
+        "confidence": 92.5,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 12,
+            "word_num": 1,
+            "left": 115,
+            "top": 951,
+            "width": 60,
+            "height": 22,
+            "conf": 92,
+            "text": "TADA"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 12,
+            "word_num": 2,
+            "left": 187,
+            "top": 946,
+            "width": 74,
+            "height": 24,
+            "conf": 90,
+            "text": "EGIFT"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 12,
+            "word_num": 3,
+            "left": 541,
+            "top": 927,
+            "width": 43,
+            "height": 30,
+            "conf": 96,
+            "text": "80"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 12,
+            "word_num": 4,
+            "left": 609,
+            "top": 924,
+            "width": 70,
+            "height": 31,
+            "conf": 92,
+            "text": "400"
+          }
+        ]
+      },
+      {
+        "text": "0",
+        "bbox": [
+          664,
+          981,
+          684,
+          1011
+        ],
+        "confidence": 94.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 14,
+            "word_num": 1,
+            "left": 664,
+            "top": 981,
+            "width": 20,
+            "height": 30,
+            "conf": 94,
+            "text": "0"
+          }
+        ]
+      },
+      {
+        "text": "CHANGES",
+        "bbox": [
+          117,
+          1001,
+          231,
+          1026
+        ],
+        "confidence": 96.0,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 13,
+            "word_num": 1,
+            "left": 117,
+            "top": 1001,
+            "width": 114,
+            "height": 25,
+            "conf": 96,
+            "text": "CHANGES"
+          }
+        ]
+      },
+      {
+        "text": "1/0 7",
+        "bbox": [
+          136,
+          1092,
+          461,
+          1136
+        ],
+        "confidence": 52.5,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 15,
+            "word_num": 1,
+            "left": 136,
+            "top": 1092,
+            "width": 255,
+            "height": 44,
+            "conf": 38,
+            "text": "1/0"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 15,
+            "word_num": 2,
+            "left": 450,
+            "top": 1101,
+            "width": 11,
+            "height": 16,
+            "conf": 67,
+            "text": "7"
+          }
+        ]
+      },
+      {
+        "text": "لله‎ »",
+        "bbox": [
+          52,
+          1240,
+          139,
+          1259
+        ],
+        "confidence": 59.5,
+        "words": [
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 16,
+            "word_num": 2,
+            "left": 118,
+            "top": 1248,
+            "width": 21,
+            "height": 9,
+            "conf": 47,
+            "text": "لله‎"
+          },
+          {
+            "level": 5,
+            "page_num": 1,
+            "block_num": 1,
+            "par_num": 1,
+            "line_num": 16,
+            "word_num": 1,
+            "left": 52,
+            "top": 1240,
+            "width": 27,
+            "height": 19,
+            "conf": 72,
+            "text": "»"
+          }
+        ]
+      }
+    ],
+    "engine": "tesseract",
+    "model": "tessdata_fast ara + installed eng, psm6",
+    "initialization_seconds": 0.0,
+    "latency_seconds": 0.8094565420178697,
+    "language_hint": "Indonesian / Latin script / mixed English",
+    "image_size": [
+      864,
+      1296
+    ]
+  },
+  "metrics": {
+    "annotated_token_recall": 0.7272727272727273,
+    "annotated_numeric_token_recall": 0.6,
+    "full_ocr_cer": null,
+    "coverage_note": "Partial transcription; token recall only, not full OCR accuracy"
+  },
+  "latency_seconds": 0.810358582995832,
+  "status": "ok"
+}

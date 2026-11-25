@@ -1,0 +1,162 @@
+{
+  "text": "33,000\nPKT AYAM\n23,000\nGULAI OTAK\n2.00 ITEMS\n56,000\nSUBTOTAL\n5,600\nTAX 10%\n61,600\nTOTAL\n61,600\nCHARGE5",
+  "lines": [
+    {
+      "text": "33,000",
+      "bbox": [
+        606,
+        412,
+        733,
+        464
+      ],
+      "confidence": 99.92687702178955
+    },
+    {
+      "text": "PKT AYAM",
+      "bbox": [
+        96,
+        419,
+        268,
+        468
+      ],
+      "confidence": 99.5340883731842
+    },
+    {
+      "text": "23,000",
+      "bbox": [
+        607,
+        459,
+        735,
+        514
+      ],
+      "confidence": 99.9106228351593
+    },
+    {
+      "text": "GULAI OTAK",
+      "bbox": [
+        97,
+        469,
+        307,
+        517
+      ],
+      "confidence": 98.29297065734863
+    },
+    {
+      "text": "2.00 ITEMS",
+      "bbox": [
+        314,
+        514,
+        521,
+        563
+      ],
+      "confidence": 97.49054908752441
+    },
+    {
+      "text": "56,000",
+      "bbox": [
+        609,
+        558,
+        737,
+        611
+      ],
+      "confidence": 99.95467066764832
+    },
+    {
+      "text": "SUBTOTAL",
+      "bbox": [
+        98,
+        567,
+        419,
+        617
+      ],
+      "confidence": 99.82067346572876
+    },
+    {
+      "text": "5,600",
+      "bbox": [
+        625,
+        606,
+        739,
+        660
+      ],
+      "confidence": 99.8806357383728
+    },
+    {
+      "text": "TAX 10%",
+      "bbox": [
+        98,
+        621,
+        249,
+        667
+      ],
+      "confidence": 99.90543723106384
+    },
+    {
+      "text": "61,600",
+      "bbox": [
+        609,
+        656,
+        739,
+        710
+      ],
+      "confidence": 99.94959235191345
+    },
+    {
+      "text": "TOTAL",
+      "bbox": [
+        98,
+        669,
+        207,
+        719
+      ],
+      "confidence": 99.96262788772583
+    },
+    {
+      "text": "61,600",
+      "bbox": [
+        609,
+        705,
+        739,
+        760
+      ],
+      "confidence": 99.93739724159241
+    },
+    {
+      "text": "CHARGE5",
+      "bbox": [
+        98,
+        718,
+        250,
+        769
+      ],
+      "confidence": 99.91573095321655
+    }
+  ],
+  "engine": "paddle",
+  "model": "en_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det",
+  "initialization_seconds": 0.0,
+  "latency_seconds": 1.805592583026737,
+  "language_hint": "en",
+  "image_size": [
+    864,
+    1296
+  ],
+  "profile": {
+    "wall_seconds": 1.8199521249625832,
+    "cpu_core_seconds": 1.8592029999999937,
+    "average_cpu_percent": 102.15669821744446,
+    "peak_cpu_percent": 104.9754734954357,
+    "baseline_ram_mib": 3581.625,
+    "peak_ram_mib": 3632.75,
+    "incremental_ram_mib": 51.125,
+    "sample_interval_seconds": 0.05,
+    "scope": "local process tree, includes provider waiting; CPU 100%=one core",
+    "peak_cpu_caveat": "50ms live process-tree samples may miss short-lived children; average/core-seconds use OS waited-child accounting",
+    "logical_cores": 10,
+    "physical_cores": 10,
+    "system_ram_bytes": 17179869184,
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "image_sha256": "35a47a2e754f3a453442e0c53aa98e1b0f672708a931bdfd4a61f020a405b035",
+  "config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552"
+}

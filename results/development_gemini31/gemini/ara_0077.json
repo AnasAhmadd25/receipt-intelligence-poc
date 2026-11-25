@@ -1,0 +1,127 @@
+{
+  "id": "ara_0077",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "gemini",
+  "split": "development",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "c9772f6873d08f4d6666fc51d02307c248ce390ac42a371214c49d036352f70d",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T00:40:11.445129+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "مكتبة النهضة العربية",
+    "receipt_number": "x3665",
+    "purchase_date": "2022-11-12",
+    "purchase_time": "03:55:00",
+    "currency": "ج.م",
+    "subtotal": "30.000",
+    "discount": null,
+    "tax": null,
+    "total": "30.000",
+    "line_items": [
+      {
+        "raw_description": "خرطوشة حبر 250 جرام 3 لون",
+        "quantity": "1",
+        "unit_price": "30",
+        "line_total": "30"
+      }
+    ],
+    "raw_text": "مكتبة النهضة العربية\nمبيعات\nx3665\nتاريخ : 12/11/2022\nالوقت : 03:55:00م\n1 - بعدا\nب : فرع السرق\nالكاسير : \nكود | اسم الصنف | الكمية | الوحدة | السعر | اجمالي\n916 | خرطوشة حبر 250 جرام 3 لون | 1 | قطعة | 30 | 30\nالاجمالي 30.000 ج.م\nالمدفوع 30.000 ج.م\nالباقي 0.00 ج.م\nثلاثون جنيه مصري فقط لا غير\nالرصيد : 0.000\nفرع : سوهاج -السرق -س البرعه المردومه حصم 15% علي الملحقات\nب/ 4597005-093/\nفرع عرب النج -سارع احمد ماهر\n01026649821-01124230420\nعفوا لا مرتجع ولا استبدال نهائيا لادوات العناية بالجسم والبشره\nولاستخدمات الشخصية الكمامات والواقي\nواله الحاسبة والالعاب\n2022 03:55:02م ServerSoft - 010687889",
+    "missing_fields": [
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"مكتبة النهضة العربية\",\n  \"receipt_number\": \"x3665\",\n  \"purchase_date\": \"2022-11-12\",\n  \"purchase_time\": \"03:55:00\",\n  \"currency\": \"ج.م\",\n  \"subtotal\": \"30.000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"30.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"خرطوشة حبر 250 جرام 3 لون\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30\",\n      \"line_total\": \"30\"\n    }\n  ],\n  \"raw_text\": \"مكتبة النهضة العربية\\nمبيعات\\nx3665\\nتاريخ : 12/11/2022\\nالوقت : 03:55:00م\\n1 - بعدا\\nب : فرع السرق\\nالكاسير : \\nكود | اسم الصنف | الكمية | الوحدة | السعر | اجمالي\\n916 | خرطوشة حبر 250 جرام 3 لون | 1 | قطعة | 30 | 30\\nالاجمالي 30.000 ج.م\\nالمدفوع 30.000 ج.م\\nالباقي 0.00 ج.م\\nثلاثون جنيه مصري فقط لا غير\\nالرصيد : 0.000\\nفرع : سوهاج -السرق -س البرعه المردومه حصم 15% علي الملحقات\\nب/ 4597005-093/\\nفرع عرب النج -سارع احمد ماهر\\n01026649821-01124230420\\nعفوا لا مرتجع ولا استبدال نهائيا لادوات العناية بالجسم والبشره\\nولاستخدمات الشخصية الكمامات والواقي\\nواله الحاسبة والالعاب\\n2022 03:55:02م ServerSoft - 010687889\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1254,
+        "output_tokens": 581,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 581,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 581,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1254,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 154
+            },
+            {
+              "modality": "IMAGE",
+              "token_count": 1100
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1835,
+          "traffic_type": null
+        },
+        "latency_seconds": 4.106425249949098
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1254,
+    "output_tokens": 581,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 4.106425249949098,
+    "latency_seconds": 4.106425249949098
+  },
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 2,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 4.749820708995685
+}

@@ -1,0 +1,26 @@
+provider,volume,inference_cost_usd_estimated,evaluated_receipts,basis
+ocr_ollama,50,,0,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+ocr_ollama,100,,0,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+ocr_ollama,1000,,0,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+ocr_ollama,10000,,0,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+ocr_ollama,100000,,0,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+ocr_nvidia,50,,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+ocr_nvidia,100,,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+ocr_nvidia,1000,,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+ocr_nvidia,10000,,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+ocr_nvidia,100000,,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+gemini,50,0.1012715,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+gemini,100,0.202543,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+gemini,1000,2.02543,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+gemini,10000,20.2543,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+gemini,100000,202.543,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+modal_hybrid,50,0.7497821738151,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+modal_hybrid,100,1.4995643476302,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+modal_hybrid,1000,14.995643476302,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+modal_hybrid,10000,149.95643476302,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+modal_hybrid,100000,1499.5643476302,10,measured tokens or observed allocated resource lifecycle extrapolation; excludes fixed CPU server
+gemini31,50,0.06847500000000001,10,Measured Gemini3.1 usage x paid list rates; estimated extrapolation excluding hosting/review
+gemini31,100,0.13695000000000002,10,Measured Gemini3.1 usage x paid list rates; estimated extrapolation excluding hosting/review
+gemini31,1000,1.3695000000000002,10,Measured Gemini3.1 usage x paid list rates; estimated extrapolation excluding hosting/review
+gemini31,10000,13.695,10,Measured Gemini3.1 usage x paid list rates; estimated extrapolation excluding hosting/review
+gemini31,100000,136.95000000000002,10,Measured Gemini3.1 usage x paid list rates; estimated extrapolation excluding hosting/review

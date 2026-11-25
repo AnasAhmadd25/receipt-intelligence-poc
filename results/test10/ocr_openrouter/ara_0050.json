@@ -1,0 +1,157 @@
+{
+  "id": "ara_0050",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_openrouter",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0050.json"
+  },
+  "experiment": {
+    "image_sha256": "09bbd37132e4dc75ebfc90f7e81599cb58ede929eca65492c34775902e6c754d",
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:55:21.055449+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": "2022-07-19",
+    "purchase_time": "07:19 PM",
+    "currency": null,
+    "subtotal": "800.00",
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "800.00",
+    "line_items": [
+      {
+        "raw_description": "GUESS TSHIRT",
+        "quantity": "800.00",
+        "unit_price": "0.000",
+        "line_total": "800.000"
+      }
+    ],
+    "raw_text": "فاتورة مبيعات نقدى\nالماكينة\n0\nالملسل\n27\nالوقت\n2022-07-19 07:19 PM\nالعميل\nالصنف\nالكمية\nالسعر\nالقيمة المشافة\nالإجمالي\nGUESS TSHIRT\n800.00\n0.000\nq\n800.000\nالإجمالي\n800.00\nالخصم\n0.00\nالقيمة المشافة للفاتورة\n0.00\nالصافى\n800.00\n0.00\nالقبمة المطافة للأصدائ\nالمدفوع\n0.00\n0.00\nالباقى",
+    "missing_fields": [
+      "receipt_number",
+      "currency",
+      "merchant_name"
+    ],
+    "uncertain_fields": [
+      "purchase_time",
+      "line_items[0].quantity",
+      "line_items[0].unit_price",
+      "line_items[0].line_total"
+    ],
+    "validation_warnings": [
+      "Quantity '800.00' appears unusually high for a single item; may represent total units rather than quantity per line",
+      "line_items[0]: quantity × unit_price differs from line_total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 2922,
+        "output_tokens": 455,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": \"2022-07-19\",\n  \"purchase_time\": \"07:19 PM\",\n  \"currency\": null,\n  \"subtotal\": \"800.00\",\n  \"discount\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"800.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"GUESS TSHIRT\",\n      \"quantity\": \"800.00\",\n      \"unit_price\": \"0.000\",\n      \"line_total\": \"800.000\"\n    }\n  ],\n  \"raw_text\": \"فاتورة مبيعات نقدى\\nالماكينة\\n0\\nالملسل\\n27\\nالوقت\\n2022-07-19 07:19 PM\\nالعميل\\nالصنف\\nالكمية\\nالسعر\\nالقيمة المشافة\\nالإجمالي\\nGUESS TSHIRT\\n800.00\\n0.000\\nq\\n800.000\\nالإجمالي\\n800.00\\nالخصم\\n0.00\\nالقيمة المشافة للفاتورة\\n0.00\\nالصافى\\n800.00\\n0.00\\nالقبمة المطافة للأصدائ\\nالمدفوع\\n0.00\\n0.00\\nالباقى\",\n  \"missing_fields\": [\n    \"receipt_number\",\n    \"currency\",\n    \"merchant_name\"\n  ],\n  \"uncertain_fields\": [\n    \"purchase_time\",\n    \"line_items[0].quantity\",\n    \"line_items[0].unit_price\",\n    \"line_items[0].line_total\"\n  ],\n  \"validation_warnings\": [\n    \"Quantity '800.00' appears unusually high for a single item; may represent total units rather than quantity per line\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 2922,
+          "completion_tokens": 455,
+          "total_tokens": 3377,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          },
+          "served_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "served_provider": "Nvidia"
+        },
+        "latency_seconds": 5.224528791033663
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 2922,
+    "output_tokens": 455,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 5.224528791033663,
+    "latency_seconds": 5.224528791033663,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle",
+    "reported_cost_usd": 0,
+    "price_scope": "free quota trial; not a production price guarantee"
+  },
+  "metrics": {
+    "field_correct": 5,
+    "field_total": 5,
+    "field_accuracy": 1.0,
+    "fields": {
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 5,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "discount"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 5.28066291694995
+}

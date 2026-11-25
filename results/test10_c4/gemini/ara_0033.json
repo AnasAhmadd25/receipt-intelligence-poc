@@ -1,0 +1,137 @@
+{
+  "id": "ara_0033",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "gemini",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "9c329e1ac0854c8909fd5fc807db620bb7ba3b47079b985346615014ae1161fe",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T00:34:14.375685+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "تريومف - الفرجاني",
+    "receipt_number": "154",
+    "purchase_date": "2022-07-05",
+    "purchase_time": "14:47:31",
+    "currency": null,
+    "subtotal": "104.81",
+    "discount": null,
+    "tax": null,
+    "total": "104.80",
+    "line_items": [
+      {
+        "raw_description": "المناهري بطاطس تحمير وزن\n2306787000003",
+        "quantity": "3.176",
+        "unit_price": "7.00",
+        "line_total": "22.23"
+      },
+      {
+        "raw_description": "سمانة وزن\n2301457000000",
+        "quantity": "0.918",
+        "unit_price": "89.95",
+        "line_total": "82.57"
+      }
+    ],
+    "raw_text": "تريومف - الفرجاني\nخدمة التوصيل 01207890866\nالصنف الكمية السعر القيمة\nالمناهري بطاطس تحمير وزن\n2306787000003 3.176 7.00 22.23\nسمانة وزن\n2301457000000 0.918 89.95 82.57\nعدد القطع 2 الاجمالى 104.81\nكارت: ائتمان 104.80\nالباقي: 0.00\nالكاشير\nUser:8723 PoS:3 Store:223\n14:47:31 Date:05/07/2022 Trans:154\nسعر أرخص - جودة أعلى - خدمة أفضل\nشكرا لزيارتكم\nخدمة التوصيل 01207890866\nfacebook.com/marketelfergany",
+    "missing_fields": [
+      "currency",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"تريومف - الفرجاني\",\n  \"receipt_number\": \"154\",\n  \"purchase_date\": \"2022-07-05\",\n  \"purchase_time\": \"14:47:31\",\n  \"currency\": null,\n  \"subtotal\": \"104.81\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"104.80\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"المناهري بطاطس تحمير وزن\\n2306787000003\",\n      \"quantity\": \"3.176\",\n      \"unit_price\": \"7.00\",\n      \"line_total\": \"22.23\"\n    },\n    {\n      \"raw_description\": \"سمانة وزن\\n2301457000000\",\n      \"quantity\": \"0.918\",\n      \"unit_price\": \"89.95\",\n      \"line_total\": \"82.57\"\n    }\n  ],\n  \"raw_text\": \"تريومف - الفرجاني\\nخدمة التوصيل 01207890866\\nالصنف الكمية السعر القيمة\\nالمناهري بطاطس تحمير وزن\\n2306787000003 3.176 7.00 22.23\\nسمانة وزن\\n2301457000000 0.918 89.95 82.57\\nعدد القطع 2 الاجمالى 104.81\\nكارت: ائتمان 104.80\\nالباقي: 0.00\\nالكاشير\\nUser:8723 PoS:3 Store:223\\n14:47:31 Date:05/07/2022 Trans:154\\nسعر أرخص - جودة أعلى - خدمة أفضل\\nشكرا لزيارتكم\\nخدمة التوصيل 01207890866\\nfacebook.com/marketelfergany\",\n  \"missing_fields\": [\n    \"currency\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1218,
+        "output_tokens": 595,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 595,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 595,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1218,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 154
+            },
+            {
+              "modality": "IMAGE",
+              "token_count": 1064
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1813,
+          "traffic_type": null
+        },
+        "latency_seconds": 6.330804000026546
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1218,
+    "output_tokens": 595,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 6.330804000026546,
+    "latency_seconds": 6.330804000026546
+  },
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 3,
+    "field_accuracy": 0.6666666666666666,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "subtotal",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 6.3462798750260845
+}

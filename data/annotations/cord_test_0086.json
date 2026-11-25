@@ -1,0 +1,55 @@
+{
+  "receipt": {
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "22000",
+    "discount": null,
+    "tax": null,
+    "total": "22000",
+    "line_items": [
+      {
+        "raw_description": "Cheezemania",
+        "quantity": "1",
+        "unit_price": null,
+        "line_total": "9500"
+      },
+      {
+        "raw_description": "Mamamia",
+        "quantity": "1",
+        "unit_price": null,
+        "line_total": "12500"
+      }
+    ],
+    "raw_text": "1\nCheezemania\n9,500\n1\nMamamia\n12,500\nSUBTOTAL 22,000\nDUE 22,000\nCASH 52,000\nCHANGE 30,000\n2 ITEM\nTOTAL QTY 2 PCS",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "annotated_fields": [
+    "subtotal",
+    "total"
+  ],
+  "line_items_supported": true,
+  "item_annotated_fields": [
+    [
+      "raw_description",
+      "quantity",
+      "line_total"
+    ],
+    [
+      "raw_description",
+      "quantity",
+      "line_total"
+    ]
+  ],
+  "ocr_text": "1\nCheezemania\n9,500\n1\nMamamia\n12,500\nSUBTOTAL 22,000\nDUE 22,000\nCASH 52,000\nCHANGE 30,000\n2 ITEM\nTOTAL QTY 2 PCS",
+  "ocr_text_complete": false,
+  "annotation_notes": [
+    "CORD header fields removed upstream are unknown, including merchant, date, time, receipt number, currency.",
+    "OCR transcription contains valid_line annotations only, not all image text.",
+    "Nested menu.sub annotations are flattened as modifier lines with original grouping retained in original annotation."
+  ]
+}

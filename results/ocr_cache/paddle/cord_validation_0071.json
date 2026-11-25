@@ -1,0 +1,172 @@
+{
+  "text": "JIA\nAIAM\n1 Dum Dum Thai Coffee\n19.000\nI Ice\n1.000\nSubtotal\n20.000\n20.000\nTOTAL\n50.000\nCash\nChange Due\n30.000",
+  "lines": [
+    {
+      "text": "JIA",
+      "bbox": [
+        500,
+        209,
+        619,
+        256
+      ],
+      "confidence": 46.220096945762634
+    },
+    {
+      "text": "AIAM",
+      "bbox": [
+        405,
+        267,
+        475,
+        308
+      ],
+      "confidence": 98.18263649940491
+    },
+    {
+      "text": "1 Dum Dum Thai Coffee",
+      "bbox": [
+        242,
+        754,
+        566,
+        806
+      ],
+      "confidence": 97.22588062286377
+    },
+    {
+      "text": "19.000",
+      "bbox": [
+        645,
+        759,
+        748,
+        798
+      ],
+      "confidence": 98.68545532226562
+    },
+    {
+      "text": "I Ice",
+      "bbox": [
+        273,
+        801,
+        390,
+        848
+      ],
+      "confidence": 87.27149963378906
+    },
+    {
+      "text": "1.000",
+      "bbox": [
+        658,
+        801,
+        749,
+        842
+      ],
+      "confidence": 99.38821792602539
+    },
+    {
+      "text": "Subtotal",
+      "bbox": [
+        235,
+        880,
+        376,
+        938
+      ],
+      "confidence": 95.7912802696228
+    },
+    {
+      "text": "20.000",
+      "bbox": [
+        641,
+        885,
+        752,
+        928
+      ],
+      "confidence": 88.95160555839539
+    },
+    {
+      "text": "20.000",
+      "bbox": [
+        641,
+        927,
+        754,
+        971
+      ],
+      "confidence": 97.30449318885803
+    },
+    {
+      "text": "TOTAL",
+      "bbox": [
+        237,
+        928,
+        331,
+        980
+      ],
+      "confidence": 99.62579011917114
+    },
+    {
+      "text": "50.000",
+      "bbox": [
+        641,
+        969,
+        757,
+        1019
+      ],
+      "confidence": 97.526615858078
+    },
+    {
+      "text": "Cash",
+      "bbox": [
+        235,
+        972,
+        320,
+        1027
+      ],
+      "confidence": 99.96512532234192
+    },
+    {
+      "text": "Change Due",
+      "bbox": [
+        235,
+        1005,
+        413,
+        1074
+      ],
+      "confidence": 99.53900575637817
+    },
+    {
+      "text": "30.000",
+      "bbox": [
+        641,
+        1013,
+        759,
+        1063
+      ],
+      "confidence": 99.09351468086243
+    }
+  ],
+  "engine": "paddle",
+  "model": "en_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det",
+  "initialization_seconds": 0.1604917080840096,
+  "latency_seconds": 2.2270452090306208,
+  "language_hint": "en",
+  "image_size": [
+    960,
+    1280
+  ],
+  "profile": {
+    "wall_seconds": 2.2411069590598345,
+    "cpu_core_seconds": 2.309142999999999,
+    "average_cpu_percent": 103.03582301884894,
+    "peak_cpu_percent": 110.65692955667726,
+    "baseline_ram_mib": 4597.953125,
+    "peak_ram_mib": 4631.859375,
+    "incremental_ram_mib": 33.90625,
+    "sample_interval_seconds": 0.05,
+    "scope": "local process tree, includes provider waiting; CPU 100%=one core",
+    "peak_cpu_caveat": "50ms live process-tree samples may miss short-lived children; average/core-seconds use OS waited-child accounting",
+    "logical_cores": 10,
+    "physical_cores": 10,
+    "system_ram_bytes": 17179869184,
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "image_sha256": "38870cde5030bd0b4cf5f1485bc39ce4632b3f10f70369d4063a3a13c6640917",
+  "config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552"
+}

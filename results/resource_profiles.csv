@@ -1,0 +1,31 @@
+provider,scope,concurrency,evaluated,core_seconds_per_receipt,peak_ram_mib,gpu_peak_mib,rpm,modal_allocated_seconds_estimated,baseline_ram_mib,average_cpu_percent,peak_cpu_percent,id,gpu_model,gpu_utilization_percent_mean,allocated_cpu_physical_cores,allocated_ram_mib,initialization_seconds,cold_first_request,container_id,container_uptime_seconds
+ocr_ollama,"local OCR + client stages, or remote Modal inference",1,0,,,,,,,,,,,,,,,,,
+ocr_nvidia,"local OCR + client stages, or remote Modal inference",1,10,10.810067799999995,5235.046875,,3.1535156792096464,,,,,,,,,,,,,
+gemini,"local OCR + client stages, or remote Modal inference",1,10,1.0535780000000001,162.5625,,10.732430548585105,,,,,,,,,,,,,
+modal_hybrid,"local OCR + client stages, or remote Modal inference",1,10,60.35,7798.0,4564.43408203125,0.9474660028836833,627.0287545389999,,,,,,,,,,,,
+ocr_nvidia,"live client/API stage; provider inference remote, OCR excluded",1,10,1.8740926999999998,2417.015625,,6.087451514260831,,2379.515625,19.01408074080028,89.08779944965804,,,,,,,,,
+gemini,"live client/API stage; provider inference remote, OCR excluded",1,10,1.0535780000000001,162.5625,,10.71595741971378,,43.90625,18.816828310578675,99.86414808352552,,,,,,,,,
+modal_hybrid,"live client/API stage; provider inference remote, OCR excluded",1,10,13.588743500000001,97.25,,0.9473965802349408,,44.015625,21.456548535982968,60.222574321745945,,,,,,,,,
+gemini,"live client/API stage; provider inference remote, OCR excluded",2,10,0.4080266,167.796875,,25.40392043812229,,45.0625,17.27579213839591,99.74553577266015,,,,,,,,,
+gemini,"live client/API stage; provider inference remote, OCR excluded",4,10,0.3654604,215.5625,,39.43274549741641,,44.0625,24.018511570973335,100.23238335682585,,,,,,,,,
+paddle,local development OCR process tree,1,8,6.587620124999999,5129.25,,8.763921234976053,,25.375,96.22230650240516,146.41368991634855,,,,,,,,,
+paddle,local development OCR process tree,2,8,6.6287818750000005,5464.265625,,8.695975883669377,,25.0,96.07287887184113,195.25062561916567,,,,,,,,,
+paddle,local development OCR process tree,4,8,6.698270749999999,5321.96875,,8.607437510973176,,24.984375,96.09157818700737,210.59039087373003,,,,,,,,,
+tesseract,local development OCR process tree,1,8,1.804041125,414.65234375,,32.2544609991065,,25.015625,96.98062351182784,131.76192455694118,,,,,,,,,
+modal_linux_cpu.json,remote x86 Linux development OCR process tree,1,8,2.24,360.05859375,,26.62916537819462,,79.3515625,99.41555074525994,98.7,,,,,,,,,
+modal_linux_cpu.json,remote x86 Linux development OCR process tree,2,8,3.9850000000000008,566.46875,,26.420354321022586,,129.2578125,175.47518661545837,108.2,,,,,,,,,
+modal_linux_cpu.json,remote x86 Linux development OCR process tree,4,8,3.42,840.90234375,,19.628408818630906,,79.3828125,111.88193026619615,108.9,,,,,,,,,
+modal_linux_paddle.json,remote x86 Linux development OCR process tree,1,8,7.38875,1912.2578125,,7.6625052349479486,,84.91015625,94.36055925786943,146.8,,,,,,,,,
+modal_linux_paddle.json,remote x86 Linux development OCR process tree,2,8,6.9175,2812.0234375,,8.563820912131906,,1641.0234375,98.73371859945411,148.3,,,,,,,,,
+modal_linux_paddle.json,remote x86 Linux development OCR process tree,4,8,6.96875,3169.83984375,,8.54933484583387,,1995.86328125,99.29696201150797,113.7,,,,,,,,,
+modal_hybrid,remote GPU per-receipt inference; initialization separate,1,1,58.83999999999999,7736.19921875,4504.39453125,,,7046.3828125,101.18712620382603,118.5,ara_0084,Tesla T4,52.70909090909091,2.0,8192,11.172391802,True,ta-01M8839534TR1DPFZN54A9FHER,71.169562416
+modal_hybrid,remote GPU per-receipt inference; initialization separate,1,1,124.12000000000002,7790.94921875,4564.43408203125,,,7768.24609375,101.0639669378893,118.5,ara_0018,Tesla T4,77.67241379310344,2.0,8192,11.172391802,False,ta-01M8839534TR1DPFZN54A9FHER,196.720402962
+modal_hybrid,remote GPU per-receipt inference; initialization separate,1,1,61.18000000000001,7791.43359375,4504.5625,,,7791.29296875,101.13829100116274,119.5,ara_0050,Tesla T4,58.228070175438596,2.0,8192,11.172391802,False,ta-01M8839534TR1DPFZN54A9FHER,261.48335409
+modal_hybrid,remote GPU per-receipt inference; initialization separate,1,1,55.559999999999974,7798.0,4504.5625,,,7793.484375,101.11121452978199,119.2,ara_0033,Tesla T4,55.5,2.0,8192,11.172391802,False,ta-01M8839534TR1DPFZN54A9FHER,321.382888978
+modal_hybrid,remote GPU per-receipt inference; initialization separate,1,1,46.06999999999997,7798.0,4504.5625,,,7797.984375,100.81172402126363,119.1,ara_0022,Tesla T4,49.51162790697674,2.0,8192,11.172391802,False,ta-01M8839534TR1DPFZN54A9FHER,370.65396857599995
+modal_hybrid,remote GPU per-receipt inference; initialization separate,1,1,52.290000000000006,7793.375,4499.16064453125,,,7770.78515625,101.00153034041956,118.7,ara_0064,Tesla T4,53.06122448979592,2.0,8192,11.172391802,False,ta-01M8839534TR1DPFZN54A9FHER,425.421286334
+modal_hybrid,remote GPU per-receipt inference; initialization separate,1,1,51.17,7793.9609375,4499.16064453125,,,7793.9453125,101.13356830079408,118.7,cord_test_0014,Tesla T4,53.375,2.0,8192,11.172391802,False,ta-01M8839534TR1DPFZN54A9FHER,477.991208419
+modal_hybrid,remote GPU per-receipt inference; initialization separate,1,1,45.309999999999995,7794.4609375,4512.37060546875,,,7793.9453125,100.98442580499386,115.1,cord_test_0027,Tesla T4,49.73809523809524,2.0,8192,11.172391802,False,ta-01M8839534TR1DPFZN54A9FHER,527.549418245
+modal_hybrid,remote GPU per-receipt inference; initialization separate,1,1,41.45000000000001,7710.55859375,4499.599609375,,,7022.296875,101.7838203512139,109.2,cord_test_0065,Tesla T4,44.73684210526316,2.0,8192,10.467509621,True,ta-01M883SDYJ8QZ6FEZQ6EQ35CFR,52.224674811
+modal_hybrid,remote GPU per-receipt inference; initialization separate,1,1,42.370000000000005,7765.8828125,4514.38232421875,,,7723.33984375,101.27160298401651,126.6,cord_test_0002,Tesla T4,47.12820512820513,2.0,8192,10.467509621,False,ta-01M883SDYJ8QZ6FEZQ6EQ35CFR,95.479336294
+paddle,SDK import and both model initializations; no image inference,1,0,,812.046875,,,,20.171875,34.10709542914725,155.69323725283678,,,,,,16.6649019169854,,,

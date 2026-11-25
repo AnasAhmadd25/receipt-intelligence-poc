@@ -1,0 +1,206 @@
+{
+  "id": "ara_0090",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_openrouter",
+  "split": "development",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0090.json"
+  },
+  "experiment": {
+    "image_sha256": "6c5fa69c1bceffecc719e712d46a96e0784f5834a3e3663c07fc3aeac3d9b6b1",
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:50:18.725105+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": "63",
+    "purchase_date": "26/04/2022",
+    "purchase_time": "11:48:59",
+    "currency": "نقدى",
+    "subtotal": "232",
+    "discount": null,
+    "tax": "32.48",
+    "total": "264.48",
+    "line_items": [
+      {
+        "raw_description": "مياهص",
+        "quantity": "1",
+        "unit_price": "8",
+        "line_total": "8"
+      },
+      {
+        "raw_description": "قهوة تركي ساده",
+        "quantity": "22",
+        "unit_price": "88",
+        "line_total": "4"
+      },
+      {
+        "raw_description": "D قهوة",
+        "quantity": "1",
+        "unit_price": "30",
+        "line_total": "30"
+      },
+      {
+        "raw_description": "هوست شوكلت كلاسيك",
+        "quantity": "1",
+        "unit_price": "30",
+        "line_total": "30"
+      },
+      {
+        "raw_description": "شاي نكهات",
+        "quantity": "2",
+        "unit_price": "20",
+        "line_total": "40"
+      },
+      {
+        "raw_description": "شاي",
+        "quantity": "2",
+        "unit_price": "18",
+        "line_total": "36"
+      }
+    ],
+    "raw_text": "كاز ابلانكا\nرقم الطلب\n63\nالفرع\nالفرع الرئيسى\nنقدى\nالتاريخ\n11:48:59\n26/04/2022\nالكاشير\nرقم\nالاجمالى\nالكمية\nالسعر\nالصنف\nمياهص\n1\n8\n8\nقهوة تركي ساده\n22\n88\n4\nD قهوة\n30\n1\n30\nهوست شوكلت كلاسيك\n30\n1\n30\nشاي نكهات\n20\n2\n40\nشاي\n2\n18\n36\nالقيمة\n232\nالضريية\n32.48\nالأجمالي\n264.48\nالرقم الضريى\nPowered by www.tebalink.com",
+    "missing_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_time",
+      "currency",
+      "subtotal",
+      "discount",
+      "tax",
+      "total",
+      "line_items"
+    ],
+    "uncertain_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_time",
+      "currency",
+      "subtotal",
+      "discount",
+      "tax",
+      "total",
+      "line_items"
+    ],
+    "validation_warnings": [
+      "Line item 'قهوة تركي ساده' has quantity 22 and unit price 88 but line total 4, which is inconsistent.",
+      "Line item 'D قهوة' has quantity 1 and unit price 30 but line total 30, which is consistent.",
+      "Line item 'هوست شوكلت كلاسيك' has quantity 1 and unit price 30 but line total 30, which is consistent.",
+      "Line item 'شاي نكهات' has quantity 2 and unit price 20 but line total 40, which is consistent.",
+      "Line item 'شاي' has quantity 2 and unit price 18 but line total 36, which is consistent.",
+      "line_items[1]: quantity × unit_price differs from line_total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 3777,
+        "output_tokens": 836,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"63\",\n  \"purchase_date\": \"26/04/2022\",\n  \"purchase_time\": \"11:48:59\",\n  \"currency\": \"نقدى\",\n  \"subtotal\": \"232\",\n  \"discount\": null,\n  \"tax\": \"32.48\",\n  \"total\": \"264.48\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"مياهص\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"8\",\n      \"line_total\": \"8\"\n    },\n    {\n      \"raw_description\": \"قهوة تركي ساده\",\n      \"quantity\": \"22\",\n      \"unit_price\": \"88\",\n      \"line_total\": \"4\"\n    },\n    {\n      \"raw_description\": \"D قهوة\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30\",\n      \"line_total\": \"30\"\n    },\n    {\n      \"raw_description\": \"هوست شوكلت كلاسيك\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30\",\n      \"line_total\": \"30\"\n    },\n    {\n      \"raw_description\": \"شاي نكهات\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"20\",\n      \"line_total\": \"40\"\n    },\n    {\n      \"raw_description\": \"شاي\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"18\",\n      \"line_total\": \"36\"\n    }\n  ],\n  \"raw_text\": \"كاز ابلانكا\\nرقم الطلب\\n63\\nالفرع\\nالفرع الرئيسى\\nنقدى\\nالتاريخ\\n11:48:59\\n26/04/2022\\nالكاشير\\nرقم\\nالاجمالى\\nالكمية\\nالسعر\\nالصنف\\nمياهص\\n1\\n8\\n8\\nقهوة تركي ساده\\n22\\n88\\n4\\nD قهوة\\n30\\n1\\n30\\nهوست شوكلت كلاسيك\\n30\\n1\\n30\\nشاي نكهات\\n20\\n2\\n40\\nشاي\\n2\\n18\\n36\\nالقيمة\\n232\\nالضريية\\n32.48\\nالأجمالي\\n264.48\\nالرقم الضريى\\nPowered by www.tebalink.com\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"receipt_number\",\n    \"purchase_time\",\n    \"currency\",\n    \"subtotal\",\n    \"discount\",\n    \"tax\",\n    \"total\",\n    \"line_items\"\n  ],\n  \"uncertain_fields\": [\n    \"merchant_name\",\n    \"receipt_number\",\n    \"purchase_time\",\n    \"currency\",\n    \"subtotal\",\n    \"discount\",\n    \"tax\",\n    \"total\",\n    \"line_items\"\n  ],\n  \"validation_warnings\": [\n    \"Line item 'قهوة تركي ساده' has quantity 22 and unit price 88 but line total 4, which is inconsistent.\",\n    \"Line item 'D قهوة' has quantity 1 and unit price 30 but line total 30, which is consistent.\",\n    \"Line item 'هوست شوكلت كلاسيك' has quantity 1 and unit price 30 but line total 30, which is consistent.\",\n    \"Line item 'شاي نكهات' has quantity 2 and unit price 20 but line total 40, which is consistent.\",\n    \"Line item 'شاي' has quantity 2 and unit price 18 but line total 36, which is consistent.\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 3777,
+          "completion_tokens": 836,
+          "total_tokens": 4613,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          },
+          "served_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "served_provider": "Nvidia"
+        },
+        "latency_seconds": 19.455894207931124
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 3777,
+    "output_tokens": 836,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 19.455894207931124,
+    "latency_seconds": 19.455894207931124,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle",
+    "reported_cost_usd": 0,
+    "price_scope": "free quota trial; not a production price guarantee"
+  },
+  "metrics": {
+    "field_correct": 4,
+    "field_total": 5,
+    "field_accuracy": 0.8,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [
+      "merchant_name"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 0.2,
+    "hallucination_rate": null,
+    "missing_denominator": 5,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "currency",
+      "subtotal"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 19.4706510839751
+}

@@ -1,0 +1,171 @@
+{
+  "id": "ara_0022",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "ocr_openrouter",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/ara_0022.json"
+  },
+  "experiment": {
+    "image_sha256": "50854a61901ab3715ee023a07c0e1bc0e569910ac79c47fa7a401b737bb07b49",
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:55:31.603280+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": "69",
+    "purchase_date": "2022-12-22",
+    "purchase_time": "1:08:10PM",
+    "currency": null,
+    "subtotal": "254.16",
+    "discount": "0.00",
+    "tax": "0.00",
+    "total": "259.16",
+    "line_items": [
+      {
+        "raw_description": "فراخ بلدي كامل",
+        "quantity": "2",
+        "unit_price": "68.00",
+        "line_total": "136.00"
+      },
+      {
+        "raw_description": "فص بالية",
+        "quantity": "1",
+        "unit_price": "110.00",
+        "line_total": "110.00"
+      },
+      {
+        "raw_description": "فراخ بلدي كامل",
+        "quantity": "0.120",
+        "unit_price": "68.00",
+        "line_total": "8.16"
+      }
+    ],
+    "raw_text": "طيور عيسي\n\nDelivery\nفاتورة\n69\nالتاريخ\n1:08:10PM\n22/12/2022\nالطيار\nالأاسم\nتيفرن ١\nالعنوان\nالمنطقة\nالدور\nالشفقة\nعلامة ممبيزة\nالاصناف\nالسعر\nكمية\nاجمالى\nفراخ بلدي كامل\n68.00\n2\n136.00\nفص بالية\n110.00\n110.00\nفراخ بلدي كامل\n0.120\n68.00\n8.16\nاجمالي المبيعات\n254.16\nضريبة القيمة المضافة\n0.00\nخدمة التوصيل\n5.00\nالخصم\n0.00\n259.16\nاجمالى الفاتورة",
+    "missing_fields": [
+      "merchant_name",
+      "currency",
+      "line_items[0].unit_price",
+      "line_items[1].unit_price",
+      "line_items[2].unit_price"
+    ],
+    "uncertain_fields": [
+      "purchase_time",
+      "line_items[2].quantity",
+      "line_items[2].unit_price"
+    ],
+    "validation_warnings": [
+      "Line item quantity '0.120' is non-integer; may indicate weight-based pricing not captured in schema",
+      "Line item unit price '68.00' appears twice for same description with different quantities, suggesting possible duplicate entries or misaligned parsing",
+      "subtotal + tax - discount differs from total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_openrouter",
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 3469,
+        "output_tokens": 628,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"69\",\n  \"purchase_date\": \"2022-12-22\",\n  \"purchase_time\": \"1:08:10PM\",\n  \"currency\": null,\n  \"subtotal\": \"254.16\",\n  \"discount\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"259.16\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"فراخ بلدي كامل\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"68.00\",\n      \"line_total\": \"136.00\"\n    },\n    {\n      \"raw_description\": \"فص بالية\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"110.00\",\n      \"line_total\": \"110.00\"\n    },\n    {\n      \"raw_description\": \"فراخ بلدي كامل\",\n      \"quantity\": \"0.120\",\n      \"unit_price\": \"68.00\",\n      \"line_total\": \"8.16\"\n    }\n  ],\n  \"raw_text\": \"طيور عيسي\\n\\nDelivery\\nفاتورة\\n69\\nالتاريخ\\n1:08:10PM\\n22/12/2022\\nالطيار\\nالأاسم\\nتيفرن ١\\nالعنوان\\nالمنطقة\\nالدور\\nالشفقة\\nعلامة ممبيزة\\nالاصناف\\nالسعر\\nكمية\\nاجمالى\\nفراخ بلدي كامل\\n68.00\\n2\\n136.00\\nفص بالية\\n110.00\\n110.00\\nفراخ بلدي كامل\\n0.120\\n68.00\\n8.16\\nاجمالي المبيعات\\n254.16\\nضريبة القيمة المضافة\\n0.00\\nخدمة التوصيل\\n5.00\\nالخصم\\n0.00\\n259.16\\nاجمالى الفاتورة\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"currency\",\n    \"line_items[0].unit_price\",\n    \"line_items[1].unit_price\",\n    \"line_items[2].unit_price\"\n  ],\n  \"uncertain_fields\": [\n    \"purchase_time\",\n    \"line_items[2].quantity\",\n    \"line_items[2].unit_price\"\n  ],\n  \"validation_warnings\": [\n    \"Line item quantity '0.120' is non-integer; may indicate weight-based pricing not captured in schema\",\n    \"Line item unit price '68.00' appears twice for same description with different quantities, suggesting possible duplicate entries or misaligned parsing\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 3469,
+          "completion_tokens": 628,
+          "total_tokens": 4097,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          },
+          "served_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "served_provider": "Nvidia"
+        },
+        "latency_seconds": 4.447344292071648
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 3469,
+    "output_tokens": 628,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 4.447344292071648,
+    "latency_seconds": 4.447344292071648,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle",
+    "reported_cost_usd": 0,
+    "price_scope": "free quota trial; not a production price guarantee"
+  },
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 4,
+    "field_accuracy": 0.5,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [
+      "merchant_name"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 0.25,
+    "hallucination_rate": null,
+    "missing_denominator": 4,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_time",
+      "subtotal",
+      "discount"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 4.463276625028811
+}

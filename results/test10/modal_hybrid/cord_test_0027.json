@@ -1,0 +1,172 @@
+{
+  "id": "cord_test_0027",
+  "dataset": "CORD-v2",
+  "language": "Indonesian / Latin script / mixed English",
+  "provider": "modal_hybrid",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "35a47a2e754f3a453442e0c53aa98e1b0f672708a931bdfd4a61f020a405b035",
+    "provider": "modal_hybrid",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T01:04:55.140334+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "FOODPRINT",
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "56000",
+    "discount": null,
+    "tax": "5600",
+    "total": "61600",
+    "line_items": [
+      {
+        "raw_description": "PKT AYAM",
+        "quantity": "1",
+        "unit_price": "33000",
+        "line_total": "33000"
+      },
+      {
+        "raw_description": "GULAI OTAK",
+        "quantity": "1",
+        "unit_price": "23000",
+        "line_total": "23000"
+      }
+    ],
+    "raw_text": "PKT AYAM\nGULAI OTAK\n2.00 ITEMS\nSUBTOTAL\nTAX 10%\nTOTAL\nCHARGE5\n",
+    "missing_fields": [
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "discount"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "modal_hybrid",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "container_id": "ta-01M8839534TR1DPFZN54A9FHER",
+    "runtime_versions": {
+      "torch": "2.9.1+cu128",
+      "transformers": "5.24.1"
+    },
+    "dtype": "torch.float16",
+    "attention_implementation": "sdpa",
+    "original_image_size": [
+      864,
+      1296
+    ],
+    "inference_image_size": [
+      816,
+      1224
+    ],
+    "image_pixel_cap": 1000000,
+    "latency_seconds": 44.86830482900001,
+    "cold_first_request": false,
+    "initialization_seconds": 11.172391802,
+    "initialization_resource": {
+      "wall_seconds": 11.16153959,
+      "cpu_core_seconds": 12.69,
+      "cpu_percent_mean": 113.69399264031101,
+      "cpu_percent_peak": 196.8,
+      "baseline_ram_bytes": 61734912,
+      "peak_ram_bytes": 11616468992,
+      "gpu_utilization_percent_mean": 5.75,
+      "gpu_memory_observed_peak_mib": 4166.0
+    },
+    "resource": {
+      "wall_seconds": 44.86830482900001,
+      "cpu_core_seconds": 45.309999999999995,
+      "cpu_percent_mean": 100.98442580499386,
+      "cpu_percent_peak": 115.1,
+      "baseline_ram_bytes": 8172544000,
+      "peak_ram_bytes": 8173084672,
+      "gpu_utilization_percent_mean": 49.73809523809524,
+      "gpu_memory_observed_peak_mib": 4952.0,
+      "gpu_name": "Tesla T4",
+      "gpu_compute_capability": [
+        7,
+        5
+      ],
+      "gpu_peak_allocated_bytes": 4731563520,
+      "gpu_peak_reserved_bytes": 5049942016,
+      "allocated_cpu_physical_cores": 2.0,
+      "allocated_ram_mib": 8192,
+      "allocated_gpu": "T4",
+      "container_uptime_seconds": 527.549418245,
+      "region_selection": "us",
+      "region_price_multiplier": 1.15
+    },
+    "input_tokens": 1154,
+    "output_tokens": 261,
+    "fallback_used": false,
+    "json_valid": true,
+    "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle.",
+    "raw_output": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"FOODPRINT\",\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"56,000\",\n  \"discount\": null,\n  \"tax\": \"5,600\",\n  \"total\": \"61,600\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"PKT AYAM\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"33,000\",\n      \"line_total\": \"33,000\"\n    },\n    {\n      \"raw_description\": \"GULAI OTAK\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"23,000\",\n      \"line_total\": \"23,000\"\n    }\n  ],\n  \"raw_text\": \"PKT AYAM\\nGULAI OTAK\\n2.00 ITEMS\\nSUBTOTAL\\nTAX 10%\\nTOTAL\\nCHARGE5\\n\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+    "client_latency_seconds": 46.393385499948636
+  },
+  "raw_output": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"FOODPRINT\",\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"56,000\",\n  \"discount\": null,\n  \"tax\": \"5,600\",\n  \"total\": \"61,600\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"PKT AYAM\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"33,000\",\n      \"line_total\": \"33,000\"\n    },\n    {\n      \"raw_description\": \"GULAI OTAK\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"23,000\",\n      \"line_total\": \"23,000\"\n    }\n  ],\n  \"raw_text\": \"PKT AYAM\\nGULAI OTAK\\n2.00 ITEMS\\nSUBTOTAL\\nTAX 10%\\nTOTAL\\nCHARGE5\\n\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+  "metrics": {
+    "field_correct": 3,
+    "field_total": 3,
+    "field_accuracy": 1.0,
+    "fields": {
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "merchant_name"
+    ],
+    "description_similarity": 1.0,
+    "line_items": {
+      "matched": 2,
+      "predicted": 2,
+      "expected": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "line_total": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "status": "ok",
+  "wall_seconds": 46.41083179193083
+}

@@ -1,0 +1,171 @@
+{
+  "id": "cord_test_0065",
+  "dataset": "CORD-v2",
+  "language": "Indonesian / Latin script / mixed English",
+  "provider": "modal_hybrid",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "23ce4a875e39efa0cf4e0a5da93c3ff04b43c6e09b4f3bb25e22b73c828330f1",
+    "provider": "modal_hybrid",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T01:05:41.552321+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "13.000",
+    "discount": null,
+    "tax": null,
+    "total": "13.000",
+    "line_items": [
+      {
+        "raw_description": "Subur Polos + Telur",
+        "quantity": null,
+        "unit_price": "13.000",
+        "line_total": "13.000"
+      }
+    ],
+    "raw_text": "",
+    "missing_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "modal_hybrid",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "container_id": "ta-01M883SDYJ8QZ6FEZQ6EQ35CFR",
+    "runtime_versions": {
+      "torch": "2.9.1+cu128",
+      "transformers": "5.24.1"
+    },
+    "dtype": "torch.float16",
+    "attention_implementation": "sdpa",
+    "original_image_size": [
+      960,
+      1706
+    ],
+    "inference_image_size": [
+      750,
+      1333
+    ],
+    "image_pixel_cap": 1000000,
+    "latency_seconds": 40.723564764,
+    "cold_first_request": true,
+    "initialization_seconds": 10.467509621,
+    "initialization_resource": {
+      "wall_seconds": 10.456683074,
+      "cpu_core_seconds": 12.45,
+      "cpu_percent_mean": 119.06261203379376,
+      "cpu_percent_peak": 197.9,
+      "baseline_ram_bytes": 61657088,
+      "peak_ram_bytes": 11604041728,
+      "gpu_utilization_percent_mean": 6.375,
+      "gpu_memory_observed_peak_mib": 4165.0
+    },
+    "resource": {
+      "wall_seconds": 40.723564764,
+      "cpu_core_seconds": 41.45000000000001,
+      "cpu_percent_mean": 101.7838203512139,
+      "cpu_percent_peak": 109.2,
+      "baseline_ram_bytes": 7363411968,
+      "peak_ram_bytes": 8085106688,
+      "gpu_utilization_percent_mean": 44.73684210526316,
+      "gpu_memory_observed_peak_mib": 4671.0,
+      "gpu_name": "Tesla T4",
+      "gpu_compute_capability": [
+        7,
+        5
+      ],
+      "gpu_peak_allocated_bytes": 4718172160,
+      "gpu_peak_reserved_bytes": 4756340736,
+      "allocated_cpu_physical_cores": 2.0,
+      "allocated_ram_mib": 8192,
+      "allocated_gpu": "T4",
+      "container_uptime_seconds": 52.224674811,
+      "region_selection": "us",
+      "region_price_multiplier": 1.15
+    },
+    "input_tokens": 1132,
+    "output_tokens": 170,
+    "fallback_used": false,
+    "json_valid": true,
+    "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle.",
+    "raw_output": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"13.000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"13.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"Subur Polos + Telur\",\n      \"quantity\": null,\n      \"unit_price\": \"13.000\",\n      \"line_total\": \"13.000\"\n    }\n  ],\n  \"raw_text\": \"\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+    "client_latency_seconds": 58.356195500004105
+  },
+  "raw_output": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"13.000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"13.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"Subur Polos + Telur\",\n      \"quantity\": null,\n      \"unit_price\": \"13.000\",\n      \"line_total\": \"13.000\"\n    }\n  ],\n  \"raw_text\": \"\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 2,
+    "field_accuracy": 0.0,
+    "fields": {
+      "subtotal": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": 0.9411764705882353,
+    "line_items": {
+      "matched": 0,
+      "predicted": 1,
+      "expected": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "quantity": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "unit_price": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "status": "ok",
+  "wall_seconds": 58.3644031669246
+}

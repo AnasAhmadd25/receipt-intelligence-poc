@@ -1,0 +1,153 @@
+{
+  "id": "cord_test_0065",
+  "dataset": "CORD-v2",
+  "language": "Indonesian / Latin script / mixed English",
+  "provider": "ocr_nvidia",
+  "split": "test",
+  "ocr": {
+    "engine": "paddle",
+    "cache": "results/ocr_cache/paddle/cord_test_0065.json"
+  },
+  "experiment": {
+    "image_sha256": "23ce4a875e39efa0cf4e0a5da93c3ff04b43c6e09b4f3bb25e22b73c828330f1",
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": "bd71ae1d7d0b93348301caddb47259ec1eb512309ff898bed4f7ff4adfe1d552",
+    "text_template_revision": "text-repair-2"
+  },
+  "started_utc": "2026-11-25T00:37:47.464355+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": "1F",
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "13.000",
+    "discount": null,
+    "tax": null,
+    "total": "13.000",
+    "line_items": [
+      {
+        "raw_description": "ubur Polos + Telur",
+        "quantity": null,
+        "unit_price": null,
+        "line_total": "13.000"
+      }
+    ],
+    "raw_text": "1F\nEOOD\nubur Polos + Telur\n13.000\n13.000\n\nSubtotal\n13.000\najak\n,otal\n13.000",
+    "missing_fields": [
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "merchant_name",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [
+      "EOOD"
+    ],
+    "validation_warnings": [
+      "The receipt text contains fragmented words ('ajak', ',otal') which might indicate OCR errors or non-standard formatting."
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_nvidia",
+    "model": "nvidia/nemotron-3.5-bolt-e4b",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "input_tokens": 1513,
+        "output_tokens": 319,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"1F\",\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"13.000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"13.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"ubur Polos + Telur\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"line_total\": \"13.000\"\n    }\n  ],\n  \"raw_text\": \"1F\\nEOOD\\nubur Polos + Telur\\n13.000\\n13.000\\n\\nSubtotal\\n13.000\\najak\\n,otal\\n13.000\",\n  \"missing_fields\": [\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\"\n  ],\n  \"uncertain_fields\": [\n    \"EOOD\"\n  ],\n  \"validation_warnings\": [\n    \"The receipt text contains fragmented words ('ajak', ',otal') which might indicate OCR errors or non-standard formatting.\"\n  ]\n}",
+        "status": "ok",
+        "token_details": {
+          "prompt_tokens": 1513,
+          "completion_tokens": 319,
+          "total_tokens": 1832,
+          "prompt_tokens_details": {
+            "cached_tokens": 832
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        },
+        "latency_seconds": 4.168659333023243
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1513,
+    "output_tokens": 319,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 4.168659333023243,
+    "latency_seconds": 4.168659333023243,
+    "template_revision": "text-repair-2",
+    "ocr_engine": "paddle"
+  },
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 2,
+    "field_accuracy": 0.0,
+    "fields": {
+      "subtotal": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number"
+    ],
+    "description_similarity": 0.9696969696969697,
+    "line_items": {
+      "matched": 0,
+      "predicted": 1,
+      "expected": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "quantity": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "unit_price": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "status": "ok",
+  "wall_seconds": 4.17889937502332
+}

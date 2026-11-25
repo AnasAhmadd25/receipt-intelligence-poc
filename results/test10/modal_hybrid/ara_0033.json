@@ -1,0 +1,157 @@
+{
+  "id": "ara_0033",
+  "dataset": "AraReceipt",
+  "language": "Arabic / mixed Arabic-English",
+  "provider": "modal_hybrid",
+  "split": "test",
+  "ocr": null,
+  "experiment": {
+    "image_sha256": "9c329e1ac0854c8909fd5fc807db620bb7ba3b47079b985346615014ae1161fe",
+    "provider": "modal_hybrid",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "prompt_sha256": "d515ed1f15249b4b29383d4c261f33efcbb4dea283720234f7890762fef750a8",
+    "schema_sha256": "b6bcb22baf3961a0fbd5420a82bb6d2784141a23660e3156d40f04083d51c433",
+    "ocr_config_signature": null
+  },
+  "started_utc": "2026-11-25T01:01:15.481345+00:00",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "نريومك-الدراجي",
+    "receipt_number": "01207890866",
+    "purchase_date": "05/07/2022",
+    "purchase_time": "14:47:31",
+    "currency": "EGP",
+    "subtotal": "104.81",
+    "discount": "0.00",
+    "tax": "0.918",
+    "total": "82.57",
+    "line_items": [
+      {
+        "raw_description": "المناشري بطاقي تحمير وزن",
+        "quantity": "2",
+        "unit_price": "3.176",
+        "line_total": "22.23"
+      },
+      {
+        "raw_description": "سماة وزن",
+        "quantity": "1",
+        "unit_price": "0.918",
+        "line_total": "82.57"
+      }
+    ],
+    "raw_text": "نريومك-الدراجي\n01207890866 خدمة التوصيل\nالقبيمة السعر الكمية المصف\nالمناشري بطاقي تحمير وزن 230678700003 3.176 7.00 22.23\nسماة وزن 230145700000 0.918 89.95 82.57\nعدد القطع 2 104.81\nكارت: اعلمان 104.80\nالباقي: 0.00\nالكاشير\nUser:8723 PoS:3 Store:223\n14:47:31 Date:05/07/2022 Trans:154\nسعر أرهم - جودة أعلى - خدمة أفضل\nشكا را لزبارتكم\n01207890866 خدمة التوصيل\nfacebook.com/marketelfergany",
+    "missing_fields": [],
+    "uncertain_fields": [],
+    "validation_warnings": [
+      "line_items[0]: quantity × unit_price differs from line_total",
+      "line_items[1]: quantity × unit_price differs from line_total",
+      "subtotal + tax - discount differs from total"
+    ]
+  },
+  "metadata": {
+    "provider": "modal_hybrid",
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "container_id": "ta-01M8839534TR1DPFZN54A9FHER",
+    "runtime_versions": {
+      "torch": "2.9.1+cu128",
+      "transformers": "5.24.1"
+    },
+    "dtype": "torch.float16",
+    "attention_implementation": "sdpa",
+    "original_image_size": [
+      3024,
+      4032
+    ],
+    "inference_image_size": [
+      866,
+      1154
+    ],
+    "image_pixel_cap": 1000000,
+    "latency_seconds": 54.94939434600002,
+    "cold_first_request": false,
+    "initialization_seconds": 11.172391802,
+    "initialization_resource": {
+      "wall_seconds": 11.16153959,
+      "cpu_core_seconds": 12.69,
+      "cpu_percent_mean": 113.69399264031101,
+      "cpu_percent_peak": 196.8,
+      "baseline_ram_bytes": 61734912,
+      "peak_ram_bytes": 11616468992,
+      "gpu_utilization_percent_mean": 5.75,
+      "gpu_memory_observed_peak_mib": 4166.0
+    },
+    "resource": {
+      "wall_seconds": 54.94939434600002,
+      "cpu_core_seconds": 55.559999999999974,
+      "cpu_percent_mean": 101.11121452978199,
+      "cpu_percent_peak": 119.2,
+      "baseline_ram_bytes": 8172060672,
+      "peak_ram_bytes": 8176795648,
+      "gpu_utilization_percent_mean": 55.5,
+      "gpu_memory_observed_peak_mib": 4788.0,
+      "gpu_name": "Tesla T4",
+      "gpu_compute_capability": [
+        7,
+        5
+      ],
+      "gpu_peak_allocated_bytes": 4723376128,
+      "gpu_peak_reserved_bytes": 4877975552,
+      "allocated_cpu_physical_cores": 2.0,
+      "allocated_ram_mib": 8192,
+      "allocated_gpu": "T4",
+      "container_uptime_seconds": 321.382888978,
+      "region_selection": "us",
+      "region_price_multiplier": 1.15
+    },
+    "input_tokens": 1138,
+    "output_tokens": 525,
+    "fallback_used": false,
+    "json_valid": true,
+    "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle.",
+    "raw_output": "```json\n{\n    \"schema_version\": \"1.0\",\n    \"merchant_name\": \"نريومك-الدراجي\",\n    \"receipt_number\": \"01207890866\",\n    \"purchase_date\": \"05/07/2022\",\n    \"purchase_time\": \"14:47:31\",\n    \"currency\": \"EGP\",\n    \"subtotal\": \"104.81\",\n    \"discount\": \"0.00\",\n    \"tax\": \"0.918\",\n    \"total\": \"82.57\",\n    \"line_items\": [\n        {\n            \"raw_description\": \"المناشري بطاقي تحمير وزن\",\n            \"quantity\": \"2\",\n            \"unit_price\": \"3.176\",\n            \"line_total\": \"22.23\"\n        },\n        {\n            \"raw_description\": \"سماة وزن\",\n            \"quantity\": \"1\",\n            \"unit_price\": \"0.918\",\n            \"line_total\": \"82.57\"\n        }\n    ],\n    \"raw_text\": \"نريومك-الدراجي\\n01207890866 خدمة التوصيل\\nالقبيمة السعر الكمية المصف\\nالمناشري بطاقي تحمير وزن 230678700003 3.176 7.00 22.23\\nسماة وزن 230145700000 0.918 89.95 82.57\\nعدد القطع 2 104.81\\nكارت: اعلمان 104.80\\nالباقي: 0.00\\nالكاشير\\nUser:8723 PoS:3 Store:223\\n14:47:31 Date:05/07/2022 Trans:154\\nسعر أرهم - جودة أعلى - خدمة أفضل\\nشكا را لزبارتكم\\n01207890866 خدمة التوصيل\\nfacebook.com/marketelfergany\",\n    \"missing_fields\": [],\n    \"uncertain_fields\": [],\n    \"validation_warnings\": []\n}\n```",
+    "client_latency_seconds": 59.86514879204333
+  },
+  "raw_output": "```json\n{\n    \"schema_version\": \"1.0\",\n    \"merchant_name\": \"نريومك-الدراجي\",\n    \"receipt_number\": \"01207890866\",\n    \"purchase_date\": \"05/07/2022\",\n    \"purchase_time\": \"14:47:31\",\n    \"currency\": \"EGP\",\n    \"subtotal\": \"104.81\",\n    \"discount\": \"0.00\",\n    \"tax\": \"0.918\",\n    \"total\": \"82.57\",\n    \"line_items\": [\n        {\n            \"raw_description\": \"المناشري بطاقي تحمير وزن\",\n            \"quantity\": \"2\",\n            \"unit_price\": \"3.176\",\n            \"line_total\": \"22.23\"\n        },\n        {\n            \"raw_description\": \"سماة وزن\",\n            \"quantity\": \"1\",\n            \"unit_price\": \"0.918\",\n            \"line_total\": \"82.57\"\n        }\n    ],\n    \"raw_text\": \"نريومك-الدراجي\\n01207890866 خدمة التوصيل\\nالقبيمة السعر الكمية المصف\\nالمناشري بطاقي تحمير وزن 230678700003 3.176 7.00 22.23\\nسماة وزن 230145700000 0.918 89.95 82.57\\nعدد القطع 2 104.81\\nكارت: اعلمان 104.80\\nالباقي: 0.00\\nالكاشير\\nUser:8723 PoS:3 Store:223\\n14:47:31 Date:05/07/2022 Trans:154\\nسعر أرهم - جودة أعلى - خدمة أفضل\\nشكا را لزبارتكم\\n01207890866 خدمة التوصيل\\nfacebook.com/marketelfergany\",\n    \"missing_fields\": [],\n    \"uncertain_fields\": [],\n    \"validation_warnings\": []\n}\n```",
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 3,
+    "field_accuracy": 0.6666666666666666,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "currency",
+      "subtotal",
+      "discount",
+      "tax",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  },
+  "status": "ok",
+  "wall_seconds": 59.871699916082434
+}

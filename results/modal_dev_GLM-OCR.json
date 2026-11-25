@@ -1,0 +1,373 @@
+[
+  {
+    "receipt": {
+      "schema_version": "1.0",
+      "merchant_name": "",
+      "receipt_number": "",
+      "purchase_date": "2022-12-11",
+      "purchase_time": "03:55:00",
+      "currency": "€",
+      "subtotal": "916.0",
+      "discount": "0.0",
+      "tax": null,
+      "total": "916.0",
+      "line_items": [],
+      "raw_text": "",
+      "missing_fields": [],
+      "uncertain_fields": [],
+      "validation_warnings": []
+    },
+    "metadata": {
+      "model": "zai-org/GLM-OCR",
+      "revision": "2e85a62840ccac27daa451df36c736c4636b8628",
+      "container_id": "ta-01M8823WVR1ZHV7XDNQE0NCC8R",
+      "runtime_versions": {
+        "torch": "2.9.1+cu128",
+        "transformers": "5.24.1"
+      },
+      "dtype": "torch.float16",
+      "attention_implementation": "sdpa",
+      "original_image_size": [
+        1080,
+        1920
+      ],
+      "inference_image_size": [
+        750,
+        1333
+      ],
+      "image_pixel_cap": 1000000,
+      "latency_seconds": 50.347358989,
+      "cold_first_request": true,
+      "initialization_seconds": 9.911302875,
+      "initialization_resource": {
+        "wall_seconds": 9.899068946,
+        "cpu_core_seconds": 10.299999999999999,
+        "cpu_percent_mean": 104.05018952981439,
+        "cpu_percent_peak": 184.4,
+        "baseline_ram_bytes": 61685760,
+        "peak_ram_bytes": 8815648768,
+        "gpu_utilization_percent_mean": 3.5714285714285716,
+        "gpu_memory_observed_peak_mib": 2222.0
+      },
+      "resource": {
+        "wall_seconds": 50.347358989,
+        "cpu_core_seconds": 50.96,
+        "cpu_percent_mean": 101.2168284956791,
+        "cpu_percent_peak": 111.4,
+        "baseline_ram_bytes": 6244114432,
+        "peak_ram_bytes": 7509995520,
+        "gpu_utilization_percent_mean": 41.297872340425535,
+        "gpu_memory_observed_peak_mib": 2920.0,
+        "gpu_name": "Tesla T4",
+        "gpu_compute_capability": [
+          7,
+          5
+        ],
+        "gpu_peak_allocated_bytes": 2749094912,
+        "gpu_peak_reserved_bytes": 2917138432,
+        "allocated_cpu_physical_cores": 2.0,
+        "allocated_ram_mib": 8192,
+        "allocated_gpu": "T4",
+        "container_uptime_seconds": 80.69888252300001,
+        "region_selection": "us",
+        "region_price_multiplier": 1.15
+      },
+      "input_tokens": 1449,
+      "output_tokens": 111,
+      "fallback_used": false,
+      "json_valid": true,
+      "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle."
+    },
+    "raw_output": "```json\n{\n    \"schema_version\": \"1.0\",\n    \"merchant_name\": \"\",\n    \"receipt_number\": \"\",\n    \"purchase_date\": \"2022-12-11\",\n    \"purchase_time\": \"03:55:00\",\n    \"currency\": \"€\",\n    \"subtotal\": 916.0,\n    \"discount\": 0.0,\n    \"tax\": \"\",\n    \"total\": 916.0\n}\n```",
+    "sample_id": "ara_0077",
+    "client_wall_seconds": 52.27665362507105
+  },
+  {
+    "receipt": {
+      "schema_version": "1.0",
+      "merchant_name": "",
+      "receipt_number": "",
+      "purchase_date": "",
+      "purchase_time": "",
+      "currency": "",
+      "subtotal": "20.0",
+      "discount": null,
+      "tax": null,
+      "total": "50.0",
+      "line_items": [
+        {
+          "raw_description": "1 Dum Dum Thai Coffee",
+          "quantity": "1.0",
+          "unit_price": "19.0",
+          "line_total": "19.0"
+        },
+        {
+          "raw_description": "1 Ice",
+          "quantity": "1.0",
+          "unit_price": "1.0",
+          "line_total": "1.0"
+        }
+      ],
+      "raw_text": "",
+      "missing_fields": [],
+      "uncertain_fields": [],
+      "validation_warnings": []
+    },
+    "metadata": {
+      "model": "zai-org/GLM-OCR",
+      "revision": "2e85a62840ccac27daa451df36c736c4636b8628",
+      "container_id": "ta-01M8823WVR1ZHV7XDNQE0NCC8R",
+      "runtime_versions": {
+        "torch": "2.9.1+cu128",
+        "transformers": "5.24.1"
+      },
+      "dtype": "torch.float16",
+      "attention_implementation": "sdpa",
+      "original_image_size": [
+        960,
+        1280
+      ],
+      "inference_image_size": [
+        866,
+        1154
+      ],
+      "image_pixel_cap": 1000000,
+      "latency_seconds": 48.48543876900001,
+      "cold_first_request": false,
+      "initialization_seconds": 9.911302875,
+      "initialization_resource": {
+        "wall_seconds": 9.899068946,
+        "cpu_core_seconds": 10.299999999999999,
+        "cpu_percent_mean": 104.05018952981439,
+        "cpu_percent_peak": 184.4,
+        "baseline_ram_bytes": 61685760,
+        "peak_ram_bytes": 8815648768,
+        "gpu_utilization_percent_mean": 3.5714285714285716,
+        "gpu_memory_observed_peak_mib": 2222.0
+      },
+      "resource": {
+        "wall_seconds": 48.48543876900001,
+        "cpu_core_seconds": 49.03,
+        "cpu_percent_mean": 101.12314386509824,
+        "cpu_percent_peak": 109.8,
+        "baseline_ram_bytes": 7524052992,
+        "peak_ram_bytes": 7560998912,
+        "gpu_utilization_percent_mean": 42.54347826086956,
+        "gpu_memory_observed_peak_mib": 2920.0,
+        "gpu_name": "Tesla T4",
+        "gpu_compute_capability": [
+          7,
+          5
+        ],
+        "gpu_peak_allocated_bytes": 2732783616,
+        "gpu_peak_reserved_bytes": 2917138432,
+        "allocated_cpu_physical_cores": 2.0,
+        "allocated_ram_mib": 8192,
+        "allocated_gpu": "T4",
+        "container_uptime_seconds": 129.553412087,
+        "region_selection": "us",
+        "region_price_multiplier": 1.15
+      },
+      "input_tokens": 1424,
+      "output_tokens": 198,
+      "fallback_used": false,
+      "json_valid": true,
+      "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle."
+    },
+    "raw_output": "```json\n{\n    \"schema_version\": \"1.0\",\n    \"merchant_name\": \"\",\n    \"receipt_number\": \"\",\n    \"purchase_date\": \"\",\n    \"purchase_time\": \"\",\n    \"currency\": \"\",\n    \"subtotal\": 20.0,\n    \"discount\": \"\",\n    \"tax\": \"\",\n    \"total\": 50.0,\n    \"line_items\": [\n        {\n            \"raw_description\": \"1 Dum Dum Thai Coffee\",\n            \"quantity\": 1.0,\n            \"unit_price\": 19.0,\n            \"line_total\": 19.0\n        },\n        {\n            \"raw_description\": \"1 Ice\",\n            \"quantity\": 1.0,\n            \"unit_price\": 1.0,\n            \"line_total\": 1.0\n        }\n    ],\n    \"missing_fields\": [],\n    \"uncertain_fields\": []\n}\n```",
+    "sample_id": "cord_validation_0071",
+    "client_wall_seconds": 48.85844524996355
+  },
+  {
+    "receipt": {
+      "schema_version": "1.0",
+      "merchant_name": "Dukkan chocolate",
+      "receipt_number": "(1220)",
+      "purchase_date": "2022-11-09",
+      "purchase_time": "23:03 AM",
+      "currency": "Riyal",
+      "subtotal": "154.0",
+      "discount": "10.0",
+      "tax": null,
+      "total": "154.0",
+      "line_items": [
+        {
+          "raw_description": "100 دلار",
+          "quantity": "1.0",
+          "unit_price": "100.0",
+          "line_total": "100.0"
+        },
+        {
+          "raw_description": "بركة والنبات بطاقة وانتاج وانتاج",
+          "quantity": "2.0",
+          "unit_price": "27.0",
+          "line_total": "54.0"
+        }
+      ],
+      "raw_text": "",
+      "missing_fields": [],
+      "uncertain_fields": [],
+      "validation_warnings": []
+    },
+    "metadata": {
+      "model": "zai-org/GLM-OCR",
+      "revision": "2e85a62840ccac27daa451df36c736c4636b8628",
+      "container_id": "ta-01M8823WVR1ZHV7XDNQE0NCC8R",
+      "runtime_versions": {
+        "torch": "2.9.1+cu128",
+        "transformers": "5.24.1"
+      },
+      "dtype": "torch.float16",
+      "attention_implementation": "sdpa",
+      "original_image_size": [
+        3456,
+        4608
+      ],
+      "inference_image_size": [
+        866,
+        1154
+      ],
+      "image_pixel_cap": 1000000,
+      "latency_seconds": 48.90831269399999,
+      "cold_first_request": false,
+      "initialization_seconds": 9.911302875,
+      "initialization_resource": {
+        "wall_seconds": 9.899068946,
+        "cpu_core_seconds": 10.299999999999999,
+        "cpu_percent_mean": 104.05018952981439,
+        "cpu_percent_peak": 184.4,
+        "baseline_ram_bytes": 61685760,
+        "peak_ram_bytes": 8815648768,
+        "gpu_utilization_percent_mean": 3.5714285714285716,
+        "gpu_memory_observed_peak_mib": 2222.0
+      },
+      "resource": {
+        "wall_seconds": 48.90831269399999,
+        "cpu_core_seconds": 49.88999999999997,
+        "cpu_percent_mean": 102.00719929174825,
+        "cpu_percent_peak": 117.8,
+        "baseline_ram_bytes": 7608975360,
+        "peak_ram_bytes": 7608991744,
+        "gpu_utilization_percent_mean": 43.71739130434783,
+        "gpu_memory_observed_peak_mib": 2920.0,
+        "gpu_name": "Tesla T4",
+        "gpu_compute_capability": [
+          7,
+          5
+        ],
+        "gpu_peak_allocated_bytes": 2732783616,
+        "gpu_peak_reserved_bytes": 2917138432,
+        "allocated_cpu_physical_cores": 2.0,
+        "allocated_ram_mib": 8192,
+        "allocated_gpu": "T4",
+        "container_uptime_seconds": 179.414445887,
+        "region_selection": "us",
+        "region_price_multiplier": 1.15
+      },
+      "input_tokens": 1424,
+      "output_tokens": 238,
+      "fallback_used": false,
+      "json_valid": true,
+      "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle."
+    },
+    "raw_output": "```json\n{\n    \"schema_version\": \"1.0\",\n    \"merchant_name\": \"Dukkan chocolate\",\n    \"receipt_number\": \"(1220)\",\n    \"purchase_date\": \"2022-11-09\",\n    \"purchase_time\": \"23:03 AM\",\n    \"currency\": \"Riyal\",\n    \"subtotal\": 154.0,\n    \"discount\": 10.0,\n    \"tax\": \"\",\n    \"total\": 154.0,\n    \"line_items\": [\n        {\n            \"raw_description\": \"100 دلار\",\n            \"quantity\": 1.0,\n            \"unit_price\": 100.0,\n            \"line_total\": 100.0\n        },\n        {\n            \"raw_description\": \"بركة والنبات بطاقة وانتاج وانتاج\",\n            \"quantity\": 2.0,\n            \"unit_price\": 27.0,\n            \"line_total\": 54.0\n        }\n    ]\n}\n```",
+    "sample_id": "ara_0100",
+    "client_wall_seconds": 49.85430899995845
+  },
+  {
+    "receipt": {
+      "schema_version": "1.0",
+      "merchant_name": "",
+      "receipt_number": "",
+      "purchase_date": "",
+      "purchase_time": "",
+      "currency": "",
+      "subtotal": "40.0",
+      "discount": "10.0",
+      "tax": null,
+      "total": "40.0",
+      "line_items": [
+        {
+          "raw_description": "4003-Blueberry Fuji",
+          "quantity": "1.0",
+          "unit_price": "40.0",
+          "line_total": "40.0"
+        },
+        {
+          "raw_description": "6001-Plastic Bag Small",
+          "quantity": "1.0",
+          "unit_price": "0.0",
+          "line_total": "0.0"
+        }
+      ],
+      "raw_text": "",
+      "missing_fields": [],
+      "uncertain_fields": [],
+      "validation_warnings": []
+    },
+    "metadata": {
+      "model": "zai-org/GLM-OCR",
+      "revision": "2e85a62840ccac27daa451df36c736c4636b8628",
+      "container_id": "ta-01M8823WVR1ZHV7XDNQE0NCC8R",
+      "runtime_versions": {
+        "torch": "2.9.1+cu128",
+        "transformers": "5.24.1"
+      },
+      "dtype": "torch.float16",
+      "attention_implementation": "sdpa",
+      "original_image_size": [
+        576,
+        864
+      ],
+      "inference_image_size": [
+        576,
+        864
+      ],
+      "image_pixel_cap": 1000000,
+      "latency_seconds": 39.77540778599999,
+      "cold_first_request": false,
+      "initialization_seconds": 9.911302875,
+      "initialization_resource": {
+        "wall_seconds": 9.899068946,
+        "cpu_core_seconds": 10.299999999999999,
+        "cpu_percent_mean": 104.05018952981439,
+        "cpu_percent_peak": 184.4,
+        "baseline_ram_bytes": 61685760,
+        "peak_ram_bytes": 8815648768,
+        "gpu_utilization_percent_mean": 3.5714285714285716,
+        "gpu_memory_observed_peak_mib": 2222.0
+      },
+      "resource": {
+        "wall_seconds": 39.77540778599999,
+        "cpu_core_seconds": 40.50000000000001,
+        "cpu_percent_mean": 101.82170907687102,
+        "cpu_percent_peak": 118.7,
+        "baseline_ram_bytes": 7608975360,
+        "peak_ram_bytes": 7608991744,
+        "gpu_utilization_percent_mean": 32.4054054054054,
+        "gpu_memory_observed_peak_mib": 2920.0,
+        "gpu_name": "Tesla T4",
+        "gpu_compute_capability": [
+          7,
+          5
+        ],
+        "gpu_peak_allocated_bytes": 2447866368,
+        "gpu_peak_reserved_bytes": 2917138432,
+        "allocated_cpu_physical_cores": 2.0,
+        "allocated_ram_mib": 8192,
+        "allocated_gpu": "T4",
+        "container_uptime_seconds": 219.550573086,
+        "region_selection": "us",
+        "region_price_multiplier": 1.15
+      },
+      "input_tokens": 804,
+      "output_tokens": 211,
+      "fallback_used": false,
+      "json_valid": true,
+      "billed_duration_note": "Container uptime is observed, not a Modal invoice; includes init, excludes provider scheduling before Python start and terminal idle."
+    },
+    "raw_output": "```json\n{\n    \"schema_version\": \"1.0\",\n    \"merchant_name\": \"\",\n    \"receipt_number\": \"\",\n    \"purchase_date\": \"\",\n    \"purchase_time\": \"\",\n    \"currency\": \"\",\n    \"subtotal\": 40.0,\n    \"discount\": 10.0,\n    \"tax\": \"\",\n    \"total\": 40.0,\n    \"line_items\": [\n        {\n            \"raw_description\": \"4003-Blueberry Fuji\",\n            \"quantity\": 1.0,\n            \"unit_price\": 40.0,\n            \"line_total\": 40.0\n        },\n        {\n            \"raw_description\": \"6001-Plastic Bag Small\",\n            \"quantity\": 1.0,\n            \"unit_price\": 0.0,\n            \"line_total\": 0.0\n        }\n    ],\n    \"missing_fields\": [],\n    \"uncertain_fields\": []\n}\n```",
+    "sample_id": "cord_validation_0054",
+    "client_wall_seconds": 40.16272075008601
+  }
+]
