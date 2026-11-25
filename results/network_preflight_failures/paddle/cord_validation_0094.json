@@ -1,0 +1,98 @@
+{
+  "id": "cord_validation_0094",
+  "dataset": "CORD-v2",
+  "split": "development",
+  "source": "paddle",
+  "image_sha256": "34098bb6289c8a289a1d68c0fc99cc1122d3b09178cdf85029f60509909afc83",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "9223fa6e9f0c2b76785323bb3a9c1379cfc088fd5b2af528a47a12a434d081f9",
+  "status": "error",
+  "error": "Gemini inference failed",
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "",
+        "status": "error",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usage_reported": false,
+        "error": "ClientConnectorDNSError",
+        "latency_seconds": 0.005485041998326778
+      }
+    ],
+    "json_valid": false,
+    "repairs": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "thinking_tokens": 0,
+    "usage_complete": false,
+    "api_latency_seconds": 0.005485041998326778,
+    "latency_seconds": 0.005485041998326778,
+    "repair_revision": "gemini-repair-2"
+  },
+  "wall_seconds": 0.01698125002440065,
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 3,
+    "field_accuracy": 0.0,
+    "fields": {
+      "subtotal": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "discount": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "subtotal",
+      "discount",
+      "total"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 1.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": 0.0,
+    "line_items": {
+      "matched": 0,
+      "predicted": 0,
+      "expected": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "quantity": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    }
+  }
+}

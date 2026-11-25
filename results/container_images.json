@@ -1,0 +1,26 @@
+{
+  "ocr": {
+    "tag": "receipt-intelligence:ocr-rd",
+    "image_id": "sha256:f42a1b51cd5b2ee7086ff257e422e700e2830215a090d6bc9811fb441362e975",
+    "architecture": "amd64",
+    "size_bytes": 570731234,
+    "inference": "HTTP200 default Paddle+NVIDIA on Docker Desktop emulation",
+    "docs": "http://localhost:8001/docs"
+  },
+  "gemini": {
+    "tag": "receipt-intelligence:gemini-rd",
+    "image_id": "sha256:a2dabe5d54e5d003401947d39b6f56620bff3b71298426895bfca68fa5383418",
+    "architecture": "arm64",
+    "size_bytes": 136749986,
+    "inference": "HTTP200 Gemini3.5 in Docker",
+    "docs": "http://localhost:8002/docs"
+  },
+  "selfhosted": {
+    "tag": "receipt-intelligence:selfhosted-rd",
+    "image_id": "sha256:0174bd3626ae1f799f962b91572e543005c7275af37b0e1fcac077c51995d382",
+    "architecture": "amd64",
+    "size_bytes": 4396872450,
+    "inference": "Common API/Dockerfile verified HTTP200 on Modal T4; Mac has no CUDA",
+    "docs": "https://anasahmadoff--receipt-intelligence-selfhosted-api-selfho-76fa77.us-east.modal.run/docs"
+  }
+}

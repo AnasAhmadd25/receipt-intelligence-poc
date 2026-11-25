@@ -1,0 +1,13 @@
+{
+  "image": "receipt-intelligence:selfhosted-rd",
+  "mode": "Docker Desktop amd64 emulation; no CUDA; warmup explicitly disabled only for packaging checks",
+  "gpu_inference_test": "results/container_smoke_c.json on Modal T4",
+  "checks": {
+    "/health": 200,
+    "/ready": 503,
+    "/docs": 200,
+    "/openapi.json": 200,
+    "unauthenticated_extract": 401
+  },
+  "container_id": "cab80b4b7701fc263910dad5e493a4aaeee30b993ea3667eb9cb56eed5c0ec5f"
+}

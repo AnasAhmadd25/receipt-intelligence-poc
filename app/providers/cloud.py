@@ -184,7 +184,16 @@ class GeminiProvider:
             raise ProviderError("Install the gemini optional dependency") from None
         attempts = []
         repairs = 0
-        contents = [types.Part.from_bytes(data=image_bytes, mime_type=mime_type), types.Part.from_text(text=INSTRUCTIONS + "\nMerchant context: " + json.dumps(merchant_id))]
+        observed = None
+        if self.provider == "ocr_gemini":
+            try:
+                observed = await obtain_ocr(image_bytes, ocr)
+            except Exception as exc:
+                raise ProviderError("Local OCR failed", {"ocr_error": safe_error(exc)}) from None
+            context = {"merchant_id": merchant_id, "ocr_text": observed.get("text", ""), "lines": observed.get("lines", [])}
+            contents = [types.Part.from_text(text=INSTRUCTIONS + "\nThe schema_version must be exactly the literal string '1.0'.\nObserved OCR data:\n" + json.dumps(context, ensure_ascii=False))]
+        else:
+            contents = [types.Part.from_bytes(data=image_bytes, mime_type=mime_type), types.Part.from_text(text=INSTRUCTIONS + "\nMerchant context: " + json.dumps(merchant_id))]
         # Disable implicit SDK retries: every billable request must be visible in
         # the experiment log. At most one explicit retry/repair is permitted.
         http_options = types.HttpOptions(timeout=120_000, retry_options=types.HttpRetryOptions(attempts=1), client_args={"trust_env": False}, async_client_args={"trust_env": False})
@@ -221,8 +230,20 @@ class GeminiProvider:
                     contents.append(types.Part.from_text(text="Previous output was invalid: " + attempt["raw_response"] + "\nDiagnostics (field location and error type only): " + json.dumps(diagnostics) + ". Repair to the required schema. schema_version must be exactly the literal string '1.0', never '1.0.0'. Monetary fields must be observed amounts, never percentage strings; use null when only a rate is visible. Return only JSON; do not invent facts."))
                     continue
                 attempt["status"] = "ok"
-                return {"receipt": receipt.model_dump(mode="json"), "metadata": self.metadata(attempts, json_valid=(index == 0), repairs=repairs)}
+                result_metadata = self.metadata(attempts, json_valid=(index == 0), repairs=repairs)
+                if observed is not None:
+                    receipt.raw_text = observed.get("text", "")
+                    result_metadata.update(ocr_engine=observed.get("engine"), input_mode="ocr_text_only", template_revision="gemini-text-1")
+                return {"receipt": receipt.model_dump(mode="json"), "metadata": result_metadata}
         raise AssertionError("Unreachable")
+
+
+class GeminiTextProvider(GeminiProvider):
+    """Priceable text-only structuring; no receipt image is sent to Gemini."""
+    provider = "ocr_gemini"
+
+    def __init__(self, model: str | None = None):
+        super().__init__(model or os.getenv("OCR_GEMINI_MODEL", "gemini-3.1-flash-lite"))
 
 
 class ModalProvider:
@@ -266,10 +287,13 @@ class ModalProvider:
 
 
 def get_provider(name: str):
+    if name == "selfhosted":
+        from app.providers.selfhosted import SelfHostedProvider
+        return SelfHostedProvider()
     if name == "ocr_openrouter":
         from app.providers.openrouter import OpenRouterProvider
         return OpenRouterProvider()
-    providers = {"ocr_ollama": OllamaProvider, "ocr_nvidia": NvidiaProvider, "gemini": GeminiProvider, "modal_hybrid": ModalProvider}
+    providers = {"ocr_ollama": OllamaProvider, "ocr_nvidia": NvidiaProvider, "gemini": GeminiProvider, "ocr_gemini": GeminiTextProvider, "modal_hybrid": ModalProvider}
     if name not in providers:
         raise ValueError("Unknown provider; use ocr_ollama, ocr_nvidia, gemini, or modal_hybrid")
     return providers[name]()

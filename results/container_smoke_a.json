@@ -1,0 +1,183 @@
+{
+  "variant": "a",
+  "started_at": "2026-11-25T02:01:12.544932+00:00",
+  "image_tag": "receipt-intelligence:ocr-rd",
+  "image_id": "sha256:f42a1b51cd5b2ee7086ff257e422e700e2830215a090d6bc9811fb441362e975",
+  "container_id": "5c2abcf0f74a2c1de88044b5441c6c543d3dee4a722c2193639d57059833f693",
+  "base_url": "http://127.0.0.1:8001",
+  "default_provider_expected": "ocr_nvidia",
+  "receipt_id": "ara_0077",
+  "receipt_sha256": "c9772f6873d08f4d6666fc51d02307c248ce390ac42a371214c49d036352f70d",
+  "public_dataset": {
+    "name": "AraReceipt",
+    "source": "https://huggingface.co/datasets/IslamMesabah/AraReceipt",
+    "revision": "d995859bd253ad37053faee8bce24b5fa1c265e2",
+    "license": "MIT",
+    "split": "train",
+    "row_index": 76
+  },
+  "checks": {
+    "health": {
+      "status_code": 200,
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "148",
+        "date": "Wed, 25 Nov 2026 02:01:14 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "status": "ok",
+        "schema_version": "1.0",
+        "default_provider": "ocr_nvidia",
+        "allowed_providers": [
+          "ocr_nvidia",
+          "ocr_openrouter",
+          "ocr_ollama",
+          "ocr_gemini"
+        ]
+      }
+    },
+    "ready": {
+      "status_code": 200,
+      "content_type": "application/json",
+      "body": {
+        "ready": true,
+        "provider": null,
+        "default_provider": "ocr_nvidia",
+        "scope": "configuration only; hosted credentials and OCR weights are not tested"
+      }
+    },
+    "docs": {
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    "openapi": {
+      "status_code": 200,
+      "content_type": "application/json",
+      "security": [
+        {
+          "APIKey": []
+        },
+        {
+          "BearerAuth": []
+        }
+      ],
+      "request_content_types": [
+        "application/json",
+        "multipart/form-data"
+      ],
+      "response_schema": {
+        "$ref": "#/components/schemas/ExtractionResponse"
+      },
+      "provider_enum": [
+        "ocr_nvidia",
+        "ocr_openrouter",
+        "ocr_ollama",
+        "ocr_gemini"
+      ]
+    },
+    "unauthenticated_extract": {
+      "status_code": 401,
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "35",
+        "date": "Wed, 25 Nov 2026 02:01:14 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "detail": "Valid API key required"
+      }
+    }
+  },
+  "extraction": {
+    "status_code": 200,
+    "headers": {
+      "content-type": "application/json",
+      "content-length": "4047",
+      "date": "Wed, 25 Nov 2026 02:01:14 GMT",
+      "server": "uvicorn"
+    },
+    "body": {
+      "receipt": {
+        "schema_version": "1.0",
+        "merchant_name": "مكتبة النهضة العربية",
+        "receipt_number": "x3665",
+        "purchase_date": "2022-11-12",
+        "purchase_time": "03:55:02",
+        "currency": "ج.م",
+        "subtotal": "30.000",
+        "discount": null,
+        "tax": null,
+        "total": "30.000",
+        "line_items": [
+          {
+            "raw_description": "١٤و جرطوسه دحان",
+            "quantity": "30",
+            "unit_price": "30",
+            "line_total": "1"
+          }
+        ],
+        "raw_text": "مكتبة النهضة العربية\nمبيعات\nx3665\nاريج12/11/202\nالوف\n1-نعدا\nنعدا\n فرع السرق\nالكاسير\nاسم الصنف\nالكمية الوحدذ السعر احمالى\n١٤و  جرطوسه دحان\nقطعه\n30\n30\n1\nأ حرام لو\nالاجمالي\n30.000\nج٠م\nالمدفوع\n30.000\nج ٠م\nالباقي\n0.00\nج،م\nنلانوب جنيه مصري فعط لا عبر\nالرصيد ٥٥٥٥\nفرع سوهاج السرف ش المزعه المردذومة حصم\nك٥٥١ علي الملخصاب\n4597005-093/\nفرع عربه النجع سارع احمد ماهر\n01026649821-01124230420\nععوا لا مرنحع ولا اسبدال بهائيا لادوات العبايه\nبالجسم والبسره\nولاسحدماب السحصيه الكماماب والوافى\nواله الحاسبة ولالعاب\n2022\n03:55:02p\nServerSoft - 010687889\n",
+        "missing_fields": [
+          "purchase_time",
+          "discount",
+          "tax"
+        ],
+        "uncertain_fields": [
+          "purchase_date"
+        ],
+        "validation_warnings": [
+          "The purchase_date '2022-11-12' was inferred from 'اريج12/11/202' and might not be unambiguous.",
+          "line_items[0]: quantity × unit_price differs from line_total"
+        ]
+      },
+      "metadata": {
+        "provider": "ocr_nvidia",
+        "model": "nvidia/nemotron-3.5-bolt-e4b",
+        "attempts": [
+          {
+            "attempt": 1,
+            "kind": "initial",
+            "input_tokens": 3555,
+            "output_tokens": 646,
+            "thinking_tokens": 0,
+            "usage_reported": true,
+            "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"مكتبة النهضة العربية\",\n  \"receipt_number\": \"x3665\",\n  \"purchase_date\": \"2022-11-12\",\n  \"purchase_time\": \"03:55:02\",\n  \"currency\": \"ج.م\",\n  \"subtotal\": \"30.000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"30.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"١٤و جرطوسه دحان\",\n      \"quantity\": \"30\",\n      \"unit_price\": \"30\",\n      \"line_total\": \"1\"\n    }\n  ],\n  \"raw_text\": \"مكتبة النهضة العربية\\nمبيعات\\nx3665\\nاريج12/11/202\\nالوف\\n1-نعدا\\nنعدا\\n فرع السرق\\nالكاسير\\nاسم الصنف\\nالكمية الوحدذ السعر احمالى\\n١٤و  جرطوسه دحان\\nقطعه\\n30\\n30\\n1\\nأ حرام لو\\nالاجمالي\\n30.000\\nج٠م\\nالمدفوع\\n30.000\\nج ٠م\\nالباقي\\n0.00\\nج،م\\nنلانوب جنيه مصري فعط لا عبر\\nالرصيد ٥٥٥٥\\nفرع سوهاج السرف ش المزعه المردذومة حصم\\nك٥٥١ علي الملخصاب\\n4597005-093/\\nفرع عربه النجع سارع احمد ماهر\\n01026649821-01124230420\\nععوا لا مرنحع ولا اسبدال بهائيا لادوات العبايه\\nبالجسم والبسره\\nولاسحدماب السحصيه الكماماب والوافى\\nواله الحاسبة ولالعاب\\n2022\\n03:55:02p\\nServerSoft - 010687889\\n\",\n  \"missing_fields\": [\n    \"purchase_time\"\n  ],\n  \"uncertain_fields\": [\n    \"purchase_date\"\n  ],\n  \"validation_warnings\": [\n    \"The purchase_date '2022-11-12' was inferred from 'اريج12/11/202' and might not be unambiguous.\"\n  ]\n}",
+            "status": "ok",
+            "token_details": {
+              "prompt_tokens": 3555,
+              "completion_tokens": 646,
+              "total_tokens": 4201,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              }
+            },
+            "latency_seconds": 10.819897171999969
+          }
+        ],
+        "json_valid": true,
+        "repairs": 0,
+        "input_tokens": 3555,
+        "output_tokens": 646,
+        "thinking_tokens": 0,
+        "usage_complete": true,
+        "api_latency_seconds": 10.819897171999969,
+        "latency_seconds": 10.819897171999969,
+        "template_revision": "text-repair-2",
+        "ocr_engine": "paddle"
+      }
+    },
+    "wall_seconds": 82.4793732080143,
+    "receipt_schema_valid": true,
+    "has_observed_content": true,
+    "observed_provider": "ocr_nvidia"
+  },
+  "success": true,
+  "completed_at": "2026-11-25T02:02:37.230942+00:00",
+  "image_platform": "linux/amd64",
+  "docker_host_architecture": "aarch64",
+  "performance_scope": "Local smoke test only; cross-architecture emulation timings are not native amd64 performance"
+}

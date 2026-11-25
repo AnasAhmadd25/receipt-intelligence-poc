@@ -1,0 +1,131 @@
+{
+  "model": "PaddlePaddle/PaddleOCR-VL-1.6",
+  "revision": "132c45f52c0a26ed5a6b2f6bd8e3985794cc27dd",
+  "parameters": 958588736,
+  "weights_dtype": "FP16 compatibility override",
+  "license": "Apache-2.0",
+  "metadata_source": "https://huggingface.co/api/models/PaddlePaddle/PaddleOCR-VL-1.6",
+  "model_card": "https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6/raw/main/README.md",
+  "scope": "Whole-receipt trial of element OCR model; official page parsing pipeline not used",
+  "prompt": "OCR:",
+  "max_processor_pixels": 1003520,
+  "max_new_tokens": 2048,
+  "allocation": {
+    "gpu": "T4",
+    "cpu_physical_cores": 2,
+    "ram_mib": 8192,
+    "max_containers": 1,
+    "min_containers": 0,
+    "scaledown_seconds": 2,
+    "timeout_seconds": 180,
+    "startup_timeout_seconds": 300
+  },
+  "selection": "development only; no test entries",
+  "development_count": 8,
+  "public_datasets": {
+    "AraReceipt": {
+      "url": "https://huggingface.co/datasets/IslamMesabah/AraReceipt",
+      "license": "MIT"
+    },
+    "CORD-v2": {
+      "url": "https://huggingface.co/datasets/naver-clova-ix/cord-v2",
+      "license": "CC-BY-4.0"
+    }
+  },
+  "samples": [
+    {
+      "id": "ara_0077",
+      "dataset": "AraReceipt",
+      "language": "Arabic / mixed Arabic-English",
+      "source_split": "train",
+      "source_row_index": 76,
+      "image": "data/images/ara_0077.jpg",
+      "annotation": "data/annotations/ara_0077.json",
+      "original_annotation": "data/original_annotations/ara_0077.json",
+      "sha256": "c9772f6873d08f4d6666fc51d02307c248ce390ac42a371214c49d036352f70d"
+    },
+    {
+      "id": "ara_0100",
+      "dataset": "AraReceipt",
+      "language": "Arabic / mixed Arabic-English",
+      "source_split": "train",
+      "source_row_index": 99,
+      "image": "data/images/ara_0100.jpg",
+      "annotation": "data/annotations/ara_0100.json",
+      "original_annotation": "data/original_annotations/ara_0100.json",
+      "sha256": "df2e461b1aa180348962b940656349bf17382ecbf084e4f16a5b7163b2b0dfcf"
+    },
+    {
+      "id": "ara_0019",
+      "dataset": "AraReceipt",
+      "language": "Arabic / mixed Arabic-English",
+      "source_split": "train",
+      "source_row_index": 18,
+      "image": "data/images/ara_0019.jpg",
+      "annotation": "data/annotations/ara_0019.json",
+      "original_annotation": "data/original_annotations/ara_0019.json",
+      "sha256": "34a36b0f707d7c8ef3b7930c66165519e6478495f82bc41a8c3ba875e6029192"
+    },
+    {
+      "id": "ara_0090",
+      "dataset": "AraReceipt",
+      "language": "Arabic / mixed Arabic-English",
+      "source_split": "train",
+      "source_row_index": 89,
+      "image": "data/images/ara_0090.jpg",
+      "annotation": "data/annotations/ara_0090.json",
+      "original_annotation": "data/original_annotations/ara_0090.json",
+      "sha256": "6c5fa69c1bceffecc719e712d46a96e0784f5834a3e3663c07fc3aeac3d9b6b1"
+    },
+    {
+      "id": "ara_0047",
+      "dataset": "AraReceipt",
+      "language": "Arabic / mixed Arabic-English",
+      "source_split": "train",
+      "source_row_index": 46,
+      "image": "data/images/ara_0047.jpg",
+      "annotation": "data/annotations/ara_0047.json",
+      "original_annotation": "data/original_annotations/ara_0047.json",
+      "sha256": "689c7f3f4b5307b4cf1551a6c4a9808634369e0610eac91d5cdb32c917a9d437"
+    },
+    {
+      "id": "cord_validation_0071",
+      "dataset": "CORD-v2",
+      "language": "Indonesian / Latin script / mixed English",
+      "source_split": "validation",
+      "source_row_index": 71,
+      "image": "data/images/cord_validation_0071.jpg",
+      "annotation": "data/annotations/cord_validation_0071.json",
+      "original_annotation": "data/original_annotations/cord_validation_0071.json",
+      "sha256": "38870cde5030bd0b4cf5f1485bc39ce4632b3f10f70369d4063a3a13c6640917"
+    },
+    {
+      "id": "cord_validation_0054",
+      "dataset": "CORD-v2",
+      "language": "Indonesian / Latin script / mixed English",
+      "source_split": "validation",
+      "source_row_index": 54,
+      "image": "data/images/cord_validation_0054.jpg",
+      "annotation": "data/annotations/cord_validation_0054.json",
+      "original_annotation": "data/original_annotations/cord_validation_0054.json",
+      "sha256": "3441cee6f018d71a5906bc947e464c736dae3f9b742dfbeabc6fda5b89444f2f"
+    },
+    {
+      "id": "cord_validation_0094",
+      "dataset": "CORD-v2",
+      "language": "Indonesian / Latin script / mixed English",
+      "source_split": "validation",
+      "source_row_index": 94,
+      "image": "data/images/cord_validation_0094.jpg",
+      "annotation": "data/annotations/cord_validation_0094.json",
+      "original_annotation": "data/original_annotations/cord_validation_0094.json",
+      "sha256": "34098bb6289c8a289a1d68c0fc99cc1122d3b09178cdf85029f60509909afc83"
+    }
+  ],
+  "status": "t4_fp16_compatibility_trial_pending",
+  "live_gpu_verified": false,
+  "approval_review_rejection": "Run rejected before process creation: reviewer considered images private and needed sensitive-data destination authorization. Public dataset provenance sent to parent for evidence-based resolution.",
+  "approval_review_resolution": "Approved on evidence-based retry: explicit user Modal/L4/$5 instructions and public-dataset provenance; $1 experiment reserved in cumulative $4.0904034 ledger.",
+  "modal_app_id": "ap-wtHnfBYLW9Rthtssk3QGJk",
+  "official_bf16_path_not_measured": true
+}

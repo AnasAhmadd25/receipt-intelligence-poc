@@ -1,0 +1,135 @@
+{
+  "id": "ara_0047",
+  "dataset": "AraReceipt",
+  "split": "development",
+  "source": "paddle_rows",
+  "image_sha256": "689c7f3f4b5307b4cf1551a6c4a9808634369e0610eac91d5cdb32c917a9d437",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "d08844e503ed1327b33644c1ff213364c117200c04d87fc08f8e7ef8dcf66d3b",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "مطعم الحاج شادي",
+    "receipt_number": "69",
+    "purchase_date": "2022-11-19",
+    "purchase_time": "06:43",
+    "currency": null,
+    "subtotal": "81.00",
+    "discount": null,
+    "tax": null,
+    "total": "91.00",
+    "line_items": [
+      {
+        "raw_description": "نصف فراخ",
+        "quantity": null,
+        "unit_price": "75.00",
+        "line_total": "75.00"
+      },
+      {
+        "raw_description": "ارز",
+        "quantity": "2",
+        "unit_price": "6.00",
+        "line_total": "6.00"
+      }
+    ],
+    "raw_text": "مطعم الحاج شادي\nموبايل\n: | 69 | رقم الطلب\nالتاريخ | 19/11/2022 | الوقت | 06:43\nالكاشير | العميل\nالعنوان\nالطيار\nالكمية | الصنف | السعرالإجمالي\nنصف فراخ | 75.00 | 75.00\n2 | ارز | 6.00 | 6.00\nالتوصيل | الإجمالي\n81.00 | 10.00\nالمطلوب\n91.00\nنسعد دائما بريارتكم لملاحظاتكم الاتصال على\n أحمد شادي\nالولية اول شارع الجسر\nمشغل بواسطة برنامج إنجزها \n01000116800-0882740818",
+    "missing_fields": [
+      "currency",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": [
+      "line_items[1]: quantity × unit_price differs from line_total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"مطعم الحاج شادي\",\n  \"receipt_number\": \"69\",\n  \"purchase_date\": \"2022-11-19\",\n  \"purchase_time\": \"06:43\",\n  \"currency\": null,\n  \"subtotal\": \"81.00\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"91.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"نصف فراخ\",\n      \"quantity\": null,\n      \"unit_price\": \"75.00\",\n      \"line_total\": \"75.00\"\n    },\n    {\n      \"raw_description\": \"ارز\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"6.00\",\n      \"line_total\": \"6.00\"\n    }\n  ],\n  \"raw_text\": \"مطعم الحاج شادي\\nموبايل\\n: | 69 | رقم الطلب\\nالتاريخ | 19/11/2022 | الوقت | 06:43\\nالكاشير | العميل\\nالعنوان\\nالطيار\\nالكمية | الصنف | السعرالإجمالي\\nنصف فراخ | 75.00 | 75.00\\n2 | ارز | 6.00 | 6.00\\nالتوصيل | الإجمالي\\n81.00 | 10.00\\nالمطلوب\\n91.00\\nنسعد دائما بريارتكم لملاحظاتكم الاتصال على\\n أحمد شادي\\nالولية اول شارع الجسر\\nمشغل بواسطة برنامج إنجزها \\n01000116800-0882740818\",\n  \"missing_fields\": [\n    \"currency\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 3599,
+        "output_tokens": 488,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 488,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 488,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 3599,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 3599
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 4087,
+          "traffic_type": null
+        },
+        "latency_seconds": 3.9596648330334574
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 3599,
+    "output_tokens": 488,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 3.9596648330334574,
+    "latency_seconds": 3.9596648330334574,
+    "repair_revision": "gemini-repair-2",
+    "ocr_engine": "paddle_grouped_rows",
+    "input_mode": "ocr_text_only",
+    "template_revision": "gemini-text-1"
+  },
+  "status": "ok",
+  "wall_seconds": 3.9841809169156477,
+  "metrics": {
+    "field_correct": 4,
+    "field_total": 4,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 4,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "subtotal"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

@@ -1,19 +1,30 @@
 FROM python:3.12-slim
+# Validated target: Linux amd64 CPU. Compose selects this explicitly.
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends tesseract-ocr tesseract-ocr-ara tesseract-ocr-eng \
+    && apt-get install -y --no-install-recommends libgomp1 libgl1 libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY pyproject.toml ./
 COPY app ./app
 COPY benchmark ./benchmark
 COPY deploy ./deploy
-# Deliberately the small Tesseract variant. Paddle evaluation is a separate opt-in install.
-RUN pip install --no-cache-dir . 'pytesseract>=0.3.13' \
-    && useradd --system --uid 10001 receipt
+# Pin the tested OCR stack; Gemini also supports the hosted text stage.
+RUN pip install --no-cache-dir '.[gemini]' \
+      'paddlepaddle==3.3.1' 'paddleocr==3.7.0' 'paddlex==3.7.2' \
+    && useradd --create-home --uid 10001 receipt \
+    && mkdir -p /home/receipt/.paddlex /home/receipt/.cache \
+    && chown -R receipt:receipt /home/receipt
 ENV PUBLIC_DEPLOYMENT=true \
-    OCR_ENGINE=tesseract \
-    TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata \
-    OMP_THREAD_LIMIT=1
+    DEFAULT_PROVIDER=ocr_nvidia \
+    ALLOWED_PROVIDERS=ocr_nvidia,ocr_openrouter,ocr_ollama,ocr_gemini \
+    OCR_ENGINE=paddle \
+    OCR_LANGUAGE=ar \
+    MAX_IN_FLIGHT=1 \
+    HOME=/home/receipt \
+    PADDLE_PDX_CACHE_HOME=/home/receipt/.paddlex \
+    OMP_NUM_THREADS=1
 USER receipt
 EXPOSE 8000
+HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

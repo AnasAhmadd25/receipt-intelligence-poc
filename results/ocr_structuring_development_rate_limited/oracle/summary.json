@@ -1,0 +1,19 @@
+{
+  "attempted_inputs": 8,
+  "strict_scorable": 3,
+  "strict_passes": 0,
+  "critical_total_scorable": 1,
+  "critical_total_passes": 0,
+  "economic_cost_usd": null,
+  "cost_per_strict_accepted_usd": null,
+  "strict_cost_reason": "no acceptable receipts",
+  "cost_per_critical_total_accepted_usd": null,
+  "critical_cost_reason": "no acceptable receipts",
+  "field_correct": 1,
+  "field_total": 20,
+  "input_tokens": 1347,
+  "output_tokens": 1902,
+  "missing_usage_requests": 7,
+  "mean_seconds": 2.7711680153443012,
+  "ocr_hosting_excluded": true
+}

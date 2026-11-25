@@ -1,0 +1,131 @@
+{
+  "id": "ara_0033",
+  "dataset": "AraReceipt",
+  "split": "test",
+  "source": "paddle",
+  "image_sha256": "9c329e1ac0854c8909fd5fc807db620bb7ba3b47079b985346615014ae1161fe",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "3f4ea0b6284be20a93d8e7ef155eda8487825d68cf43ee430535d7a9d23eed18",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "تريومف الفرجانى",
+    "receipt_number": "154",
+    "purchase_date": "2022-07-05",
+    "purchase_time": "14:47:31",
+    "currency": null,
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "total": "104.81",
+    "line_items": [
+      {
+        "raw_description": "المناهري بطاعى تحمير",
+        "quantity": "3.176",
+        "unit_price": "7.00",
+        "line_total": "22.23"
+      },
+      {
+        "raw_description": "سمانة وزن",
+        "quantity": "0.918",
+        "unit_price": "89.95",
+        "line_total": "82.57"
+      }
+    ],
+    "raw_text": "تريومف الفرجانى\n01207890866\nالتوصيل\nخدمة\nالكمية\nاللصنق\nالسعر\nالقيمة\nالمناهري بطاعى\nتحمير\nوزن\n22.23\n2306787000003\n7.00\n3.176\nسمانة وزن\n89.95\n2301457000000\n82.57\n0.918\nالدجمالي\n104.81\nعدد القطع2\n\n104.80\nكارن اطتمان\n   \nالباقى\n0.00\nالكاشر\nUser:8723\nPoS:3\nStore:223\n14:47:31 Date:05/07/2022\nTrans:154\nأفمل\nأرفى  جودة\nسعر\n5\no\nE\nشكرا لزيارتكم\n01207890866\nالتوصيل\nخدمة\nfacebook.com/marketelfergany",
+    "missing_fields": [
+      "currency",
+      "subtotal",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": [
+      "Total amount 104.81 does not match sum of line items 104.80"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"تريومف الفرجانى\",\n  \"receipt_number\": \"154\",\n  \"purchase_date\": \"2022-07-05\",\n  \"purchase_time\": \"14:47:31\",\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"104.81\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"المناهري بطاعى تحمير\",\n      \"quantity\": \"3.176\",\n      \"unit_price\": \"7.00\",\n      \"line_total\": \"22.23\"\n    },\n    {\n      \"raw_description\": \"سمانة وزن\",\n      \"quantity\": \"0.918\",\n      \"unit_price\": \"89.95\",\n      \"line_total\": \"82.57\"\n    }\n  ],\n  \"raw_text\": \"تريومف الفرجانى\\n01207890866\\nالتوصيل\\nخدمة\\nالكمية\\nاللصنق\\nالسعر\\nالقيمة\\nالمناهري بطاعى\\nتحمير\\nوزن\\n22.23\\n2306787000003\\n7.00\\n3.176\\nسمانة وزن\\n89.95\\n2301457000000\\n82.57\\n0.918\\nالدجمالي\\n104.81\\nعدد القطع2\\n\\n104.80\\nكارن اطتمان\\n   \\nالباقى\\n0.00\\nالكاشر\\nUser:8723\\nPoS:3\\nStore:223\\n14:47:31 Date:05/07/2022\\nTrans:154\\nأفمل\\nأرفى  جودة\\nسعر\\n5\\no\\nE\\nشكرا لزيارتكم\\n01207890866\\nالتوصيل\\nخدمة\\nfacebook.com/marketelfergany\",\n  \"missing_fields\": [\n    \"currency\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": [\n    \"Total amount 104.81 does not match sum of line items 104.80\"\n  ]\n}",
+        "status": "ok",
+        "input_tokens": 3125,
+        "output_tokens": 634,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 634,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 634,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 3125,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 3125
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 3759,
+          "traffic_type": null
+        },
+        "latency_seconds": 3.267807582975365
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 3125,
+    "output_tokens": 634,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 3.267807582975365,
+    "latency_seconds": 3.267807582975365,
+    "repair_revision": "gemini-repair-2",
+    "ocr_engine": "paddle",
+    "input_mode": "ocr_text_only",
+    "template_revision": "gemini-text-1"
+  },
+  "status": "ok",
+  "wall_seconds": 3.301325709093362,
+  "metrics": {
+    "field_correct": 3,
+    "field_total": 3,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

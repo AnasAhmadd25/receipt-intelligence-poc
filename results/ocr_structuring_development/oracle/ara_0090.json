@@ -1,0 +1,160 @@
+{
+  "id": "ara_0090",
+  "dataset": "AraReceipt",
+  "split": "development",
+  "source": "oracle",
+  "image_sha256": "6c5fa69c1bceffecc719e712d46a96e0784f5834a3e3663c07fc3aeac3d9b6b1",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "e5c4a4ecc19f1720839917e383b1e3e2f9c4b75154b1b8f6c09f3da8ecf912aa",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "كازابلانكا",
+    "receipt_number": null,
+    "purchase_date": "2022-04-26",
+    "purchase_time": "11:48:59",
+    "currency": null,
+    "subtotal": "232",
+    "discount": null,
+    "tax": "32.48",
+    "total": "264.48",
+    "line_items": [
+      {
+        "raw_description": "مياه (ص",
+        "quantity": "1",
+        "unit_price": "8",
+        "line_total": "8"
+      },
+      {
+        "raw_description": "قهوة ثركي ساده",
+        "quantity": "4",
+        "unit_price": "22",
+        "line_total": "88"
+      },
+      {
+        "raw_description": "قهوة",
+        "quantity": "1",
+        "unit_price": "30",
+        "line_total": "30"
+      },
+      {
+        "raw_description": "هوست شو كلت كلاسيك",
+        "quantity": "2",
+        "unit_price": "20",
+        "line_total": "40"
+      },
+      {
+        "raw_description": "شاي نكهات",
+        "quantity": "2",
+        "unit_price": "18",
+        "line_total": "36"
+      }
+    ],
+    "raw_text": "كازابلانكا\nرقم الطلب\nالفرع\nالفرع الرئيسي\nنقدى\nالتاريخ\n26/04/2022\n11:48:59\nم\nالكائشير\nرقم\nالاجمالى\nالسعر\nالكمية\nالصنف\nمياه (ص\n8\n8\nقهوة ثركي ساده\n22\n88\n30\nقهوة\n30\nهوست شو كلت كلاسيك\n40\nشاي نكهات\nشاي\n36\nالقيمة\n232\nالضريبة\n32.48\nالأجمالي\n264.48\n:الررقم:\nالضريبى\ntebalink\nPowered by\ncom\nwww\n63\n1\n4\n1\n20\n18\n1\n2\n2\n30\n30",
+    "missing_fields": [
+      "receipt_number",
+      "currency",
+      "discount"
+    ],
+    "uncertain_fields": [
+      "line_items"
+    ],
+    "validation_warnings": [
+      "Currency not found on receipt.",
+      "Receipt number not found on receipt."
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"كازابلانكا\",\n  \"receipt_number\": null,\n  \"purchase_date\": \"2022-04-26\",\n  \"purchase_time\": \"11:48:59\",\n  \"currency\": null,\n  \"subtotal\": \"232\",\n  \"discount\": null,\n  \"tax\": \"32.48\",\n  \"total\": \"264.48\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"مياه (ص\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"8\",\n      \"line_total\": \"8\"\n    },\n    {\n      \"raw_description\": \"قهوة ثركي ساده\",\n      \"quantity\": \"4\",\n      \"unit_price\": \"22\",\n      \"line_total\": \"88\"\n    },\n    {\n      \"raw_description\": \"قهوة\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30\",\n      \"line_total\": \"30\"\n    },\n    {\n      \"raw_description\": \"هوست شو كلت كلاسيك\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"20\",\n      \"line_total\": \"40\"\n    },\n    {\n      \"raw_description\": \"شاي نكهات\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"18\",\n      \"line_total\": \"36\"\n    }\n  ],\n  \"raw_text\": \"كازابلانكا\\nرقم الطلب\\nالفرع\\nالفرع الرئيسي\\nنقدى\\nالتاريخ\\n26/04/2022\\n11:48:59\\nم\\nالكائشير\\nرقم\\nالاجمالى\\nالسعر\\nالكمية\\nالصنف\\nمياه (ص\\n8\\n8\\nقهوة ثركي ساده\\n22\\n88\\n30\\nقهوة\\n30\\nهوست شو كلت كلاسيك\\n40\\nشاي نكهات\\nشاي\\n36\\nالقيمة\\n232\\nالضريبة\\n32.48\\nالأجمالي\\n264.48\\n:الررقم:\\nالضريبى\\ntebalink\\nPowered by\\ncom\\nwww\\n63\\n1\\n4\\n1\\n20\\n18\\n1\\n2\\n2\\n30\\n30\",\n  \"missing_fields\": [\n    \"receipt_number\",\n    \"currency\"\n  ],\n  \"uncertain_fields\": [\n    \"line_items\"\n  ],\n  \"validation_warnings\": [\n    \"Currency not found on receipt.\",\n    \"Receipt number not found on receipt.\"\n  ]\n}",
+        "status": "ok",
+        "input_tokens": 440,
+        "output_tokens": 712,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 712,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 712,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 440,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 440
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1152,
+          "traffic_type": null
+        },
+        "latency_seconds": 3.6016511250054464
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 440,
+    "output_tokens": 712,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 3.6016511250054464,
+    "latency_seconds": 3.6016511250054464,
+    "repair_revision": "gemini-repair-2",
+    "ocr_engine": "annotation_partial_transcript_control",
+    "input_mode": "ocr_text_only",
+    "template_revision": "gemini-text-1"
+  },
+  "status": "ok",
+  "wall_seconds": 3.6303590839961544,
+  "metrics": {
+    "field_correct": 5,
+    "field_total": 5,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 5,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "subtotal"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

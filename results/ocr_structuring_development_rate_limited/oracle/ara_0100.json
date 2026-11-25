@@ -1,0 +1,102 @@
+{
+  "id": "ara_0100",
+  "dataset": "AraReceipt",
+  "split": "development",
+  "source": "oracle",
+  "image_sha256": "df2e461b1aa180348962b940656349bf17382ecbf084e4f16a5b7163b2b0dfcf",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "c4456230d33cf94df672bbb96165ddd01237e69cb02d896b52cddff4413e27c0",
+  "status": "error",
+  "error": "Gemini inference failed",
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0.0\",\n  \"merchant_name\": \"Dukkan chocolate\",\n  \"receipt_number\": \"1220\",\n  \"purchase_date\": \"2022-09-11\",\n  \"purchase_time\": \"07:23:03\",\n  \"currency\": \"جنية\",\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"154.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"عرض\",\n      \"quantity\": \"3\",\n      \"unit_price\": null,\n      \"line_total\": \"100.00\"\n    },\n    {\n      \"raw_description\": \"بريك وايت بندق ولوز وزبيب\",\n      \"quantity\": \"1\",\n      \"unit_price\": null,\n      \"line_total\": \"54.00\"\n    }\n  ],\n  \"raw_text\": \"Dukkan chocolate \\n(1220)\\nفاتورة رقم\\n1220\\nكاشير: المدير\\nCash\\nالوقت\\n07:23:03   11/09/2022\\nAM 07:23:03\\nعدد الُاصناف\\nالعدد\\n100.00\\nعرض\\n100ال\\nبريك وايت بندق ولوز\\n54.00\\nوزبيب\\nالإجمالي\\nجنية\\n154.00\\nفرع شبرا\\n01550088990\\n27.00\\n100.00\\nالصنف\\nالسعر\\nالإجمالي\\n3\\n1\\n2\",\n  \"missing_fields\": [\n    \"subtotal\",\n    \"discount\",\n    \"tax\"\n  ],\n  \"uncertain_fields\": [\n    \"line_items\"\n  ],\n  \"validation_warnings\": [\n    \"Line item mapping is ambiguous due to layout structure.\"\n  ]\n}",
+        "status": "invalid_json_or_schema",
+        "input_tokens": 363,
+        "output_tokens": 503,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 503,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 503,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 363,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 363
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 866,
+          "traffic_type": null
+        },
+        "latency_seconds": 3.573784709093161,
+        "validation_diagnostics": [
+          {
+            "loc": [
+              "schema_version"
+            ],
+            "type": "literal_error"
+          }
+        ]
+      },
+      {
+        "attempt": 2,
+        "kind": "repair",
+        "raw_response": "",
+        "status": "error",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usage_reported": false,
+        "error": "ClientError",
+        "latency_seconds": 0.33935666701290756,
+        "http_status_code": 429
+      }
+    ],
+    "json_valid": false,
+    "repairs": 1,
+    "input_tokens": 363,
+    "output_tokens": 503,
+    "thinking_tokens": 0,
+    "usage_complete": false,
+    "api_latency_seconds": 3.9131413761060685,
+    "latency_seconds": 3.9131413761060685,
+    "repair_revision": "gemini-repair-2"
+  },
+  "wall_seconds": 3.9286679580109194,
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 1,
+    "field_accuracy": 0.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "merchant_name"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 1.0,
+    "hallucination_rate": null,
+    "missing_denominator": 1,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

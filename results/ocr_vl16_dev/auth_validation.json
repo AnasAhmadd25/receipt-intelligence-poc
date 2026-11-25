@@ -1,0 +1,10 @@
+{
+  "application_auth": "constant-time bearer check before request-body decoding or infer",
+  "configured_nonempty": true,
+  "http_statuses": {
+    "missing": 401,
+    "wrong": 401,
+    "valid": 200
+  },
+  "scope": "Exact ASGI function extracted from source; mocked OCR inference, no cloud GPU"
+}

@@ -1,0 +1,16 @@
+# Explicit build-context allowlist. Never send local keys, inputs, results or caches.
+**
+!pyproject.toml
+!app/
+!app/**
+!benchmark/
+!benchmark/**
+!deploy/
+!deploy/**
+!configs/
+!configs/Dockerfile.*
+**/__pycache__/
+**/*.pyc
+**/.env*
+**/*credentials*
+**/*secret*

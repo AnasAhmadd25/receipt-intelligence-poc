@@ -1,0 +1,130 @@
+{
+  "id": "ara_0019",
+  "dataset": "AraReceipt",
+  "split": "development",
+  "source": "paddle_rows",
+  "image_sha256": "34a36b0f707d7c8ef3b7930c66165519e6478495f82bc41a8c3ba875e6029192",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "40c040dafbd097dc39a518d83a60aff292ab7a388f97c9d3163ff56a78f7f402",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "sheko",
+    "receipt_number": null,
+    "purchase_date": "2022-11-18",
+    "purchase_time": "6:00 PM",
+    "currency": null,
+    "subtotal": null,
+    "discount": null,
+    "tax": "0.00",
+    "total": "1620.00",
+    "line_items": [
+      {
+        "raw_description": "كفر مرتبه ٦٥ سم",
+        "quantity": null,
+        "unit_price": "160.00",
+        "line_total": "160.00"
+      },
+      {
+        "raw_description": "كفر مرتبه ٦٥ سم",
+        "quantity": null,
+        "unit_price": "140.00",
+        "line_total": "140.00"
+      },
+      {
+        "raw_description": "كفر مرتبه ٦٥سم",
+        "quantity": "12",
+        "unit_price": "110.00",
+        "line_total": "1320.00"
+      }
+    ],
+    "raw_text": "sheko\nفاتورة بيع\nرقم الفاتورة | التاريخ | 2022/11/18\nنوع الفاتورة نقدى | الوقت | 6:00 PM\nكاشير | تستحق\nاسم الصنف | كمية | السعر | الإجمالى\nكفر مرتبه ٦٥ سم | 160.00 | 160.00\nكفر مرتبه ٦٥ سم | 140.00 | 140.00\nكفر مرتبه ٦٥سم | 12 | 110.00 | 1,320.00\nالمطلوب | 1,620.00\nيشمل ضريبة القيمة المضافة ٥ | 0.00\nالمدفوع | 1,620.00\nشكرا لزيارتكع\n",
+    "missing_fields": [
+      "receipt_number",
+      "currency",
+      "subtotal",
+      "discount"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"sheko\",\n  \"receipt_number\": null,\n  \"purchase_date\": \"2022-11-18\",\n  \"purchase_time\": \"6:00 PM\",\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": \"0.00\",\n  \"total\": \"1620.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥ سم\",\n      \"quantity\": null,\n      \"unit_price\": \"160.00\",\n      \"line_total\": \"160.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥ سم\",\n      \"quantity\": null,\n      \"unit_price\": \"140.00\",\n      \"line_total\": \"140.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه ٦٥سم\",\n      \"quantity\": \"12\",\n      \"unit_price\": \"110.00\",\n      \"line_total\": \"1320.00\"\n    }\n  ],\n  \"raw_text\": \"sheko\\nفاتورة بيع\\nرقم الفاتورة | التاريخ | 2022/11/18\\nنوع الفاتورة نقدى | الوقت | 6:00 PM\\nكاشير | تستحق\\nاسم الصنف | كمية | السعر | الإجمالى\\nكفر مرتبه ٦٥ سم | 160.00 | 160.00\\nكفر مرتبه ٦٥ سم | 140.00 | 140.00\\nكفر مرتبه ٦٥سم | 12 | 110.00 | 1,320.00\\nالمطلوب | 1,620.00\\nيشمل ضريبة القيمة المضافة ٥ | 0.00\\nالمدفوع | 1,620.00\\nشكرا لزيارتكع\",\n  \"missing_fields\": [\n    \"receipt_number\",\n    \"currency\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 3099,
+        "output_tokens": 569,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 569,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 569,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 3099,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 3099
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 3668,
+          "traffic_type": null
+        },
+        "latency_seconds": 2.37417845800519
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 3099,
+    "output_tokens": 569,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 2.37417845800519,
+    "latency_seconds": 2.37417845800519,
+    "repair_revision": "gemini-repair-2",
+    "ocr_engine": "paddle_grouped_rows",
+    "input_mode": "ocr_text_only"
+  },
+  "status": "ok",
+  "wall_seconds": 2.3941809999523684,
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 2,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "purchase_time",
+      "tax",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "ara_0047",
+  "dataset": "AraReceipt",
+  "split": "development",
+  "source": "paddle",
+  "image_sha256": "689c7f3f4b5307b4cf1551a6c4a9808634369e0610eac91d5cdb32c917a9d437",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "3323129b3c865544da1b22d6fea14ccfca18638875a60d6fadd915f24dc780c3",
+  "status": "error",
+  "error": "Gemini inference failed",
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "",
+        "status": "error",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usage_reported": false,
+        "error": "ClientConnectorDNSError",
+        "latency_seconds": 0.004608292016200721
+      }
+    ],
+    "json_valid": false,
+    "repairs": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "thinking_tokens": 0,
+    "usage_complete": false,
+    "api_latency_seconds": 0.004608292016200721,
+    "latency_seconds": 0.004608292016200721,
+    "repair_revision": "gemini-repair-2"
+  },
+  "wall_seconds": 0.016490499954670668,
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 4,
+    "field_accuracy": 0.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_date": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_time": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "merchant_name",
+      "purchase_date",
+      "purchase_time",
+      "total"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 1.0,
+    "hallucination_rate": null,
+    "missing_denominator": 4,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

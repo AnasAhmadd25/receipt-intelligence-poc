@@ -14,6 +14,7 @@ Measured on **10 fixed held-out images**, not all 50 prepared test images. One i
 |---|---:|---:|---:|---:|---:|---:|
 | Gemini 3.5 Flash-Lite, direct image | **84.6%** (22/26) | **90.9%** | **6/9** | **5.59 s** | $0.02025 estimated | $3.38 estimated |
 | Gemini 3.1 Flash-Lite, direct image | 73.1% (19/26) | 72.7% | 5/9 | 4.66 s | $0.01370 estimated | **$2.74 estimated** |
+| PaddleOCR + Gemini 3.1, text only | 76.9% (20/26) | 27.3% | 4/9 | 13.01 s reconstructed | $0.01678 tokens; OCR hosting extra | $4.20 tokens; OCR hosting extra |
 | PaddleOCR + NVIDIA Nemotron 3.5 Bolt E4B | 61.5% (16/26) | 27.3% | 2/9 | 19.03 s | Free developer trial; commercial price N/A | N/A commercial |
 | PaddleOCR + OpenRouter free Nemotron Nano Omni | 65.4% (17/26) | 0% | 2/9 | 30.93 s | $0 within tested free quota | $0 trial inference; hosting extra |
 | Modal T4 + Qwen3-VL-2B | 73.1% (19/26) | **90.9%** | 4/9 | 63.33 s | $0.14996 estimated | $37.49 estimated |
@@ -34,11 +35,13 @@ flowchart LR
     I[Receipt image] --> A[Local PP-OCRv5 CPU]
     A --> L[OCR text and bounding boxes]
     L --> N[NVIDIA hosted text model]
+    L --> T[Gemini 3.1 text-only structurer]
     L --> O[OpenRouter fixed free text model]
     L --> OL[Ollama Cloud text model]
     I --> G[Gemini Flash-Lite image extraction]
     I --> M[Modal T4: Qwen3-VL-2B]
     N --> V[Pydantic validation]
+    T --> V
     O --> V
     OL --> V
     G --> V
@@ -51,6 +54,8 @@ flowchart LR
 The **API default remains NVIDIA**, as requested during the experiments. Select `provider=gemini` to use the recommended architecture. Ollama always uses the hosted API; no local Ollama inference model was downloaded.
 
 The separately tested self-hosted fallback was **PaddleOCR + Qwen3-1.7B**. It produced 0/6 correct development scalar fields and was rejected. It is not silently substituted into the direct Qwen VLM results.
+
+The later OCR investigation adds a **text-only Gemini 3.1 Flash-Lite** structurer (`ocr_gemini`), geometry-based row grouping, and a PaddleOCR-VL-1.6 trial. The new text-only row above uses the same ten images; its latency combines saved OCR timing with fresh text-call timing. Row grouping did not improve development results and remains disabled. PaddleOCR-VL did not produce validated OCR output, so it has no accuracy score and is not selected. See the [final report](reports/FINAL_REPORT.md) and [OCR research](docs/OCR_RESEARCH.md).
 
 ## Benchmark workflow
 
@@ -224,6 +229,27 @@ Every text provider uses the same saved OCR for a given image/configuration. Hos
 
 ## API
 
+### Three container services
+
+```bash
+# Set API_KEY plus NVIDIA_API_KEY/NVIDIA_MODEL and GEMINI_API_KEY locally.
+docker compose up --build -d ocr gemini
+# On a Linux NVIDIA GPU host:
+docker compose --profile gpu up --build -d selfhosted
+```
+
+| Service | Interactive API docs after startup | Runtime |
+|---|---|---|
+| A: local OCR + hosted text model | [localhost:8001/docs](http://localhost:8001/docs) | Linux amd64 CPU; PaddleOCR Arabic/English |
+| B: direct Gemini | [localhost:8002/docs](http://localhost:8002/docs) | CPU only; Gemini credentials |
+| C: fully self-hosted Qwen | [localhost:8003/docs](http://localhost:8003/docs) | Linux NVIDIA CUDA GPU; persistent model cache |
+
+Every service provides uploads, secure image URLs, bounded batches, `/health`, `/ready`, `/docs`, `/redoc` and `/openapi.json` using the same receipt schema. Click **Authorize** and use the local `API_KEY`. Each image restricts the enabled providers and requires API-key protection. [API documentation](docs/API.md) explains inputs, responses, errors, limits, first-use model downloads and readiness.
+
+The GPU path was also verified on a Modal T4 using the same Dockerfile and common API: [hosted API docs](https://anasahmadoff--receipt-intelligence-selfhosted-api-selfho-76fa77.us-east.modal.run/docs). Inference requires the separately configured `MODAL_API_KEY`; public documentation does not grant extraction access. The service scales to zero. Modal's Dockerfile builder ignores Docker `USER`, `HEALTHCHECK` and `CMD`; its ASGI entrypoint serves the same Python application. See runtime evidence before interpreting this as a local NVIDIA Docker test.
+
+### Run without Docker
+
 ```bash
 uvicorn app.main:app --host 127.0.0.1 --port 8000
 # Estimated 4 GB Linux OCR machine: limit active requests.
@@ -233,10 +259,12 @@ uvicorn app.main:app --host 127.0.0.1 --port 8000
 | Endpoint | Input | Output |
 |---|---|---|
 | `GET /health` | None | Status and schema version |
+| `GET /ready` | None | Configuration readiness, or actual loaded local GPU state |
+| `GET /docs`, `/openapi.json` | None | Swagger UI and complete API schema |
 | `POST /v1/extract` | Multipart image or JSON `image_url`, provider, optional merchant ID | `{receipt, metadata}` |
 | `POST /v1/batch` | Uploaded files or URL items, bounded concurrency | Ordered results with per-item failures |
 
-Provider IDs: `ocr_nvidia`, `ocr_ollama`, `gemini`, `modal_hybrid`, `ocr_openrouter`.
+Provider IDs: `ocr_nvidia`, `ocr_ollama`, `ocr_gemini`, `gemini`, `modal_hybrid`, `ocr_openrouter`, `selfhosted`. Each container accepts only the providers listed in its `/health` response.
 
 ```bash
 curl --fail http://127.0.0.1:8000/v1/extract \
@@ -259,6 +287,14 @@ For public hosting, set `PUBLIC_DEPLOYMENT=true` and a nonempty `API_KEY`. Suppl
 A returned JSON object is not proof of extraction accuracy. Inspect warnings and per-item batch failures; real-world acceptance needs a client-reviewed policy.
 
 ## Modal deployment
+
+For the new common-interface GPU container API:
+
+```bash
+modal deploy deploy/modal_container_api.py
+```
+
+This exposes the upload/URL/batch API described above. The historical benchmark deployment below uses its original internal base64 request format; `ModalProvider` is its adapter. Its scores remain tied to that original prompt/configuration.
 
 ```bash
 uv pip install -e '.[modal]'
@@ -309,7 +345,7 @@ python -m benchmark.modal_report
 pytest -q
 ```
 
-Run `variant_report` after `report` to add the cheaper-model/review-cost sensitivity section. Docker configurations are supplied for Gemini-only and Tesseract-only services; builds were not run because the local Docker daemon was stopped. Use `OCR_ENGINE=tesseract` with the Tesseract image.
+Run `variant_report` after `report` to add the cheaper-model/review-cost sensitivity section. The three Dockerfiles and Compose configuration now package CPU PaddleOCR, direct Gemini and local Qwen GPU services. Runtime verification and later OCR findings are recorded separately from the historical benchmark.
 
 | Deliverable | Purpose |
 |---|---|
@@ -321,9 +357,12 @@ Run `variant_report` after `report` to add the cheaper-model/review-cost sensiti
 | [Modal experiments](reports/modal_experiments.md) | GLM, Hunyuan, Qwen and fallback development evidence |
 | [Dataset audit](reports/dataset_audit.md) | Licensing, conversion policy, coverage and duplicate checks |
 | [Sources](reports/sources.md) | Official dated model/cloud price references |
+| [Final R&D report](reports/FINAL_REPORT.md) | Latest tested approaches, acceptable-result costs and container delivery |
+| [API documentation](docs/API.md) | Container startup, authentication, uploads, URLs, batch and errors |
+| [OCR research](docs/OCR_RESEARCH.md) | Stronger recognizers, layout, Arabic evidence, licensing and hardware |
 | [Benchmark CSV](results/benchmark.csv) | Per-receipt measured results |
 | [Model variants CSV](results/model_variants.csv) | Same-image model comparison |
 | [Cost projections CSV](results/cost_projections.csv) | Estimated costs for larger workloads |
 | [Resource profiles CSV](results/resource_profiles.csv) | Local and remote process/GPU profiles |
 
-Final verification: **61 tests passed**. Source and report files were scanned against configured credential values before publication. Actual invoices were not accessed, and unmeasured metrics remain N/A.
+The container/API revision passed **83 tests**. All three Docker images built; A/B returned real validated receipts in Docker, and C returned a real validated receipt on a Modal T4 using the common API/Dockerfile. Local C packaging also passed, correctly reporting not ready without a GPU. Source and report files are scanned against configured credential values before publication. Actual invoices were not accessed, and unmeasured metrics remain N/A.

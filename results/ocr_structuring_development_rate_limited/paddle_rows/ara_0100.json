@@ -1,0 +1,163 @@
+{
+  "id": "ara_0100",
+  "dataset": "AraReceipt",
+  "split": "development",
+  "source": "paddle_rows",
+  "image_sha256": "df2e461b1aa180348962b940656349bf17382ecbf084e4f16a5b7163b2b0dfcf",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "7e9f87f955b0274ad0737dcb62c0d408f451f3cf15311876a7ca355652912d5e",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "Dukkan chocolate",
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": "07:23:03",
+    "currency": null,
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "total": "154.00",
+    "line_items": [
+      {
+        "raw_description": "عرض ال٥",
+        "quantity": null,
+        "unit_price": "100.00",
+        "line_total": "100.00"
+      },
+      {
+        "raw_description": "بريك وابت بندق ولوز وزبيب",
+        "quantity": "2",
+        "unit_price": "27.00",
+        "line_total": "54.00"
+      }
+    ],
+    "raw_text": "Dukkan chocolate\n(1220)\nفاتورة رقم \nCash | كاشير  المدير\nالوقت | AM 07:23:03\n3 | عدد الأصناف\nالاحمالي | السعر | العد\nI\n100.00 | 100.00 | – | عرض ال٥\nبريك وابت بندق ولوز\nIn\n54.00 | 27.00 | 2 | وزبيب\n154.00 | KK\nOBT\nIF\nفرع شبرا\nر\n01550088990",
+    "missing_fields": [
+      "receipt_number",
+      "purchase_date",
+      "currency",
+      "subtotal",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0.0\",\n  \"merchant_name\": \"Dukkan chocolate\",\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": \"07:23:03\",\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"154.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"عرض ال٥\",\n      \"quantity\": null,\n      \"unit_price\": \"100.00\",\n      \"line_total\": \"100.00\"\n    },\n    {\n      \"raw_description\": \"بريك وابت بندق ولوز وزبيب\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"27.00\",\n      \"line_total\": \"54.00\"\n    }\n  ],\n  \"raw_text\": \"Dukkan chocolate (1220) فاتورة رقم Cash | كاشير المدير الوقت | AM 07:23:03 3 | عدد الأصناف الاحمالي | السعر | العد I 100.00 | 100.00 | – | عرض ال٥ بريك وابت بندق ولوز In 54.00 | 27.00 | 2 | وزبيب 154.00 | KK OBT IF فرع شبرا ر 01550088990\",\n  \"missing_fields\": [\n    \"receipt_number\",\n    \"purchase_date\",\n    \"currency\",\n    \"subtotal\",\n    \"discount\",\n    \"tax\"\n  ],\n  \"uncertain_fields\": [\n    \"receipt_number\"\n  ],\n  \"validation_warnings\": []\n}",
+        "status": "invalid_json_or_schema",
+        "input_tokens": 3179,
+        "output_tokens": 437,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 437,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 437,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 3179,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 3179
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 3616,
+          "traffic_type": null
+        },
+        "latency_seconds": 2.0786627079360187,
+        "validation_diagnostics": [
+          {
+            "loc": [
+              "schema_version"
+            ],
+            "type": "literal_error"
+          }
+        ]
+      },
+      {
+        "attempt": 2,
+        "kind": "repair",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"Dukkan chocolate\",\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": \"07:23:03\",\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"154.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"عرض ال٥\",\n      \"quantity\": null,\n      \"unit_price\": \"100.00\",\n      \"line_total\": \"100.00\"\n    },\n    {\n      \"raw_description\": \"بريك وابت بندق ولوز وزبيب\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"27.00\",\n      \"line_total\": \"54.00\"\n    }\n  ],\n  \"raw_text\": \"Dukkan chocolate (1220) فاتورة رقم Cash | كاشير المدير الوقت | AM 07:23:03 3 | عدد الأصناف الاحمالي | السعر | العد I 100.00 | 100.00 | – | عرض ال٥ بريك وابت بندق ولوز In 54.00 | 27.00 | 2 | وزبيب 154.00 | KK OBT IF فرع شبرا ر 01550088990\",\n  \"missing_fields\": [\n    \"receipt_number\",\n    \"purchase_date\",\n    \"currency\",\n    \"subtotal\",\n    \"discount\",\n    \"tax\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 3705,
+        "output_tokens": 425,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 425,
+        "token_details": {
+          "cache_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 1609
+            }
+          ],
+          "cached_content_token_count": 1609,
+          "candidates_token_count": 425,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 3705,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 3705
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 4130,
+          "traffic_type": null
+        },
+        "latency_seconds": 1.7378478749888018
+      }
+    ],
+    "json_valid": false,
+    "repairs": 1,
+    "input_tokens": 6884,
+    "output_tokens": 862,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 3.8165105829248205,
+    "latency_seconds": 3.8165105829248205,
+    "repair_revision": "gemini-repair-2",
+    "ocr_engine": "paddle_grouped_rows",
+    "input_mode": "ocr_text_only"
+  },
+  "status": "ok",
+  "wall_seconds": 3.833491374971345,
+  "metrics": {
+    "field_correct": 1,
+    "field_total": 1,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 1,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "purchase_time",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "id": "ara_0090",
+  "dataset": "AraReceipt",
+  "split": "development",
+  "source": "paddle",
+  "image_sha256": "6c5fa69c1bceffecc719e712d46a96e0784f5834a3e3663c07fc3aeac3d9b6b1",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "690ab57efacbffba723e9c2c36b0800e6f385168b226e83eab3f001e8ba67b09",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "كاز ابلانكا",
+    "receipt_number": "63",
+    "purchase_date": "2022-04-26",
+    "purchase_time": "11:48:59",
+    "currency": null,
+    "subtotal": "232",
+    "discount": null,
+    "tax": "32.48",
+    "total": "264.48",
+    "line_items": [
+      {
+        "raw_description": "مياهص",
+        "quantity": "1",
+        "unit_price": "8",
+        "line_total": "8"
+      },
+      {
+        "raw_description": "قهوة تركي ساده",
+        "quantity": "4",
+        "unit_price": "22",
+        "line_total": "88"
+      },
+      {
+        "raw_description": "D قهوة",
+        "quantity": "1",
+        "unit_price": "30",
+        "line_total": "30"
+      },
+      {
+        "raw_description": "هوست شوكلت كلاسيك",
+        "quantity": "1",
+        "unit_price": "30",
+        "line_total": "30"
+      },
+      {
+        "raw_description": "شاي نكهات",
+        "quantity": "2",
+        "unit_price": "20",
+        "line_total": "40"
+      },
+      {
+        "raw_description": "شاي",
+        "quantity": "2",
+        "unit_price": "18",
+        "line_total": "36"
+      }
+    ],
+    "raw_text": "كاز ابلانكا\nرقم الطلب\n63\nالفرع\nالفرع الرئيسى\nنقدى\nالتاريخ\n11:48:59\n26/04/2022\nالكاشير\nرقم\nالاجمالى\nالكمية\nالسعر\nالصنف\nمياهص\n1\n8\n8\nقهوة تركي ساده\n22\n88\n4\nD قهوة\n30\n1\n30\nهوست شوكلت كلاسيك\n30\n1\n30\nشاي نكهات\n20\n2\n40\nشاي\n2\n18\n36\nالقيمة\n232\nالضريية\n32.48\nالأجمالي\n264.48\nالرقم الضريى\nPowered by www.tebalink.com",
+    "missing_fields": [
+      "currency",
+      "discount"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"كاز ابلانكا\",\n  \"receipt_number\": \"63\",\n  \"purchase_date\": \"2022-04-26\",\n  \"purchase_time\": \"11:48:59\",\n  \"currency\": null,\n  \"subtotal\": \"232\",\n  \"discount\": null,\n  \"tax\": \"32.48\",\n  \"total\": \"264.48\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"مياهص\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"8\",\n      \"line_total\": \"8\"\n    },\n    {\n      \"raw_description\": \"قهوة تركي ساده\",\n      \"quantity\": \"4\",\n      \"unit_price\": \"22\",\n      \"line_total\": \"88\"\n    },\n    {\n      \"raw_description\": \"D قهوة\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30\",\n      \"line_total\": \"30\"\n    },\n    {\n      \"raw_description\": \"هوست شوكلت كلاسيك\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30\",\n      \"line_total\": \"30\"\n    },\n    {\n      \"raw_description\": \"شاي نكهات\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"20\",\n      \"line_total\": \"40\"\n    },\n    {\n      \"raw_description\": \"شاي\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"18\",\n      \"line_total\": \"36\"\n    }\n  ],\n  \"raw_text\": \"كاز ابلانكا\\nرقم الطلب\\n63\\nالفرع\\nالفرع الرئيسى\\nنقدى\\nالتاريخ\\n11:48:59\\n26/04/2022\\nالكاشير\\nرقم\\nالاجمالى\\nالكمية\\nالسعر\\nالصنف\\nمياهص\\n1\\n8\\n8\\nقهوة تركي ساده\\n22\\n88\\n4\\nD قهوة\\n30\\n1\\n30\\nهوست شوكلت كلاسيك\\n30\\n1\\n30\\nشاي نكهات\\n20\\n2\\n40\\nشاي\\n2\\n18\\n36\\nالقيمة\\n232\\nالضريية\\n32.48\\nالأجمالي\\n264.48\\nالرقم الضريى\\nPowered by www.tebalink.com\",\n  \"missing_fields\": [\n    \"currency\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 3092,
+        "output_tokens": 713,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 713,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 713,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 3092,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 3092
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 3805,
+          "traffic_type": null
+        },
+        "latency_seconds": 3.5293006660649553
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 3092,
+    "output_tokens": 713,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 3.5293006660649553,
+    "latency_seconds": 3.5293006660649553,
+    "repair_revision": "gemini-repair-2",
+    "ocr_engine": "paddle",
+    "input_mode": "ocr_text_only",
+    "template_revision": "gemini-text-1"
+  },
+  "status": "ok",
+  "wall_seconds": 3.551704665995203,
+  "metrics": {
+    "field_correct": 4,
+    "field_total": 5,
+    "field_accuracy": 0.8,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_time": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 5,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "subtotal"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

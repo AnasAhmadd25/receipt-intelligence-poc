@@ -12,6 +12,40 @@ _paddle_engines = {}
 _paddle_lock = threading.Lock()
 
 
+def group_detection_rows(boxes):
+    """Merge boxes by vertical overlap, retaining original boxes as evidence.
+
+    This is geometry only: no dictionary, amount repair, or receipt-specific rules.
+    """
+    groups = []
+    for box in sorted(boxes, key=lambda b: ((b["bbox"][1] + b["bbox"][3]) / 2, b["bbox"][0])):
+        x1, y1, x2, y2 = box["bbox"]
+        height = max(1, y2 - y1)
+        matches = []
+        for index, group in enumerate(groups):
+            # Compare with each original member, avoiding chained row expansion.
+            centers = [(b["bbox"][1] + b["bbox"][3]) / 2 for b in group]
+            center = sum(centers) / len(centers)
+            mean_height = sum(max(1, b["bbox"][3] - b["bbox"][1]) for b in group) / len(group)
+            if abs((y1 + y2) / 2 - center) <= .4 * min(height, mean_height):
+                matches.append((abs((y1 + y2) / 2 - center), index))
+        if matches:
+            groups[min(matches)[1]].append(box)
+        else:
+            groups.append([box])
+    rows = []
+    for group in groups:
+        arabic = sum("\u0600" <= c <= "\u06ff" for box in group for c in box["text"])
+        latin = sum(c.isascii() and c.isalpha() for box in group for c in box["text"])
+        ordered = sorted(group, key=lambda b: b["bbox"][0], reverse=arabic > latin)
+        rows.append({"text": " | ".join(b["text"] for b in ordered),
+                     "bbox": [min(b["bbox"][0] for b in group), min(b["bbox"][1] for b in group),
+                              max(b["bbox"][2] for b in group), max(b["bbox"][3] for b in group)],
+                     "confidence": sum(b.get("confidence", 0) for b in group) / len(group),
+                     "boxes": ordered})
+    return sorted(rows, key=lambda b: (b["bbox"][1], b["bbox"][0]))
+
+
 def reconstruct_lines(words):
     groups = {}
     for word in words:
@@ -50,7 +84,7 @@ def run_ocr(image_bytes: bytes, engine: str = "tesseract", language: str | None 
     elif engine == "paddle":
         import numpy as np
         from paddleocr import PaddleOCR
-        # Separate recognizers are necessary: the Arabic alphabet model lacks Latin coverage.
+        # Arabic's dictionary includes Latin; a language hint selects the specialist.
         language = language or os.getenv("OCR_LANGUAGE", "ar")
         language = "ar" if language.casefold().startswith("ar") else "en"
         with _paddle_lock:
@@ -70,6 +104,8 @@ def run_ocr(image_bytes: bytes, engine: str = "tesseract", language: str | None 
             for text, score, box in zip(page["rec_texts"], page["rec_scores"], page["rec_boxes"]):
                 rows.append({"text": str(text), "bbox": [int(v) for v in box], "confidence": float(score) * 100})
         rows.sort(key=lambda row: (row["bbox"][1], row["bbox"][0]))
+        if os.getenv("OCR_GROUP_ROWS", "false").lower() == "true":
+            rows = group_detection_rows(rows)
         model = ("arabic" if language == "ar" else "en") + "_PP-OCRv5_mobile_rec + PP-OCRv5_mobile_det"
     else:
         raise ValueError("Unknown OCR engine")

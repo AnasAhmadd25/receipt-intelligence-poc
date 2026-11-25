@@ -1,0 +1,137 @@
+{
+  "id": "cord_validation_0094",
+  "dataset": "CORD-v2",
+  "split": "development",
+  "source": "paddle",
+  "image_sha256": "34098bb6289c8a289a1d68c0fc99cc1122d3b09178cdf85029f60509909afc83",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "9223fa6e9f0c2b76785323bb3a9c1379cfc088fd5b2af528a47a12a434d081f9",
+  "status": "error",
+  "error": "Gemini inference failed",
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"C003\",\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"69.000\",\n  \"discount\": \"0\",\n  \"tax\": null,\n  \"total\": \"80.100\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"1 Emily's Shrimp Scampi Fettucine\",\n      \"quantity\": \"1\",\n      \"unit_price\": null,\n      \"line_total\": \"69.000\"\n    }\n  ],\n  \"raw_text\": \"gooC C003 69.000 1 Emily's Shrimp Scampi Fettucine 69.000 SUB TOTAL 0 DISCOUNT 3.795 SERVICE 7.280 OTHERS +25 ROUNDING 80.100 GRAND TOTAL 80.100 TADA EGIFT CHANGES SANKYOU\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "invalid_json_or_schema",
+        "input_tokens": 1449,
+        "output_tokens": 314,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 314,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 314,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1449,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 1449
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1763,
+          "traffic_type": null
+        },
+        "latency_seconds": 1.6886864999542013,
+        "validation_diagnostics": [
+          {
+            "loc": [
+              "schema_version"
+            ],
+            "type": "literal_error"
+          }
+        ]
+      },
+      {
+        "attempt": 2,
+        "kind": "repair",
+        "raw_response": "",
+        "status": "error",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usage_reported": false,
+        "error": "ClientError",
+        "latency_seconds": 0.23184520902577788,
+        "http_status_code": 429
+      }
+    ],
+    "json_valid": false,
+    "repairs": 1,
+    "input_tokens": 1449,
+    "output_tokens": 314,
+    "thinking_tokens": 0,
+    "usage_complete": false,
+    "api_latency_seconds": 1.9205317089799792,
+    "latency_seconds": 1.9205317089799792,
+    "repair_revision": "gemini-repair-2"
+  },
+  "wall_seconds": 1.9350834169890732,
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 3,
+    "field_accuracy": 0.0,
+    "fields": {
+      "subtotal": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "discount": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "subtotal",
+      "discount",
+      "total"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 1.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": 0.0,
+    "line_items": {
+      "matched": 0,
+      "predicted": 0,
+      "expected": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "quantity": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    }
+  }
+}

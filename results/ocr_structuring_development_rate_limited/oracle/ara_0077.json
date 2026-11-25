@@ -1,0 +1,123 @@
+{
+  "id": "ara_0077",
+  "dataset": "AraReceipt",
+  "split": "development",
+  "source": "oracle",
+  "image_sha256": "c9772f6873d08f4d6666fc51d02307c248ce390ac42a371214c49d036352f70d",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "00d579e02266dea5ee9bf271bf72811e8119a686301563ccaf8fba7814778cf8",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "مكتبة النهضة العربية",
+    "receipt_number": "3665",
+    "purchase_date": "2022-11-12",
+    "purchase_time": "03:55:00",
+    "currency": "ج.م",
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "total": "30.00",
+    "line_items": [
+      {
+        "raw_description": "خرطوشة دخان",
+        "quantity": "30",
+        "unit_price": null,
+        "line_total": "30.000"
+      }
+    ],
+    "raw_text": "مكتبة النهضة العربية\nمبيعات\nx3665\n:اربح\n12/11/2022\nالوقت\n03:55:00\nنقدًا\nنقدًا\nفرع السرق\nالكاسير\nاسم الصنف\nالوحد\nود\n916\n30\nخرطوشة دخان\nفطعه\n30\n250\nون3\nحرام\nالاجمالي\n30.000\nج.م\nالمد فوع\n30.00\nج.م\nالباقي\n0.00\nج.م\nثلاثون جنيهً مصريً فقط لا غير\n:الرصيد\n0.000\nفرع سوهاج الشرق-\nالبرعه المردومة حصم\nعلي الملخصاب\n%15\n4597005\n093/\nفررع عرب النجع سارع- احمد ماهر\n01026649821-01124230420\nعفوًا لا مرتجع ولا استبدال نهائيًا لأدوات العناية\nبالجسم البسشره و الكمامات والوافي\nولاسحدماب السحصية\nواله الحاسبة ولالعاب\n2022\n03:55:02\n010687889\nServerSoft\n1\n السعر  \n احمالى\nالكمية",
+    "missing_fields": [
+      "subtotal",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [
+      "unit_price"
+    ],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"مكتبة النهضة العربية\",\n  \"receipt_number\": \"3665\",\n  \"purchase_date\": \"2022-11-12\",\n  \"purchase_time\": \"03:55:00\",\n  \"currency\": \"ج.م\",\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"30.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"خرطوشة دخان\",\n      \"quantity\": \"30\",\n      \"unit_price\": null,\n      \"line_total\": \"30.000\"\n    }\n  ],\n  \"raw_text\": \"مكتبة النهضة العربية\\nمبيعات\\nx3665\\n:اربح\\n12/11/2022\\nالوقت\\n03:55:00\\nنقدًا\\nنقدًا\\nفرع السرق\\nالكاسير\\nاسم الصنف\\nالوحد\\nود\\n916\\n30\\nخرطوشة دخان\\nفطعه\\n30\\n250\\nون3\\nحرام\\nالاجمالي\\n30.000\\nج.م\\nالمد فوع\\n30.00\\nج.م\\nالباقي\\n0.00\\nج.م\\nثلاثون جنيهً مصريً فقط لا غير\\n:الرصيد\\n0.000\\nفرع سوهاج الشرق-\\nالبرعه المردومة حصم\\nعلي الملخصاب\\n%15\\n4597005\\n093/\\nفررع عرب النجع سارع- احمد ماهر\\n01026649821-01124230420\\nعفوًا لا مرتجع ولا استبدال نهائيًا لأدوات العناية\\nبالجسم البسشره و الكمامات والوافي\\nولاسحدماب السحصية\\nواله الحاسبة ولالعاب\\n2022\\n03:55:02\\n010687889\\nServerSoft\\n1\\n السعر  \\n احمالى\\nالكمية\",\n  \"missing_fields\": [\n    \"subtotal\",\n    \"discount\",\n    \"tax\"\n  ],\n  \"uncertain_fields\": [\n    \"unit_price\"\n  ],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 560,
+        "output_tokens": 635,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 635,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 635,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 560,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 560
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1195,
+          "traffic_type": null
+        },
+        "latency_seconds": 4.101529666921124
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 560,
+    "output_tokens": 635,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 4.101529666921124,
+    "latency_seconds": 4.101529666921124,
+    "repair_revision": "gemini-repair-2",
+    "ocr_engine": "annotation_partial_transcript_control",
+    "input_mode": "ocr_text_only"
+  },
+  "status": "ok",
+  "wall_seconds": 4.4433554579736665,
+  "metrics": {
+    "field_correct": 1,
+    "field_total": 2,
+    "field_accuracy": 0.5,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "subtotal": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "subtotal"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 0.5,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

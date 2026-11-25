@@ -1,0 +1,87 @@
+{
+  "id": "ara_0090",
+  "dataset": "AraReceipt",
+  "split": "development",
+  "source": "oracle",
+  "image_sha256": "6c5fa69c1bceffecc719e712d46a96e0784f5834a3e3663c07fc3aeac3d9b6b1",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "e5c4a4ecc19f1720839917e383b1e3e2f9c4b75154b1b8f6c09f3da8ecf912aa",
+  "status": "error",
+  "error": "Gemini inference failed",
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "",
+        "status": "error",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usage_reported": false,
+        "error": "ClientConnectorDNSError",
+        "latency_seconds": 0.0038337919395416975
+      }
+    ],
+    "json_valid": false,
+    "repairs": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "thinking_tokens": 0,
+    "usage_complete": false,
+    "api_latency_seconds": 0.0038337919395416975,
+    "latency_seconds": 0.0038337919395416975,
+    "repair_revision": "gemini-repair-2"
+  },
+  "wall_seconds": 0.015991374966688454,
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 5,
+    "field_accuracy": 0.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_date": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_time": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "tax": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "merchant_name",
+      "purchase_date",
+      "purchase_time",
+      "tax",
+      "total"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 1.0,
+    "hallucination_rate": null,
+    "missing_denominator": 5,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

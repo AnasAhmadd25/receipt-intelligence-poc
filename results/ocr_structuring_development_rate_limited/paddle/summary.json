@@ -1,0 +1,19 @@
+{
+  "attempted_inputs": 8,
+  "strict_scorable": 6,
+  "strict_passes": 4,
+  "critical_total_scorable": 3,
+  "critical_total_passes": 2,
+  "economic_cost_usd": null,
+  "cost_per_strict_accepted_usd": null,
+  "strict_cost_reason": "unknown price, usage, or allocated lifecycle cost",
+  "cost_per_critical_total_accepted_usd": null,
+  "critical_cost_reason": "unknown price, usage, or allocated lifecycle cost",
+  "field_correct": 13,
+  "field_total": 20,
+  "input_tokens": 26909,
+  "output_tokens": 5396,
+  "missing_usage_requests": 3,
+  "mean_seconds": 4.168003948012483,
+  "ocr_hosting_excluded": true
+}

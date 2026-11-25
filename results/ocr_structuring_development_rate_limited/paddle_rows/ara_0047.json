@@ -1,0 +1,95 @@
+{
+  "id": "ara_0047",
+  "dataset": "AraReceipt",
+  "split": "development",
+  "source": "paddle_rows",
+  "image_sha256": "689c7f3f4b5307b4cf1551a6c4a9808634369e0610eac91d5cdb32c917a9d437",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "d08844e503ed1327b33644c1ff213364c117200c04d87fc08f8e7ef8dcf66d3b",
+  "status": "error",
+  "error": "Gemini inference failed",
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "",
+        "status": "error",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usage_reported": false,
+        "error": "ClientError",
+        "latency_seconds": 0.5814661670010537,
+        "http_status_code": 429
+      },
+      {
+        "attempt": 2,
+        "kind": "retry",
+        "raw_response": "",
+        "status": "error",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usage_reported": false,
+        "error": "ClientError",
+        "latency_seconds": 0.31951441697310656,
+        "http_status_code": 429
+      }
+    ],
+    "json_valid": false,
+    "repairs": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "thinking_tokens": 0,
+    "usage_complete": false,
+    "api_latency_seconds": 0.9009805839741603,
+    "latency_seconds": 0.9009805839741603,
+    "repair_revision": "gemini-repair-2"
+  },
+  "wall_seconds": 1.9290786660276353,
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 4,
+    "field_accuracy": 0.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_date": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "purchase_time": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "merchant_name",
+      "purchase_date",
+      "purchase_time",
+      "total"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 1.0,
+    "hallucination_rate": null,
+    "missing_denominator": 4,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

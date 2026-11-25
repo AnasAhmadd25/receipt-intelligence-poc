@@ -1,0 +1,150 @@
+{
+  "base_url": "https://anasahmadoff--receipt-intelligence-selfhosted-api-selfho-76fa77.us-east.modal.run",
+  "image": "ara_0077",
+  "checks": {
+    "/health": {
+      "status": 200,
+      "seconds": 17.821603332995437,
+      "body": {
+        "status": "ok",
+        "schema_version": "1.0",
+        "default_provider": "selfhosted",
+        "allowed_providers": [
+          "selfhosted"
+        ]
+      }
+    },
+    "/ready": {
+      "status": 200,
+      "seconds": 0.2247333750128746,
+      "body": {
+        "ready": true,
+        "provider": "selfhosted",
+        "model": "Qwen/Qwen3-VL-2B-Instruct",
+        "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+        "device": "cuda",
+        "gpu_name": "Tesla T4",
+        "gpu_compute_capability": [
+          7,
+          5
+        ],
+        "dtype": "torch.float16",
+        "attention_implementation": "sdpa",
+        "runtime_versions": {
+          "torch": "2.9.1+cu128",
+          "transformers": "5.24.1"
+        },
+        "initialization_seconds": 12.788846428
+      }
+    },
+    "/docs": {
+      "status": 200,
+      "seconds": 0.21410483308136463
+    },
+    "/openapi.json": {
+      "status": 200,
+      "seconds": 0.2666726669995114
+    },
+    "unauthenticated_extract": 401
+  },
+  "extraction": {
+    "status": 200,
+    "seconds": 56.828759416006505,
+    "result": {
+      "receipt": {
+        "schema_version": "1.0",
+        "merchant_name": null,
+        "receipt_number": null,
+        "purchase_date": "12/11/2022",
+        "purchase_time": "03:55:00",
+        "currency": "EGP",
+        "subtotal": "60.00",
+        "discount": "0.00",
+        "tax": "0.00",
+        "total": "60.00",
+        "line_items": [
+          {
+            "raw_description": "الكمية 1 قطعة",
+            "quantity": "1",
+            "unit_price": "30.000",
+            "line_total": "30.000"
+          },
+          {
+            "raw_description": "الكمية 1 قطعة",
+            "quantity": "1",
+            "unit_price": "30.000",
+            "line_total": "30.000"
+          },
+          {
+            "raw_description": "الكمية 0.00",
+            "quantity": "0.00",
+            "unit_price": "0.00",
+            "line_total": "0.00"
+          }
+        ],
+        "raw_text": "مكتبة النهضة العربية\nx3665\nمبيعات\nالوقت : 03:55:00 م\nتاريخ : 12/11/2022\nبعدا - 1\nالكاسر : فرع السرى\nالسعر : 30\nالوحدة : 30\nالكمية : 1\nالصفح : جرّ طوسة دجان\nالسعر : 250 حرام\nالنسبة : 91€\nالإجمالي : 30.000\nالمدفوع : 30.000\nالباقي : 0.00\nلا تلابون حبّة مصري فقط لا غير\nالرصيد : 0.000\nفرع : سوهاج - النسوي - س البرغة المدرّومة حصم\nعلى الملخصات : 15%\n4597005-093/ ب\nفرع عربة - الجح - نساعر احمد ماهر\n01026649821-01124230420\nعفوا لا مرجح ولا اسيدال رهانها لادوات العناية\nبالجسم والبشره\nولاستخدامات الشخصية الكمامات والواقعي\nواله الحاسبة ولالعب\n2022 03:55:02 ServerSoft - 010687889",
+        "missing_fields": [
+          "merchant_name",
+          "receipt_number"
+        ],
+        "uncertain_fields": [],
+        "validation_warnings": []
+      },
+      "metadata": {
+        "provider": "selfhosted",
+        "model": "Qwen/Qwen3-VL-2B-Instruct",
+        "attempts": [
+          {
+            "attempt": 1,
+            "kind": "initial",
+            "raw_response": "```json\n{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": \"12/11/2022\",\n  \"purchase_time\": \"03:55:00\",\n  \"currency\": \"EGP\",\n  \"subtotal\": \"60.00\",\n  \"discount\": \"0.00\",\n  \"tax\": \"0.00\",\n  \"total\": \"60.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"الكمية 1 قطعة\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30.000\",\n      \"line_total\": \"30.000\"\n    },\n    {\n      \"raw_description\": \"الكمية 1 قطعة\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30.000\",\n      \"line_total\": \"30.000\"\n    },\n    {\n      \"raw_description\": \"الكمية 0.00\",\n      \"quantity\": \"0.00\",\n      \"unit_price\": \"0.00\",\n      \"line_total\": \"0.00\"\n    }\n  ],\n  \"raw_text\": \"مكتبة النهضة العربية\\nx3665\\nمبيعات\\nالوقت : 03:55:00 م\\nتاريخ : 12/11/2022\\nبعدا - 1\\nالكاسر : فرع السرى\\nالسعر : 30\\nالوحدة : 30\\nالكمية : 1\\nالصفح : جرّ طوسة دجان\\nالسعر : 250 حرام\\nالنسبة : 91€\\nالإجمالي : 30.000\\nالمدفوع : 30.000\\nالباقي : 0.00\\nلا تلابون حبّة مصري فقط لا غير\\nالرصيد : 0.000\\nفرع : سوهاج - النسوي - س البرغة المدرّومة حصم\\nعلى الملخصات : 15%\\n4597005-093/ ب\\nفرع عربة - الجح - نساعر احمد ماهر\\n01026649821-01124230420\\nعفوا لا مرجح ولا اسيدال رهانها لادوات العناية\\nبالجسم والبشره\\nولاستخدامات الشخصية الكمامات والواقعي\\nواله الحاسبة ولالعب\\n2022 03:55:02 ServerSoft - 010687889\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}\n```",
+            "status": "ok",
+            "input_tokens": 1167,
+            "output_tokens": 644,
+            "thinking_tokens": 0,
+            "usage_reported": true,
+            "latency_seconds": 55.516062176
+          }
+        ],
+        "json_valid": true,
+        "repairs": 0,
+        "input_tokens": 1167,
+        "output_tokens": 644,
+        "thinking_tokens": 0,
+        "usage_complete": true,
+        "api_latency_seconds": 55.516062176,
+        "latency_seconds": 55.571839385000004,
+        "revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+        "template_revision": "selfhosted-qwen-repair-1",
+        "hosted_inference": false,
+        "image_pixel_cap": 1000000,
+        "device": "cuda",
+        "gpu_name": "Tesla T4",
+        "gpu_compute_capability": [
+          7,
+          5
+        ],
+        "dtype": "torch.float16",
+        "attention_implementation": "sdpa",
+        "runtime_versions": {
+          "torch": "2.9.1+cu128",
+          "transformers": "5.24.1"
+        },
+        "initialization_seconds": 12.788846428,
+        "final_valid": true,
+        "cold_first_request": true,
+        "original_image_size": [
+          1080,
+          1920
+        ],
+        "inference_image_size": [
+          750,
+          1333
+        ],
+        "gpu_peak_allocated_bytes": 4735632896,
+        "gpu_peak_reserved_bytes": 4773117952
+      }
+    },
+    "schema_valid": true
+  }
+}

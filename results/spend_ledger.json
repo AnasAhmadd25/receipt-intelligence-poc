@@ -68,7 +68,19 @@
     "test10/modal_hybrid/722d0c0860b7": {
       "usd": 0.8,
       "status": "reserved upper bound, not actual charge"
+    },
+    "ocr_vl16_rnd": {
+      "usd": 1.0,
+      "status": "reserved upper bound, not actual charge"
+    },
+    "ocr_text_structuring_rnd": {
+      "usd": 0.4,
+      "status": "reserved upper bound, not actual charge"
+    },
+    "container_verification": {
+      "usd": 0.4,
+      "status": "reserved upper bound, not actual charge"
     }
   },
-  "reserved_or_estimated_usd": 2.2904034
+  "reserved_or_estimated_usd": 4.0904034000000005
 }

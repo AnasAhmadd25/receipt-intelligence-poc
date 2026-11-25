@@ -1,0 +1,182 @@
+{
+  "variant": "b",
+  "started_at": "2026-11-25T02:00:40.072252+00:00",
+  "image_tag": "receipt-intelligence:gemini-rd",
+  "image_id": "sha256:a2dabe5d54e5d003401947d39b6f56620bff3b71298426895bfca68fa5383418",
+  "container_id": "ff38788591f12adf5b03e6211dfab0a68ea4cabb6bde1e58114b30f886a46175",
+  "base_url": "http://127.0.0.1:8002",
+  "default_provider_expected": "gemini",
+  "receipt_id": "ara_0077",
+  "receipt_sha256": "c9772f6873d08f4d6666fc51d02307c248ce390ac42a371214c49d036352f70d",
+  "public_dataset": {
+    "name": "AraReceipt",
+    "source": "https://huggingface.co/datasets/IslamMesabah/AraReceipt",
+    "revision": "d995859bd253ad37053faee8bce24b5fa1c265e2",
+    "license": "MIT",
+    "split": "train",
+    "row_index": 76
+  },
+  "checks": {
+    "health": {
+      "status_code": 200,
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "97",
+        "date": "Wed, 25 Nov 2026 02:00:41 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "status": "ok",
+        "schema_version": "1.0",
+        "default_provider": "gemini",
+        "allowed_providers": [
+          "gemini"
+        ]
+      }
+    },
+    "ready": {
+      "status_code": 200,
+      "content_type": "application/json",
+      "body": {
+        "ready": true,
+        "provider": null,
+        "default_provider": "gemini",
+        "scope": "configuration only; hosted credentials and OCR weights are not tested"
+      }
+    },
+    "docs": {
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    "openapi": {
+      "status_code": 200,
+      "content_type": "application/json",
+      "security": [
+        {
+          "APIKey": []
+        },
+        {
+          "BearerAuth": []
+        }
+      ],
+      "request_content_types": [
+        "application/json",
+        "multipart/form-data"
+      ],
+      "response_schema": {
+        "$ref": "#/components/schemas/ExtractionResponse"
+      },
+      "provider_enum": [
+        "gemini"
+      ]
+    },
+    "unauthenticated_extract": {
+      "status_code": 401,
+      "headers": {
+        "content-type": "application/json",
+        "content-length": "35",
+        "date": "Wed, 25 Nov 2026 02:00:41 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "detail": "Valid API key required"
+      }
+    }
+  },
+  "extraction": {
+    "status_code": 200,
+    "headers": {
+      "content-type": "application/json",
+      "content-length": "3848",
+      "date": "Wed, 25 Nov 2026 02:00:41 GMT",
+      "server": "uvicorn"
+    },
+    "body": {
+      "receipt": {
+        "schema_version": "1.0",
+        "merchant_name": "مكتبة النهضة العربية",
+        "receipt_number": "x3665",
+        "purchase_date": "2022-11-12",
+        "purchase_time": "03:55:00",
+        "currency": "ج.م",
+        "subtotal": "30.000",
+        "discount": null,
+        "tax": null,
+        "total": "30.000",
+        "line_items": [
+          {
+            "raw_description": "خرطوشة حبر 250 جرام 3 لون",
+            "quantity": "1",
+            "unit_price": "30",
+            "line_total": "30"
+          }
+        ],
+        "raw_text": "مكتبة النهضة العربية مبيعات x3665 تاريخ : 12/11/2022 الوقت : 03:55:00م 1 - نقدا ب: فرع الشرق الكاشير: اسم الصنف الكمية الوحدة السعر اجمالي 916 خرطوشة حبر 1 قطعة 30 30 250 جرام 3 لون الاجمالي 30.000 ج.م المدفوع 30.000 ج.م الباقي 0.00 ج.م ثلاثون جنيه مصرى فقط لاغير الرصيد: 0.000 فرع: سوهاج -الشرق -ش البرعه المردومه خصم 15% على الملحقات ت/093-4597005 فرع عرب النجع -شارع احمد ماهر 01026649821-01124230420 عفوا لا مرتجع ولا استبدال نهائيا لادوات العناية بالجسم والبشرة ولاستخدامات الشخصية الكمامات والواقى واله الحاسبه والالعاب 2022 03:55:02م ServerSoft - 0106878891",
+        "missing_fields": [
+          "discount",
+          "tax"
+        ],
+        "uncertain_fields": [],
+        "validation_warnings": []
+      },
+      "metadata": {
+        "provider": "gemini",
+        "model": "gemini-3.5-flash-lite",
+        "attempts": [
+          {
+            "attempt": 1,
+            "kind": "initial",
+            "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"مكتبة النهضة العربية\",\n  \"receipt_number\": \"x3665\",\n  \"purchase_date\": \"2022-11-12\",\n  \"purchase_time\": \"03:55:00\",\n  \"currency\": \"ج.م\",\n  \"subtotal\": \"30.000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"30.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"خرطوشة حبر 250 جرام 3 لون\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"30\",\n      \"line_total\": \"30\"\n    }\n  ],\n  \"raw_text\": \"مكتبة النهضة العربية مبيعات x3665 تاريخ : 12/11/2022 الوقت : 03:55:00م 1 - نقدا ب: فرع الشرق الكاشير: اسم الصنف الكمية الوحدة السعر اجمالي 916 خرطوشة حبر 1 قطعة 30 30 250 جرام 3 لون الاجمالي 30.000 ج.م المدفوع 30.000 ج.م الباقي 0.00 ج.م ثلاثون جنيه مصرى فقط لاغير الرصيد: 0.000 فرع: سوهاج -الشرق -ش البرعه المردومه خصم 15% على الملحقات ت/093-4597005 فرع عرب النجع -شارع احمد ماهر 01026649821-01124230420 عفوا لا مرتجع ولا استبدال نهائيا لادوات العناية بالجسم والبشرة ولاستخدامات الشخصية الكمامات والواقى واله الحاسبه والالعاب 2022 03:55:02م ServerSoft - 0106878891\",\n  \"missing_fields\": [],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+            "status": "ok",
+            "input_tokens": 1254,
+            "output_tokens": 521,
+            "thinking_tokens": 0,
+            "usage_reported": true,
+            "candidate_tokens": 521,
+            "token_details": {
+              "cache_tokens_details": null,
+              "cached_content_token_count": null,
+              "candidates_token_count": 521,
+              "candidates_tokens_details": null,
+              "prompt_token_count": 1254,
+              "prompt_tokens_details": [
+                {
+                  "modality": "TEXT",
+                  "token_count": 154
+                },
+                {
+                  "modality": "IMAGE",
+                  "token_count": 1100
+                }
+              ],
+              "thoughts_token_count": null,
+              "tool_use_prompt_token_count": null,
+              "tool_use_prompt_tokens_details": null,
+              "total_token_count": 1775,
+              "traffic_type": null
+            },
+            "latency_seconds": 3.39305862599997
+          }
+        ],
+        "json_valid": true,
+        "repairs": 0,
+        "input_tokens": 1254,
+        "output_tokens": 521,
+        "thinking_tokens": 0,
+        "usage_complete": true,
+        "api_latency_seconds": 3.39305862599997,
+        "latency_seconds": 3.39305862599997,
+        "repair_revision": "gemini-repair-2"
+      }
+    },
+    "wall_seconds": 3.622075791005045,
+    "receipt_schema_valid": true,
+    "has_observed_content": true,
+    "observed_provider": "gemini"
+  },
+  "success": true,
+  "completed_at": "2026-11-25T02:00:45.846486+00:00",
+  "image_platform": "linux/arm64",
+  "docker_host_architecture": "aarch64",
+  "performance_scope": "Local smoke test only; cross-architecture emulation timings are not native amd64 performance"
+}

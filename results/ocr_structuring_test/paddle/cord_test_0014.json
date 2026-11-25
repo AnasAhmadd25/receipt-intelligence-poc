@@ -1,0 +1,182 @@
+{
+  "id": "cord_test_0014",
+  "dataset": "CORD-v2",
+  "split": "test",
+  "source": "paddle",
+  "image_sha256": "ea8f1c932350e1e2d5182a9dad4ed0fdadf2fe4d88703ee1d4ce20ecf9933067",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "4e22bf474392a1f12b16494a0a5db2bc3cbce5a0d22f9b696f9463815a0d97bf",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "238000",
+    "discount": "100000",
+    "tax": "25585",
+    "total": "281435",
+    "line_items": [
+      {
+        "raw_description": "RedVelvetCheese Slc",
+        "quantity": "1",
+        "unit_price": null,
+        "line_total": null
+      },
+      {
+        "raw_description": "Chicken Baked Rice",
+        "quantity": "1",
+        "unit_price": null,
+        "line_total": "65000"
+      },
+      {
+        "raw_description": "Fish n Chips",
+        "quantity": null,
+        "unit_price": null,
+        "line_total": "35000"
+      },
+      {
+        "raw_description": "Mushroom Soup",
+        "quantity": null,
+        "unit_price": null,
+        "line_total": "2500"
+      },
+      {
+        "raw_description": "Chamomile",
+        "quantity": null,
+        "unit_price": null,
+        "line_total": "20000"
+      },
+      {
+        "raw_description": "Iced Tea",
+        "quantity": "1",
+        "unit_price": null,
+        "line_total": null
+      }
+    ],
+    "raw_text": "1 RedVelvetCheese Slc\n,000\n38.\n55\n1 Chicken Baked Rice\n000\n3\n65,000\nFish n Chips\n2\n35,000\nMushroom Soup\n25,,00\nChamomile\n20, 000\n1 Iced Tea\n238,000\nSUBTOTAL\n17,850\nService\n25,585\nPB1\nin upne 2\n281-435\nTOTAL\n100,000\nCoupon\nCASH\n200, 000\n,55\n18\nChange\n\nIto t  2  b  o \n2  3  ",
+    "missing_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency"
+    ],
+    "uncertain_fields": [
+      "line_items"
+    ],
+    "validation_warnings": [
+      "Could not reliably map all line item prices due to OCR formatting.",
+      "Currency symbol not found.",
+      "subtotal + tax - discount differs from total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"238000\",\n  \"discount\": \"100000\",\n  \"tax\": \"25585\",\n  \"total\": \"281435\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"RedVelvetCheese Slc\",\n      \"quantity\": \"1\",\n      \"unit_price\": null,\n      \"line_total\": null\n    },\n    {\n      \"raw_description\": \"Chicken Baked Rice\",\n      \"quantity\": \"1\",\n      \"unit_price\": null,\n      \"line_total\": \"65000\"\n    },\n    {\n      \"raw_description\": \"Fish n Chips\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"line_total\": \"35000\"\n    },\n    {\n      \"raw_description\": \"Mushroom Soup\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"line_total\": \"2500\"\n    },\n    {\n      \"raw_description\": \"Chamomile\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"line_total\": \"20000\"\n    },\n    {\n      \"raw_description\": \"Iced Tea\",\n      \"quantity\": \"1\",\n      \"unit_price\": null,\n      \"line_total\": null\n    }\n  ],\n  \"raw_text\": \"1 RedVelvetCheese Slc\\n,000\\n38.\\n55\\n1 Chicken Baked Rice\\n000\\n3\\n65,000\\nFish n Chips\\n2\\n35,000\\nMushroom Soup\\n25,,00\\nChamomile\\n20, 000\\n1 Iced Tea\\n238,000\\nSUBTOTAL\\n17,850\\nService\\n25,585\\nPB1\\nin upne 2\\n281-435\\nTOTAL\\n100,000\\nCoupon\\nCASH\\n200, 000\\n,55\\n18\\nChange\\n\\nIto t  2  b  o \\n2  3  \",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"receipt_number\",\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\"\n  ],\n  \"uncertain_fields\": [\n    \"line_items\"\n  ],\n  \"validation_warnings\": [\n    \"Could not reliably map all line item prices due to OCR formatting.\",\n    \"Currency symbol not found.\"\n  ]\n}",
+        "status": "ok",
+        "input_tokens": 2367,
+        "output_tokens": 707,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 707,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 707,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 2367,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 2367
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 3074,
+          "traffic_type": null
+        },
+        "latency_seconds": 2.916029041982256
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 2367,
+    "output_tokens": 707,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 2.916029041982256,
+    "latency_seconds": 2.916029041982256,
+    "repair_revision": "gemini-repair-2",
+    "ocr_engine": "paddle",
+    "input_mode": "ocr_text_only",
+    "template_revision": "gemini-text-1"
+  },
+  "status": "ok",
+  "wall_seconds": 2.9355364580405876,
+  "metrics": {
+    "field_correct": 3,
+    "field_total": 3,
+    "field_accuracy": 1.0,
+    "fields": {
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "tax": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "discount"
+    ],
+    "description_similarity": 0.9957264957264957,
+    "line_items": {
+      "matched": 0,
+      "predicted": 6,
+      "expected": 6,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 5,
+        "total": 6,
+        "accuracy": 0.8333333333333334
+      },
+      "quantity": {
+        "correct": 3,
+        "total": 6,
+        "accuracy": 0.5
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 6,
+        "accuracy": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "endpoint": "https://anasahmadoff--receipt-ocr-vl16-rd-ocrtrial-web.us-east.modal.run",
+  "started_epoch": 1795572364.3267992,
+  "transport": "HTTPS with303redirectfollowing",
+  "gpu": "T4",
+  "dtype": "FP16 compatibility override; official BF16 path unmeasured",
+  "status": "failed",
+  "error": "HTTPStatusError: Server error '500 Internal Server Error' for url 'https://anasahmadoff--receipt-ocr-vl16-rd-ocrtrial-web.us-east.modal.run/ocr'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
+  "client_lifecycle_seconds": 48.30603550001979,
+  "stop_exit_code": 0,
+  "stop_output": ""
+}

@@ -1,0 +1,34 @@
+# Build from the project root. CUDA is provided by the pinned Linux Torch wheels;
+# the host must supply an NVIDIA GPU and NVIDIA Container Toolkit (--gpus all).
+FROM python:3.12.12-slim-bookworm
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends libgl1 libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+RUN pip install --no-cache-dir \
+    torch==2.9.1 torchvision==0.24.1 transformers==5.24.1 accelerate==1.12.0 \
+    pillow==12.0.0 sentencepiece==0.2.1 einops==0.8.1 \
+    fastapi==0.121.3 uvicorn==0.54.0 pydantic==2.12.4 httpx==0.28.1 \
+    python-dotenv==1.2.4 python-multipart==0.0.20 psutil==7.1.3 \
+    rapidfuzz==3.14.6 scipy==1.18.1
+COPY pyproject.toml ./
+COPY app ./app
+COPY benchmark ./benchmark
+COPY deploy ./deploy
+RUN pip install --no-cache-dir --no-deps . \
+    && useradd --system --uid 10001 receipt \
+    && mkdir -p /model-cache \
+    && chown receipt:receipt /model-cache
+ENV PUBLIC_DEPLOYMENT=true \
+    DEFAULT_PROVIDER=selfhosted \
+    ALLOWED_PROVIDERS=selfhosted \
+    SELFHOSTED_WARMUP=true \
+    MAX_IN_FLIGHT=1 \
+    HF_HOME=/model-cache \
+    TOKENIZERS_PARALLELISM=false \
+    PYTHONUNBUFFERED=1
+USER receipt
+EXPOSE 8000
+HEALTHCHECK --interval=30s --timeout=5s --start-period=300s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready', timeout=4)"
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]

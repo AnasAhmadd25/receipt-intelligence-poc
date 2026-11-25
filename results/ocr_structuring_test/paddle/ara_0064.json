@@ -1,0 +1,132 @@
+{
+  "id": "ara_0064",
+  "dataset": "AraReceipt",
+  "split": "test",
+  "source": "paddle",
+  "image_sha256": "a5ae8f8190f2627e250c1e7ac32b98ef72a06348d1d0d9dd969f736061a637de",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "b63e4aaa1de0e1ff9d663be20df1d663afb0a676cf75e46e1e52e664008f8f3c",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": "23",
+    "purchase_date": "2022-11-09",
+    "purchase_time": "8:44 PM",
+    "currency": null,
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "total": null,
+    "line_items": [
+      {
+        "raw_description": "تشيكن بانيه ص",
+        "quantity": "2",
+        "unit_price": "25.000",
+        "line_total": "50.000"
+      }
+    ],
+    "raw_text": "Q٢RRRBEEF\nفاتورة\nتيكاوي\n23\n2022-11-09 8:44 PM\nورلية \n438\nكاشير\nعميل\nالصنف\nالسعر\nاجمالي\nعدد\nتشيكن بانيه ص\ne..e...\n0 25.000\n50.000\n2\nتكلفة اضافية  \n١جمالي ١صناف\nخصم\nضريية \n١جمالي\nباقي\nمدفوع \nمدينة الشيخ زايد\n01126965454\nWELCOM",
+    "missing_fields": [
+      "merchant_name",
+      "currency",
+      "subtotal",
+      "discount",
+      "tax",
+      "total"
+    ],
+    "uncertain_fields": [
+      "merchant_name"
+    ],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": \"23\",\n  \"purchase_date\": \"2022-11-09\",\n  \"purchase_time\": \"8:44 PM\",\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": null,\n  \"line_items\": [\n    {\n      \"raw_description\": \"تشيكن بانيه ص\",\n      \"quantity\": \"2\",\n      \"unit_price\": \"25.000\",\n      \"line_total\": \"50.000\"\n    }\n  ],\n  \"raw_text\": \"Q٢RRRBEEF\\nفاتورة\\nتيكاوي\\n23\\n2022-11-09 8:44 PM\\nورلية \\n438\\nكاشير\\nعميل\\nالصنف\\nالسعر\\nاجمالي\\nعدد\\nتشيكن بانيه ص\\ne..e...\\n0 25.000\\n50.000\\n2\\nتكلفة اضافية  \\n١جمالي ١صناف\\nخصم\\nضريية \\n١جمالي\\nباقي\\nمدفوع \\nمدينة الشيخ زايد\\n01126965454\\nWELCOM\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"currency\",\n    \"subtotal\",\n    \"discount\",\n    \"tax\",\n    \"total\"\n  ],\n  \"uncertain_fields\": [\n    \"merchant_name\"\n  ],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1940,
+        "output_tokens": 416,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 416,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 416,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1940,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 1940
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 2356,
+          "traffic_type": null
+        },
+        "latency_seconds": 2.9809668749803677
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1940,
+    "output_tokens": 416,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 2.9809668749803677,
+    "latency_seconds": 2.9809668749803677,
+    "repair_revision": "gemini-repair-2",
+    "ocr_engine": "paddle",
+    "input_mode": "ocr_text_only",
+    "template_revision": "gemini-text-1"
+  },
+  "status": "ok",
+  "wall_seconds": 3.00130924989935,
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 3,
+    "field_accuracy": 0.0,
+    "fields": {
+      "subtotal": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "tax": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "subtotal",
+      "tax",
+      "total"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 1.0,
+    "hallucination_rate": null,
+    "missing_denominator": 3,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_date",
+      "purchase_time"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

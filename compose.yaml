@@ -1,0 +1,65 @@
+name: receipt-intelligence
+services:
+  ocr:
+    image: receipt-intelligence:ocr-rd
+    build:
+      context: .
+      dockerfile: configs/Dockerfile.ocr
+    platform: linux/amd64
+    ports:
+      - "127.0.0.1:8001:8000"
+    environment:
+      API_KEY: ${API_KEY:-}
+      DEFAULT_PROVIDER: ${OCR_DEFAULT_PROVIDER:-ocr_nvidia}
+      NVIDIA_API_KEY: ${NVIDIA_API_KEY:-}
+      NVIDIA_MODEL: ${NVIDIA_MODEL:-}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      OPENROUTER_MODEL: ${OPENROUTER_MODEL:-}
+      OLLAMA_API_KEY: ${OLLAMA_API_KEY:-}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-gemma4:31b}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      OCR_GEMINI_MODEL: ${OCR_GEMINI_MODEL:-gemini-3.1-flash-lite}
+      OCR_LANGUAGE: ${OCR_LANGUAGE:-ar}
+    volumes:
+      - paddle-models:/home/receipt/.paddlex
+      - ocr-cache:/home/receipt/.cache
+  gemini:
+    image: receipt-intelligence:gemini-rd
+    build:
+      context: .
+      dockerfile: configs/Dockerfile.gemini
+    ports:
+      - "127.0.0.1:8002:8000"
+    environment:
+      API_KEY: ${API_KEY:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.5-flash-lite}
+  selfhosted:
+    image: receipt-intelligence:selfhosted-rd
+    profiles: [gpu]
+    build:
+      context: .
+      dockerfile: configs/Dockerfile.selfhosted
+    platform: linux/amd64
+    ports:
+      - "127.0.0.1:8003:8000"
+    environment:
+      API_KEY: ${API_KEY:-}
+      DEFAULT_PROVIDER: selfhosted
+      ALLOWED_PROVIDERS: selfhosted
+      MAX_IN_FLIGHT: "1"
+      SELFHOSTED_WARMUP: "true"
+      HF_HOME: /model-cache
+    volumes:
+      - qwen-models:/model-cache
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+volumes:
+  paddle-models:
+  ocr-cache:
+  qwen-models:

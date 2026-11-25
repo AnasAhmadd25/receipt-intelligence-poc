@@ -1,0 +1,138 @@
+{
+  "id": "ara_0019",
+  "dataset": "AraReceipt",
+  "split": "development",
+  "source": "oracle",
+  "image_sha256": "34a36b0f707d7c8ef3b7930c66165519e6478495f82bc41a8c3ba875e6029192",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "2fe825227d33a75312a3c8ce4fc52cdf2dfac22ad6b1f22873c9c1e9cdeec193",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": "sheko",
+    "receipt_number": "4070",
+    "purchase_date": "2022-11-18",
+    "purchase_time": "06:55",
+    "currency": null,
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "total": "620.00",
+    "line_items": [
+      {
+        "raw_description": "كفر مرتبه 180 سم",
+        "quantity": "1",
+        "unit_price": "160.00",
+        "line_total": "160.00"
+      },
+      {
+        "raw_description": "كفر مرتبه 160 سم",
+        "quantity": "1",
+        "unit_price": "140.00",
+        "line_total": "140.00"
+      },
+      {
+        "raw_description": "كفر مرتبه 120 سم",
+        "quantity": "1",
+        "unit_price": "110.00",
+        "line_total": "320.00"
+      }
+    ],
+    "raw_text": "sheko\nفاتورة بيع\n2022/11/18\nالتاريخ\nرقم الفاتورة\n4070\nالوقت M\n٥٥6:\nنوع الفاتورة نقدى\n2022/11/18\nكاشير\nتستحق\nالإجمالى\nالسعر\nاسم الصنف\n160.00\n160.00\nكفر مرتبه\n180\nسم\n140.00\n٥16\nكفر مرتبه\n140.00\nلش\n320.00,1\nكفر مرتبه\n110.00\n120\nسم\n20.0,1\nالمطلوب\nيشمل ضريبة القيمة المضافة\n٥٥.٥\n٥٥\nالمدفوع\n620.00,1\nشكرًا لزيارتكم\nكمية\n1\n1\n12",
+    "missing_fields": [
+      "currency",
+      "subtotal",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [
+      "purchase_time",
+      "line_items"
+    ],
+    "validation_warnings": [
+      "The OCR text contains ambiguous or garbled numeric data for line items and totals.",
+      "Purchase time format is non-standard.",
+      "line_items[2]: quantity × unit_price differs from line_total"
+    ]
+  },
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": \"sheko\",\n  \"receipt_number\": \"4070\",\n  \"purchase_date\": \"2022-11-18\",\n  \"purchase_time\": \"06:55\",\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"620.00\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"كفر مرتبه 180 سم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"160.00\",\n      \"line_total\": \"160.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه 160 سم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"140.00\",\n      \"line_total\": \"140.00\"\n    },\n    {\n      \"raw_description\": \"كفر مرتبه 120 سم\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"110.00\",\n      \"line_total\": \"320.00\"\n    }\n  ],\n  \"raw_text\": \"sheko\\nفاتورة بيع\\n2022/11/18\\nالتاريخ\\nرقم الفاتورة\\n4070\\nالوقت M\\n٥٥6:\\nنوع الفاتورة نقدى\\n2022/11/18\\nكاشير\\nتستحق\\nالإجمالى\\nالسعر\\nاسم الصنف\\n160.00\\n160.00\\nكفر مرتبه\\n180\\nسم\\n140.00\\n٥16\\nكفر مرتبه\\n140.00\\nلش\\n320.00,1\\nكفر مرتبه\\n110.00\\n120\\nسم\\n20.0,1\\nالمطلوب\\nيشمل ضريبة القيمة المضافة\\n٥٥.٥\\n٥٥\\nالمدفوع\\n620.00,1\\nشكرًا لزيارتكم\\nكمية\\n1\\n1\\n12\",\n  \"missing_fields\": [\n    \"currency\",\n    \"subtotal\",\n    \"discount\",\n    \"tax\"\n  ],\n  \"uncertain_fields\": [\n    \"purchase_time\",\n    \"line_items\"\n  ],\n  \"validation_warnings\": [\n    \"The OCR text contains ambiguous or garbled numeric data for line items and totals.\",\n    \"Purchase time format is non-standard.\"\n  ]\n}",
+        "status": "ok",
+        "input_tokens": 448,
+        "output_tokens": 675,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 675,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 675,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 448,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 448
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1123,
+          "traffic_type": null
+        },
+        "latency_seconds": 2.838476874982007
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 448,
+    "output_tokens": 675,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 2.838476874982007,
+    "latency_seconds": 2.838476874982007,
+    "repair_revision": "gemini-repair-2",
+    "ocr_engine": "annotation_partial_transcript_control",
+    "input_mode": "ocr_text_only",
+    "template_revision": "gemini-text-1"
+  },
+  "status": "ok",
+  "wall_seconds": 2.860636750003323,
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 2,
+    "field_accuracy": 1.0,
+    "fields": {
+      "merchant_name": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "purchase_date": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [
+      "receipt_number",
+      "purchase_time",
+      "total"
+    ],
+    "description_similarity": null,
+    "line_items": null,
+    "item_fields": {}
+  }
+}

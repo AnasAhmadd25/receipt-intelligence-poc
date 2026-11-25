@@ -1,0 +1,19 @@
+{
+  "attempted_inputs": 10,
+  "strict_scorable": 9,
+  "strict_passes": 4,
+  "critical_total_scorable": 8,
+  "critical_total_passes": 6,
+  "economic_cost_usd": 0.01678,
+  "cost_per_strict_accepted_usd": 0.004195,
+  "strict_cost_reason": "all input inference cost divided by accepted receipts",
+  "cost_per_critical_total_accepted_usd": 0.0027966666666666665,
+  "critical_cost_reason": "all input inference cost divided by accepted receipts",
+  "field_correct": 20,
+  "field_total": 26,
+  "input_tokens": 26560,
+  "output_tokens": 6760,
+  "missing_usage_requests": 0,
+  "mean_seconds": 3.836994745989796,
+  "ocr_hosting_excluded": true
+}

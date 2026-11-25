@@ -1,0 +1,147 @@
+{
+  "id": "cord_test_0002",
+  "dataset": "CORD-v2",
+  "split": "test",
+  "source": "paddle",
+  "image_sha256": "bcf0c175181bfc6b2352ab8f452704b8f18e27fa51f2278bc5c41f6765179edb",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "bb85708f1b4508e72ec92308d16fe358e9e26aa873f2febf46dece55c26bc0b4",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": "28000",
+    "discount": null,
+    "tax": null,
+    "total": "28000",
+    "line_items": [
+      {
+        "raw_description": "SMINEMT (L)",
+        "quantity": null,
+        "unit_price": null,
+        "line_total": "24000"
+      },
+      {
+        "raw_description": "DUCONUT JELLY (L)",
+        "quantity": null,
+        "unit_price": null,
+        "line_total": "4000"
+      }
+    ],
+    "raw_text": "SMINEMT (L)\n24,000\nDUCONUT JELLY (L)\n4,000\nSUB TOTAI\n28,000\nTOTAL SALES\n28,000\nTOTAL ITEMS\n-\n100,000\nCASH\n72,000\nCHANGE\nQueue No: 102",
+    "missing_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "tax",
+      "discount"
+    ],
+    "uncertain_fields": [],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": \"28000\",\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"28000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"SMINEMT (L)\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"line_total\": \"24000\"\n    },\n    {\n      \"raw_description\": \"DUCONUT JELLY (L)\",\n      \"quantity\": null,\n      \"unit_price\": null,\n      \"line_total\": \"4000\"\n    }\n  ],\n  \"raw_text\": \"SMINEMT (L) 24,000 DUCONUT JELLY (L) 4,000 SUB TOTAI 28,000 TOTAL SALES 28,000 TOTAL ITEMS - 100,000 CASH 72,000 CHANGE Queue No: 102\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"receipt_number\",\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\",\n    \"tax\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1097,
+        "output_tokens": 358,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 358,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 358,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1097,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 1097
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1455,
+          "traffic_type": null
+        },
+        "latency_seconds": 2.054559416952543
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1097,
+    "output_tokens": 358,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 2.054559416952543,
+    "latency_seconds": 2.054559416952543,
+    "repair_revision": "gemini-repair-2",
+    "ocr_engine": "paddle",
+    "input_mode": "ocr_text_only",
+    "template_revision": "gemini-text-1"
+  },
+  "status": "ok",
+  "wall_seconds": 2.0785513339797035,
+  "metrics": {
+    "field_correct": 2,
+    "field_total": 2,
+    "field_accuracy": 1.0,
+    "fields": {
+      "subtotal": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "total": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 2,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": 0.861904761904762,
+    "line_items": {
+      "matched": 1,
+      "predicted": 2,
+      "expected": 2,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      },
+      "quantity": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      },
+      "line_total": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      }
+    }
+  }
+}

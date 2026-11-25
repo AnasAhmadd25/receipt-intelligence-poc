@@ -1,0 +1,150 @@
+{
+  "id": "cord_validation_0054",
+  "dataset": "CORD-v2",
+  "split": "development",
+  "source": "paddle",
+  "image_sha256": "3441cee6f018d71a5906bc947e464c736dae3f9b742dfbeabc6fda5b89444f2f",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "410430ef7ba68083cb1ccd0270286fcb50db7c12db4748a4fec0198be45683fd",
+  "receipt": {
+    "schema_version": "1.0",
+    "merchant_name": null,
+    "receipt_number": null,
+    "purchase_date": null,
+    "purchase_time": null,
+    "currency": null,
+    "subtotal": null,
+    "discount": null,
+    "tax": null,
+    "total": "40.000",
+    "line_items": [
+      {
+        "raw_description": "4003-Blueberry Fuji",
+        "quantity": "1",
+        "unit_price": "40.000",
+        "line_total": "40.000"
+      },
+      {
+        "raw_description": "6001-Plastic Bag Small",
+        "quantity": "1",
+        "unit_price": "0",
+        "line_total": "0"
+      }
+    ],
+    "raw_text": "4003-Blueberry Fuji\n40.000\n40.000\nx1\n6001-Plastic Bag Small\n0\nx1\nTotal Item:\nON\nTotal.\n40.000\nCash\nTendered:\n50.000\nChange:\n10,000",
+    "missing_fields": [
+      "merchant_name",
+      "receipt_number",
+      "purchase_date",
+      "purchase_time",
+      "currency",
+      "subtotal",
+      "discount",
+      "tax"
+    ],
+    "uncertain_fields": [
+      "currency"
+    ],
+    "validation_warnings": []
+  },
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"40.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"4003-Blueberry Fuji\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"40.000\",\n      \"line_total\": \"40.000\"\n    },\n    {\n      \"raw_description\": \"6001-Plastic Bag Small\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"0\",\n      \"line_total\": \"0\"\n    }\n  ],\n  \"raw_text\": \"4003-Blueberry Fuji 40.000 40.000 x1 6001-Plastic Bag Small 0 x1 Total Item: ON Total. 40.000 Cash Tendered: 50.000 Change: 10,000\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"receipt_number\",\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\",\n    \"subtotal\",\n    \"discount\",\n    \"tax\"\n  ],\n  \"uncertain_fields\": [\n    \"currency\"\n  ],\n  \"validation_warnings\": []\n}",
+        "status": "ok",
+        "input_tokens": 1124,
+        "output_tokens": 379,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 379,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 379,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1124,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 1124
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 1503,
+          "traffic_type": null
+        },
+        "latency_seconds": 27.818505333038047
+      }
+    ],
+    "json_valid": true,
+    "repairs": 0,
+    "input_tokens": 1124,
+    "output_tokens": 379,
+    "thinking_tokens": 0,
+    "usage_complete": true,
+    "api_latency_seconds": 27.818505333038047,
+    "latency_seconds": 27.818505333038047,
+    "repair_revision": "gemini-repair-2",
+    "ocr_engine": "paddle",
+    "input_mode": "ocr_text_only",
+    "template_revision": "gemini-text-1"
+  },
+  "status": "ok",
+  "wall_seconds": 27.845617624931037,
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 1,
+    "field_accuracy": 0.0,
+    "fields": {
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [],
+    "hallucinated_fields": [],
+    "missing_rate": 0.0,
+    "hallucination_rate": null,
+    "missing_denominator": 1,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": 1.0,
+    "line_items": {
+      "matched": 1,
+      "predicted": 2,
+      "expected": 2,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "quantity": {
+        "correct": 2,
+        "total": 2,
+        "accuracy": 1.0
+      },
+      "unit_price": {
+        "correct": 1,
+        "total": 2,
+        "accuracy": 0.5
+      },
+      "line_total": {
+        "correct": 1,
+        "total": 2,
+        "accuracy": 0.5
+      }
+    }
+  }
+}

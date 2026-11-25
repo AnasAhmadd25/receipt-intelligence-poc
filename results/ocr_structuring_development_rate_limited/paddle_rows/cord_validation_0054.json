@@ -1,0 +1,130 @@
+{
+  "id": "cord_validation_0054",
+  "dataset": "CORD-v2",
+  "split": "development",
+  "source": "paddle_rows",
+  "image_sha256": "3441cee6f018d71a5906bc947e464c736dae3f9b742dfbeabc6fda5b89444f2f",
+  "provider": "ocr_gemini",
+  "ocr_sha256": "d5aa6baf0b76f36eeddb5199f8a8b6576d7be91ccf9411885d46fa80f244a461",
+  "status": "error",
+  "error": "Gemini inference failed",
+  "metadata": {
+    "provider": "ocr_gemini",
+    "model": "gemini-3.1-flash-lite",
+    "attempts": [
+      {
+        "attempt": 1,
+        "kind": "initial",
+        "raw_response": "{\n  \"schema_version\": \"1.0.0\",\n  \"merchant_name\": null,\n  \"receipt_number\": null,\n  \"purchase_date\": null,\n  \"purchase_time\": null,\n  \"currency\": null,\n  \"subtotal\": null,\n  \"discount\": null,\n  \"tax\": null,\n  \"total\": \"40.000\",\n  \"line_items\": [\n    {\n      \"raw_description\": \"4003-Blueberry Fuji\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"40.000\",\n      \"line_total\": \"40.000\"\n    },\n    {\n      \"raw_description\": \"6001-Plastic Bag Small\",\n      \"quantity\": \"1\",\n      \"unit_price\": \"0\",\n      \"line_total\": \"0\"\n    }\n  ],\n  \"raw_text\": \"4003-Blueberry Fuji\\n40.000 | x1 | 40.000\\n6001-Plastic Bag Small\\n0 | x1\\nTotal Item: | ON\\nTotal. | 40.000\\nCash\\nTendered: | 50.000\\nChange: | 10,000\",\n  \"missing_fields\": [\n    \"merchant_name\",\n    \"receipt_number\",\n    \"purchase_date\",\n    \"purchase_time\",\n    \"currency\",\n    \"subtotal\",\n    \"discount\",\n    \"tax\"\n  ],\n  \"uncertain_fields\": [],\n  \"validation_warnings\": []\n}",
+        "status": "invalid_json_or_schema",
+        "input_tokens": 1656,
+        "output_tokens": 393,
+        "thinking_tokens": 0,
+        "usage_reported": true,
+        "candidate_tokens": 393,
+        "token_details": {
+          "cache_tokens_details": null,
+          "cached_content_token_count": null,
+          "candidates_token_count": 393,
+          "candidates_tokens_details": null,
+          "prompt_token_count": 1656,
+          "prompt_tokens_details": [
+            {
+              "modality": "TEXT",
+              "token_count": 1656
+            }
+          ],
+          "thoughts_token_count": null,
+          "tool_use_prompt_token_count": null,
+          "tool_use_prompt_tokens_details": null,
+          "total_token_count": 2049,
+          "traffic_type": null
+        },
+        "latency_seconds": 1.9351510839769617,
+        "validation_diagnostics": [
+          {
+            "loc": [
+              "schema_version"
+            ],
+            "type": "literal_error"
+          }
+        ]
+      },
+      {
+        "attempt": 2,
+        "kind": "repair",
+        "raw_response": "",
+        "status": "error",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "thinking_tokens": 0,
+        "usage_reported": false,
+        "error": "ClientError",
+        "latency_seconds": 0.20685462490655482,
+        "http_status_code": 429
+      }
+    ],
+    "json_valid": false,
+    "repairs": 1,
+    "input_tokens": 1656,
+    "output_tokens": 393,
+    "thinking_tokens": 0,
+    "usage_complete": false,
+    "api_latency_seconds": 2.1420057088835165,
+    "latency_seconds": 2.1420057088835165,
+    "repair_revision": "gemini-repair-2"
+  },
+  "wall_seconds": 2.1551789169898257,
+  "metrics": {
+    "field_correct": 0,
+    "field_total": 1,
+    "field_accuracy": 0.0,
+    "fields": {
+      "total": {
+        "correct": 0,
+        "total": 1,
+        "accuracy": 0.0
+      }
+    },
+    "missing_fields": [
+      "total"
+    ],
+    "hallucinated_fields": [],
+    "missing_rate": 1.0,
+    "hallucination_rate": null,
+    "missing_denominator": 1,
+    "hallucination_denominator": 0,
+    "unscorable_fields": [],
+    "description_similarity": 0.0,
+    "line_items": {
+      "matched": 0,
+      "predicted": 0,
+      "expected": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "item_fields": {
+      "raw_description": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      },
+      "quantity": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      },
+      "unit_price": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      },
+      "line_total": {
+        "correct": 0,
+        "total": 2,
+        "accuracy": 0.0
+      }
+    }
+  }
+}
